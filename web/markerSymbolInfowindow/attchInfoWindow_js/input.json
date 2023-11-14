@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Attach a InfoWindow to a marker",
+    "desc": "마커에 인포윈도우를 연결하고, 마커 클릭 시 인포윈도우를 표시하는 예제입니다. <br/> Marker 생성 후 marker#setInfoWindow 메소드를 통해 인포윈도우를 연결할 수 있습니다",
+    "reference": {
+        "Marker": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html",
+        "InfoWindow": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html"
+    }
+}

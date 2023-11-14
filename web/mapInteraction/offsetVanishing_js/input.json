@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    },
+    "package.json":{
+      "contentType" : "text/json"
+    }
+  },
+  "category": "Map Interaction",
+  "name": "Offset the vanishing point using padding",
+  "desc": "떠있는 요소가 지도 위에 표시될 때 왜곡을 줄이기 위해 지도의 중심이나 소실점을 오프셋합니다.",
+  "reference" : {
+    "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html"
+  }
+}

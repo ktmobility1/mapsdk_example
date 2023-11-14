@@ -1,0 +1,23 @@
+{
+  "infos": [
+    {
+      "name":"Base Map", 
+      "examples":[
+        {"name":"Normal Map", "path":"/android/example/baseMap/normalMap"}, 
+        {"name":"Satellite Map", "path":"/android/example/baseMap/satelliteMap"}, 
+        {"name":"Hybrid Map", "path":"/android/example/baseMap/hybridMap"}, 
+        {"name":"Realtime Traffic Map", "path":"/android/example/baseMap/realtimeTrafficMap"},
+        {"name":"Vector Map", "path":"/android/example/baseMap/vectorMap"}, 
+        {"name":"Raster Map", "path":"/android/example/baseMap/rasterMap"}
+      ]
+    },
+    {
+      "name":"Map interaction", 
+      "examples":[
+          {"name": "Change map center, zoom", "path": "/android/example/mapInteraction/changeMapCenterZoom"},
+          {"name": "Change map zoom, pitch, rotate", "path": "/android/example/mapInteraction/changeMapZoomPitchRotate"}, 
+          {"name": "Resize map", "path": "/android/example/mapInteraction/resizeMapZoom"}
+      ]
+    }
+  ]
+}

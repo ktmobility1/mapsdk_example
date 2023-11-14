@@ -1,0 +1,25 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "cluster",
+    "desc": "symbol style과 circle style을 사용하여 동물병원 데이터를 클러스터링합니다. <br/> GeoJSONSource의 cluster 관련 속성을 통해 클러스터를 설정할 수 있습니다.",
+    "reference": {
+        "Map": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+        "GeoJSONSource": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "CircleStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_CircleStyle.CircleStyle.html",
+        "SymbolStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html",
+        "PointLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+        "InfoWindow": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html"
+    }
+}

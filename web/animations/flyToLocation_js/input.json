@@ -1,0 +1,20 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.js": {
+			"contentType": "text/javascript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Fly to a location",
+	"desc": "map의 flyTo 메소드를 사용하여 화면을 이동시키는 애니메이션 예제입니다.",
+	"reference": {
+		"Map#flyTo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#flyTo"
+	}
+}

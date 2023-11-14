@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Events",
+    "name": "Get feature under the mouse pointer",
+    "desc": "queryRenderedFeatures를 사용하면 마우스를 올려놓은 지도 요소의 속성을 표시할 수 있습니다.",
+    "reference": {
+        "MapMouseEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html",
+        "Map#queryRenderedFeatures": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#queryRenderedFeatures"
+    }
+}

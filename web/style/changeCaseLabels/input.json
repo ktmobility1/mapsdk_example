@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Change the case of labels",
+    "desc": "symbol style의 text-field에 upcase 및 downcase 표현식을 사용하여 text의 대소문자를 변경합니다",
+    "reference": {
+        "PointGeo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "PointLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+        "SymbolStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType" : "text/typescript",
+"selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Show polygon information on Click",
+    "desc": "서울특별시 행정 구역 기준으로 나뉜 다각형을 클릭하면 해당 자치구 이름을 InfoWindow로 표시하는 예제입니다. <br/> PolygonLayer, LineLayer를 추가하고, PolygonLayer 피쳐에 클릭 이벤트가 감지되면 InfoWindow를 표시합니다. <br/>",
+    "reference": {
+        "GeoJSON Source" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "Fill Style" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+        "Line Style" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+        "Line layer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html",
+        "Polygon layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html"
+    }
+}

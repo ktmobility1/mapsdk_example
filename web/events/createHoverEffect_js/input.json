@@ -1,0 +1,26 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Events",
+    "name": "Create a hover effect",
+    "desc": "이벤트 및 기능 상태를 사용하여 feature 별 hover 효과를 만듭니다. 예제에서는 서울특별시 행정동 기준으로 각 feature에 hover 시 불투명도를 변경시킵니다.",
+    "reference": {
+        "MapMouseEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html",
+        "GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "Polygon Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html",
+        "Line Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html",
+        "Fill Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+        "Line Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+        "Map#setFeatureState" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setFeatureState"
+    }
+}

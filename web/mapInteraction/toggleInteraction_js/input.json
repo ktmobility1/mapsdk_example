@@ -1,0 +1,25 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "Toggle Handler",
+    "desc": "지도에서 UI 핸들러를 활성화하거나 비활성화합니다. 'enable','disable' 메소드를 통해 interaction을 활성화, 비활성화 할 수 있습니다.",
+    "reference": {
+        "BoxZoom Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_BoxZoomHandler.BoxZoomHandler.html",
+        "ScrollZoom Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_ScrollZoomHandler.ScrollZoomHandler.html",
+        "DragRotate Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_DragRotateHandler.DragRotateHandler.html",
+        "DragPan Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_DragPanHandler.DragPanHandler.html",
+        "Keyboard Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_KeyboardHandler.KeyboardHandler.html",
+        "DoubleClick Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_DoubleClickZoomHandler.DoubleClickZoomHandler.html"
+    }
+}

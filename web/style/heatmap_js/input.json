@@ -1,0 +1,20 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.js": {
+			"contentType": "text/javascript",
+			"selected": true
+		}
+	},
+	"category": "Style",
+	"name": "HeatMap",
+	"desc": "전국 동물병원 6000여개의 위치 Point를 HeatMap 스타일로 표출하는 예제입니다",
+	"reference": {
+		"GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+		"Heatmap Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_HeatmapStyle.HeatmapStyle.html",
+		"Point Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+		"addSource": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#addSource"
+	}
+}

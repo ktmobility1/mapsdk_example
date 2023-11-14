@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <script type="module" src="./index.js" defer></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    html, body, #map { width:100%; height: 100%; }
+    #events {
+        position: absolute;
+        top: 0;
+        height: 150px;
+        width: 100%;
+        overflow: auto;
+        background: rgba(255, 255, 255);
+        text-align: center;
+    }
+    #map canvas {
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="events">
+      <p>겹쳐있는 map, layer, marker를 클릭하면서<br/> 이벤트 발생 순서를 알아보세요.<br/></p>
+      <pre id="res"></pre>
+  </div>
+
+</body>
+</html>

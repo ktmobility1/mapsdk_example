@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Controls",
+    "name": "Custom DrawControl",
+    "desc": "지도에 그리기 기능을 제공하는 DrawControl을 사용자가 원하는 버튼, 이벤트로 핸들링하는 예제입니다.",
+    "reference":{
+        "DrawControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_DrawControl.DrawControl.html",
+        "DrawOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_DrawOptions.DrawOptions.html"
+    }
+}

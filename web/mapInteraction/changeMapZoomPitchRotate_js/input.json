@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "Change map zoom, pitch, rotate",
+    "desc": "선택한 zoom, pitch, rotate에 맞게 지도를 조정합니다. <br/> map의 setZoom, setPitch, setRotate를 통해 애니메이션 없이 조정할 수 있습니다. <br/> map.easeTo 메소드를 통해 애니메이션 전환과 함께 지도를 조정할 수 있습니다.",
+    "reference": {
+        "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html"
+    }
+}

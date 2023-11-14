@@ -1,0 +1,24 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Filter symbols by toggling a list",
+    "desc": "토글 버튼으로 심볼 레이어들을 필터할 수 있는 예제입니다. <br/><br/> 소스를 추가할 때 properties 속성으로 각 Geometry의 속성을 설정합니다. <br/>PointLayer의 LayerInfo의 filter 속성을 통해 사용자가 입력한 레이어만 보이도록 visibility를 설정합니다. <br/>map#setLayoutProperty를 사용하여 사용자가 입력한 텍스트박스에 맞게 visibility 속성을 설정할 수 있습니다.",
+    "reference": {
+        "PointGeo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "GeoJSONSource": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "PointLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+        "SymbolStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html",
+        "Map#setLayoutProperty" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setLayoutProperty"
+    }
+}

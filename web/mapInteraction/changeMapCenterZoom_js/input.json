@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "change Map Center Zoom",
+    "desc": "중심점의 위도 및 경도 좌표는 확대/축소 레벨과 함께 지도 객체를 초기화하는 메소드에 전달될 수 있습니다. #map div가 렌더링된 후에만 지도를 구성할 수 있습니다.<br/> 중심점은 'setCenter' 또는 'jumpTo'를 통해 변경 가능합니다. <br/> 확대/축소 레벨은 'setZoom' 또는 'zoomTo'로 변경 가능합니다. ",
+    "reference": {
+        "Map": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+        "Map#setCenter": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setCenter",
+        "Map#zoomTo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#zoomTo"
+    }
+}

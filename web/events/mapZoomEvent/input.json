@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Events",
+    "name": "Map Zoom Event - scroll, double Click, boxZoom",
+    "desc": "scroll, double Click, boxZoom으로 zoom핸들링하는 예제입니다.",
+    "reference": {
+        "MapDefaultEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html",
+        "MapMouseEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html",
+        "MapTouchEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapTouchEvent.MapTouchEvent.html"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Controls",
+    "name": "MinimapControl",
+    "desc": "현재 맵의 미니어처 오버뷰(minimap)를 표시하는 Control입니다.  <br/> map.addControl 메소드로 MinimapControl을 추가할 수 있으며, 기본 Map 생성 시 minimapControl:true로도 생성할 수 있습니다. ",
+    "reference":{
+        "MinimapControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_MinimapControl.MinimapControl.html",
+        "MinimapOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_MinimapOptions.MinimapOptions.html"
+    }
+}

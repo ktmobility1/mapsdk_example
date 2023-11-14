@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <script type="module" src="./index.js" defer></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    html, body, #map { height: 100%; }
+    #map canvas {
+        cursor: crosshair;
+    }
+    #features {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        overflow: auto;
+        background: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <pre id="features"></pre>
+</body>
+</html>

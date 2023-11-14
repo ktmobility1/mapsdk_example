@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Style lines with a data - driven property",
+    "desc": "Line Layer 생성 시 들어가는 Line Style의 'line-color' 값으로 표현식을 사용하여 라인 레이어의 색상을 지정합니다. 라인의 데이터 생성 시 property에 color를 추가하고, 그 color를 표현식에 사용할 수 있습니다",
+    "reference": {
+        "LineString": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_LineString.LineString.html",
+        "LineStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+        "LineLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html"
+    }
+}

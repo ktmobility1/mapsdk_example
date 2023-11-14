@@ -1,0 +1,18 @@
+{
+    "files": {
+      "index.html": {
+        "contentType" : "text/html"
+      },
+      "index.ts" :{
+        "contentType" : "text/typescript",
+"selected" : true
+      }
+    },
+    "category": "Base Map",
+    "name": "Vector Map",
+    "desc": "sdk에서는 KT의 벡터맵을 기본으로 Normal, Satellite, Hybrid외에 mvt(mapbox Vector Tile) 포맷이면 sdk에서 베이스맵으로 표출됩니다 \n예제는 다양한 mvt타입이 vector맵을 선택하며 변경 할 수 있습니다.",
+    "reference":{
+      "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+      "Map#setStyle": "https://map.gis.kt.com/mapsdk/web_apidocs/docs/classes/Map.Map.html#setStyle"
+    }
+}

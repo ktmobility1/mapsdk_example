@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType" : "text/typescript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Controls",
+    "name": "Custom MeasureControl",
+    "desc": "지도에 측정 기능을 제공하는 MeasureControl을 사용자가 원하는 버튼, 이벤트로 핸들링하는 예제입니다.",
+    "reference":{
+        "MeasureControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_MeasureControl.MeasureControl.html",
+        "MeasureOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_MeasureOptions.MeasureOptions.html"
+    }
+}

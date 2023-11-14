@@ -1,0 +1,20 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.ts": {
+			"contentType": "text/typescript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Fly to a location based on scroll position",
+	"desc": "scroll event가 발생하면 해당되는 chapter의 위치로 좌표와 카메라 시점을 변경하는 애니메이션 예제입니다.",
+	"reference": {
+		"Map#flyTo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#flyTo"
+	}
+}

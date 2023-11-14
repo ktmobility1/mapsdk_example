@@ -1,0 +1,18 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    }
+  },
+  "category": "Layer, Source",
+  "name": "Get features under the mouse pointer",
+  "desc": "지도에 mousemoveEvent를 추가하고, queryRenderedFeatures를 사용하여 마우스 좌표 지점의 features를 표출하는 예제입니다.",
+  "reference":{
+    "Map#queryRenderedFeatures" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#queryRenderedFeatures",
+    "MapMouseEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Draggable Point",
+    "desc": "드래그 할 수 있는 포인트 레이어입니다. 포인트 레이어에서 마우스를 뗄 때 마우스 좌표를 InfoWindow로 표시하는 예제입니다. ",
+    "reference": {
+        "PointGeo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "CircleStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_CircleStyle.CircleStyle.html",
+        "InfoWindow": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html",
+        "Map": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+        "Map#setPaintProperty": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setPaintProperty"
+    }
+}

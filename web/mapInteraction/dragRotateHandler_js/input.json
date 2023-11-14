@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "dragRotate Handler",
+    "desc": "DragRotateHandler를 사용하면 사용자가 마우스 오른쪽 버튼이나 Ctrl 키를 누른 채 커서를 클릭하고 드래그하여 지도를 회전할 수 있습니다. 'enable','disable' 메소드를 통해 'DragRotate' interaction을 활성화, 비활성화 할 수 있습니다.",
+    "reference": {
+        "DragRotate Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_DragRotateHandler.DragRotateHandler.html"
+    }
+}

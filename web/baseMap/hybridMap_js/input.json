@@ -1,0 +1,17 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+"selected" : true
+    }
+  },
+  "category": "Base Map",
+  "name": "KT Normal Map",
+  "desc": "위성지도와 배경에 도로,POI 벡터를 오버레이한 hybrid지도입니다.",
+  "reference":{
+    "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html"
+  }
+}

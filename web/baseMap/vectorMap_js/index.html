@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <script type="module" src="./index.js" defer></script>
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay-panel {
+            left: 16px;
+            position: absolute;
+            top: 16px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.5);
+            padding: 16px;
+            z-index: 1;
+        }
+        .buttons-group__button {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            color: #666666;
+            cursor: pointer;
+            font-family: Gotham, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0;
+            padding: 10px;
+            text-overflow: ellipsis;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            overflow: hidden;
+        }
+        .-active {
+            background-color: #4ba3e3;
+            color: white;
+        }
+        .title {
+            padding: 5px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div id="map">
+    <div class="js-button-list overlay-panel">
+     <div class="title">VectorMap 선택</div>
+     <button class="js-button buttons-group__button -active" value="basic">Basic</button>
+     <button class="js-button buttons-group__button" value="bright">Bright</button>
+     <button class="js-button buttons-group__button" value="dark">Dark</button>
+     <button class="js-button buttons-group__button" value="osm">OSM</button>
+     <button class="js-button buttons-group__button" value="positron">Positron</button>
+     <button class="js-button buttons-group__button" value="toner">Toner</button>
+    </div>
+  </div>
+</body>
+</html>

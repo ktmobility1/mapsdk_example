@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <script type="module" src="./index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay-panel {
+            left: 16px;
+            position: absolute;
+            top: 16px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.5);
+            padding: 16px;
+            z-index: 1;
+        }
+        .button {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            cursor: pointer;
+            padding: 10px;
+            color: #333333;
+            font-family: Gotham, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        .button:active {
+            border: 1px solid gray;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #4ba3e3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #4ba3e3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+        <div class="overlay-panel">
+            boxZoom
+            <label class="switch">
+                <input type="checkbox" id="switch" checked="true" />
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</body>

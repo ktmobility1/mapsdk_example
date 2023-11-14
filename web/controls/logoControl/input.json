@@ -1,0 +1,21 @@
+{
+  "files": {
+      "index.html": {
+        "contentType": "text/html"
+      },
+      "index.ts": {
+        "contentType" : "text/typescript",
+        "selected" : true
+      },
+      "package.json": {
+        "contentType": "text/json"
+      }
+  },
+  "category": "Controls",
+  "name": "LogoControl",
+  "desc": "로고를 표시하는 Control입니다.<br/> 로고 컨트롤은 지도 생성 시 kt로고로 기본적으로 함께 생성됩니다. 프리미엄 계정에서만 로고를 없애거나 커스텀할 수 있습니다.<br/> map.addControl 메소드로 LogoControl을 추가할 수 있으며, 기본 Map 생성 시 ktLogo:true로도 생성할 수 있습니다.",
+  "reference":{
+    "LogoControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_LogoControl.LogoControl.html",
+    "LogoOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_LogoOptions.LogoOptions.html"
+    }
+}

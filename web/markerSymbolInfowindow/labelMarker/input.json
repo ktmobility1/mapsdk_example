@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Label Marker",
+    "desc": "KT의 4대 사옥을 표시하는 예제입니다. 사옥의 위치에 마커와 이름 라벨을 함께 표시합니다",
+    "reference" : {
+        "Marker" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html"
+    }
+}

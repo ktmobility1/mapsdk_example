@@ -1,0 +1,25 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Events",
+    "name": "Mouse Layer - Map, Layer, Marker",
+    "desc": "map, layer, marker 가 겹쳐 있을 때 클릭 이벤트 발생 순서를 알아보는 예제입니다. map, layer, marker 각각 클릭 이벤트가 발생하면 '클릭 이벤트가 발생하였습니다.' 메시지를 남깁니다. ",
+    "reference": {
+        "MapMouseEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html",
+        "Polygon" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_Polygon.Polygon.html",
+        "GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "Fill Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+        "Polygon Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html",
+        "Marker": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html"
+    }
+}

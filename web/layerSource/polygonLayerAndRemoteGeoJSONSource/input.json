@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Layer, Source",
+  "name": "PolygonLayer and Remote GeoJSONSource",
+  "desc": "PolygonLayer 소스로 GeoJSONSource를 사용하는 예제입니다.<br/>GeoJSONSource 데이터를 url을 통해 받아오고, 이를 layer에 적용합니다.",
+  "reference":{
+    "PolygonLayer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html",
+    "GeoJSONSource" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+    "FillStyle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+    "MapDefaultEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html"
+  }
+}

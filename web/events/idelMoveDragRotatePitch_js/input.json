@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Events",
+    "name": "Map Event - idle, Move, Drag, Rotate, Pitch",
+    "desc": "Map Event - idle, Move, Drag, Rotate, Pitch 등 다양한 event를 수신하면 로그에 표시합니다.",
+    "reference": {
+        "MapDefaultEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html",
+        "MapMouseEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapMouseEvent.MapMouseEvent.html",
+        "MapTouchEvent": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapTouchEvent.MapTouchEvent.html"
+    }
+}

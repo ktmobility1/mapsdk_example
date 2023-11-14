@@ -1,0 +1,21 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.js": {
+      "contentType": "text/javascript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "Animations",
+  "name": "Animate map camera around a point",
+  "desc": "특정 point를 기점으로 카메라 시점을 회전하는 애니메이션 예제입니다",
+  "reference": {
+    "Map#rotateTo" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#rotateTo",
+    "Map#setLayoutProperty" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setLayoutProperty"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    },
+    "package.json":{
+      "contentType" : "text/json"
+    }
+  },
+  "category": "Map Interaction",
+  "name": "Fit to the bounds of a LineString",
+  "desc": "LineString의 범위에 맞춰 지도를 확대합니다.",
+  "reference" : {
+    "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+    "LineString": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_LineString.LineString.html",
+    "LineLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html",
+    "LineStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+    "fitBounds":"https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#fitBounds"
+  }
+}

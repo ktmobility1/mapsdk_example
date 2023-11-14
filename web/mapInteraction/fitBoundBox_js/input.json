@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "Fit a map to a bounding box",
+    "desc": "Map의 fitBounds 메소드를 통해 설정한 Bounding Box 좌표에 맞게 지도를 확대/축소할 수 있습니다. 예제에서는 부산 Bound에 맞춰 확대합니다.",
+    "reference": {
+        "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+        "fitBounds":"https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#fitBounds"
+    }
+}

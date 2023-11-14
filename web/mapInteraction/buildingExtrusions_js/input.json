@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "Building Extrusions",
+    "desc": "Map의 changeExtrusionOpacity 메소드를 통해 3D 건물 불투명도를 조절할 수 있습니다. <br/> 이 예제에서는 건물을 표시하거나 숨기는 두 가지 방법을 보여줍니다. 3D건물 켜기/끄기 버튼을 사용하여 가시성을 전환합니다. 지도에서 마우스 오른쪽 버튼을 누르고 지도를 피치하여 가시성을 전환합니다.",
+    "reference": {
+        "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+        "Map#changeExtrusionOpacity": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#changeExtrusionOpacity"
+    }
+}

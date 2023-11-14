@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType" : "text/typescript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "DoubleClickZoom Handler",
+    "desc": "DoubleClickZoomHandler를 사용하면 사용자가 두 번 클릭하거나 두 번 탭하여 한 지점에서 지도를 확대/축소할 수 있습니다. 'enable','disable' 메소드를 통해 'double click zoom' interaction을 활성화, 비활성화 할 수 있습니다.",
+    "reference": {
+        "DoubleClickZoom Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_DoubleClickZoomHandler.DoubleClickZoomHandler.html"
+    }
+}

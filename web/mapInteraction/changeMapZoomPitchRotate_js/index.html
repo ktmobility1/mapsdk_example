@@ -1,0 +1,80 @@
+<!doctype html>
+<head>
+    <script type="module" src="./index.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { width:100%; height: 100%; }
+        .map-overlay {
+        font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 200px;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .map-overlay .map-overlay-inner {
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .map-overlay-inner fieldset {
+        border: none;
+        padding: 0;
+        margin: 0 0 10px;
+    }
+
+    .map-overlay-inner fieldset:last-child {
+        margin: 0;
+    }
+
+    .map-overlay-inner label {
+        display: block;
+        font-weight: bold;
+        margin: 0 0 3px 5px;
+    }
+
+    input {
+        accent-color: #7725ff; 
+    }
+
+    .value {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+      </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <fieldset>
+                <label>현재 확대/축소 Zoom : <span id="nowZoom"></span></label>
+                <div style="display: flex;">
+                    <div id="minZoom" class="value"></div>
+                    <input id="zoom" name="zoom" type="range" step="0.1"/>
+                    <div id="maxZoom" class="value"></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>현재 회전 각도 Bearing : <span id="nowBearing"></span></label>
+                <div style="display: flex;">
+                    <div id="minBearing" class="value">0</div>
+                    <input id="bearing" name="bearing" type="range" step="0.1" min="0" max="360"/>
+                    <div id="maxBearing" class="value">360</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>현재 기울기 Pitch : <span id="nowPitch"></span></label>
+                <div style="display: flex;">
+                    <div id="minPitch" class="value"></div>
+                    <input id="pitch" name="pitch" type="range" step="0.1" />
+                    <div id="maxPitch" class="value"></div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>

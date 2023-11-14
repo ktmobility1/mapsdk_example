@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Layer, Source",
+  "name": "PolygonLayer and Circle",
+  "desc": "Circle Geometry를 지도상에 표출하는 예제입니다.<br/>Circle Geometry의 feature 정보와 FillStyle 스타일 정보를 PolygonLayer에 입력하여 원을 표출합니다.",
+  "reference":{
+    "Circle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_Circle.Circle.html",
+    "FillStyle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+    "PolygonLayer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html",
+    "MapDefaultEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html"
+  }  
+}

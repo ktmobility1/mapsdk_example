@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Draggable marker",
+    "desc": "드래그 가능한 마커를 지도에 띄우고, 마커 드래그가 끝났을 때의 좌표를 인포윈도우로 표시하는 예제입니다.",
+    "reference" : {
+        "Marker" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html"
+    }
+}

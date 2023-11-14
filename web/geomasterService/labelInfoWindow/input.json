@@ -1,0 +1,17 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Geomaster Service",
+    "name": "Label InfoWindow",
+    "desc": "Geomaster의 POI Search API를 사용한 예제입니다. 지도에 POI 아이콘을 클릭하면 해당 지점에 대한 정보를 InfoWindow로 보여줍니다. "
+}

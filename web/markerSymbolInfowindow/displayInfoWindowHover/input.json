@@ -1,0 +1,24 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Display a InfoWindow on Hover",
+    "desc": "조선시대의 5대 궁 정보에 대한 인포윈도우 Mouse Hover 예제 입니다. 사용자가 기호 위에 마우스를 올리면(Mouse Hover 시) 추가 정보가 포함된 인포윈도우를 표시합니다. ",
+    "reference": {
+        "PointGeo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "GeoJSON Source" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "Symbol Style" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html",
+        "Point Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+        "InfoWindow": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html"
+    }
+}

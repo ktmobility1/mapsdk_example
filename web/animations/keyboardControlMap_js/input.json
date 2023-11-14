@@ -1,0 +1,21 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.js": {
+			"contentType": "text/javascript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Navigate the map with game-like controls",
+	"desc": "키보드로 지도를 이동하는 애니메이션 예제입니다. 게임처럼 키보드를 사용하여 지도를 이동할 수 있습니다.",
+	"reference": {
+		"Map#easeTo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#easeTo",
+		"Map#panBy": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#panBy"
+	}
+}

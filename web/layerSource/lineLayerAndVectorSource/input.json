@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Layer, Source",
+  "name": "LineLayer and VectorSource",
+  "desc": "LineLayer 소스로 VectorSource을 사용하는 예제입니다.<br/>VectorSource는 pbf형식의 mvt 포맷입니다. VectorSource는 여러 개의 Layer가 포함되어 있기 때문에 LineLayer로 표출할 Layer를 지정해야 합니다.",
+  "reference":{
+    "LineStyle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+    "LineLayer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PolygonLayer.PolygonLayer.html",
+    "VectorSource" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+    "MapDefaultEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html"
+  }
+}

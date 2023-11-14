@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.js": {
+      "contentType": "text/javascript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "Animations",
+  "name": "Animate a marker",
+  "desc": "marker의 setLngLat 메소드를 활용하여 marker를 이동시키는 애니메이션 예제입니다",
+  "reference": {
+    "Marker": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html"
+  }
+}

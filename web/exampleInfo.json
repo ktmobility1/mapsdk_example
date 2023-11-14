@@ -1,0 +1,167 @@
+{
+  "infos": [
+    {
+      "name":"Base Map", 
+      "examples":[
+        {"name":"Normal Map", "path":"/web/example/baseMap/normalMap"}, 
+        {"name":"Satellite Map", "path":"/web/example/baseMap/satelliteMap"}, 
+        {"name":"Hybrid Map", "path":"/web/example/baseMap/hybridMap"}, 
+        {"name":"Realtime Traffic Map", "path":"/web/example/baseMap/realtimeTrafficMap"}, 
+        {"name":"Vector Map", "path":"/web/example/baseMap/vectorMap"}, 
+        {"name":"Raster Map", "path":"/web/example/baseMap/rasterMap"}
+      ]
+    },
+    {
+      "name":"Map interaction", 
+      "examples":[
+          {"name": "Change map center, zoom", "path": "/web/example/mapInteraction/changeMapCenterZoom"},
+          {"name": "Change map zoom, pitch, rotate", "path": "/web/example/mapInteraction/changeMapZoomPitchRotate"}, 
+  
+          {"name": "Resize map", "path": "/web/example/mapInteraction/resizeMapZoom"}, 
+          {"name": "BoxZoom Handler", "path": "/web/example/mapInteraction/boxZoomHandler"},
+          {"name": "DoubleClickZoom Handler", "path": "/web/example/mapInteraction/doubleClickHandler"},
+          {"name": "DragPan Handler", "path": "/web/example/mapInteraction/dragPanHandler"},
+          {"name": "DragRotate Handler", "path": "/web/example/mapInteraction/dragRotateHandler"},
+          {"name": "Keyboard Handler", "path": "/web/example/mapInteraction/keyboardHandler"},
+          {"name": "Toggle interaction", "path": "/web/example/mapInteraction/toggleInteraction"}, 
+          {"name": "Display a non-interactive map", "path": "/web/example/mapInteraction/displayNonInteractive"}, 
+          {"name": "Offset the vanishing point using padding", "path": "/web/example/mapInteraction/offsetVanishing"}, 
+          {"name": "Fit to the bounds of a LineString", "path": "/web/example/mapInteraction/fitBoundLine"}, 
+          {"name": "Fit a map to a bounding box", "path": "/web/example/mapInteraction/fitBoundBox"}, 
+          {"name": "Building extrusions", "path": "/web/example/mapInteraction/buildingExtrusions"}
+      ]
+    },
+    {
+      "name":"controls", 
+      "examples":[
+          {"name":"NavigatonControl", "path":"/web/example/controls/navigatonControl"},
+          {"name":"MinimapControl", "path":"/web/example/controls/minimapControl"},
+          {"name":"DrawControl", "path":"/web/example/controls/drawControl"},
+          {"name":"Custom DrawControl", "path":"/web/example/controls/customDrawControl"},
+          {"name":"MeasureControl", "path":"/web/example/controls/measureControl"},
+          {"name":"Custom MeasureControl", "path":"/web/example/controls/customMeasureControl"},
+          {"name":"AttributionControl", "path":"/web/example/controls/attributionControl"},
+          {"name":"FullscreenControl", "path":"/web/example/controls/fullscreenControl"},
+          {"name":"GeolocateControl", "path":"/web/example/controls/geolocateControl"},
+          {"name":"LogoControl", "path":"/web/example/controls/logoControl"},
+          {"name":"ScaleControl", "path":"/web/example/controls/scaleControl"}
+      ]
+    },
+    {
+      "name":"Marker, Symbol, InfoWindow", 
+      "examples":[
+        {"name":"Custom marker with Image", "path":"/web/example/markerSymbolInfowindow/customMarkerImage"}, 
+        {"name":"Custom marker with HTML", "path":"/web/example/markerSymbolInfowindow/customMarkerHtml"}, 
+        {"name":"Drggable marker", "path":"/web/example/markerSymbolInfowindow/draggableMarker"}, 
+        {"name":"Label marker", "path":"/web/example/markerSymbolInfowindow/labelMarker"}, 
+        {"name":"Bounce marker", "path":"/web/example/markerSymbolInfowindow/bounceMarker"}, 
+        {"name":"Draggable point", "path":"/web/example/markerSymbolInfowindow/draggablePoint"}, 
+        {"name":"Custom InfoWindow", "path":"/web/example/markerSymbolInfowindow/customInfoWindow"}, 
+        {"name":"Display a InfoWindow on click", "path":"/web/example/markerSymbolInfowindow/displayInfoWindowClick"}, 
+        {"name":"Display a InfoWindow on hover", "path":"/web/example/markerSymbolInfowindow/displayInfoWindowHover"}, 
+        {"name":"Polygon information on click", "path":"/web/example/markerSymbolInfowindow/polygonInformation"}, 
+        {"name":"Attach a InfoWindow to a marker instance", "path":"/web/example/markerSymbolInfowindow/attchInfoWindow"}
+      ]
+    },
+    {
+      "name":"Events", 
+      "examples":[
+        {"name":"MouseEvent - Map,Layer,Marker", "path":"/web/example/events/mouseEvent"}, 
+        {"name":"MapZoomEvent", "path":"/web/example/events/mapZoomEvent"}, 
+        {"name":"Idle,Move,Drag,Rotate,Pitch Event", "path":"/web/example/events/idelMoveDragRotatePitch"}, 
+        {"name":"Keyboard the map with game-like controls", "path":"/web/example/animations/keyboardControlMap"}, 
+        {"name":"Create a hover effect", "path":"/web/example/events/createHoverEffect"}, 
+        {"name":"Display a InfoWindow on Click", "path":"/web/example/events/displayInfoWindowClick"}, 
+        {"name":"Display a InfoWindow on hover", "path":"/web/example/events/displayInfoWindowHover"}, 
+        {"name":"Show polygon information on click", "path":"/web/example/events/polygonInformation"}, 
+        {"name":"Get features under the mouse pointer", "path":"/web/example/events/getFeatures"}
+      ]
+    },
+    {
+      "name":"Style", 
+      "examples":[
+        {"name":"SymbolStyle - icon", "path":"/web/example/style/symbolStyleIcon"}, 
+        {"name":"SymbolStyle - text", "path":"/web/example/style/symbolStyleText"}, 
+        {"name":"Heatmap", "path":"/web/example/style/heatmap"}, 
+        {"name":"Cluster", "path":"/web/example/style/Cluster"}, 
+        {"name":"Custom Cluster", "path":"/web/example/style/customCluster"}, 
+        {"name":"Dynamic Icon", "path":"/web/example/style/dynamicIcon"}, 
+        {"name":"Add a generated icon", "path":"/web/example/style/imageSourceIcon"}, 
+        {"name":"Filter symbols by text input", "path":"/web/example/style/filterSymbolText"}, 
+        {"name":"Filter symbols by toggling a list", "path":"/web/example/style/filterSymbolToggling"}, 
+        {"name":"Change the case of labels", "path":"/web/example/style/changeCaseLabels"}, 
+        {"name":"LineStyle - ArrowLine", "path":"/web/example/style/lineStyleArrow"}, 
+        {"name":"LineStyle - Text", "path":"/web/example/style/lineStyleText"}, 
+        {"name":"Style lines with a data - driven property", "path":"/web/example/style/styleLinesData"}, 
+        {"name":"Gradient line using expression", "path":"/web/example/style/gradientLine"}, 
+        {"name":"Pattern to a polygon", "path":"/web/example/style/patternPolygon"}, 
+        {"name":"Building display FillExtrusionStyle", "path":"/web/example/style/buildingFillExtrusionStyle"}, 
+        {"name":"Change a layer's color", "path":"/web/example/style/changeLayerColor"}
+      ]
+    },
+    {
+      "name":"Layer, Source",
+      "examples":[
+        {"name":"PolygonLayer", "path":"/web/example/layerSource/polygonLayer"}, 
+        {"name":"PolygonLayer and Circle", "path":"/web/example/layerSource/polygonLayerAndCircle"}, 
+        {"name":"PolygonLayer and GeoJSONSource", "path":"/web/example/layerSource/polygonLayerAndGeoJSONSource"}, 
+        {"name":"PolygonLayer and Remote GeoJSONSource", "path":"/web/example/layerSource/polygonLayerAndRemoteGeoJSONSource"},
+        {"name":"LineLayer and VectorSource", "path":"/web/example/layerSource/lineLayerAndVectorSource"}, 
+        {"name":"PointLayer and Image", "path":"/web/example/layerSource/pointLayerAndImage"}, 
+        {"name":"PointLayer and Circle", "path":"/web/example/layerSource/pointLayerAndCircle"}, 
+        {"name":"RasterLayer", "path":"/web/example/layerSource/rasterLayer"}, 
+        {"name":"RasterLayer and ImageSource", "path":"/web/example/layerSource/rasterLayerAndImageSource"},
+        {"name":"BackgroundLayer", "path":"/web/example/layerSource/backgroundLayer"}, 
+        {"name":"Change a layer's color", "path":"/web/example/style/changeLayerColor"}, 
+        {"name":"Filter symbols by text input", "path":"/web/example/style/filterSymbolText"}, 
+        {"name":"Filter symbols by toggling a list", "path":"/web/example/style/filterSymbolToggling"}, 
+        {"name":"Get features under the mouse pointer", "path":"/web/example/layerSource/getFeaturesMouse"}
+      ]
+    },
+    {
+      "name":"Animations",
+      "examples":[
+        {"name":"Animate a Line", "path":"/web/example/animations/animateLine"}, 
+        {"name":"Animate map camera around a point", "path":"/web/example/animations/animateMapCamera"}, 
+        {"name":"Add an animated icon to the map", "path":"/web/example/animations/animateIcon"},
+        {"name":"Animate a marker", "path":"/web/example/animations/animateMarker"}, 
+        {"name":"Animate a point", "path":"/web/example/animations/animatePoint"}, 
+        {"name":"Animate a point along a route", "path":"/web/example/animations/animatePointRoute"},
+        {"name":"Fly to a location", "path":"/web/example/animations/flyToLocation"}, 
+        {"name":"Jump to a location", "path":"/web/example/animations/jumpToLocation"}, 
+        {"name":"Update a feature in realtime", "path":"/web/example/animations/updateFeatureRealtime"}, 
+        {"name":"Fly to location based on scoll position", "path":"/web/example/animations/flyToLocationScoll"}, 
+        {"name":"Keyboard the map with game-like controls", "path":"/web/example/animations/keyboardControlMap"} 
+      ]
+    },
+    {
+      "name":"Geomaster Service",
+      "examples":[
+        {"name":"Label InfoWindow", "path":"/web/example/geomasterService/labelInfoWindow"},
+        {"name":"POI Search API", "path":"/web/example/geomasterService/poiSearchApi"},
+        {"name":"Thema API", "path":"/web/example/geomasterService/themaApi"},
+        {"name":"Address Search API", "path":"/web/example/geomasterService/addresSearchApi"},
+        {"name":"Reverse Geocoding API", "path":"/web/example/geomasterService/reverseGeocodingApi"},
+        {"name":"Route API", "path":"/web/example/geomasterService/routeApi"}
+      ]
+    },
+    {
+      "name":"3D Visualization",
+      "examples":[
+        {"name":"Display building in 3D", "path":"/web/example/visualization/displayBuilding"},
+        {"name":"3D model with babylon.js", "path":"/web/example/visualization/babylon"},
+        {"name":"3D model with three.js", "path":"/web/example/visualization/three"}
+      ]
+    },
+    {
+      "name":"Analyze Tool",
+      "examples":[
+      ]
+    },
+    {
+      "name":"Misellaneous",
+      "examples":[
+      ]
+    }
+  ]
+}

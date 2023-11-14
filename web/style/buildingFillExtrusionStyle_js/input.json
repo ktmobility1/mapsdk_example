@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Building display FillExtrusionStyle",
+    "desc": "건물을 2D/3D로 바꾸고, 3D 건물의 색상을 변경할 수 있는 예제입니다. <br/> FillExtrusionStyle로 3D 건물의 스타일을 설정할 수 있습니다. 'fill-extrusion-opacity'을 사용하여 건물을 3D로 보여줄지, 2D로 보여줄지 설정하고, 'fill-extrusion-opacity-transition'을 사용하여 2D에서 3D로 전환될 때 애니메이션 전환처럼 보이게 합니다. 그리고 'fill-extrusion-color'를 사용하여 3D 건물의 색상을 변경시킵니다.",
+    "reference": {
+        "FillExtrusion Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillextrusionStyle.FillExtrusionStyle.html",
+        "Map#setPaintProperty": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setPaintProperty"
+    }
+}

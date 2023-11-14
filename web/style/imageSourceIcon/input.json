@@ -1,0 +1,23 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Add a generated icon",
+    "desc": "런타임 시 그라데이션 형태의 아이콘을 생성하여 이미지로 추가하고 지도 위에 표출하는 예제입니다.",
+    "reference": {
+        "Map#addImage": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#addImage",
+        "PointGeo" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "PointLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+        "SymbolStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html"
+    }
+}

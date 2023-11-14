@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    },
+    "package.json":{
+      "contentType" : "text/json"
+    }
+  },
+  "category": "Map Interaction",
+  "name": "Display a non-interactive map",
+  "desc": "사용자 이벤트에 응답하지 않는 정적 지도를 만들 수 있습니다. interactive속성을 비활성화해야 합니다.",
+  "reference" : {
+    "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html"
+  }
+}

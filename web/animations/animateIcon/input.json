@@ -1,0 +1,23 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.ts": {
+			"contentType": "text/typescript",
+			"selected": true
+		},
+		"makeImage.js": {
+			"contentType": "text/javascript"
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Add an animated icon to the map",
+	"desc": "Canvas API를 활용해 사용자가 직접 커스터마이징한 동적 Icon을 표출하는 애니메이션입니다. <br/> makeImage.js에 StyleImageInterface를 활용하여 동적 이미지 스타일을 생성할 수 있는 클래스를 만들고, index.ts에서 객체를 생성하여 이미지로 추가했습니다.",
+	"reference": {
+    "Map#triggerRepaint" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#triggerRepaint"
+	}
+}

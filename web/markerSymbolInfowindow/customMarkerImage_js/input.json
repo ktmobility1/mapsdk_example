@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Marker, Symbol, InfoWindow",
+    "name": "Custom Marker with Image",
+    "desc": "이미지로 커스텀한 마커를 지도에 표시합니다. marker 생성 후 setImageElement 메소드를 사용하여 이미지로 커스텀할 수 있습니다",
+    "reference": {
+        "Marker" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html"
+    }
+}

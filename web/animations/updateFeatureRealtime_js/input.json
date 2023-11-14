@@ -1,0 +1,24 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.js": {
+			"contentType": "text/javascript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Update a feature in realtime",
+	"desc": "길을 따라 라인을 생성하는 애니메이션 예제입니다. <br/> GeoJSON Source의 setData 메소드로 라인 레이어의 데이어 소스를 실시간으로 변경하여 애니메이션을 나타냅니다.",
+	"reference": {
+		"Map": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+		"GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+		"Line Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+		"Line Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html",
+		"Map#panTo" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#panTo"
+	}
+}

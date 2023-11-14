@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Gradient line using expression",
+    "desc": "line style의 gradient에 표현식을 사용하여 라인 레이어를 그라데이션 형태로 스타일을 변경합니다 <br/> line style의 gradient를 적용하려면, GeoJSONSource으로 source 추가 시 lineMetrics:true로 설정해야 합니다",
+    "reference": {
+        "GeoJSONSource": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+        "LineStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+        "LineLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html"
+    }
+}

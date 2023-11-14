@@ -1,0 +1,22 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "symbolStyleIcon",
+    "desc": "symbol style을 사용하여 지도에 icon 레이어 추가하는 예제입니다.",
+    "reference": {
+        "SymbolStyle": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_SymbolStyle.SymbolStyle.html",
+        "MultiPoint": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_MultiPoint.MultiPoint.html",
+        "PointLayer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html"
+    }
+}

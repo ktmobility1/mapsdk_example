@@ -1,0 +1,21 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    },
+    "package.json":{
+      "contentType" : "text/json"
+    }
+  },
+  "category": "Controls",
+  "name": "NavigationControl",
+  "desc": "지도의 zoom, 방향, 기울기를 조정하는 Control입니다. <br/> map.addControl 메소드로 NavigationControl을 추가할 수 있으며, 기본 Map 생성 시 navigationControl:true로도 생성할 수 있습니다.",
+  "reference":{
+    "NavigationControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_NavigationControl.NavigationControl.html",
+    "NavigationOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_NavigationOptions.NavigationOptions.html"
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.js": {
+			"contentType": "text/javascript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Animate a point",
+	"desc": "GeoJSON source의 setData 메소드를 활용하여 point를 이동시키는 애니메이션 예제입니다",
+	"reference": {
+		"GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+		"PointGeo": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_PointGeo.PointGeo.html",
+		"Point Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_PointLayer.PointLayer.html",
+		"Circle Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_CircleStyle.CircleStyle.html"
+	}
+}

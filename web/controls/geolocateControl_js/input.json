@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Controls",
+    "name": "GeolocateControl",
+    "desc": "지도에 사용자의 현재 위치 표출 기능을 제공하는 Control입니다.<br/> Chrome을 포함한 최신 브라우저에 대한 위치정보 지원을 위해서는 사이트가 HTTPS를 통해 제공되어야 합니다.<br/> map.addControl 메소드로 GeolocateControl을 추가할 수 있으며, 기본 Map 생성 시 geolocateControl:true로도 생성할 수 있습니다.",
+    "reference":{
+        "GeolocateControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_GeolocateControl.GeolocateControl.html",
+        "GeolocateOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_GeolocateOptions.GeolocateOptions.html"
+    }
+}

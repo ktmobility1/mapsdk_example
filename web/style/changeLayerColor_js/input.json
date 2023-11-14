@@ -1,0 +1,24 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType": "text/javascript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Style",
+    "name": "Change a layer's color",
+    "desc": "Building(아파트 건물)및 Water의 색상을 변경할 수 있는 예제입니다. 선택한 색상에 맞게 레이어의 색상을 변경합니다. <br/> map#queryRenderedFeatures로 원하는 layer 피쳐를 받아오고, map#setPaintProperty로 레이어 색상을 변경합니다. ",
+    "reference": {
+        "Map#queryRenderedFeatures": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#queryRenderedFeatures",
+        "Map#setPaintProperty": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#setPaintProperty",
+        "Fill Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html",
+        "FillExtrusion Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillextrusionStyle.FillExtrusionStyle.html",
+        "Line Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html"
+    }
+}

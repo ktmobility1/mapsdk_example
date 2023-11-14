@@ -1,0 +1,19 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Layer, Source",
+  "name": "BackgroundLayer",
+  "desc": "BackgroundLayer에 BackgroundStyle을 적용하여 지도를 dim 처리하는 예제입니다.",
+  "reference":{
+    "BackgroundLayer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_BackgroundLayer.BackgroundLayer.html",
+    "BackgroundStyle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_BackgroundStyle.BackgroundStyle.html",
+    "MapDefaultEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+      "index.html": {
+        "contentType": "text/html"
+      },
+      "index.ts": {
+        "contentType" : "text/typescript",
+        "selected" : true
+      },
+      "package.json": {
+        "contentType": "text/json"
+      }
+  },
+  "category": "Controls",
+  "name": "ScaleControl",
+  "desc": "지도 축척(지면의 해당 거리에 대한 지도의 거리 비율)을 표시하는 Control입니다. <br/> map.addControl 메소드로 ScaleControl을 추가할 수 있습니다.",
+  "reference":{
+    "ScaleControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_ScaleControl.ScaleControl.html",
+    "ScaleOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_ScaleControl.ScaleOptions.html"
+    }
+}

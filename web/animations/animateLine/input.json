@@ -1,0 +1,24 @@
+{
+	"files": {
+		"index.html": {
+			"contentType": "text/html"
+		},
+		"index.ts": {
+			"contentType": "text/typescript",
+			"selected": true
+		},
+		"package.json": {
+			"contentType": "text/json"
+		}
+	},
+	"category": "Animations",
+	"name": "Animate a Line",
+	"desc": "kt연구개발센터 사옥에서 kt광화문 사옥까지의 Line을 그리는 예제입니다. <br/> turf와 GeoJSON source 갱신을 통해 origin(kt연구개발센터 사옥)과 destination(kt광화문 사옥) 구간에 Line 변화 애니메이션을 나타냅니다.",
+	"reference": {
+		"Turf": "https://turfjs.org/",
+		"LineString": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/geometry_LineString.LineString.html",
+		"Line Style": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_LineStyle.LineStyle.html",
+		"GeoJSON Source": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html",
+		"Line Layer": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_LineLayer.LineLayer.html"
+	}
+}

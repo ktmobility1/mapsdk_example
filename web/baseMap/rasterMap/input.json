@@ -1,0 +1,20 @@
+{
+    "files": {
+      "index.html": {
+        "contentType" : "text/html"
+      },
+      "index.ts" :{
+        "contentType" : "text/typescript",
+"selected" : true
+      }
+    },
+    "category": "Base Map",
+    "name": "Raster Map",
+    "desc": "Raster Map은 zoom 레벨별 x/y/z 의 격자모양으로 제작된 이미지 타일을 표출하는 맵입니다.\n sdk에서 서비스를 하고자 하는 Raster Tile url을 RasterLayer을 이용하여 지도상에 표출하는 샘플입니다.",
+    "reference":{
+      "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html",
+      "RasterStyle" : "https://map.gis.kt.com/mapsdk/web_apidocs/docs/classes/style_RasterStyle.RasterStyle.html",
+      "RasterSource" : "https://map.gis.kt.com/mapsdk/web_apidocs/docs/classes/source_RasterSource.RasterSource.html",
+      "RasterLayer" : "https://map.gis.kt.com/mapsdk/web_apidocs/docs/classes/layer_RasterLayer.RasterLayer.html"
+    }
+}

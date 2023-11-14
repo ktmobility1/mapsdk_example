@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+	<script type="module" src="./index.js" defer></script>
+	<script src="https://www.unpkg.com/@turf/turf@6/turf.min.js" charset="utf-8"></script>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		html,
+		body,
+		#map {
+			width: 100%;
+			height: 100%;
+		}
+		button {
+			position: absolute;
+		}
+		.overlay {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.overlay button {
+			font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+			background-color: #3386c0;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			border-radius: 3px;
+		}
+		.overlay button:hover {
+			background-color: #4ea0da;
+		}
+		.overlay button:after {
+			content: "Pause";
+		}
+		.overlay button.pause:after {
+			content: "Play";
+		}
+	</style>
+</head>
+
+<body>
+	<div id="map"></div>
+	<div class="overlay">
+		<button id="pause"></button>
+	</div>
+</body>
+
+</html>

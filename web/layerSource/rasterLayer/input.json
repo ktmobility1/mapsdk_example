@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+  "index.ts" :{
+    "contentType" : "text/typescript",
+    "selected" : true
+  }
+  },
+  "category": "Layer, Source",
+  "name": "RasterLayer",
+  "desc": "RasterLayer에 RasterStyle을 적용하여 외부의 Raster tile을 지도상에 표출하는 예제입니다.",
+  "reference":{
+    "RasterSource" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_RasterSource.RasterSource.html",
+    "RasterLayer" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/layer_RasterLayer.RasterLayer.html",
+    "RasterStyle" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_RasterStyle.RasterStyle.html",
+    "MapDefaultEvent" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/event_MapDefaultEvent.MapDefaultEvent.html"
+  }
+}

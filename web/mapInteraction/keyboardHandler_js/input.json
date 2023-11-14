@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.js": {
+            "contentType" : "text/javascript",
+            "selected" : true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Map Interaction",
+    "name": "keyboard Handler",
+    "desc": "KeyboardHandler를 사용하면 사용자는 다음 키보드 단축키를 사용하여 지도를 확대/축소, 회전 및 이동할 수 있습니다.'enable','disable' 메소드를 통해 'keyboard' interaction을 활성화, 비활성화 할 수 있습니다.",
+    "reference": {
+        "Keyboard Handler": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/handler_KeyboardHandler.KeyboardHandler.html"
+    }
+}
