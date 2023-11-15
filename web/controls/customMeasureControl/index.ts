@@ -9,45 +9,44 @@ const map: ktGms.Map = new ktGms.Map({
   maxPitch: 68
 });
 
-let measureControl:ktGms.control.MeasureControl = new ktGms.control.MeasureControl({
-  markerPosition: "none", // 최종 측정 결과를 표출하지 않음
+let drawControl = new ktGms.control.DrawControl({
+  displayControlsDefault: false,
+  controls: {}, // default 버튼 숨김
+  measure: true, // 측정 옵션 & 함수 사용
+  showIcon: false, // infoIcon을 표출하지 않음
+  resultPosition: "none", // 최종 측정 결과를 표출하지 않음
   lengthUnit: "kilometers", 
-  boxColor: "#FFFFFF", 
-  boxPosition: "none", // 중간 측정 결과를 표출하지 않음
-  boxBorderColor: "#000000", 
-  textColor: "#000000", 
-  draggable: false, 
-  visibility: false // default 버튼 숨김
+  boxPosition: "none", // 중간 측정 결과를 표출하지 않음 
 })
 
-//지도에 MeasureControl을 추가합니다. 
-map.addControl(measureControl, "top-left");
+//지도에 DrawControl을 추가합니다. 
+map.addControl(drawControl, "top-left");
 
 //선택된 feature들의 id를 저장하는 리스트입니다.
 let activeSectionId:string[] = [];
 
 //커스텀 버튼에 클릭 이벤트를 추가합니다.
 (document.getElementById("lineString") as HTMLButtonElement).addEventListener("click", () => {
-  //현재 활성화된 모드가 calc_line_string인 경우 simple_select 모드로 돌아갑니다.
-  if(measureControl.getMode() === "calc_line_string"){
-    measureControl.changeMode("simple_select");
+  //현재 활성화된 모드가 draw_line_string인 경우 simple_select 모드로 돌아갑니다.
+  if(drawControl.getMode() === "draw_line_string"){
+    drawControl.changeMode("simple_select");
   }
-  else measureControl.changeMode("calc_line_string");
+  else drawControl.changeMode("draw_line_string");
 });
 (document.getElementById("polygon") as HTMLButtonElement).addEventListener("click", () => {
-  //현재 활성화된 모드가 calc_polygon인 경우 simple_select 모드로 돌아갑니다.
-  if(measureControl.getMode() === "calc_polygon"){
-    measureControl.changeMode("simple_select");
+  //현재 활성화된 모드가 draw_polygon인 경우 simple_select 모드로 돌아갑니다.
+  if(drawControl.getMode() === "draw_polygon"){
+    drawControl.changeMode("simple_select");
   }
-  else measureControl.changeMode("calc_polygon");
+  else drawControl.changeMode("draw_polygon");
 });
 (document.getElementById("trash") as HTMLButtonElement).addEventListener("click", () => {
   //feature 삭제 함수를 호출합니다.
-  measureControl.trash();
+  drawControl.trash();
 });
 
 //create 이벤트를 생성합니다.
-measureControl.addDrawEventListener("create", (e:any) => {
+drawControl.addDrawEventListener("create", (e:any) => {
   let id:string = e.features[0].id;
 
   let section_inp = document.createElement("section");
@@ -66,6 +65,35 @@ measureControl.addDrawEventListener("create", (e:any) => {
   (document.getElementById("list") as HTMLElement).appendChild(section_inp);
 });
 
+//update 이벤트를 생성합니다.
+drawControl.addDrawEventListener("update", (e:any) => {
+  if(e && e.features && e.features.length){  
+    e.features.forEach(item => {
+      let id:string = item.id;
+      let new_section_inp = document.createElement("section");
+
+      let h4_inp = document.createElement("h4");
+      h4_inp.innerHTML = `ID : ${id}`;
+
+      let p_inp = document.createElement("p");
+      p_inp.innerHTML = `타입 : ${e.features[0].geometry.type}<br>면적 : ${e.area} ${"m&#178"}<br>길이 : ${e.length} ${e.lengthUnit}`;
+
+      // 발생한 이벤트를 통해 새롭게 측정된 값들을 저장합니다.
+      new_section_inp.appendChild(h4_inp);
+      new_section_inp.appendChild(p_inp);
+
+      let list = (document.getElementById("list") as HTMLElement);
+
+      // List에서 기존의 결과값을 삭제하고 새로운 결과로 대체합니다.
+      list.replaceChild(new_section_inp, (document.getElementById(id) as HTMLElement));
+      //선택된 feature의 section에 active 속성을 설정합니다.
+      new_section_inp.setAttribute("class", "active");
+      activeSectionId.push(id);   
+      new_section_inp.setAttribute("id", id);         
+    })
+  }
+});
+
 //delete listener 함수입니다.
 function delete_listener (e:any):void {
   if(e && e.features && e.features.length){  
@@ -78,10 +106,10 @@ function delete_listener (e:any):void {
 }
 
 //delete 이벤트를 생성합니다. 
-measureControl.addDrawEventListener("delete", delete_listener);
+drawControl.addDrawEventListener("delete", delete_listener);
 
 // 주석 해제 시 delete 이벤트가 삭제됩니다.
-//measureControl.removeDrawEventListener("delete", delete_listener);
+//drawControl.removeDrawEventListener("delete", delete_listener);
 
 //선택되지 않은 feature의 section active 속성을 해제하는 함수입니다.
 function deActiveFunction():void {
@@ -92,7 +120,7 @@ function deActiveFunction():void {
 }
 
 //선택한 feature가 변경될 때 호출되는 이벤트입니다.
-measureControl.addDrawEventListener("selectionchange", (e:any)=>{
+drawControl.addDrawEventListener("selectionchange", (e:any)=>{
   //선택된 feature가 없을때 active 속성을 제거합니다.
   if(e.features.length === 0) {
     deActiveFunction();
@@ -103,7 +131,7 @@ measureControl.addDrawEventListener("selectionchange", (e:any)=>{
     deActiveFunction();
     e.features.forEach(item => {
       let id:string = item.id;
-      //선택되지 않은 feature의 section의 active 속성을 해제합니다.
+      //선택된 feature의 section에 active 속성을 설정합니다.
       document.getElementById(id)?.setAttribute("class", "active");
       activeSectionId.push(id);
     })

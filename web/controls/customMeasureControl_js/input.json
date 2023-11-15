@@ -12,10 +12,10 @@
         }
     },
     "category": "Controls",
-    "name": "Custom MeasureControl",
-    "desc": "지도에 측정 기능을 제공하는 MeasureControl을 사용자가 원하는 버튼, 이벤트로 핸들링하는 예제입니다.",
+    "name": "Measure by Custom DrawControl",
+    "desc": "지도에 측정 기능을 제공하는 DrawControl을 사용자가 원하는 버튼, 이벤트로 핸들링하는 예제입니다.",
     "reference":{
-        "MeasureControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_MeasureControl.MeasureControl.html",
-        "MeasureOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_MeasureOptions.MeasureOptions.html"
+        "DrawControl" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/control_DrawControl.DrawControl.html",
+        "DrawOptions" : "https://map.gis.kt.com/mapsdk/web/apidoc/types/control_DrawOptions.DrawOptions.html"
     }
 }
