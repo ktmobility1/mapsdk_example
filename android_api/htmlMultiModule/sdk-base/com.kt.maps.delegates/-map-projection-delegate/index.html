@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MapProjectionDelegate</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>Kt Map Native for Android</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sdk-base:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="sdk-base::com.kt.maps.delegates/MapProjectionDelegate///PointingToDeclaration//-273960753">
+  <div class="breadcrumbs"><a href="../../index.html">sdk-base</a><span class="delimiter">/</span><a href="../index.html">com.kt.maps.delegates</a><span class="delimiter">/</span><span class="current">MapProjectionDelegate</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Map</span><wbr><span>Projection</span><wbr><span><span>Delegate</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">MapProjectionDelegate</a></div><p class="paragraph">Map Projection 에 대한 정의 (Maplibre - Projection)</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="838010453%2FFunctions%2F-273960753" anchor-label="fromScreenLocation" id="838010453%2FFunctions%2F-273960753" data-filterable-set=":sdk-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":sdk-base:dokkaHtmlPartial/release" data-filterable-set=":sdk-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="from-screen-location.html"><span>from</span><wbr><span>Screen</span><wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="838010453%2FFunctions%2F-273960753"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="from-screen-location.html"><span class="token function">fromScreenLocation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/PointF.html">PointF</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a></div><div class="brief "><p class="paragraph">Screen 위의 좌표에 해당하는 <a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a> 위치 반환 Screen 위의 좌표는 screen pixel을 기준으로 지정됨</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="205664688%2FFunctions%2F-273960753" anchor-label="getMetersPerPixelAtLatitude" id="205664688%2FFunctions%2F-273960753" data-filterable-set=":sdk-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":sdk-base:dokkaHtmlPartial/release" data-filterable-set=":sdk-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-meters-per-pixel-at-latitude.html"><span>get</span><wbr><span>Meters</span><wbr><span>Per</span><wbr><span>Pixel</span><wbr><span>At</span><wbr><span><span>Latitude</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="205664688%2FFunctions%2F-273960753"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-meters-per-pixel-at-latitude.html"><span class="token function">getMetersPerPixelAtLatitude</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">latitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">지정된 위도와 zoom level 상태에서 한 픽셀에 걸친 거리를 계산</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1974996777%2FFunctions%2F-273960753" anchor-label="toScreenLocation" id="1974996777%2FFunctions%2F-273960753" data-filterable-set=":sdk-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":sdk-base:dokkaHtmlPartial/release" data-filterable-set=":sdk-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-screen-location.html"><span>to</span><wbr><span>Screen</span><wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1974996777%2FFunctions%2F-273960753"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-screen-location.html"><span class="token function">toScreenLocation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">location<span class="token operator">: </span><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/PointF.html">PointF</a></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a> 좌표에 해당하는 Screen 위의 좌표를 반환 좌표는 screen pixel을 기준으로 지정됨</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
