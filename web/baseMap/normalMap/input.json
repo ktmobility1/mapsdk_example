@@ -1,7 +1,7 @@
 {
   "files": {
     "index.html": {
-      "contentType" : "text/html"
+      
     },
     "index.ts" :{
       "contentType" : "text/typescript",
