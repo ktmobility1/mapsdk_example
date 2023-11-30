@@ -1,4 +1,4 @@
-window.addEventListener('hashchange', function(event){
+window.addEventListener('load', function(event){
   this.alert(event.target.location.pathname);
 });
 "use strict";
