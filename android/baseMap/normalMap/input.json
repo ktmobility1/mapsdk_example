@@ -1,7 +1,7 @@
 {
   "files": [
-    "src/config/activity_marker.xml",
-    "src/sample/MarkerActivity.kt"
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_normal_map.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/base/NormalMapActivity.kt"
   ],
   "category": "Base Map",
   "name": "KT Normal Map",
