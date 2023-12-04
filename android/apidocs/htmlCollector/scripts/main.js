@@ -1,9 +1,7 @@
 window.addEventListener('load', function(event){
-  //alert('load : ' + event.target.location.pathname);
   window.parent.postMessage({'type':'load', 'pathname':event.target.location.pathname}, '*')
 });
 window.addEventListener('hashchange', function(event){
-  //alert('hashchange : ' + event.target.location.pathname);
   const hash = event.newURL.split('#').length>0 ? `#${event.newURL.split('#')[1]}` : ''
   window.parent.postMessage({'type':'hashchange', 'pathname':event.target.location.pathname, 'hash':hash}, '*')
 });
