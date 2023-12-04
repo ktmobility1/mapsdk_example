@@ -1,0 +1,1171 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>React에서 KTMapSDK WebComponent 시작하기</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f2e9d2c2-e5b6-4fab-8b16-1c21619423b9" class="page sans"><header><h1 class="page-title">React에서 KTMapSDK WebComponent 시작하기</h1><p class="page-description"></p></header><div class="page-body"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f16e867f-47c8-48df-8df8-b0675d3c101f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">튜토리얼의 목표<strong>: React 프로젝트를 생성하고 KTMapSDK를 npm 으로 설치 후 개발하는 방법을 이 튜토리얼에서 설명합니다. Map을 화면에 띄우고, Control을 추가하고, Overlay 추가 후 Layer를 사용하는 과정을 설명합니다.</strong></div></figure><p id="7d1de776-4691-4545-ae87-afbd7bf17194" class=""><strong>Table of contents</strong></p><nav id="ae0b1171-698c-44e1-822d-863993fd1c7d" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ed028d91-fd2b-4689-a25a-51594cdc9e26">Getting Start</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#dc1701d0-36ba-4952-9512-5f9b105c7bcb">API key 발급</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c92a64a6-ec78-4e86-bac3-2183e3df8c1f">Node.js and npm 준비</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#62d8660b-4e4b-4e69-910d-07d7d276a541">Create an App using React</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9bf8ffc1-7abf-432d-a7cb-2ffea6a7ee0c"><strong>Vite로 React 프로젝트 생성</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#49234125-b6c1-4fe1-ba32-ce813816d44e"><strong>디렉토리 이동 후 시작</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e57686a6-c799-4104-9b53-b53db25c4a61">설치 및 설정</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f65b63aa-9945-4cba-aca0-34478bb5e911"><strong>Create a navbar component</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#51122950-0b6d-4ffc-b5b2-1642116867ac">create a map component</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#02fffade-9cbb-4846-820b-71d4d54cde7e"><strong>Render a map</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#5958911d-6571-4ef4-a1f6-9665f4716084">Map Options</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#589f264e-b07d-41a9-9d28-3043551ba329">Map Event</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#67a856e8-44cf-40d3-8d92-161095acad90">Add Control </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#8ec9e96d-0c29-49e8-8e68-028448f30bfd">각 종류별 control 설명 및 추가</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#68b14a8d-b9f6-47f2-a099-9de0439509d3">Add Overlay</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#09df35f6-9dfc-4a91-b69e-80140a6d63fc">Add Marker</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#bc83b2c4-cb6a-463b-a62a-9894b6bd273f">Add InfoWindow</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#eae073e4-2a3b-411e-b523-47d5a4ffc265">Custom InfoWindow</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#e065711f-2bd5-4a23-a726-9dbfb239377a">Add Layer</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6ab3168f-cf3d-4fad-9a98-47644206a7fe">Source, Style, Layer</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9ad25bc0-fbbf-49a5-9b14-3b7758f7ba44">Layer Event</a></div></nav><h1 id="ed028d91-fd2b-4689-a25a-51594cdc9e26" class="">Getting Start</h1><h3 id="dc1701d0-36ba-4952-9512-5f9b105c7bcb" class="">API key 발급</h3><p id="b1c76497-07ca-4498-8c1a-18fb68754240" class="">1. KT API 사이트 <a href="https://apilink.kt.co.kr/"><em>(https://apilink.kt.co.kr/)</em></a><em> </em>접속</p><p id="c02e678d-23c5-4025-ab44-e3ac2f1eaf7f" class="">2. 계정 가입 및 로그인</p><p id="6b079fee-ffb3-4abe-bc0a-6d8de1844d78" class="">3. 권한신청 메뉴로 이동</p><p id="01b782d9-50c5-4a1b-83aa-b47b0b95cf62" class="">4. API 신청 &gt; 일반개발자 | 개인사업자 | 법인사업자 | GiGA Genie 제휴법인 중 해당 소속 선택</p><p id="d026a860-8a64-47e2-9629-c21f155052c1" class="">5. 정보입력 후 권한 신청</p><p id="3c743748-5eeb-4cdc-ac06-f92543c35d10" class="">
+</p><h3 id="c92a64a6-ec78-4e86-bac3-2183e3df8c1f" class="">Node.js and npm 준비</h3><ol type="1" id="fe339e2d-8688-4652-926f-39960cebfbfa" class="numbered-list" start="1"><li><a href="https://nodejs.org/en">https://nodejs.org/en</a> 에 접속하여 node.js 설치합니다 </li></ol><ol type="1" id="76c37e81-ded2-4bcc-806b-423a28df2354" class="numbered-list" start="2"><li>npm 및 node 버전 확인을 통해 설치가 잘 되었는지 확인합니다<pre id="833b5813-ec37-44e5-89b0-3796d2eb8dd5" class="code"><code>//npm 버전 확인
+cmd &gt; npm -v 
+
+//node 버전 확인
+cmd &gt; node -v</code></pre></li></ol><p id="749bb359-4a41-4925-a2be-4b524c79594a" class="">
+</p><h1 id="62d8660b-4e4b-4e69-910d-07d7d276a541" class="">Create an App using React</h1><p id="51cb92d4-a2d5-41f9-9c14-f4ed505600cb" class="">create-react-app으로 React 앱을 생성하지 않고, <code>vite</code>를 통해 React 프로젝트 생성하는 과정을 보여드리겠습니다. 저희 본 튜토리얼은 <code>typescript</code>로 진행합니다. </p><p id="f85d1df9-af28-425d-baf7-3eb769545b52" class="">리액트 환경설정을 잘 아시는 분이면 Create Navbar Component 챕터로 바로 넘어가셔도 됩니다.</p><p id="4f4cb900-f0f8-42f1-9a1a-2bb0f9655925" class="">
+</p><h3 id="9bf8ffc1-7abf-432d-a7cb-2ffea6a7ee0c" class=""><strong>Vite로 React 프로젝트 생성</strong></h3><p id="7c51d93a-db77-4133-962e-e88e174e4d32" class="">mac 기준 프롬프트 창에서 vite를 통해 react 프로젝트 생성하는 과정을 보여드리겠습니다. </p><p id="eefb5cd8-f85b-4383-bf72-48807099816a" class="">
+</p><ol type="1" id="28d0ceb5-3e93-4dbb-a658-a9c319d015ef" class="numbered-list" start="1"><li>cmd에 아래와 같이 vite로 react 프로젝트 생성하는 명령어를 입력합니다<pre id="e32ecb5b-b8bf-4d88-998a-2697d07b88f6" class="code"><code>npm create vite@latest</code></pre></li></ol><ol type="1" id="a2b8ef9b-ad2b-447b-b03b-75c3c0950bd4" class="numbered-list" start="2"><li>프로젝트 이름을 설정합니다<figure id="896a1085-f2f0-4fe4-9d04-c6e8f277ddf8" class="image"><a href="images/Untitled.png"><img style="width:2166px" src="images/Untitled.png"/></a></figure></li></ol><ol type="1" id="b71757b2-4954-4945-9cb3-401501385136" class="numbered-list" start="3"><li>프레임워크를 React로 선택합니다<figure id="209764d7-c9a6-451a-afc8-f48eb119f49e" class="image"><a href="images/Untitled%201.png"><img style="width:2012px" src="images/Untitled%201.png"/></a></figure></li></ol><ol type="1" id="9d889eb6-5866-4788-aa03-b9e2681f5885" class="numbered-list" start="4"><li>언어를 Typescript로 선택합니다<figure id="5fd67e3a-20b3-400f-8dce-497b0c830e7d" class="image"><a href="images/Untitled%202.png"><img style="width:2156px" src="images/Untitled%202.png"/></a></figure></li></ol><ol type="1" id="21d3e2f4-71fa-437c-81dd-951583bb2d49" class="numbered-list" start="5"><li>아래와 같은 화면이 나오면 react 프로젝트가 생성된 것입니다.<figure id="51e08c7f-47ce-481e-b774-b2360ddcaa20" class="image"><a href="images/Untitled%203.png"><img style="width:2278px" src="images/Untitled%203.png"/></a></figure></li></ol><p id="dac489a2-bed4-4a42-bc1b-18f764c22f9e" class="">
+</p><h3 id="49234125-b6c1-4fe1-ba32-ce813816d44e" class=""><strong>디렉토리 이동 후 시작</strong></h3><p id="e36012b0-2f30-486a-85b7-4dda068f4c80" class="">생성된 프로젝트로 디렉토리를 이동하고, 필요한 모듈을 설치하고, React 프로젝트를 start 하는 과정을 설명드리겠습니다. </p><p id="b9b086bf-a991-40ab-a093-5d66b2ce574b" class="">
+</p><p id="95de81df-4bc3-4949-a87e-a188d87001ab" class="">cmd에 아래 명령어 3개를 순서대로 입력합니다. </p><pre id="985a6f8f-6ed0-4ba6-8b07-50a9797b89f7" class="code"><code>cd ktmap-react-tutorial //디렉토리 이동
+npm install //필요한 모듈 설치
+npm run dev //프로젝트 start</code></pre><p id="8ee88e6f-8f79-4f59-b9be-3543f27214d0" class="">
+</p><p id="e339c24b-aeae-492d-b158-00177e0b7b9f" class="">아래와 같이 react 초기 화면을 브라우저에서 확인하시면 환경셋팅에 성공하신겁니다</p><p id="2dfb22cf-3a17-447a-b61e-cb1d72ead08b" class="">
+</p><h3 id="e57686a6-c799-4104-9b53-b53db25c4a61" class="">설치 및 설정</h3><p id="6ab8f86c-6cac-44fd-9711-aead62737bf1" class=""><code>kt-map-sdk-webcomponent</code>는 <code>kt-map-sdk-js</code>를 캡슐화하여 웹 컴포넌트로 제공하는 라이브러리입니다.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d4cd5e4b-bcf2-4f3e-97ac-b760aef390a8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">웹 컴포넌트란
+
+웹 컴포넌트는 재사용 가능한 <strong>사용자 정의 HTML 요소</strong>에 HTML, CSS 및 JS를 캡슐화하는 널리 사용되는 W3C 표준입니다. 이러한 재사용 가능한 컴포넌트는 지도 표시와 같은 기능부터 보다 복잡한 비즈니스 로직까지 다양한 기능을 캡슐화합니다. 이 가이드에서는 kt map sdk 에서 사용할 수 있는 웹 컴포넌트를 설명합니다.</div></figure><p id="44622995-525d-4a03-a7e4-c6b95922e141" class="">
+</p><p id="0788686c-25bd-48b4-8e1f-3e09d4901047" class="">npm으로 kt-map-sdk-webcomponent 라이브러리를 설치합니다</p><pre id="041c2034-173a-4ecf-ad9a-106cc35e3a41" class="code"><code>npm install kt-map-sdk-webcomponent</code></pre><p id="086bc632-725a-4789-8bb2-a3683c486731" class="">
+</p><p id="1b58ad19-a13d-4009-95a6-5560de60c27c" class="">React 프로젝트의 레이아웃을 구성하겠습니다.</p><p id="a5fc298a-aa82-4746-a0e3-1da55d717a31" class="">App 컴포넌트를 생성하여 화면 영역을 구성합니다.</p><blockquote id="b71a3feb-f481-41c5-9bc5-c1bbb8104a83" class="">App.tsx</blockquote><pre id="a1fb2734-491d-4c83-95f7-1d5d688f7500" class="code"><code>import &#x27;./App.css&#x27;;
+
+function App() {
+	return (
+		&lt;div className=&quot;App&quot;&gt;
+			{/* 네비바와 지도가 들어갈 영역입니다 */}
+		&lt;/div&gt;
+	);
+}
+
+export default App;</code></pre><p id="4acf9af5-e2bd-4ec4-a4ed-6f7bb1ab39ef" class="">
+</p><p id="b023ea7a-1d6c-41b3-a5c6-15e77fdcef4a" class="">전체적인 구조의 css를 정의합니다.</p><blockquote id="c37712bc-6199-44d5-bc87-b47fd4cf93c5" class="">App.css</blockquote><pre id="f94fdf81-31df-492a-923d-6f39aacb970d" class="code"><code>body {
+    margin: 0;
+    padding: 0;
+}</code></pre><p id="f8cd7ad5-d8fb-4c0d-97a4-89d5be415a69" class="">
+</p><h3 id="f65b63aa-9945-4cba-aca0-34478bb5e911" class=""><strong>Create a navbar component</strong></h3><p id="f124f196-0666-4051-b5bf-86dc8c9b2d55" class="">화면 상단에 navbar 컴포넌트를 만드는 과정은 아래와 같습니다.</p><p id="0be56ba7-0243-4819-963d-7e732a585ff5" class="">Navbar 컴포넌트를 생성하여 컨텐츠를 구성합니다.</p><blockquote id="8ca8fcc2-1059-4abd-9cad-e7ae47aa8179" class="">Navbar.tsx</blockquote><pre id="8a10fe4c-1b14-42c1-8938-42621872c5c3" class="code"><code>import &#x27;./navbar.css&#x27;;
+
+export default function Navbar() {
+    return (
+        &lt;div className=&quot;heading&quot;&gt;
+            &lt;h1&gt;KT Map 튜토리얼&lt;/h1&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="6b5f8ac1-5d86-4004-a350-af88773fd773" class="">
+</p><p id="914b098b-710b-42d4-a6b6-b8009c93aa0d" class="">상단 Navbar의 스타일은 아래와 같이 정의합니다.</p><blockquote id="2a5a1cd1-a70c-436e-b0b6-9577a53f29fb" class="">Navbar.css</blockquote><pre id="04878992-2b0c-41d0-a658-3dca25a61955" class="code"><code>.heading {
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.heading&gt;h1 {
+    padding: 20px;
+    margin: 0;
+}</code></pre><p id="0eb3075b-e526-421a-a839-037ad5e0aa52" class="">
+</p><p id="c65f2b2c-8978-4ef6-a78c-fddafe53c497" class="">App 컴포넌트에 Navbar 컴포넌트를 넣고 Navbar의 렌더링을 확인합니다</p><blockquote id="65ffbc87-0fdb-4f46-b55f-484691495721" class="">App.tsx</blockquote><pre id="09c6ea02-3ebe-47b2-bb3c-124ab9ac256b" class="code"><code>import &#x27;./App.css&#x27;;
+import Navbar from &#x27;./Navbar&#x27;;
+
+export default function App() {
+	return (
+		&lt;div className=&quot;App&quot;&gt;
+			{/* 네비바와 지도가 들어갈 영역입니다 */}
+			&lt;Navbar/&gt;
+		&lt;/div&gt;
+	);
+}</code></pre><p id="24e2013c-33c3-4016-9ed1-76de3b192377" class="">
+</p><p id="3ef8d367-e086-4c08-94b1-60c2c73e6b7c" class="">아래와 같이 Navbar가 추가된 화면을 브라우저에서 확인할 수 있습니다.</p><p id="d7bcfd8f-358d-44f5-8dfc-182e30d12f8f" class="">
+</p><h3 id="51122950-0b6d-4ffc-b5b2-1642116867ac" class="">create a map component</h3><p id="71d7c022-bcd5-40f3-b4da-25c0b4948727" class="">Navbar 아래에 전체 사이즈로 KT Map을 넣겠습니다.</p><p id="3e42aec1-08bd-425b-bc03-c0c610ca5f36" class="">Map.tsx 파일 생성 후 KT Map Component에 관련된 모듈을 import를 통해 셋팅합니다.</p><pre id="8071b26a-9fc6-47d5-9516-c44a24d10f25" class="code"><code>import { useState } from &#x27;react&#x27;;
+import &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;</code></pre><p id="87cbe015-0503-44b8-8ea0-40ca3facf2ad" class="">
+</p><p id="20e7d8b7-6b52-4299-be5f-0456187c3816" class="">React의 Map 컴포넌트를 정의합니다. 위도, 경도, 줌 레벨을 useState로 생성하고, 내부적으로 <code>kt-map-sdk-webcomponent</code> 모듈을 통해 kt-map 컴포넌트로 지도를 생성합니다. css를 쉽게 적용하기 위해서 <code>&lt;kt-map&gt;</code> 웹 컴포넌트를 생성하고 <code>&lt;div id=&quot;map-wrap&quot;&gt;</code> 태그로 감싸겠습니다.</p><blockquote id="7f653365-2621-46a9-a1af-3ca3d3c55106" class="">Map.tsx</blockquote><pre id="3de81d11-49e6-49bf-9664-d25581715f79" class="code"><code>import { useState } from &#x27;react&#x27;;
+import &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            {/* 줌 레벨, 위도, 경도 설정  */}
+            &lt;kt-map id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;&lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="c96e9a85-491b-418e-8f7d-2e341d004a1f" class="">
+</p><p id="353a7744-d392-419a-af43-405633971a7c" class="">추가적으로 Map에 대한 스타일 css입니다.</p><blockquote id="c293d09e-8461-42fd-b141-43e754392806" class="">Map.css</blockquote><pre id="0b618093-e3db-43f8-a6c1-3816711063cc" class="code"><code>#map-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 77px); /* 전체 높이에서 Navbar 높이를 뺀 값으로 설정합니다 */
+}
+
+#map {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}</code></pre><p id="eb37254b-d9e6-477b-be50-ac8d8d186fdc" class="">
+</p><h3 id="02fffade-9cbb-4846-820b-71d4d54cde7e" class=""><strong>Render a map</strong></h3><p id="5862e168-c697-41ca-9565-f2dd6f693f74" class="">생성한 Map 컴포넌트를 App.tsx에 추가합니다. </p><blockquote id="d317d645-783d-42d8-ab4f-ae36518020fd" class="">App.tsx</blockquote><pre id="921f4077-b951-4f1d-8838-bb112a98544f" class="code"><code>import &#x27;./App.css&#x27;;
+import Map from &#x27;./Map&#x27;;
+import Navbar from &#x27;./Navbar&#x27;;
+
+export default function App() {
+	return (
+		&lt;div className=&quot;App&quot;&gt;
+			{/* 네비바와 지도가 들어갈 영역입니다 */}
+			&lt;Navbar/&gt;
+			&lt;Map/&gt;
+		&lt;/div&gt;
+	);
+}</code></pre><p id="3d35781b-848a-42dc-957c-4dee8ab36386" class="">
+</p><p id="5ac7d74c-d459-4561-ab2b-da68bd91b2d6" class="">Navbar와 KT Map이 렌더링 된 화면은 아래와 같습니다.</p><p id="65855fe3-4c53-4578-a887-85d5bd2ca69e" class="">
+</p><h3 id="5958911d-6571-4ef4-a1f6-9665f4716084" class="">Map Options</h3><p id="95874fd7-0576-420d-8991-11cf481f5bd1" class="">map 생성 시 map을 설정하기 위한 option들이 있습니다. KTMapSDK WebComponent는 다음과 같은 프로퍼티를 사용할 수 있습니다.</p><ul id="c4485d56-a787-480c-875b-2e57a10a3240" class="bulleted-list"><li style="list-style-type:disc"><code>id</code> : 지도의 문자열 id입니다. </li></ul><ul id="d4404857-0176-4f0d-a6ae-bee4f3eaa418" class="bulleted-list"><li style="list-style-type:disc"><code>mapStyle</code> : 지도의 스타일입니다. 기본지도, 위성지도, 하이브리드지도 등을 설정할 수 있습니다.</li></ul><ul id="f8a478f3-1a4d-4995-8a42-753a9ff959eb" class="bulleted-list"><li style="list-style-type:disc"><code>lng</code> : 지도의 경도입니다.</li></ul><ul id="8ac4bcde-16db-4a50-81f3-e810f62b87b2" class="bulleted-list"><li style="list-style-type:disc"><code>lat</code> : 지도의 위도입니다.</li></ul><ul id="94d85cf4-98da-4611-975d-c16725e3a264" class="bulleted-list"><li style="list-style-type:disc"><code>zoomValue</code> : 지도의 초기 확대/축소 수준입니다. </li></ul><ul id="38725adf-ff8d-40d6-ab69-b805ced32e28" class="bulleted-list"><li style="list-style-type:disc"><code>bearingValue</code> : 지도의 초기 회전 각도입니다.</li></ul><ul id="257526f4-6882-43aa-b024-b572298f632e" class="bulleted-list"><li style="list-style-type:disc"><code>pitchValue</code> : 지도의 초기 pitch(기울기)입니다.</li></ul><p id="04c33b85-ee6a-4572-ad38-b61a8a9806ee" class="">이 option 외에도 다른 option들이 많으며, 더 자세한 것은 Map 및 Map Options API DOCS를 확인해주세요</p><p id="b93c9242-251b-469f-a085-6816fe05e69c" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html">Map API DOCS</a></p><p id="c60b91a6-bd02-49a7-a49a-880dfcb129a7" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/types/MapOptions.MapOptions.html">MapOptions API DOCS</a></p><p id="2bef0954-a7be-4e7a-893b-995ccf0684d3" class="">
+</p><h3 id="589f264e-b07d-41a9-9d28-3043551ba329" class="">Map Event</h3><p id="b8d2f929-0fdf-48cb-9090-9df9780e03f7" class="">KTMapSDK WebComponent를 활용하여 지도에 이벤트를 추가하기 위해선 총 3가지 단계를 거쳐야합니다.</p><ol type="1" id="9af77611-8595-4179-8699-700a46cac879" class="numbered-list" start="1"><li>이벤트 사용을 위한 모듈 불러오기<ul id="9a5a414d-c635-40cc-8fe8-78d911b646a9" class="bulleted-list"><li style="list-style-type:disc"><code>ktGms</code> 는 kt map sdk의 기본 모듈입니다. 타입을 정의해주거나, kt map의 더 많은 옵션과 기능을 사용하고 싶을 때 불러서 사용할 수 있습니다.</li></ul><ul id="e47fb8e5-d050-47ab-a81d-5ba830cb2c54" class="bulleted-list"><li style="list-style-type:disc"><code>ktMapComponent</code> 는 kt map sdk의 컴포넌트 모듈입니다. <code>ktMapComponent.ktMapCatalog</code>를 통해 컴포넌트로 정의했던 기능 객체들을 확인/추가/삭제 할 수 있습니다.</li></ul><pre id="485534ac-989e-4502-8f10-0f9c9780ca11" class="code"><code>import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;</code></pre></li></ol><ol type="1" id="f8b1d23d-8274-4d8c-b932-e48f358cbf76" class="numbered-list" start="2"><li>함수 선언하기<p id="5e6b6ab9-550d-4bb9-bffd-dec75916f5e7" class="">지도를 클릭하면 클릭한 좌표의 위경도 정보를 alert로 출력하도록 함수를 선언하겠습니다.</p><pre id="6074bdbe-fec1-4665-a762-88c49ee3f3b0" class="code"><code>// Map Event
+function mapClick(event:ktGms.event.MapMouseEvent){
+    alert(event.lngLat);
+}</code></pre></li></ol><ol type="1" id="649f3c26-f0ec-40e8-9354-46f99e4ddae9" class="numbered-list" start="3"><li>ktMapCatalog에 이벤트 등록하기<pre id="991eec9e-198e-4c4f-a532-05c2fa2dc739" class="code"><code>// &#x27;mapClick&#x27;라는 Id로 mapClick 함수 등록
+useEffect(()=&gt;{
+    ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+}, [])</code></pre></li></ol><ol type="1" id="6eb1dba6-4b6b-4c77-b819-37ee6effe0fe" class="numbered-list" start="4"><li><code>&lt;kt-map&gt;</code> 웹 컴포넌트에 eventId인 ‘mapClick’을 click이벤트 property로 전달해주기<pre id="a78813d4-a330-4aee-8744-5a1455c4b711" class="code"><code>&lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;&lt;/kt-map&gt;</code></pre></li></ol><p id="8dc9f4db-e4df-40c8-970d-8e5818115a26" class="">
+</p><p id="5be925bf-3b96-4ee6-8f0c-37b676468efa" class="">Map Event까지 추가한 코드는 아래와 같습니다. </p><p id="227dd4ab-b9e7-4b62-a6f0-e6578a3b865f" class="">12~18라인에서 Map Event 추가 코드를 볼 수 있습니다.</p><pre id="6f5a6c74-90e5-4f0a-88de-e5ac5990bce6" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(()=&gt;{
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event:ktGms.event.MapMouseEvent){
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            {/* 줌 레벨, 위도, 경도 설정  */}
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;&lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="99f45909-bfdc-48b6-92f6-8ab64882edd3" class="">
+</p><h1 id="67a856e8-44cf-40d3-8d92-161095acad90" class="">Add Control </h1><p id="4e3ff425-8aba-411b-8e8d-94666627ff95" class="">Control은 지도 핸들링 및 지도 사용을 도와주는 기능입니다. </p><p id="2aa66aa3-f82c-4365-8707-24cbdc43e02a" class="">Control을 지도에 추가하기 위해선 아래와 같이 <code>&lt;kt-map&gt;</code> 웹 컴포넌트 태그 안에 특정 컨트롤 컴포넌트 태그를 추가해주면 됩니다.</p><pre id="6a4e98c2-9ce4-489e-88bf-d117dacfd65e" class="code"><code>&lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+    &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+&lt;/kt-map&gt;</code></pre><p id="77364b07-ee54-4dae-a284-5cd4051c6d66" class="">
+</p><p id="532ceda2-d897-4d5a-ae25-3899287547f2" class="">Map 컴포넌트의 우측 상단에 네비게이션 컨트롤을 추가하겠습니다.</p><p id="81f62747-49bf-4955-b4f8-49aeeed1bf2f" class="">23번째 라인에서 추가하였습니다.</p><pre id="ed276267-9c01-458c-a10d-b9c001200117" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(()=&gt;{
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event:ktGms.event.MapMouseEvent){
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt; // 추가
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="3f6a7616-d256-4c37-94c9-5d0d38aa3974" class="">
+</p><h3 id="8ec9e96d-0c29-49e8-8e68-028448f30bfd" class="">각 종류별 control 설명 및 추가</h3><ul id="b962716b-e77f-4a17-b7cd-6b7580dd45af" class="bulleted-list"><li style="list-style-type:disc">Navigation Control : 지도의 zoom, bearing, pitch를 조정할 수 있는 컨트롤입니다.</li></ul><ul id="cdc44ed8-e7ff-4694-818c-874b710a8bb4" class="bulleted-list"><li style="list-style-type:disc">Minimap Control : 현재 지도의 미니어처 오버뷰를 표시하는 컨트롤입니다.</li></ul><ul id="8efcdf89-99c3-47fc-99cc-c6f103ebcdbd" class="bulleted-list"><li style="list-style-type:disc">Draw Control : 지도 위에서 도형을 그리고 측정할 수 있는 컨트롤입니다.</li></ul><ul id="19ffd9de-64d5-40fa-a342-6c5a3649e206" class="bulleted-list"><li style="list-style-type:disc">Scale Control : 지도 축척(지면의 해당 거리에 대한 지도의 거리 비율)을 표시하는 컨트롤입니다.</li></ul><p id="f3947a69-30dc-4419-8d40-54a0b2b7c9a6" class="">
+</p><p id="218eb4f1-b727-485d-8700-b66c92dd1019" class="">위의 4개의 컨트롤러를 추가하겠습니다.</p><p id="485981ba-3e8b-427e-bd88-cca3562043fc" class="">23~26라인에서 추가하였습니다.</p><pre id="6f5514ec-f965-4698-8988-9e1887687c3d" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="d59ced3b-af55-4e40-a1c2-aa732777c13a" class="">
+</p><p id="db9da7a0-e5d9-454f-8acb-eb95a541be19" class="">Navbar와 KT Map과 4개의 컨트롤러들이 추가된 화면은 아래와 같습니다. </p><p id="6f833749-77e7-479c-ad19-fe09da9d06a0" class="">왼쪽 상단에 Draw Control, 왼쪽 하단에 Scale Control, 오른쪽 상단에 Navigation Control, 오른쪽 하단에 Minimap Control이 추가된 것을 확인할 수 있습니다.</p><p id="7b430e3f-99ca-4138-adf5-29402c8fc113" class="">4개의 컨트롤 이외에도 다른 컨트롤들이 있으며, 더 자세한 사항은 API DOCS를 확인해주세요</p><p id="c1014bcc-045d-4012-ac34-85972d158fad" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html#addControl">Control API DOCS</a></p><p id="e383a437-2920-42b4-a65d-dc38f7993eb0" class="">
+</p><h1 id="68b14a8d-b9f6-47f2-a099-9de0439509d3" class="">Add Overlay</h1><h3 id="09df35f6-9dfc-4a91-b69e-80140a6d63fc" class="">Add Marker</h3><p id="310a5e62-50ab-45ec-8823-c4034e43de3e" class="">Marker는 지도 상에 특정 위치에 원하는 아이콘 또는 이미지를 표출하는 기능입니다.</p><p id="69261b3e-13b0-45da-9cec-388d69f0d0dc" class="">기본 Marker를 생성하여 지도에 추가하는 코드는 아래와 같습니다. </p><pre id="6e2eac7a-c921-4b52-a7d9-6a74019790ee" class="code"><code>&lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;</code></pre><p id="1bfa0bd0-0b33-4bfa-b53e-bc8d2ccd226c" class="">
+</p><p id="2abbc1d2-3a60-4140-b4cc-d6f1afe047fe" class="">커스텀 Marker를 추가해보겠습니다. 기본 마커 대신 이미지를 표출하기 위해선 <code>&lt;kt-marker&gt;</code> 태그 사이에 표출하고 싶은 <code>&lt;img&gt;</code> 태그를 넣으면 됩니다.</p><pre id="8921f837-a610-40d6-be86-cd404b0a41b6" class="code"><code>&lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{height:&#x27;50px&#x27;, width:&#x27;50px&#x27;}} alt=&quot;marker-image&quot;/&gt;
+&lt;/kt-marker&gt;</code></pre><p id="d5e0eda4-1e21-43fe-89e4-25b3796c9a66" class="">
+</p><p id="ecde845d-cd2f-4bac-8820-a74cf47580b5" class="">Map 컴포넌트에 기본 Marker와 커스텀 Marker를 추가하겠습니다.</p><p id="422cb9cd-f964-46d0-8808-7fdc29453cd0" class="">27~30라인에서 Marker 추가 코드를 볼 수 있습니다.</p><pre id="6e16a5a8-ce00-4eb4-9bfc-0a722305cb20" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+                &lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;
+                &lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+                    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{height:&#x27;50px&#x27;, width:&#x27;50px&#x27;}} alt=&quot;marker-image&quot;/&gt;
+                &lt;/kt-marker&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="9fe10c03-98a0-4df5-b224-65e319e02084" class="">
+</p><p id="67b0ba4c-c687-435e-aaea-4bf84996f5f4" class="">마커가 추가된 화면은 아래와 같습니다.</p><figure id="aa0fc974-f9ca-4c7a-8c0f-dd3a65eb92a3" class="image"><a href="images/Untitled%204.png"><img style="width:2056px" src="images/Untitled%204.png"/></a></figure><p id="f23f05fc-91c5-4d43-80db-9c0738356412" class="">
+</p><p id="c8044cb5-eb45-45ad-b413-351ee4fc3698" class="">마커에 대한 더 자세한 사항은 API DOCS를 확인해주세요</p><p id="644cd3c7-8ce7-4c89-abc7-772f09509608" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_Marker.Marker.html">Marker API DOCS</a></p><p id="4be7f8a3-2586-487c-a7e1-6d85209b9a24" class="">
+</p><h3 id="bc83b2c4-cb6a-463b-a62a-9894b6bd273f" class="">Add InfoWindow</h3><p id="8081e13f-5538-45b5-a9eb-47311002cdbc" class="">InfoWindow는 지도 위의 특정 지점에 대한 상세정보를 제공하기 위한 기능입니다.</p><p id="e79f3c24-e8e3-4bb9-8d88-36e29e55a430" class="">InfoWindow는 말풍선과 같은 형태를 가지며 정보를 기술하는 영역과 지도상의 특정 지점과 연결되는 말풍선 anchor로 구성됩니다.</p><p id="062d631d-bec9-437b-bc7b-9f2d00c81175" class="">일반적으로 인포윈도우는 지도상의 특정지점(POI)상에 직접 출력되거나 마커 상단에 출력되는 형태를 가집니다.</p><p id="6ed8f10f-a635-41a7-82cf-bf2652cf0cde" class="">
+</p><p id="f720fa6f-b154-4c4e-8787-4294faaab46a" class="">InfoWindow를 생성하여 지도에 추가하는 코드는 아래와 같습니다. </p><pre id="08dc4922-6ce4-463d-ad99-669c2c1bcf10" class="code"><code>&lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot;&gt;
+    &lt;h1&gt;InfoWindow&lt;/h1&gt;
+&lt;/kt-infowindow&gt;</code></pre><p id="dd8bd9cb-47fc-4d9c-8e7d-a672795a11aa" class="">
+</p><p id="9993022b-ef1b-447a-97fd-3480dde789b7" class="">Map 컴포넌트에 InfoWindow를 추가하겠습니다.</p><p id="5cf1ab82-42d1-473a-803b-3add60baf238" class="">31~33라인에서 InfoWindow 추가 코드를 볼 수 있습니다.</p><pre id="654a1eca-f1e2-4c30-8772-40225b9e50e9" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+                &lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;
+                &lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+                    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{height:&#x27;50px&#x27;, width:&#x27;50px&#x27;}} alt=&quot;marker-image&quot;/&gt;
+                &lt;/kt-marker&gt;
+                &lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot;&gt;
+                    &lt;h1&gt;InfoWindow&lt;/h1&gt;
+                &lt;/kt-infowindow&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="be5ac902-ea37-4975-a6ce-24ea71354128" class="">
+</p><p id="fec9d9a6-638b-4134-8f45-eef20712adae" class="">인포윈도우가 추가된 화면은 아래와 같습니다.</p><p id="2e65f905-26b4-4d80-b0c9-0587bd54cc69" class="">
+</p><h3 id="eae073e4-2a3b-411e-b523-47d5a4ffc265" class="">Custom InfoWindow</h3><p id="5d2d24d6-b456-456c-9ff7-6f42b322f772" class="">data property를 사용하여 InfoWindow를 커스텀할 수 있습니다.</p><p id="6b5052cd-4449-4ef3-ae1b-9bc458ad4ed6" class=""><code>kt-infowindow</code> 컴포넌트에 data property로 JSON 문자열 형태의 데이터를 넘겨주고, <code>&lt;kt-infowindow&gt;</code> 태그 사이에서 원하는 html 템플릿을 작성하고, 템플릿 내에서 <code>#{key}</code> 방식으로 데이터에 접근할 수 있습니다.</p><p id="493f3235-950a-484d-88e2-02196aa64c22" class="">Custom InfoWindow를 생성하여 지도에 추가하는 코드는 아래와 같습니다. </p><pre id="62ee6cf4-d8a5-4ac1-9f92-e58a01bd0524" class="code"><code>&lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot; closeOnClick=&quot;false&quot;
+    data={JSON.stringify({&quot;title&quot;:&quot;KT연구개발센터&quot;,&quot;category&quot;:&quot;산업/기간시설&quot;,&quot;url&quot;:&quot;https://map.gis.kt.com&quot;,&quot;addr&quot;:&quot;서울특별시 서초구 태봉로 151&quot;,&quot;tel&quot;:&quot;02-526-5114&quot;})}&gt;
+    &lt;div style={{padding: &#x27;10px 10px 15px&#x27;, width:&#x27;180px&#x27;}}&gt;
+        &lt;div style={{display:&#x27;inline-block&#x27;, verticalAlign:&#x27;top&#x27;}}&gt;
+            &lt;strong style={{marginRight: &#x27;6px&#x27;, fontSize: &#x27;16px&#x27;, fontWeight: &#x27;700&#x27;, letterSpacing: &#x27;-1px&#x27;, color: &#x27;#0068c3&#x27;, lineHeight: &#x27;23px&#x27;}}&gt;#{&#x27;{&#x27;}title{&#x27;}&#x27;}&lt;/strong&gt;
+            &lt;span style={{fontSize: &#x27;13px&#x27;, lineHeight: &#x27;19px&#x27;, color: &#x27;#8f8f8f&#x27;}}&gt;#{&#x27;{&#x27;}category{&#x27;}&#x27;}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style={{marginTop: &#x27;5px&#x27;}}&gt;
+            &lt;span style={{fontSize: &#x27;14px&#x27;, lineHeight: &#x27;22px&#x27;, color: &#x27;#424242&#x27;}}&gt;#{&#x27;{&#x27;}addr{&#x27;}&#x27;}&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/kt-infowindow&gt;</code></pre><p id="0d7fd82d-94b1-49f1-9416-f13dd1a771ea" class="">
+</p><p id="1b0fdc42-f5f7-4655-87e0-db2cdcbcc7ed" class="">Map 컴포넌트에 기존의 InfoWindow는 삭제하고 Custom InfoWindow를 추가하겠습니다.</p><p id="c5a8d6f6-53de-4a31-bfc9-98bc5ae89c39" class="">31~42라인에서 Custom InfoWindow 추가 코드를 볼 수 있습니다.</p><pre id="6d60ccc2-60df-4d63-bb5f-d5dd4c2fda6f" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+                &lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;
+                &lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+                    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{ height: &#x27;50px&#x27;, width: &#x27;50px&#x27; }} alt=&quot;marker-image&quot; /&gt;
+                &lt;/kt-marker&gt;
+                &lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot; closeOnClick=&quot;false&quot;
+                    data={JSON.stringify({&quot;title&quot;:&quot;KT연구개발센터&quot;,&quot;category&quot;:&quot;산업/기간시설&quot;,&quot;url&quot;:&quot;https://map.gis.kt.com&quot;,&quot;addr&quot;:&quot;서울특별시 서초구 태봉로 151&quot;,&quot;tel&quot;:&quot;02-526-5114&quot;})}&gt;
+                    &lt;div style={{padding: &#x27;10px 10px 15px&#x27;, width:&#x27;180px&#x27;}}&gt;
+                        &lt;div style={{display:&#x27;inline-block&#x27;, verticalAlign:&#x27;top&#x27;}}&gt;
+                            &lt;strong style={{marginRight: &#x27;6px&#x27;, fontSize: &#x27;16px&#x27;, fontWeight: &#x27;700&#x27;, letterSpacing: &#x27;-1px&#x27;, color: &#x27;#0068c3&#x27;, lineHeight: &#x27;23px&#x27;}}&gt;#{&#x27;{&#x27;}title{&#x27;}&#x27;}&lt;/strong&gt;
+                            &lt;span style={{fontSize: &#x27;13px&#x27;, lineHeight: &#x27;19px&#x27;, color: &#x27;#8f8f8f&#x27;}}&gt;#{&#x27;{&#x27;}category{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div style={{marginTop: &#x27;5px&#x27;}}&gt;
+                            &lt;span style={{fontSize: &#x27;14px&#x27;, lineHeight: &#x27;22px&#x27;, color: &#x27;#424242&#x27;}}&gt;#{&#x27;{&#x27;}addr{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/kt-infowindow&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="23ef3b25-96aa-4968-a9fb-f1569a594b90" class="">
+</p><p id="a4533b70-3029-4764-8595-4080ea404709" class="">커스텀한 인포윈도우가 추가된 화면은 아래와 같습니다.</p><figure id="34f3ca12-2f36-4b8e-9deb-61af03a0d3c9" class="image"><a href="images/Untitled%205.png"><img style="width:1030px" src="images/Untitled%205.png"/></a></figure><p id="602d1bbd-5136-4257-83c8-f4fbd42bf26f" class="">인포윈도우에 대한 더 자세한 사항은 API DOCS를 확인해주세요</p><p id="cd5b6e3a-1551-4b71-af5c-383961f72531" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html">InfoWindow API DOCS</a></p><h1 id="e065711f-2bd5-4a23-a726-9dbfb239377a" class="">Add Layer</h1><p id="6405378c-65ee-4853-84bf-136f05391d77" class="">Layer는 Geography 데이터를 지도 상에 시각적으로 표현하는 기능입니다. </p><p id="b6c2f117-c3bd-4af7-9f5e-e73952cfeaa7" class="">Layer는 Source와 Style 요소로 정의됩니다. </p><p id="083e0982-4bf9-49c4-8d37-c0de8bd336db" class="">
+</p><p id="e62bdfda-8bba-428d-8b28-04a965bac32c" class="">Polygon Layer를 예시로 설명 드리겠습니다. Polygon Layer는 데이터인 GeoJSON Source와 시각적 요소인 Fill Style로 구성됩니다. 그리고 GeoJSON Source는 Polygon 형태의 Geometry로 구성되어 있습니다. </p><figure id="1d0f0c4a-44f4-4810-9e8d-e078e5066db3" class="image"><a href="images/Untitled%206.png"><img style="width:1834px" src="images/Untitled%206.png"/></a></figure><p id="f030da3f-21c4-47e2-88ff-0fa7a84b1fb9" class="">
+</p><h3 id="6ab3168f-cf3d-4fad-9a98-47644206a7fe" class="">Source, Style, Layer</h3><p id="6abd137b-1d22-45c5-b5bb-24bf90178231" class=""><strong>Source</strong></p><p id="a6356dcc-7f77-420a-90eb-e063f405831e" class="">Source는 지도에 표출되어야하는 데이터를 나타냅니다. 소스에는 스타일 세부정보가 포함되어 있지 않기 때문에 소스를 추가하는 것으로는 맵에 데이터를 표시하기 충분하지 않습니다. </p><p id="27e118df-7672-47df-953f-6da74e1844f4" class="">따라서 레이어가 소스를 참고하여 시각적 표현을 제공합니다.</p><p id="97900c68-f966-40d8-af31-3dd262933c17" class="">KTMapSDK WebComponent 에서는 <code>GeoJSONSource</code> 타입, <code>VectorSource</code>타입을 지원합니다. 그리고 <code>dataUrl</code> 프로퍼티를 통해 source data를 불러옵니다.</p><p id="fb762439-703c-439c-9df6-e5e2986444f5" class="">
+</p><p id="403d1c03-2723-4130-9dd3-a966ac4afe3e" class="">GeoJSON Source의 데이터를 바인딩하는 코드는 아래와 같습니다.</p><pre id="3f656da0-0387-461c-9a97-95b8dc988f83" class="code"><code>&lt;kt-geojson-source id=&quot;geoJsonSource&quot; dataUrl=&quot;https://map.gis.kt.com/mapsdk/data/seoul_sub.geojson&quot;&gt;&lt;/kt-geojson-source&gt;</code></pre><p id="35edb976-9773-4bca-9dd6-9980e7af74ef" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/source_GeoJSONSource.GeoJSONSource.html">Source API DOCS</a></p><p id="8b5e93d3-d948-408e-8a23-e22d81fa36f4" class="">
+</p><p id="05b736a3-cef6-4154-9896-df92c02dd414" class=""><strong>Style</strong></p><p id="46cb9f57-3962-4ac3-a4f9-5a1e9d9a717f" class="">Layer 설정 시 시각적인 요소들은 Style 객체로 정의합니다. </p><p id="696ca67f-cfbb-4859-853d-c9a445692e09" class="">KTMapSDK WebComponent 에서는 Paint 요소와 Layout 요소를 Layer의 프로퍼티로 전달해서 Layer에 style을 적용합니다.</p><p id="03be3a0a-bc6a-4932-8e41-81e4518ed7e1" class="">폴리곤 레이어에 Fill Style을 적용하는 코드는 아래와 같습니다.</p><pre id="c5547667-38a3-41af-b214-009d5f59e1a4" class="code"><code>&lt;kt-polygon-layer id=&quot;polygonLayer&quot; source=&quot;geoJsonSource&quot;
+    paint=&quot;fill-antialias:true; fill-color:#0000ff; fill-outline-color:#ff0000; fill-opacity:0.1&quot;
+    layout=&quot;visibility:visible&quot;&gt;
+&lt;/kt-polygon-layer&gt;</code></pre><p id="f69baf66-6903-4ef1-854f-d716f2a4679b" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/style_FillStyle.FillStyle.html">Style API DOCS</a></p><p id="4bdc6d1b-9162-4ca3-b8b4-67ec3a7e2d1a" class="">
+</p><p id="ee265362-a3bc-4b4b-b64e-22e370721984" class=""><strong>Layer</strong></p><p id="35c8e688-69c0-41af-9ed7-249c69d2b314" class="">KTMapSDK WebComponent에서 Layer에 Source를 적용하는 두가지 방법에 대해 소개해드리겠습니다.</p><ol type="1" id="2bc16753-6c7d-4e68-b9f1-b8bb8f73b2f8" class="numbered-list" start="1"><li>맵에 GeoJSONSource를 추가하고, 해당 소스의 아이디를 <code>source</code> 이름의 Layer 프로퍼티로 넘겨주는 경우<p id="9e73a2a1-f5f4-45ad-864d-058ed802371a" class="">(해당 경우에는 dataUrl을 통해서만 source의 geometry 정보를 넘겨줄 수 있습니다.)</p><pre id="e0a3331e-ca79-420a-b4a3-707707e03b57" class="code"><code>&lt;kt-geojson-source id=&quot;geoJsonSource&quot; dataUrl=&quot;https://map.gis.kt.com/mapsdk/data/seoul_sub.geojson&quot;&gt;&lt;/kt-geojson-source&gt;
+&lt;kt-polygon-layer id=&quot;polygonLayer&quot; source=&quot;geoJsonSource&quot; 
+    paint=&quot;fill-antialias:true; fill-color:#0000ff; fill-outline-color:#ff0000; fill-opacity:0.1&quot;
+    layout=&quot;visibility:visible&quot;&gt;
+&lt;/kt-polygon-layer&gt;</code></pre></li></ol><ol type="1" id="8aa1e2b9-7270-4a0d-916c-2c1e08117bd7" class="numbered-list" start="2"><li>Layer 컴포넌트에 <code>source</code> 프로퍼티로 geometry 정보를 넘겨주는 경우<p id="e2d51200-d1cd-4b92-ae6b-957059b5614b" class="">(sourceProperty로 geometry의 속성을 넘겨줄 수도 있습니다. dataProperty 활용 예시는 Layer Event에서 확인하실 수 있습니다.)</p><pre id="f170b8f9-71b3-4ad9-b8a5-c745436816ff" class="code"><code>&lt;kt-polygon-layer id=&quot;polygonLayer2&quot; source=&#x27;[[[127.044414, 37.479701], [127.044414, 37.469701], [127.035514, 37.469701], [127.044414, 37.479701]]]&#x27;
+    sourceProperty=&#x27;{ &quot;id&quot;: &quot;06740&quot;, &quot;area&quot;: &quot;서울시 서초구&quot;, &quot;description&quot;: &quot;핫플레이스 상권&quot; }&#x27;
+	  paint=&quot;fill-antialias:true; fill-color:#FF0000; fill-outline-color:#ff0000; fill-opacity:0.35&quot;
+	  layout=&quot;visibility:visible&quot;&gt;
+&lt;/kt-polygon-layer&gt;</code></pre></li></ol><p id="523ed434-61ff-4fa5-b8ef-c91ce33f63f9" class="">
+</p><p id="927c2054-a597-489a-a571-e4cd345d0f9e" class="">Layer 추가까지 한 코드는 아래와 같습니다.</p><p id="88d7555e-a2a5-49a5-9f68-0f5daef62c48" class="">43~52라인에서 Layer 추가 코드를 볼 수 있습니다.</p><pre id="c68f0ae5-1ad6-4809-8467-03a2c951e5fa" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick)
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+                &lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;
+                &lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+                    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{ height: &#x27;50px&#x27;, width: &#x27;50px&#x27; }} alt=&quot;marker-image&quot; /&gt;
+                &lt;/kt-marker&gt;
+                &lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot; closeOnClick=&quot;false&quot;
+                    data={JSON.stringify({ &quot;title&quot;: &quot;KT연구개발센터&quot;, &quot;category&quot;: &quot;산업/기간시설&quot;, &quot;url&quot;: &quot;https://map.gis.kt.com&quot;, &quot;addr&quot;: &quot;서울특별시 서초구 태봉로 151&quot;, &quot;tel&quot;: &quot;02-526-5114&quot; })}&gt;
+                    &lt;div style={{ padding: &#x27;10px 10px 15px&#x27;, width: &#x27;180px&#x27; }}&gt;
+                        &lt;div style={{ display: &#x27;inline-block&#x27;, verticalAlign: &#x27;top&#x27; }}&gt;
+                            &lt;strong style={{ marginRight: &#x27;6px&#x27;, fontSize: &#x27;16px&#x27;, fontWeight: &#x27;700&#x27;, letterSpacing: &#x27;-1px&#x27;, color: &#x27;#0068c3&#x27;, lineHeight: &#x27;23px&#x27; }}&gt;#{&#x27;{&#x27;}title{&#x27;}&#x27;}&lt;/strong&gt;
+                            &lt;span style={{ fontSize: &#x27;13px&#x27;, lineHeight: &#x27;19px&#x27;, color: &#x27;#8f8f8f&#x27; }}&gt;#{&#x27;{&#x27;}category{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div style={{ marginTop: &#x27;5px&#x27; }}&gt;
+                            &lt;span style={{ fontSize: &#x27;14px&#x27;, lineHeight: &#x27;22px&#x27;, color: &#x27;#424242&#x27; }}&gt;#{&#x27;{&#x27;}addr{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/kt-infowindow&gt;
+                &lt;kt-geojson-source id=&quot;geoJsonSource&quot; dataUrl=&quot;https://map.gis.kt.com/mapsdk/data/seoul_sub.geojson&quot;&gt;&lt;/kt-geojson-source&gt;
+                &lt;kt-polygon-layer id=&quot;polygonLayer&quot; source=&quot;geoJsonSource&quot;
+                    paint=&quot;fill-antialias:true; fill-color:#0000ff; fill-outline-color:#ff0000; fill-opacity:0.1&quot;
+                    layout=&quot;visibility:visible&quot;&gt;
+                &lt;/kt-polygon-layer&gt;
+                &lt;kt-polygon-layer id=&quot;polygonLayer2&quot; source=&#x27;[[[127.044414, 37.479701], [127.044414, 37.469701], [127.035514, 37.469701], [127.044414, 37.479701]]]&#x27;
+                    sourceProperty=&#x27;{ &quot;id&quot;: &quot;06740&quot;, &quot;area&quot;: &quot;서울시 서초구&quot;, &quot;description&quot;: &quot;핫플레이스 상권&quot; }&#x27;
+                    paint=&quot;fill-antialias:true; fill-color:#FF0000; fill-outline-color:#ff0000; fill-opacity:0.35&quot;
+                    layout=&quot;visibility:visible&quot;&gt;
+                &lt;/kt-polygon-layer&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="b336e0e4-af18-4def-a3d4-eaeee378df67" class=""> 두 개의 레이어를 추가한 결과입니다.</p><figure id="96ec3b06-3d83-46c7-9fe1-56dde0ade08d" class="image"><a href="images/Untitled%207.png"><img style="width:2272px" src="images/Untitled%207.png"/></a></figure><p id="d45a41b8-95e9-43a8-a2ce-d3da18e82c3b" class="">
+</p><h3 id="9ad25bc0-fbbf-49a5-9b14-3b7758f7ba44" class="">Layer Event</h3><p id="560f818a-a2ee-4b96-be9f-86c54543b98e" class="">KTMapSDK WebComponent에서 레이어에 이벤트를 추가하는 방식은 맵에 이벤트를 추가하는 방식과 동일합니다. </p><ol type="1" id="0a32f01e-8809-426e-8b44-d0ceefa8300e" class="numbered-list" start="1"><li>함수 선언하기<p id="eaa5fbf2-c196-4fe6-b73b-c03ad064a44a" class="">폴리곤 레이어를 클릭하면 Source 내 Property로 등록해뒀던 description이 alert로 출력되도록 이벤트를 추가하겠습니다.</p><pre id="9a351691-608c-4283-92cc-446f9368ec3d" class="code"><code>// Layer Event
+function layerClick(event:any){
+    alert(event.features[0].properties[&quot;description&quot;]);
+}</code></pre></li></ol><ol type="1" id="be2ad80b-a0b4-44e5-a152-0d17c4d31aa6" class="numbered-list" start="2"><li>ktMapCatalog에 이벤트 등록하기<pre id="58f5d5f8-669e-4885-bd93-519d19c24e50" class="code"><code>// &#x27;layerClick&#x27;라는 Id로 layerClick 함수 등록
+useEffect(()=&gt;{
+    ktMapComponent.ktMapCatalog.addEvent(&#x27;layerClick&#x27;, layerClick);
+}, [])</code></pre></li></ol><ol type="1" id="7c9d0c5a-7c09-4bb8-9b1c-56a90093b12f" class="numbered-list" start="3"><li><code>&lt;kt-polygon-layer&gt;</code> 컴포넌트에 eventId를 property로 전달해주기<pre id="12470380-5558-45df-ac79-296adacead64" class="code"><code>&lt;kt-polygon-layer id=&quot;polygonLayer2&quot; source=&#x27;[[[127.044414, 37.479701], [127.044414, 37.469701], [127.035514, 37.469701], [127.044414, 37.479701]]]&#x27;
+    sourceProperty=&#x27;{ &quot;id&quot;: &quot;06740&quot;, &quot;area&quot;: &quot;서울시 서초구&quot;, &quot;description&quot;: &quot;핫플레이스 상권&quot; }&#x27;
+    paint=&quot;fill-antialias:true; fill-color:#FF0000; fill-outline-color:#ff0000; fill-opacity:0.35&quot;
+    layout=&quot;visibility:visible&quot; click=&quot;layerClick&quot;&gt;
+&lt;/kt-polygon-layer&gt;</code></pre></li></ol><p id="25a54648-5717-46d0-8797-e8142d1f857d" class="">
+</p><p id="cd73d0bc-b164-40bd-a0b2-5197f9d99de5" class="">Layer Event 까지 추가한 완성 코드는 아래와 같습니다. </p><blockquote id="da9c7862-cb0b-4e14-a5f4-83976f71bf37" class="">src/Map.tsx</blockquote><pre id="25f19ba1-accd-4b41-b90b-007bccbbc97d" class="code"><code>import { useEffect, useState } from &#x27;react&#x27;;
+import ktGms from &#x27;kt-map-sdk-js&#x27;;
+import ktMapComponent from &#x27;kt-map-sdk-webcomponent&#x27;;
+import &#x27;./Map.css&#x27;;
+
+export default function Map() {
+    const [lng] = useState(127.029414); //경도
+    const [lat] = useState(37.471401); //위도
+    const [zoom] = useState(14); //줌 레벨
+    const [API_KEY] = useState(&#x27;YOUR_KTMAP_API_KEY_HERE&#x27;); //인증키
+
+    useEffect(() =&gt; {
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;mapClick&#x27;, mapClick);
+        ktMapComponent.ktMapCatalog.addEvent(&#x27;layerClick&#x27;, layerClick);
+    }, [])
+
+    function mapClick(event: ktGms.event.MapMouseEvent) {
+        alert(event.lngLat);
+    }
+
+    function layerClick(event: any){
+        alert(event.features[0].properties[&quot;description&quot;]);
+    } 
+
+    return (
+        &lt;div id=&quot;map-wrap&quot;&gt;
+            &lt;kt-map click=&quot;mapClick&quot; id=&quot;map&quot; zoomValue={zoom} mapStyle=&quot;normal&quot; lng={lng} lat={lat} bearingValue={0} pitchValue={0}&gt;
+                &lt;kt-navigation-control position=&quot;top-right&quot;&gt;&lt;/kt-navigation-control&gt;
+                &lt;kt-minimap-control position=&quot;bottom-right&quot;&gt;&lt;/kt-minimap-control&gt;
+                &lt;kt-draw-control position=&quot;top-left&quot;&gt;&lt;/kt-draw-control&gt;
+                &lt;kt-scale-control position=&quot;bottom-left&quot;&gt;&lt;/kt-scale-control&gt;
+                &lt;kt-marker id=&quot;defaultMarkerId&quot; lng=&quot;127.037414&quot; lat=&quot;37.471401&quot; color=&quot;#FF0000&quot; &gt;&lt;/kt-marker&gt;
+                &lt;kt-marker id=&quot;imgMarkerId&quot; lng=&quot;127.047414&quot; lat=&quot;37.475401&quot; offset=&quot;[0,0]&quot; label=&quot;위스키&quot; labelOffset=&quot;[0,12]&quot; labelColor=&quot;#0000ff&quot; labelSize=&quot;16&quot;&gt;
+                    &lt;img src=&quot;https://map.gis.kt.com/mapsdk/images/bar.png&quot; style={{ height: &#x27;50px&#x27;, width: &#x27;50px&#x27; }} alt=&quot;marker-image&quot; /&gt;
+                &lt;/kt-marker&gt;
+                &lt;kt-infowindow lng=&quot;127.029414&quot; lat=&quot;37.471401&quot; closeOnClick=&quot;false&quot;
+                    data={JSON.stringify({ &quot;title&quot;: &quot;KT연구개발센터&quot;, &quot;category&quot;: &quot;산업/기간시설&quot;, &quot;url&quot;: &quot;https://map.gis.kt.com&quot;, &quot;addr&quot;: &quot;서울특별시 서초구 태봉로 151&quot;, &quot;tel&quot;: &quot;02-526-5114&quot; })}&gt;
+                    &lt;div style={{ padding: &#x27;10px 10px 15px&#x27;, width: &#x27;180px&#x27; }}&gt;
+                        &lt;div style={{ display: &#x27;inline-block&#x27;, verticalAlign: &#x27;top&#x27; }}&gt;
+                            &lt;strong style={{ marginRight: &#x27;6px&#x27;, fontSize: &#x27;16px&#x27;, fontWeight: &#x27;700&#x27;, letterSpacing: &#x27;-1px&#x27;, color: &#x27;#0068c3&#x27;, lineHeight: &#x27;23px&#x27; }}&gt;#{&#x27;{&#x27;}title{&#x27;}&#x27;}&lt;/strong&gt;
+                            &lt;span style={{ fontSize: &#x27;13px&#x27;, lineHeight: &#x27;19px&#x27;, color: &#x27;#8f8f8f&#x27; }}&gt;#{&#x27;{&#x27;}category{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div style={{ marginTop: &#x27;5px&#x27; }}&gt;
+                            &lt;span style={{ fontSize: &#x27;14px&#x27;, lineHeight: &#x27;22px&#x27;, color: &#x27;#424242&#x27; }}&gt;#{&#x27;{&#x27;}addr{&#x27;}&#x27;}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/kt-infowindow&gt;
+                &lt;kt-geojson-source id=&quot;geoJsonSource&quot; dataUrl=&quot;https://map.gis.kt.com/mapsdk/data/seoul_sub.geojson&quot;&gt;&lt;/kt-geojson-source&gt;
+                &lt;kt-polygon-layer id=&quot;polygonLayer&quot; source=&quot;geoJsonSource&quot;
+                    paint=&quot;fill-antialias:true; fill-color:#0000ff; fill-outline-color:#ff0000; fill-opacity:0.1&quot;
+                    layout=&quot;visibility:visible&quot;&gt;
+                &lt;/kt-polygon-layer&gt;
+                &lt;kt-polygon-layer id=&quot;polygonLayer2&quot; source=&#x27;[[[127.044414, 37.479701], [127.044414, 37.469701], [127.035514, 37.469701], [127.044414, 37.479701]]]&#x27;
+                    sourceProperty=&#x27;{ &quot;id&quot;: &quot;06740&quot;, &quot;area&quot;: &quot;서울시 서초구&quot;, &quot;description&quot;: &quot;핫플레이스 상권&quot; }&#x27;
+                    paint=&quot;fill-antialias:true; fill-color:#FF0000; fill-outline-color:#ff0000; fill-opacity:0.35&quot;
+                    layout=&quot;visibility:visible&quot; click=&quot;layerClick&quot;&gt;
+                &lt;/kt-polygon-layer&gt;
+            &lt;/kt-map&gt;
+        &lt;/div&gt;
+    );
+}</code></pre><p id="abb86a81-f8f1-4ada-b585-f9daa8c4d673" class="">
+</p><p id="1d783d58-c458-40c0-aa80-a251933145a0" class="">Layer가 추가된 최종화면은 아래와 같습니다.</p><figure id="892b9207-2817-4db7-9b3f-587f13bc4988" class="image"><a href="images/Untitled%207.png"><img style="width:2272px" src="images/Untitled%207.png"/></a></figure><p id="5a868a1e-c130-4dd9-bd8d-51bb0692ec28" class="">레이어에 대한 더 자세한 사항은 API Document를 확인해주세요.</p><p id="c4d3daea-004e-4b28-ac53-5795c97b6ea1" class="">→ <a href="https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html">Layer API DOCS</a></p><p id="65749c98-d849-4e0c-90e9-bcd8a9ed61e5" class="">
+</p><p id="24ec6371-2760-4e45-b7e0-5193a8da5d48" class="">이상으로 리액트에서 Web Component를 사용해서 kt map 사용하는 튜토리얼을 끝내겠습니다.</p><p id="6bfd35f3-8999-469c-b52f-4e01b74d6875" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
