@@ -9,7 +9,19 @@ const map: ktGms.Map = new ktGms.Map({
 	maxPitch: 68
 });
 
-map.on("load", () => {
+const arrowHeadImage = (color:any) => {
+	const param = {"color": color, "size": 16, "rotation": 90};
+	const data = `<svg width='${param.size}' height='${param.size}' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg' version='1.1'><polygon fill='${param.color}' stroke='gray' stroke-width='1' points='20,90 50,10 80,90 50,70' transform='rotate(${param.rotation} 50 50)'/></svg>`;
+	return new Promise((resolve) => {
+		const img = new Image(param.size, param.size);
+		img.src = "data:image/svg+xml;base64," + btoa(data);
+		img.onload = () => resolve(createImageBitmap(img));
+	});
+}
+
+map.on("load", async() => {
+     const is = await arrowHeadImage("#ff0000");
+     map.addImage('arrow-head', is as any);
 	//"route" 이름으로 경로 좌표 저장
 	map.addSource("route", new ktGms.source.GeoJSONSource("route", {
 		data: "https://map.gis.kt.com/mapsdk/data/lineData.geojson",
@@ -36,19 +48,14 @@ map.on("load", () => {
 
 	//화살표 표시하는 SymbolStyle의 라인 레이어
 	map.addLayer(new ktGms.layer.LineSymbolicLayer("arrow", 
-		new ktGms.style.SymbolStyle(
-		{
-			"text-color": "#007cbf", //글자 색상
-			"text-halo-color": "#007cbf", //글자 그림자 색상
-			"text-halo-width": 0.5 //글자 두께
-		},
+        new ktGms.style.SymbolStyle(
+		{},
 		{
 			"visibility": "visible",
-			"text-field": "<", //화살표로 사용할 글자
-			"text-size": 12, //글자 크기
-			"text-rotation-alignment": "map", //map이 회전될 때 text도 map과 같이 회전되도록 
-			"symbol-placement": "line", //글자 위치 : 라인 위에 위치
-			"symbol-spacing": 180 //180px 간격으로 심볼이 라인 위에 반복적으로 나타나도록 설정
+			"symbol-placement": "line",
+            "icon-image": "arrow-head",
+            "symbol-spacing": 70,
+            "icon-offset": [0, 0],
 		}),
 		"route" //"route" 소스 데이터 사용
 	))
