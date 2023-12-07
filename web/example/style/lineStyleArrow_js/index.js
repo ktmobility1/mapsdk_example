@@ -17,7 +17,7 @@ const arrowHeadImage = (color) => {
     });
 };
 map.on("load", async () => {
-    const is = await arrowHeadImage("#ff0000");
+    const is = await arrowHeadImage("#fff");
     map.addImage('arrow-head', is);
     //"route" 이름으로 경로 좌표 저장
     map.addSource("route", new ktGms.source.GeoJSONSource("route", {
@@ -25,14 +25,14 @@ map.on("load", async () => {
     }));
     //흰색 라인 레이어
     map.addLayer(new ktGms.layer.LineLayer("background-route", new ktGms.style.LineStyle({
-        "line-width": 15, //라인 두께
-        "line-color": "#ffffff", //라인 색상
-        "line-opacity": 0.8 //라인 투명도
+        "line-width": 14, //라인 두께
+        "line-color": "#fff", //라인 색상
+        "line-opacity": 1 //라인 투명도
     }, {}), "route" //"route" 소스 데이터 사용
     ));
     //길 표시 하는 라인 레이어
     map.addLayer(new ktGms.layer.LineLayer("route", new ktGms.style.LineStyle({
-        "line-width": 1.5, //라인 두께
+        "line-width": 10, //라인 두께
         "line-color": "#007cbf" //라인 색상
     }, {}), "route" //"route" 소스 데이터 사용
     ));
