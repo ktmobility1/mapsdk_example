@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PolygonOverlayOptions</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>KT Map SDK For Android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":overlays:overlay-polyline:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="KT Map SDK For Android::com.kt.maps.overlay.polygon/PolygonOverlayOptions///PointingToDeclaration//1113602356">
+  <div class="breadcrumbs"><a href="../../../index.html">KT Map SDK For Android</a><span class="delimiter">/</span><a href="../index.html">com.kt.maps.overlay.polygon</a><span class="delimiter">/</span><span class="current">PolygonOverlayOptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Polygon</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">PolygonOverlayOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="-builder/index.html">PolygonOverlayOptions.Builder</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.overlay/OverlayOptions///PointingToDeclaration/">OverlayOptions</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-polygon-overlay/index.html">PolygonOverlay</a><span class="token operator">&gt; </span></div><p class="paragraph"><a href="../-polygon-overlay/index.html">PolygonOverlay</a> 생성을 위한 Builder 클래스</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="252868688%2FConstructors%2F1113602356" anchor-label="PolygonOverlayOptions" id="252868688%2FConstructors%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-polygon-overlay-options.html"><span>Polygon</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="252868688%2FConstructors%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="-builder/index.html">PolygonOverlayOptions.Builder</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">기본 생성자</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1820057490%2FClasslikes%2F1113602356" anchor-label="Builder" id="-1820057490%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1820057490%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a></div><div class="brief "><p class="paragraph"><a href="index.html">PolygonOverlayOptions</a> 생성을 위한 Builder 클래스</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="784152915%2FProperties%2F1113602356" anchor-label="color" id="784152915%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="784152915%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="color.html">color</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">면 색상</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-154452221%2FProperties%2F1113602356" anchor-label="holes" id="-154452221%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="holes.html"><span><span>holes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-154452221%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="holes.html">holes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">내부 홀</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1722186685%2FProperties%2F1113602356" anchor-label="lngLats" id="1722186685%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lng-lats.html"><span>lng</span><wbr></wbr><span><span>Lats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1722186685%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lng-lats.html">lngLats</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">좌표열 값</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1825209195%2FProperties%2F1113602356" anchor-label="opacity" id="1825209195%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="opacity.html"><span><span>opacity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1825209195%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="opacity.html">opacity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">투명도</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-15802141%2FProperties%2F1113602356" anchor-label="outlineColor" id="-15802141%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="outline-color.html"><span>outline</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-15802141%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="outline-color.html">outlineColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">테두리 색상</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SymbolTextStyleLayouts</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>KT Map SDK For Android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":overlays:overlay-polyline:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="KT Map SDK For Android::com.kt.maps.style.styles/SymbolTextStyleLayouts///PointingToDeclaration//1113602356">
+  <div class="breadcrumbs"><a href="../../../index.html">KT Map SDK For Android</a><span class="delimiter">/</span><a href="../index.html">com.kt.maps.style.styles</a><span class="delimiter">/</span><span class="current">SymbolTextStyleLayouts</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Symbol</span><wbr></wbr><span>Text</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Layouts</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SymbolTextStyleLayouts</a></div><p class="paragraph">Symbol Text layout 속성</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-430032299%2FConstructors%2F1113602356" anchor-label="SymbolTextStyleLayouts" id="-430032299%2FConstructors%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-symbol-text-style-layouts.html"><span>Symbol</span><wbr></wbr><span>Text</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Layouts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-430032299%2FConstructors%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">textField<span class="token operator">: </span><a href="-text-field/index.html">SymbolTextStyleLayouts.TextField</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>options<span class="token operator">: </span><a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">textFieldName<span class="token operator">: </span><a href="-text-field-name/index.html">SymbolTextStyleLayouts.TextFieldName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>options<span class="token operator">: </span><a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-590555899%2FClasslikes%2F1113602356" anchor-label="Companion" id="-590555899%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-590555899%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1918300762%2FClasslikes%2F1113602356" anchor-label="TextAllowOverlap" id="-1918300762%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-allow-overlap/index.html"><span>Text</span><wbr></wbr><span>Allow</span><wbr></wbr><span><span>Overlap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1918300762%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-allow-overlap/index.html">TextAllowOverlap</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-allow-overlap</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1091742257%2FClasslikes%2F1113602356" anchor-label="TextAnchor" id="-1091742257%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-anchor/index.html"><span>Text</span><wbr></wbr><span><span>Anchor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1091742257%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-anchor/index.html">TextAnchor</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-anchor/index.html">SymbolTextStyleLayouts.TextAnchor</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-anchor</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-860404892%2FClasslikes%2F1113602356" anchor-label="TextField" id="-860404892%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-field/index.html"><span>Text</span><wbr></wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-860404892%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-field/index.html">TextField</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-field</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1928017511%2FClasslikes%2F1113602356" anchor-label="TextFieldName" id="-1928017511%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-field-name/index.html"><span>Text</span><wbr></wbr><span>Field</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1928017511%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-field-name/index.html">TextFieldName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-field-name</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1364345291%2FClasslikes%2F1113602356" anchor-label="TextFont" id="-1364345291%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-font/index.html"><span>Text</span><wbr></wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1364345291%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-font/index.html">TextFont</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>arrayOf(
+            &quot;Nanum Gothic Regular&quot;
+        )</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-font</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1612398859%2FClasslikes%2F1113602356" anchor-label="TextIgnorePlacement" id="1612398859%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-ignore-placement/index.html"><span>Text</span><wbr></wbr><span>Ignore</span><wbr></wbr><span><span>Placement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1612398859%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-ignore-placement/index.html">TextIgnorePlacement</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-ignore-placement</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="652592974%2FClasslikes%2F1113602356" anchor-label="TextJustify" id="652592974%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-justify/index.html"><span>Text</span><wbr></wbr><span><span>Justify</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="652592974%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-justify/index.html">TextJustify</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-justify/index.html">SymbolTextStyleLayouts.TextJustify</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-justify</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1087819714%2FClasslikes%2F1113602356" anchor-label="TextKeepUpright" id="1087819714%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-keep-upright/index.html"><span>Text</span><wbr></wbr><span>Keep</span><wbr></wbr><span><span>Upright</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1087819714%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-keep-upright/index.html">TextKeepUpright</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-keep-upright</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="434694017%2FClasslikes%2F1113602356" anchor-label="TextLetterSpacing" id="434694017%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-letter-spacing/index.html"><span>Text</span><wbr></wbr><span>Letter</span><wbr></wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="434694017%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-letter-spacing/index.html">TextLetterSpacing</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-letter-spacing TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1182401417%2FClasslikes%2F1113602356" anchor-label="TextLineHeight" id="1182401417%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-line-height/index.html"><span>Text</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1182401417%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-line-height/index.html">TextLineHeight</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-line-height TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1991940299%2FClasslikes%2F1113602356" anchor-label="TextMaxAngle" id="-1991940299%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-max-angle/index.html"><span>Text</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1991940299%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-max-angle/index.html">TextMaxAngle</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">45</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-max-angle TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-953280094%2FClasslikes%2F1113602356" anchor-label="TextMaxWidth" id="-953280094%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-max-width/index.html"><span>Text</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953280094%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-max-width/index.html">TextMaxWidth</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-max-width TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2041964977%2FClasslikes%2F1113602356" anchor-label="TextOffset" id="2041964977%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-offset/index.html"><span>Text</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2041964977%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-offset/index.html">TextOffset</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator"> = </span>arrayOf(0, 0)</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-offset TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1667435836%2FClasslikes%2F1113602356" anchor-label="TextOptional" id="-1667435836%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-optional/index.html"><span>Text</span><wbr></wbr><span><span>Optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1667435836%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-optional/index.html">TextOptional</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-optional</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1074005779%2FClasslikes%2F1113602356" anchor-label="TextPadding" id="-1074005779%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-padding/index.html"><span>Text</span><wbr></wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1074005779%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-padding/index.html">TextPadding</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-padding TODO IconPadding과 상이함. Array<Int> ? Int? TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1668959495%2FClasslikes%2F1113602356" anchor-label="TextPitchAlighment" id="1668959495%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-pitch-alighment/index.html"><span>Text</span><wbr></wbr><span>Pitch</span><wbr></wbr><span><span>Alighment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1668959495%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-pitch-alighment/index.html">TextPitchAlighment</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-pitch-alighment/index.html">SymbolTextStyleLayouts.TextPitchAlighment</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-pitch-alignment</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="945250642%2FClasslikes%2F1113602356" anchor-label="TextRadialOffset" id="945250642%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-radial-offset/index.html"><span>Text</span><wbr></wbr><span>Radial</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="945250642%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-radial-offset/index.html">TextRadialOffset</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-radial-offset TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1379033577%2FClasslikes%2F1113602356" anchor-label="TextRotate" id="1379033577%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-rotate/index.html"><span>Text</span><wbr></wbr><span><span>Rotate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1379033577%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-rotate/index.html">TextRotate</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-rotate</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-501540039%2FClasslikes%2F1113602356" anchor-label="TextRotationAlignment" id="-501540039%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-rotation-alignment/index.html"><span>Text</span><wbr></wbr><span>Rotation</span><wbr></wbr><span><span>Alignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-501540039%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-rotation-alignment/index.html">TextRotationAlignment</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-rotation-alignment/index.html">SymbolTextStyleLayouts.TextRotationAlignment</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-rotation-alignment</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1226369341%2FClasslikes%2F1113602356" anchor-label="TextSize" id="-1226369341%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-size/index.html"><span>Text</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1226369341%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-size/index.html">TextSize</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">16.0f</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kt.maps.style/DashProperty///PointingToDeclaration/">DashProperty</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-size TODO interpolate expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1662943566%2FClasslikes%2F1113602356" anchor-label="TextTransform" id="-1662943566%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-transform/index.html"><span>Text</span><wbr></wbr><span><span>Transform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1662943566%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-transform/index.html">TextTransform</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-transform/index.html">SymbolTextStyleLayouts.TextTransform</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-transform</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-437139277%2FClasslikes%2F1113602356" anchor-label="TextVariableAnchor" id="-437139277%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-variable-anchor/index.html"><span>Text</span><wbr></wbr><span>Variable</span><wbr></wbr><span><span>Anchor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-437139277%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-variable-anchor/index.html">TextVariableAnchor</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-variable-anchor/index.html">SymbolTextStyleLayouts.TextVariableAnchor</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-variable-anchor</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1275091359%2FClasslikes%2F1113602356" anchor-label="TextWritingMode" id="1275091359%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-writing-mode/index.html"><span>Text</span><wbr></wbr><span>Writing</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1275091359%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-text-writing-mode/index.html">TextWritingMode</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-text-writing-mode/index.html">SymbolTextStyleLayouts.TextWritingMode</a><span class="token operator">&gt; </span>, <a href="../-symbol-text-style-layout/index.html">SymbolTextStyleLayout</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">text-writing-mode</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1493233777%2FProperties%2F1113602356" anchor-label="textAllowOverlap" id="1493233777%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-allow-overlap.html"><span>text</span><wbr></wbr><span>Allow</span><wbr></wbr><span><span>Overlap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1493233777%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-allow-overlap.html">textAllowOverlap</a><span class="token operator">: </span><a href="-text-allow-overlap/index.html">SymbolTextStyleLayouts.TextAllowOverlap</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1043452890%2FProperties%2F1113602356" anchor-label="textAnchor" id="1043452890%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-anchor.html"><span>text</span><wbr></wbr><span><span>Anchor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1043452890%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-anchor.html">textAnchor</a><span class="token operator">: </span><a href="-text-anchor/index.html">SymbolTextStyleLayouts.TextAnchor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="125162641%2FProperties%2F1113602356" anchor-label="textField" id="125162641%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field.html"><span>text</span><wbr></wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125162641%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-field.html">textField</a><span class="token operator">: </span><a href="-text-field/index.html">SymbolTextStyleLayouts.TextField</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1336499642%2FProperties%2F1113602356" anchor-label="textFieldName" id="-1336499642%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-field-name.html"><span>text</span><wbr></wbr><span>Field</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1336499642%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-field-name.html">textFieldName</a><span class="token operator">: </span><a href="-text-field-name/index.html">SymbolTextStyleLayouts.TextFieldName</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-692957184%2FProperties%2F1113602356" anchor-label="textFont" id="-692957184%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-font.html"><span>text</span><wbr></wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-692957184%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-font.html">textFont</a><span class="token operator">: </span><a href="-text-font/index.html">SymbolTextStyleLayouts.TextFont</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2009694984%2FProperties%2F1113602356" anchor-label="textIgnorePlacement" id="-2009694984%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-ignore-placement.html"><span>text</span><wbr></wbr><span>Ignore</span><wbr></wbr><span><span>Placement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2009694984%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-ignore-placement.html">textIgnorePlacement</a><span class="token operator">: </span><a href="-text-ignore-placement/index.html">SymbolTextStyleLayouts.TextIgnorePlacement</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-228461509%2FProperties%2F1113602356" anchor-label="textJustify" id="-228461509%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-justify.html"><span>text</span><wbr></wbr><span><span>Justify</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-228461509%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-justify.html">textJustify</a><span class="token operator">: </span><a href="-text-justify/index.html">SymbolTextStyleLayouts.TextJustify</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-517839825%2FProperties%2F1113602356" anchor-label="textKeepUpright" id="-517839825%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-keep-upright.html"><span>text</span><wbr></wbr><span>Keep</span><wbr></wbr><span><span>Upright</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-517839825%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-keep-upright.html">textKeepUpright</a><span class="token operator">: </span><a href="-text-keep-upright/index.html">SymbolTextStyleLayouts.TextKeepUpright</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="465455022%2FProperties%2F1113602356" anchor-label="textLetterSpacing" id="465455022%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-letter-spacing.html"><span>text</span><wbr></wbr><span>Letter</span><wbr></wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="465455022%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-letter-spacing.html">textLetterSpacing</a><span class="token operator">: </span><a href="-text-letter-spacing/index.html">SymbolTextStyleLayouts.TextLetterSpacing</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-308008428%2FProperties%2F1113602356" anchor-label="textLineHeight" id="-308008428%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-line-height.html"><span>text</span><wbr></wbr><span>Line</span><wbr></wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-308008428%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-line-height.html">textLineHeight</a><span class="token operator">: </span><a href="-text-line-height/index.html">SymbolTextStyleLayouts.TextLineHeight</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1887452800%2FProperties%2F1113602356" anchor-label="textMaxAngle" id="-1887452800%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-max-angle.html"><span>text</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1887452800%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-max-angle.html">textMaxAngle</a><span class="token operator">: </span><a href="-text-max-angle/index.html">SymbolTextStyleLayouts.TextMaxAngle</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-848792595%2FProperties%2F1113602356" anchor-label="textMaxWidth" id="-848792595%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-max-width.html"><span>text</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-848792595%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-max-width.html">textMaxWidth</a><span class="token operator">: </span><a href="-text-max-width/index.html">SymbolTextStyleLayouts.TextMaxWidth</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-117807172%2FProperties%2F1113602356" anchor-label="textOffset" id="-117807172%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-offset.html"><span>text</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-117807172%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-offset.html">textOffset</a><span class="token operator">: </span><a href="-text-offset/index.html">SymbolTextStyleLayouts.TextOffset</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1562948337%2FProperties%2F1113602356" anchor-label="textOptional" id="-1562948337%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-optional.html"><span>text</span><wbr></wbr><span><span>Optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1562948337%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-optional.html">textOptional</a><span class="token operator">: </span><a href="-text-optional/index.html">SymbolTextStyleLayouts.TextOptional</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1955060262%2FProperties%2F1113602356" anchor-label="textPadding" id="-1955060262%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-padding.html"><span>text</span><wbr></wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955060262%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-padding.html">textPadding</a><span class="token operator">: </span><a href="-text-padding/index.html">SymbolTextStyleLayouts.TextPadding</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-25043950%2FProperties%2F1113602356" anchor-label="textPitchAlighment" id="-25043950%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-pitch-alighment.html"><span>text</span><wbr></wbr><span>Pitch</span><wbr></wbr><span><span>Alighment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-25043950%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-pitch-alighment.html">textPitchAlighment</a><span class="token operator">: </span><a href="-text-pitch-alighment/index.html">SymbolTextStyleLayouts.TextPitchAlighment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="61817885%2FProperties%2F1113602356" anchor-label="textRadialOffset" id="61817885%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-radial-offset.html"><span>text</span><wbr></wbr><span>Radial</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="61817885%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-radial-offset.html">textRadialOffset</a><span class="token operator">: </span><a href="-text-radial-offset/index.html">SymbolTextStyleLayouts.TextRadialOffset</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-780738572%2FProperties%2F1113602356" anchor-label="textRotate" id="-780738572%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-rotate.html"><span>text</span><wbr></wbr><span><span>Rotate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-780738572%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-rotate.html">textRotate</a><span class="token operator">: </span><a href="-text-rotate/index.html">SymbolTextStyleLayouts.TextRotate</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1233894682%2FProperties%2F1113602356" anchor-label="textRotationAlignment" id="-1233894682%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-rotation-alignment.html"><span>text</span><wbr></wbr><span>Rotation</span><wbr></wbr><span><span>Alignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1233894682%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-rotation-alignment.html">textRotationAlignment</a><span class="token operator">: </span><a href="-text-rotation-alignment/index.html">SymbolTextStyleLayouts.TextRotationAlignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-554981234%2FProperties%2F1113602356" anchor-label="textSize" id="-554981234%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-size.html"><span>text</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-554981234%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-size.html">textSize</a><span class="token operator">: </span><a href="-text-size/index.html">SymbolTextStyleLayouts.TextSize</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1071425697%2FProperties%2F1113602356" anchor-label="textTransform" id="-1071425697%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-transform.html"><span>text</span><wbr></wbr><span><span>Transform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1071425697%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-transform.html">textTransform</a><span class="token operator">: </span><a href="-text-transform/index.html">SymbolTextStyleLayouts.TextTransform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2131142722%2FProperties%2F1113602356" anchor-label="textVariableAnchor" id="-2131142722%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-variable-anchor.html"><span>text</span><wbr></wbr><span>Variable</span><wbr></wbr><span><span>Anchor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2131142722%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-variable-anchor.html">textVariableAnchor</a><span class="token operator">: </span><a href="-text-variable-anchor/index.html">SymbolTextStyleLayouts.TextVariableAnchor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-330568180%2FProperties%2F1113602356" anchor-label="textWritingMode" id="-330568180%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-writing-mode.html"><span>text</span><wbr></wbr><span>Writing</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-330568180%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="text-writing-mode.html">textWritingMode</a><span class="token operator">: </span><a href="-text-writing-mode/index.html">SymbolTextStyleLayouts.TextWritingMode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
