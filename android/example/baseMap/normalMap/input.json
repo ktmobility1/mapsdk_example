@@ -7,6 +7,6 @@
   "name": "KT Normal Map",
   "desc": "배경지도를 KT의 기본지도를 표출하는 예제입니다....",
   "reference":{
-    "Map" : "https://map.gis.kt.com/mapsdk/web/apidoc/classes/Map.Map.html"
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html"
   }
 }
