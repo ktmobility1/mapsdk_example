@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ArrowOverlayOptions</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>maps</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":overlays:overlay-polyline:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="maps::com.kt.maps.extensions.path/ArrowOverlayOptions///PointingToDeclaration//1113602356">
+  <div class="breadcrumbs"><a href="../../../index.html">maps</a><span class="delimiter">/</span><a href="../index.html">com.kt.maps.extensions.path</a><span class="delimiter">/</span><span class="current">ArrowOverlayOptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Arrow</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ArrowOverlayOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="-builder/index.html">ArrowOverlayOptions.Builder</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">경로 화살표 오버레이 옵션</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>builder</span></span></u></div></span></div><div><div class="title"><p class="paragraph">옵션을 생성하기 위한 빌더</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1820203487%2FConstructors%2F1113602356" anchor-label="ArrowOverlayOptions" id="1820203487%2FConstructors%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-arrow-overlay-options.html"><span>Arrow</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1820203487%2FConstructors%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="-builder/index.html">ArrowOverlayOptions.Builder</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1486219780%2FClasslikes%2F1113602356" anchor-label="Builder" id="-1486219780%2FClasslikes%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1486219780%2FClasslikes%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a></div><div class="brief "><p class="paragraph">경로 화살표 오버레이 옵션을 생성하기 위한 빌더 클래스</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-752928159%2FProperties%2F1113602356" anchor-label="color" id="-752928159%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-752928159%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="color.html">color</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2056024395%2FProperties%2F1113602356" anchor-label="lngLats" id="2056024395%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lng-lats.html"><span>lng</span><wbr></wbr><span><span>Lats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2056024395%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lng-lats.html">lngLats</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.geometry/-lng-lat/index.html">LngLat</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-478596743%2FProperties%2F1113602356" anchor-label="strokeColor" id="-478596743%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stroke-color.html"><span>stroke</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-478596743%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="stroke-color.html">strokeColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2124879990%2FProperties%2F1113602356" anchor-label="strokeWidth" id="2124879990%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stroke-width.html"><span>stroke</span><wbr></wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2124879990%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="stroke-width.html">strokeWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1850548574%2FProperties%2F1113602356" anchor-label="width" id="1850548574%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1850548574%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="width.html">width</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

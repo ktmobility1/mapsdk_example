@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>KtMap</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>maps</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":overlays:overlay-polyline:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="maps::com.kt.maps/KtMap///PointingToDeclaration//1113602356">
+  <div class="breadcrumbs"><a href="../../../index.html">maps</a><span class="delimiter">/</span><a href="../index.html">com.kt.maps</a><span class="delimiter">/</span><span class="current">KtMap</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Kt</span><wbr></wbr><span><span>Map</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">KtMap</a> : <span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span>, <span data-unresolved-link="com.kt.maps.delegates/CameraListenerDelegate///PointingToDeclaration/">CameraListenerDelegate</span></div><p class="paragraph">Android MapSDK에서 상호작용할 일반 클래스입니다. MapView와 관련된 모든 메소드에 대한 진입점을 노출합니다. KtMap 객체를 직접 생성할 수는 없으며 애플리케이션에 추가한 <a href="../-map-fragment/get-map-async.html">MapFragment.getMapAsync</a> 또는 <a href="../-map-view/get-map-async.html">MapView.getMapAsync</a> 메서드를 통해 객체를 가져와야 합니다.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="664395263%2FProperties%2F1113602356" anchor-label="buildingLayerGroup" id="664395263%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="building-layer-group.html"><span>building</span><wbr></wbr><span>Layer</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664395263%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="building-layer-group.html">buildingLayerGroup</a><span class="token operator">: </span><a href="../../com.kt.maps.style.layers/-building-layer-group/index.html">BuildingLayerGroup</a></div><div class="brief "><p class="paragraph">빌딩 LayerGroup</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1738650134%2FProperties%2F1113602356" anchor-label="context" id="-1738650134%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context.html"><span><span>context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1738650134%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1436544973%2FProperties%2F1113602356" anchor-label="locationHeadingEnabled" id="1436544973%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location-heading-enabled.html"><span>location</span><wbr></wbr><span>Heading</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1436544973%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="location-heading-enabled.html">locationHeadingEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">사용자 위치 아이콘에서 bearing 표출 여부 설정</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="693879098%2FProperties%2F1113602356" anchor-label="locationPuckEnabled" id="693879098%2FProperties%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location-puck-enabled.html"><span>location</span><wbr></wbr><span>Puck</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="693879098%2FProperties%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="location-puck-enabled.html">locationPuckEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">사용자 위치 아이콘 enable 여부 설정</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1389712867%2FFunctions%2F1113602356" anchor-label="addArrowPathOverlay" id="1389712867%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.extensions.path/add-arrow-path-overlay.html"><span>add</span><wbr></wbr><span>Arrow</span><wbr></wbr><span>Path</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1389712867%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">KtMap</a><span class="token punctuation">.</span><a href="../../com.kt.maps.extensions.path/add-arrow-path-overlay.html"><span class="token function">addArrowPathOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">options<span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-arrow-overlay-options/index.html">ArrowOverlayOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-arrow-overlay/index.html">ArrowOverlay</a></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.extensions.path/-arrow-overlay/index.html">ArrowOverlay</a>를 지도에 추가한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1009117865%2FFunctions%2F1113602356" anchor-label="addImage" id="-1009117865%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-image.html"><span>add</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1009117865%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-image.html"><span class="token function">addImage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">image<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-image.html"><span class="token function">addImage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">drawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">이미지 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1453307979%2FFunctions%2F1113602356" anchor-label="addLayer" id="-1453307979%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-layer.html"><span>add</span><wbr></wbr><span><span>Layer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1453307979%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-layer.html"><span class="token function">addLayer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">layer<span class="token operator">: </span><a href="../../com.kt.maps.style.layers/-layer/index.html">Layer</a><span class="token punctuation">, </span></span><span class="parameter ">beforeLayer<span class="token operator">: </span><a href="../../com.kt.maps.style.layers/-layer/index.html">Layer</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 <a href="../../com.kt.maps.style.layers/-layer/index.html">Layer</a>를 추가한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="560771986%2FFunctions%2F1113602356" anchor-label="addOnCameraChangedListener" id="560771986%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-on-camera-changed-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Camera</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="560771986%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-on-camera-changed-listener.html"><span class="token function">addOnCameraChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.camera/-on-camera-change-listener/index.html">OnCameraChangeListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1274220160%2FFunctions%2F1113602356" anchor-label="addOnCameraIdleListener" id="-1274220160%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-on-camera-idle-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Camera</span><wbr></wbr><span>Idle</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1274220160%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-on-camera-idle-listener.html"><span class="token function">addOnCameraIdleListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.camera/-on-camera-idle-listener/index.html">OnCameraIdleListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1311107091%2FFunctions%2F1113602356" anchor-label="addOnFlingListener" id="1311107091%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-fling-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Fling</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1311107091%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-fling-listener.html"><span class="token function">addOnFlingListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-fling-listener/index.html">OnFlingListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 플링 제스처 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1160502949%2FFunctions%2F1113602356" anchor-label="addOnMapDoubleTapListener" id="-1160502949%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-map-double-tap-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Double</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1160502949%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-map-double-tap-listener.html"><span class="token function">addOnMapDoubleTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-double-tap-listener/index.html">OnMapDoubleTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 더블 탭 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="258556219%2FFunctions%2F1113602356" anchor-label="addOnMapLongPressListener" id="258556219%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-map-long-press-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Long</span><wbr></wbr><span>Press</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="258556219%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-map-long-press-listener.html"><span class="token function">addOnMapLongPressListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-long-press-listener/index.html">OnMapLongPressListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 LongPress 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1140250629%2FFunctions%2F1113602356" anchor-label="addOnMapTapListener" id="-1140250629%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-map-tap-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1140250629%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-map-tap-listener.html"><span class="token function">addOnMapTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-tap-listener/index.html">OnMapTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 탭 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1432799543%2FFunctions%2F1113602356" anchor-label="addOnMapTwoFingerTapListener" id="1432799543%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-map-two-finger-tap-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Two</span><wbr></wbr><span>Finger</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1432799543%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-map-two-finger-tap-listener.html"><span class="token function">addOnMapTwoFingerTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-two-finger-tap-listener/index.html">OnMapTwoFingerTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 두 손가락 탭 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="449994193%2FFunctions%2F1113602356" anchor-label="addOnPanListener" id="449994193%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-pan-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Pan</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="449994193%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-pan-listener.html"><span class="token function">addOnPanListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-pan-listener/index.html">OnPanListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 이동 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1558300235%2FFunctions%2F1113602356" anchor-label="addOnPitchListener" id="1558300235%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-pitch-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Pitch</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1558300235%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-pitch-listener.html"><span class="token function">addOnPitchListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-pitch-listener/index.html">OnPitchListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 기울기 변화 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1548524933%2FFunctions%2F1113602356" anchor-label="addOnRotateListener" id="-1548524933%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-rotate-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Rotate</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1548524933%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-rotate-listener.html"><span class="token function">addOnRotateListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-rotate-listener/index.html">OnRotateListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 회전 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1004340425%2FFunctions%2F1113602356" anchor-label="addOnScaleListener" id="-1004340425%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/add-on-scale-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>Scale</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1004340425%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/add-on-scale-listener.html"><span class="token function">addOnScaleListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-scale-listener/index.html">OnScaleListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 스케일 리스너 추가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-924346623%2FFunctions%2F1113602356" anchor-label="addOnUserHeadingListener" id="-924346623%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-on-user-heading-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>User</span><wbr></wbr><span>Heading</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-924346623%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-on-user-heading-listener.html"><span class="token function">addOnUserHeadingListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.locationcomponent/-on-user-heading-changed-listener/index.html">OnUserHeadingChangedListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">사용자 기기의 방향 감지 리스너를 등록한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1257093193%2FFunctions%2F1113602356" anchor-label="addOnUserLocationChangeListener" id="1257093193%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-on-user-location-change-listener.html"><span>add</span><wbr></wbr><span>On</span><wbr></wbr><span>User</span><wbr></wbr><span>Location</span><wbr></wbr><span>Change</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1257093193%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-on-user-location-change-listener.html"><span class="token function">addOnUserLocationChangeListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.locationcomponent/-on-user-location-changed-listener/index.html">OnUserLocationChangedListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">사용자 위치 변경 리스너를 등록한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1352038010%2FFunctions%2F1113602356" anchor-label="addOverlay" id="1352038010%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-overlay.html"><span>add</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1352038010%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-overlay.html">T</a><span class="token operator"> : </span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span><span class="token operator">&gt; </span><a href="add-overlay.html"><span class="token function">addOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlayOptions<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/OverlayOptions///PointingToDeclaration/">OverlayOptions</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-overlay.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="add-overlay.html">T</a></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span>를 지도에 추가한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-98573961%2FFunctions%2F1113602356" anchor-label="addOverlays" id="-98573961%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-overlays.html"><span>add</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-98573961%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-overlays.html">T</a><span class="token operator"> : </span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span><span class="token operator">&gt; </span><a href="add-overlays.html"><span class="token function">addOverlays</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlayOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kt.maps.overlay/OverlayOptions///PointingToDeclaration/">OverlayOptions</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-overlays.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-overlays.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span> List를 지도에 추가한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1750199996%2FFunctions%2F1113602356" anchor-label="addPathOverlay" id="1750199996%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.extensions.path/add-path-overlay.html"><span>add</span><wbr></wbr><span>Path</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1750199996%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">KtMap</a><span class="token punctuation">.</span><a href="../../com.kt.maps.extensions.path/add-path-overlay.html"><span class="token function">addPathOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pathOverlayOptions<span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-path-overlay-options/index.html">PathOverlayOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-path-overlay/index.html">PathOverlay</a></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.extensions.path/-path-overlay/index.html">PathOverlay</a>를 지도에 추가한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="421235056%2FFunctions%2F1113602356" anchor-label="addSource" id="421235056%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-source.html"><span>add</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="421235056%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-source.html"><span class="token function">addSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.style.sources/Source///PointingToDeclaration/">Source</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 <span data-unresolved-link="com.kt.maps.style.sources/Source///PointingToDeclaration/">Source</span>를 추가한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1255303651%2FFunctions%2F1113602356" anchor-label="deselectMarkers" id="1255303651%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="deselect-markers.html"><span>deselect</span><wbr></wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1255303651%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="deselect-markers.html"><span class="token function">deselectMarkers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">모든 <a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a>를 선택 해제한다</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="deselect-markers.html"><span class="token function">deselectMarkers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">marker<span class="token operator">: </span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a>를 선택 해제한다. 선택 해제되면 표출된 InfoWindow가 사라진다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1785380832%2FFunctions%2F1113602356" anchor-label="easeTo" id="-1785380832%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ease-to.html"><span>ease</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1785380832%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="ease-to.html"><span class="token function">easeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-bounds-options/index.html">CameraBoundsOptions</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">300</span><span class="token punctuation">, </span></span><span class="parameter ">easingInterpolator<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="ease-to.html"><span class="token function">easeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-position-options/index.html">CameraPositionOptions</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">300</span><span class="token punctuation">, </span></span><span class="parameter ">easingInterpolator<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 카메라 애니메이션(ease)를 통해 이동</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1071888424%2FFunctions%2F1113602356" anchor-label="flyTo" id="-1071888424%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fly-to.html"><span>fly</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1071888424%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fly-to.html"><span class="token function">flyTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-bounds-options/index.html">CameraBoundsOptions</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">300</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fly-to.html"><span class="token function">flyTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-position-options/index.html">CameraPositionOptions</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">300</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 카메라 애니메이션(ease)를 통해 이동</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2056824333%2FFunctions%2F1113602356" anchor-label="gesturesManager" id="-2056824333%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gestures-manager.html"><span>gestures</span><wbr></wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2056824333%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="gestures-manager.html"><span class="token function">gesturesManager</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">function<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.kt.maps.gesture/GesturesManager///PointingToDeclaration/">GesturesManager</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="86460755%2FFunctions%2F1113602356" anchor-label="getAllOverlays" id="86460755%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-overlays.html"><span>get</span><wbr></wbr><span>All</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="86460755%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-all-overlays.html"><span class="token function">getAllOverlays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">지도에 표시된 <span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span> List를 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-601299499%2FFunctions%2F1113602356" anchor-label="getCameraPosition" id="-601299499%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-camera-position.html"><span>get</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-601299499%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-camera-position.html"><span class="token function">getCameraPosition</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-position/index.html">CameraPosition</a></div><div class="brief "><p class="paragraph">지도 카메라 정보 반환</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="689500710%2FFunctions%2F1113602356" anchor-label="getInfoWindowAdapter" id="689500710%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-info-window-adapter.html"><span>get</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="689500710%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-info-window-adapter.html"><span class="token function">getInfoWindowAdapter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay.infowindow/InfoWindowAdapter///PointingToDeclaration/">InfoWindowAdapter</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">설정된 <span data-unresolved-link="com.kt.maps.overlay.infowindow/InfoWindowAdapter///PointingToDeclaration/">InfoWindowAdapter</span>를 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="751025857%2FFunctions%2F1113602356" anchor-label="getMapType" id="751025857%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-map-type.html"><span>get</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="751025857%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-map-type.html"><span class="token function">getMapType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-kt-map-options/-map-type/index.html">KtMapOptions.MapType</a></div><div class="brief "><p class="paragraph">지도 mapType 반환</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1602570402%2FFunctions%2F1113602356" anchor-label="getMarkers" id="-1602570402%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-markers.html"><span>get</span><wbr></wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1602570402%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-markers.html"><span class="token function">getMarkers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">지도에 표시된 <a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a>를 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-453698360%2FFunctions%2F1113602356" anchor-label="getOnInfoWindowCloseListener" id="-453698360%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-on-info-window-close-listener.html"><span>get</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Close</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-453698360%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-on-info-window-close-listener.html"><span class="token function">getOnInfoWindowCloseListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-close-listener/index.html">OnInfoWindowCloseListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">InfoWindow 가 닫힐 때 설정된 콜백 리스너를 반환한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="664927737%2FFunctions%2F1113602356" anchor-label="getOnInfoWindowLongPressListener" id="664927737%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-on-info-window-long-press-listener.html"><span>get</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Long</span><wbr></wbr><span>Press</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664927737%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-on-info-window-long-press-listener.html"><span class="token function">getOnInfoWindowLongPressListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-long-press-listener/index.html">OnInfoWindowLongPressListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">InfoWindow 가 LongPress 될 때 설정된 콜백 리스너를 반환한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229508669%2FFunctions%2F1113602356" anchor-label="getOnInfoWindowTapListener" id="229508669%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-on-info-window-tap-listener.html"><span>get</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229508669%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-on-info-window-tap-listener.html"><span class="token function">getOnInfoWindowTapListener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-tap-listener/index.html">OnInfoWindowTapListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">InfoWindow 가 Tap될 때 설정된 콜백 리스너를 반환한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2042359410%2FFunctions%2F1113602356" anchor-label="getOverlay" id="2042359410%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-overlay.html"><span>get</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2042359410%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-overlay.html"><span class="token function">getOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">지도에 표시된 <span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span>를 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="736363744%2FFunctions%2F1113602356" anchor-label="getOverlayPlugin" id="736363744%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-overlay-plugin.html"><span>get</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Plugin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="736363744%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-overlay-plugin.html"><span class="token function">getOverlayPlugin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlayType<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/OverlayManagerType///PointingToDeclaration/">OverlayManagerType</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/OverlayManager///PointingToDeclaration/">OverlayManager</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1289652262%2FFunctions%2F1113602356" anchor-label="getPolygonOverlays" id="-1289652262%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-polygon-overlays.html"><span>get</span><wbr></wbr><span>Polygon</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1289652262%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-polygon-overlays.html"><span class="token function">getPolygonOverlays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.polygon/-polygon-overlay/index.html">PolygonOverlay</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">지도에 표시된 <a href="../../com.kt.maps.overlay.polygon/-polygon-overlay/index.html">PolygonOverlay</a>을 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1446792544%2FFunctions%2F1113602356" anchor-label="getPolylineOverlays" id="1446792544%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-polyline-overlays.html"><span>get</span><wbr></wbr><span>Polyline</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1446792544%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-polyline-overlays.html"><span class="token function">getPolylineOverlays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.polyline/-polyline-overlay/index.html">PolylineOverlay</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">지도에 표시된 <a href="../../com.kt.maps.overlay.polyline/-polyline-overlay/index.html">PolylineOverlay</a>을 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1735923687%2FFunctions%2F1113602356" anchor-label="getSelectedMarkers" id="-1735923687%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-selected-markers.html"><span>get</span><wbr></wbr><span>Selected</span><wbr></wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1735923687%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-selected-markers.html"><span class="token function">getSelectedMarkers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">선택된 <a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a>를 가져온다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1890008516%2FFunctions%2F1113602356" anchor-label="getUiControl" id="1890008516%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-ui-control.html"><span>get</span><wbr></wbr><span>Ui</span><wbr></wbr><span><span>Control</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1890008516%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-ui-control.html"><span class="token function">getUiControl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uiControlType<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.controls/UiControlType///PointingToDeclaration/">UiControlType</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.kt.maps.controls/UiControl///PointingToDeclaration/">UiControl</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1642407164%2FFunctions%2F1113602356" anchor-label="isAllowConcurrentMultipleOpenInfoWindows" id="1642407164%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-allow-concurrent-multiple-open-info-windows.html"><span>is</span><wbr></wbr><span>Allow</span><wbr></wbr><span>Concurrent</span><wbr></wbr><span>Multiple</span><wbr></wbr><span>Open</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Windows</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1642407164%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-allow-concurrent-multiple-open-info-windows.html"><span class="token function">isAllowConcurrentMultipleOpenInfoWindows</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">동시에 여러개 InfoWindow를 보여줄지 설정값 반환</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1078622272%2FFunctions%2F1113602356" anchor-label="jumpTo" id="1078622272%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="jump-to.html"><span>jump</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1078622272%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="jump-to.html"><span class="token function">jumpTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-bounds-options/index.html">CameraBoundsOptions</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="jump-to.html"><span class="token function">jumpTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cameraOptions<span class="token operator">: </span><a href="../../com.kt.maps.camera/-camera-position-options/index.html">CameraPositionOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 카메라 애니메이션 없이 즉시 이동</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="467797246%2FFunctions%2F1113602356" anchor-label="onDestroy" id="467797246%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-destroy.html"><span>on</span><wbr></wbr><span><span>Destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="467797246%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-destroy.html"><span class="token function">onDestroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1823623870%2FFunctions%2F1113602356" anchor-label="onPause" id="-1823623870%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-pause.html"><span>on</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1823623870%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-pause.html"><span class="token function">onPause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1611622187%2FFunctions%2F1113602356" anchor-label="onResume" id="-1611622187%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-resume.html"><span>on</span><wbr></wbr><span><span>Resume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1611622187%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-resume.html"><span class="token function">onResume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1202198442%2FFunctions%2F1113602356" anchor-label="onStart" id="-1202198442%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-start.html"><span>on</span><wbr></wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1202198442%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-start.html"><span class="token function">onStart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1791408160%2FFunctions%2F1113602356" anchor-label="onStop" id="-1791408160%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-stop.html"><span>on</span><wbr></wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1791408160%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-stop.html"><span class="token function">onStop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="654005753%2FFunctions%2F1113602356" anchor-label="removeAllOverlays" id="654005753%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-all-overlays.html"><span>remove</span><wbr></wbr><span>All</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="654005753%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-all-overlays.html"><span class="token function">removeAllOverlays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">모든 <span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span>를 지도에서 제거한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1936996260%2FFunctions%2F1113602356" anchor-label="removeArrowPathOverlay" id="1936996260%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.extensions.path/remove-arrow-path-overlay.html"><span>remove</span><wbr></wbr><span>Arrow</span><wbr></wbr><span>Path</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1936996260%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">KtMap</a><span class="token punctuation">.</span><a href="../../com.kt.maps.extensions.path/remove-arrow-path-overlay.html"><span class="token function">removeArrowPathOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlay<span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-arrow-overlay/index.html">ArrowOverlay</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.extensions.path/-arrow-overlay/index.html">ArrowOverlay</a>를 지도에서 해제한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="762914018%2FFunctions%2F1113602356" anchor-label="removeImage" id="762914018%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-image.html"><span>remove</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="762914018%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-image.html"><span class="token function">removeImage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">이미지 해제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1038570645%2FFunctions%2F1113602356" anchor-label="removeLayer" id="-1038570645%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-layer.html"><span>remove</span><wbr></wbr><span><span>Layer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1038570645%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-layer.html"><span class="token function">removeLayer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">layer<span class="token operator">: </span><a href="../../com.kt.maps.style.layers/-layer/index.html">Layer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 <a href="../../com.kt.maps.style.layers/-layer/index.html">Layer</a>를 해제한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-201598569%2FFunctions%2F1113602356" anchor-label="removeOnCameraChangedListener" id="-201598569%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-on-camera-changed-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Camera</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201598569%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-on-camera-changed-listener.html"><span class="token function">removeOnCameraChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.camera/-on-camera-change-listener/index.html">OnCameraChangeListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-538616741%2FFunctions%2F1113602356" anchor-label="removeOnCameraIdleListener" id="-538616741%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-on-camera-idle-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Camera</span><wbr></wbr><span>Idle</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-538616741%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-on-camera-idle-listener.html"><span class="token function">removeOnCameraIdleListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.camera/-on-camera-idle-listener/index.html">OnCameraIdleListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1237320906%2FFunctions%2F1113602356" anchor-label="removeOnFlingListener" id="1237320906%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-fling-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Fling</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1237320906%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-fling-listener.html"><span class="token function">removeOnFlingListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-fling-listener/index.html">OnFlingListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 플링 제스처 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1671024174%2FFunctions%2F1113602356" anchor-label="removeOnMapDoubleTapListener" id="-1671024174%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-map-double-tap-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Double</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1671024174%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-map-double-tap-listener.html"><span class="token function">removeOnMapDoubleTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-double-tap-listener/index.html">OnMapDoubleTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 더블 탭 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1276473774%2FFunctions%2F1113602356" anchor-label="removeOnMapLongTapListener" id="-1276473774%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-map-long-tap-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Long</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1276473774%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-map-long-tap-listener.html"><span class="token function">removeOnMapLongTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-long-press-listener/index.html">OnMapLongPressListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 롱 탭 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965669618%2FFunctions%2F1113602356" anchor-label="removeOnMapTapListener" id="965669618%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-map-tap-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965669618%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-map-tap-listener.html"><span class="token function">removeOnMapTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-tap-listener/index.html">OnMapTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 Tap 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1009935470%2FFunctions%2F1113602356" anchor-label="removeOnMapTwoFingerTapListener" id="1009935470%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-map-two-finger-tap-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Map</span><wbr></wbr><span>Two</span><wbr></wbr><span>Finger</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1009935470%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-map-two-finger-tap-listener.html"><span class="token function">removeOnMapTwoFingerTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-map-two-finger-tap-listener/index.html">OnMapTwoFingerTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 두 손가락 탭 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-143823352%2FFunctions%2F1113602356" anchor-label="removeOnPanListener" id="-143823352%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-pan-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Pan</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-143823352%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-pan-listener.html"><span class="token function">removeOnPanListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-pan-listener/index.html">OnPanListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 이동 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1484514050%2FFunctions%2F1113602356" anchor-label="removeOnPitchListener" id="1484514050%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-pitch-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Pitch</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1484514050%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-pitch-listener.html"><span class="token function">removeOnPitchListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-pitch-listener/index.html">OnPitchListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 기울기 변화 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="557395314%2FFunctions%2F1113602356" anchor-label="removeOnRotateListener" id="557395314%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-rotate-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Rotate</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557395314%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-rotate-listener.html"><span class="token function">removeOnRotateListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-rotate-listener/index.html">OnRotateListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 회전 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078126610%2FFunctions%2F1113602356" anchor-label="removeOnScaleListener" id="-1078126610%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.gesture/remove-on-scale-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>Scale</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078126610%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.kt.maps.delegates/MapPluginExtensionsDelegate///PointingToDeclaration/">MapPluginExtensionsDelegate</span><span class="token punctuation">.</span><a href="../../com.kt.maps.gesture/remove-on-scale-listener.html"><span class="token function">removeOnScaleListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.gesture/-on-scale-listener/index.html">OnScaleListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 스케일 리스너 삭제</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1254029732%2FFunctions%2F1113602356" anchor-label="removeOnUserHeadingListener" id="-1254029732%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-on-user-heading-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>User</span><wbr></wbr><span>Heading</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1254029732%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-on-user-heading-listener.html"><span class="token function">removeOnUserHeadingListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.locationcomponent/-on-user-heading-changed-listener/index.html">OnUserHeadingChangedListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">사용자 기기의 방향 감지 리스너를 등록한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="784047268%2FFunctions%2F1113602356" anchor-label="removeOnUserLocationChangeListener" id="784047268%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-on-user-location-change-listener.html"><span>remove</span><wbr></wbr><span>On</span><wbr></wbr><span>User</span><wbr></wbr><span>Location</span><wbr></wbr><span>Change</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="784047268%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-on-user-location-change-listener.html"><span class="token function">removeOnUserLocationChangeListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.locationcomponent/-on-user-location-changed-listener/index.html">OnUserLocationChangedListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">사용자 위치 변경 리스너를 제거한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1388102570%2FFunctions%2F1113602356" anchor-label="removeOverlay" id="-1388102570%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-overlay.html"><span>remove</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1388102570%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-overlay.html"><span class="token function">removeOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlay<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-overlay.html"><span class="token function">removeOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span>를 지도에서 제거한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="898476953%2FFunctions%2F1113602356" anchor-label="removeOverlays" id="898476953%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-overlays.html"><span>remove</span><wbr></wbr><span><span>Overlays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="898476953%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-overlays.html"><span class="token function">removeOverlays</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlays<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span> List를 지도에서 제거한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="67643179%2FFunctions%2F1113602356" anchor-label="removePathOverlay" id="67643179%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.kt.maps.extensions.path/remove-path-overlay.html"><span>remove</span><wbr></wbr><span>Path</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="67643179%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">KtMap</a><span class="token punctuation">.</span><a href="../../com.kt.maps.extensions.path/remove-path-overlay.html"><span class="token function">removePathOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlay<span class="token operator">: </span><a href="../../com.kt.maps.extensions.path/-path-overlay/index.html">PathOverlay</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.extensions.path/-path-overlay/index.html">PathOverlay</a>를 지도에서 해제한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="395815861%2FFunctions%2F1113602356" anchor-label="removeSource" id="395815861%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-source.html"><span>remove</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="395815861%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-source.html"><span class="token function">removeSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.style.sources/Source///PointingToDeclaration/">Source</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 <span data-unresolved-link="com.kt.maps.style.sources/Source///PointingToDeclaration/">Source</span>를 해제한다.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-878794682%2FFunctions%2F1113602356" anchor-label="selectMarker" id="-878794682%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="select-marker.html"><span>select</span><wbr></wbr><span><span>Marker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-878794682%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="select-marker.html"><span class="token function">selectMarker</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">marker<span class="token operator">: </span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a>를 선택한다. 선택되면 InfoWindow가 표출된다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2139998337%2FFunctions%2F1113602356" anchor-label="setAllowConcurrentMultipleOpenInfoWindows" id="2139998337%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-allow-concurrent-multiple-open-info-windows.html"><span>set</span><wbr></wbr><span>Allow</span><wbr></wbr><span>Concurrent</span><wbr></wbr><span>Multiple</span><wbr></wbr><span>Open</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Windows</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2139998337%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-allow-concurrent-multiple-open-info-windows.html"><span class="token function">setAllowConcurrentMultipleOpenInfoWindows</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">allow<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">동시에 여러개 InfoWindow를 보여줄지 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1102723513%2FFunctions%2F1113602356" anchor-label="setInfoWindowAdapter" id="-1102723513%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-info-window-adapter.html"><span>set</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1102723513%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-info-window-adapter.html"><span class="token function">setInfoWindowAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">infoWindowAdapter<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay.infowindow/InfoWindowAdapter///PointingToDeclaration/">InfoWindowAdapter</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay.infowindow/InfoWindowAdapter///PointingToDeclaration/">InfoWindowAdapter</span>를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-697187365%2FFunctions%2F1113602356" anchor-label="setMapType" id="-697187365%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-type.html"><span>set</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-697187365%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-map-type.html"><span class="token function">setMapType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapType<span class="token operator">: </span><a href="../-kt-map-options/-map-type/index.html">KtMapOptions.MapType</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">지도 mapType 을 설정</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-39606248%2FFunctions%2F1113602356" anchor-label="setOnInfoWindowCloseListener" id="-39606248%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-info-window-close-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Close</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-39606248%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-info-window-close-listener.html"><span class="token function">setOnInfoWindowCloseListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-close-listener/index.html">OnInfoWindowCloseListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">InfoWindow 가 닫힐 때 콜백 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="369901589%2FFunctions%2F1113602356" anchor-label="setOnInfoWindowLongClickListener" id="369901589%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-info-window-long-click-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Long</span><wbr></wbr><span>Click</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="369901589%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-info-window-long-click-listener.html"><span class="token function">setOnInfoWindowLongClickListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-long-press-listener/index.html">OnInfoWindowLongPressListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">InfoWindow 가 LongPress 될 때 콜백 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="743259266%2FFunctions%2F1113602356" anchor-label="setOnInfoWindowTapListener" id="743259266%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-info-window-tap-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Info</span><wbr></wbr><span>Window</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="743259266%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-info-window-tap-listener.html"><span class="token function">setOnInfoWindowTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.infowindow/-on-info-window-tap-listener/index.html">OnInfoWindowTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">InfoWindow 가 탭 될 때 콜백 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="490919902%2FFunctions%2F1113602356" anchor-label="setOnMarkerTapListener" id="490919902%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-marker-tap-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Marker</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="490919902%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-marker-tap-listener.html"><span class="token function">setOnMarkerTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.marker/-on-marker-tap-listener/index.html">OnMarkerTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.overlay.marker/-marker/index.html">Marker</a> Tap 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="655833680%2FFunctions%2F1113602356" anchor-label="setOnPolygonOverlayTapListener" id="655833680%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-polygon-overlay-tap-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Polygon</span><wbr></wbr><span>Overlay</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="655833680%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-polygon-overlay-tap-listener.html"><span class="token function">setOnPolygonOverlayTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.polygon/-on-polygon-overlay-tap-listener/index.html">OnPolygonOverlayTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.overlay.polygon/-polygon-overlay/index.html">PolygonOverlay</a> Tap 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1529435834%2FFunctions%2F1113602356" anchor-label="setOnPolylineOverlayTapListener" id="1529435834%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-polyline-overlay-tap-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Polyline</span><wbr></wbr><span>Overlay</span><wbr></wbr><span>Tap</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1529435834%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-on-polyline-overlay-tap-listener.html"><span class="token function">setOnPolylineOverlayTapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.kt.maps.overlay.polyline/-on-polyline-overlay-tap-listener/index.html">OnPolylineOverlayTapListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><a href="../../com.kt.maps.overlay.polyline/-polyline-overlay/index.html">PolylineOverlay</a> Tap 리스너를 설정한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1336510109%2FFunctions%2F1113602356" anchor-label="updateOverlay" id="1336510109%2FFunctions%2F1113602356" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":overlays:overlay-polyline:dokkaHtml/release" data-filterable-set=":overlays:overlay-polyline:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-overlay.html"><span>update</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1336510109%2FFunctions%2F1113602356"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":overlays:overlay-polyline:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-overlay.html"><span class="token function">updateOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlay<span class="token operator">: </span><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.kt.maps.overlay/Overlay///PointingToDeclaration/">Overlay</span>를 지도에서 업데이트 한다</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
