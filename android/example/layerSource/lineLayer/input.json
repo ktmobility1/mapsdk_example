@@ -1,0 +1,17 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_line_layer_vector.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/layer/LineLayerVectorSourceActivity.kt"
+  ],
+  "category": "Layer, Source",
+  "name": "LineLayer",
+  "desc": "벡터 타일 데이터의 특정 SourceLayer에 선에 대한 스타일을 적용한 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "line": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style/-layer-factory/-companion/line.html",
+    "LineLayer": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.layers/-line-layer/index.html",
+    "LineStylePaints": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-line-style-paints/index.html",
+    "LineStyleLayouts": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-line-style-layouts/index.html",
+    "VectorSource": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.sources/-vector-source/index.html"
+  }
+}

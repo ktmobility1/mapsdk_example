@@ -1,0 +1,19 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_symbol_layer.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/layer/SymbolLayerActivity.kt"
+  ],
+  "category": "Layer, Source",
+  "name": "LineLayer",
+  "desc": "MultiPoint Geometry를 심볼 아이콘, 텍스트를 표출하기 위해 SymbolLayer에 적용한 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "symbol": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.style/-layer-factory/-companion/symbol.html",
+    "SymbolLayer": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.style.layers/-symbol-layer/index.html",
+    "SymbolIconStylePaints": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-symbol-icon-style-paints/index.html",
+    "SymbolIconStyleLayouts": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-symbol-icon-style-layouts/index.html",
+    "SymbolTextStylePaints": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-symbol-text-style-paints/index.html",
+    "SymbolTextStyleLayouts": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-symbol-text-style-layouts/index.html",
+    "GeojsonSource": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.style.sources/-geojson-source/index.html"
+  }
+}

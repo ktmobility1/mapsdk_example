@@ -1,0 +1,16 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_fill_layer.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/layer/FillLayerActivity.kt"
+  ],
+  "category": "Layer, Source",
+  "name": "FillLayer",
+  "desc": "Polygon Geometry를 FillLayer에 적용한 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "fill": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.style/-layer-factory/-companion/fill.html",
+    "FillLayer": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.layers/-fill-layer/index.html",
+    "FillStylePaints": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-fill-style-paints/index.html",
+    "FillStyleLayouts": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-fill-style-layouts/index.html"
+  }
+}

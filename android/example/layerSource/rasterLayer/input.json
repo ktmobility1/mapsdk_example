@@ -1,0 +1,16 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_raster_layer.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/layer/RasterLayerActivity.kt"
+  ],
+  "category": "Layer, Source",
+  "name": "RasterLayer",
+  "desc": "Raster 데이터(이미지 타일) RasterLayer에 적용한 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "raster": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style/-layer-factory/-companion/raster.html",
+    "RasterLayer": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.layers/-raster-layer/index.html",
+    "RasterStylePaints": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.styles/-raster-style-paints/index.html",
+    "RasterSource": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.style.sources/-raster-source/index.html"
+  }
+}

@@ -39,7 +39,7 @@
       "examples":[
         {"name": "Marker", "path": "/android/example/overlays/marker"},
         {"name": "InfoWindow", "path": "/android/example/overlays/infoWindow"},
-        {"name": "Custom InfoWindow", "path": "/android/overlays/customInfoWindow"},
+        {"name": "Custom InfoWindow", "path": "/android/example/overlays/customInfoWindow"},
         {"name": "Polygon", "path": "/android/example/overlays/polygon"},
         {"name": "Polyline", "path": "/android/example/overlays/polyline"},
         {"name": "Path", "path": "/android/example/overlays/path"}
@@ -50,7 +50,17 @@
       "examples":[
         {"name": "Map Tap, LongPress Event", "path": "/android/example/events/mapTap"},
         {"name": "Map Double/TwoFingerTap, Scale Event", "path": "/android/example/events/mapZoom"},
-        {"name": "Overlay Event", "path": "/android/events/overlayEvent"}
+        {"name": "Overlay Event", "path": "/android/example/events/overlayEvent"}
+      ]
+    },
+    {
+      "name":"Layer, Source",
+      "examples":[
+        {"name": "BackgroundLayer", "path": "/android/example/layerSource/backgroundLayer"},
+        {"name": "FillLayer", "path": "/android/example/layerSource/fillLayer"},
+        {"name": "LineLayer", "path": "/android/example/layerSource/lineLayer"},
+        {"name": "RasterLayer", "path": "/android/example/layerSource/rasterLayer"},
+        {"name": "SymbolLayer", "path": "/android/example/layerSource/symbolLayer"}
       ]
     }
   ]
