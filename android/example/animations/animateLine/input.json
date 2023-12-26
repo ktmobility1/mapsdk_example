@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_animate_line.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/animations/AnimateLineActivity.kt"
+  ],
+  "category": "Animations",
+  "name": "Animate a Line",
+  "desc": "PolyLine을 이용한 애니메이션 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "PolylineOverlayOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.polygon/-polygon-overlay-options/index.html"
+  }
+}

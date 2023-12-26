@@ -70,6 +70,14 @@
         {"name": "BuildingLayerGroup", "path": "/android/example/style/building"},
         {"name": "Pattern to Polygon", "path": "/android/example/style/pattern"}
       ]
+    },
+    {
+      "name":"Animations",
+      "examples":[
+        {"name": "Animate a map camera around a point", "path": "/android/example/animations/animateMapCamera"},
+        {"name": "Animate a marker", "path": "/android/example/animations/animateMarker"},
+        {"name": "Animate a Line", "path": "/android/example/animations/animateLine"}
+      ]
     }
   ]
 }

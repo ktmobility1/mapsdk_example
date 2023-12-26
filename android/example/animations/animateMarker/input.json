@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_animate_marker.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/animations/AnimateMarkerActivity.kt"
+  ],
+  "category": "Animations",
+  "name": "Animate a marker",
+  "desc": "마커의 위치를 변경 시키는 애니메이션 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "MarkerOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.marker/-marker-options/index.html"
+  }
+}

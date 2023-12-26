@@ -1,0 +1,12 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_animate_map_camera.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/animations/AnimateMapCameraActivity.kt"
+  ],
+  "category": "Animations",
+  "name": "Animate a map camera around a point",
+  "desc": "일정주기로 지도를 회전하는 애니메이션 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html"
+  }
+}
