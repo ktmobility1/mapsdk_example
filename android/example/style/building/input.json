@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_building.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/style/BuildingActivity.kt"
+  ],
+  "category": "Style",
+  "name": "BuildingLayerGroup",
+  "desc": "건물 2D/3D 변경,  3D 건물 색상 변경 등의 스타일을 적용한 예제",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "BuildingLayerGroup": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.style.layers/-building-layer-group/index.html"
+  }
+}

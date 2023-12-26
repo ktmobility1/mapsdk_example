@@ -62,6 +62,14 @@
         {"name": "RasterLayer", "path": "/android/example/layerSource/rasterLayer"},
         {"name": "SymbolLayer", "path": "/android/example/layerSource/symbolLayer"}
       ]
+    },
+    {
+      "name":"Style",
+      "examples":[
+        {"name": "Get features", "path": "/android/example/style/getFeatures"},
+        {"name": "BuildingLayerGroup", "path": "/android/example/style/building"},
+        {"name": "Pattern to Polygon", "path": "/android/example/style/pattern"}
+      ]
     }
   ]
 }
