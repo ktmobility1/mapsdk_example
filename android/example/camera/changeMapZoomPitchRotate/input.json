@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_random_camera.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/camera/GestureCameraActivity.kt"
+  ],
+  "category": "Map Camera",
+  "name": "Change Map zoom, pitch, rotate",
+  "desc": "지도 줌레벨, 기울기, 방향을 변경하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "CameraPositionOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-camera-position-options/index.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_fitbounds_camera.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/camera/FitBoundsCameraActivity.kt"
+  ],
+  "category": "Map Camera",
+  "name": "Fit to the bounds",
+  "desc": "지도를 bounds에 맞게 변경하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "CameraBoundsOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-camera-bounds-options/index.html"
+  }
+}

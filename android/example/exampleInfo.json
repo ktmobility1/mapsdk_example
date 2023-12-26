@@ -19,6 +19,15 @@
           {"name": "Max Pitch", "path": "/android/example/mapInteraction/maxPitch"},
           {"name": "Gesture Interactive", "path": "/android/example/mapInteraction/gestureInteractive"}
       ]
+    },
+    {
+      "name":"Map Camera",
+      "examples":[
+        {"name": "Change Map center, zoom", "path": "/android/example/camera/changeMapCenterZoom"},
+        {"name": "Change Map zoom, pitch, rotate", "path": "/android/example/camera/changeMapZoomPitchRotate"},
+        {"name": "Move Camera", "path": "/android/example/camera/moveCamera"},
+        {"name": "Fit to the bounds", "path": "/android/example/camera/fitBounds"}
+      ]
     }
   ]
 }

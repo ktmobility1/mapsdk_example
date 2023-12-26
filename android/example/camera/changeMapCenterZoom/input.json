@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_gesture_camera.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/camera/RandomCameraActivity.kt"
+  ],
+  "category": "Map Camera",
+  "name": "Change Map center, zoom",
+  "desc": "지도 중심점, 줌레벨을 random하게 변경하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "CameraPositionOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-camera-position-options/index.html"
+  }
+}

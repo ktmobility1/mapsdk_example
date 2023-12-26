@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_move_camera.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/camera/MoveCameraActivity.kt"
+  ],
+  "category": "Map Camera",
+  "name": "Move Camera",
+  "desc": "카메라 이동시 애니메이션(fly, Ease) 사용하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "CameraPositionOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-camera-position-options/index.html"
+  }
+}
