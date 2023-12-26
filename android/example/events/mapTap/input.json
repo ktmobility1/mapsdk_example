@@ -1,0 +1,14 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_map_tap_event.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/events/MapTapEventActivity.kt"
+  ],
+  "category": "Events",
+  "name": "Map Tap, LongPress Event",
+  "desc": "Map의 Tap 및 LongPress 이벤트에 관련된 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "OnMapTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-on-map-tap-listener/index.html",
+    "OnMapLongPressListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-on-map-long-press-listener/index.html"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_overlay_event.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/events/OverlayEventActivity.kt"
+  ],
+  "category": "Events",
+  "name": "Overlay Event",
+  "desc": "Map 위 Overlay 이벤트에 관련된 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "OnMarkerTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.marker/-on-marker-tap-listener/index.html",
+    "OnInfoWindowTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.infowindow/-on-info-window-tap-listener/index.html",
+    "OnPolygonOverlayTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.polygon/-on-polygon-overlay-tap-listener/index.html",
+    "OnPolylineOverlayTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.polyline/-on-polyline-overlay-tap-listener/index.html",
+  }
+}

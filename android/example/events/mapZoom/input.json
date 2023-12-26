@@ -1,0 +1,15 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_zoom_gestures_event.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/events/ZoomGestureEventActivity.kt"
+  ],
+  "category": "Events",
+  "name": "Map Double/TwoFingerTap, Scale Event",
+  "desc": "Map 의 Double Tap, Two Finger Tap, Scale를 활용한 Zoom 이벤트 관련된 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "OnMapDoubleTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-on-map-double-tap-listener/index.html",
+    "OnMapTwoFingerTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-on-map-two-finger-tap-listener/index.html",
+    "OnScaleListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-on-scale-listener/index.html"
+  }
+}

@@ -37,12 +37,20 @@
     {
       "name":"Overlays",
       "examples":[
-        {"name": "Marker", "path": "/android/example/overlay/marker"},
-        {"name": "InfoWindow", "path": "/android/example/overlay/infoWindow"},
-        {"name": "Custom InfoWindow", "path": "/android/overlay/customInfoWindow"},
-        {"name": "Polygon", "path": "/android/example/overlay/polygon"},
-        {"name": "Polyline", "path": "/android/example/overlay/polyline"},
-        {"name": "Path", "path": "/android/example/overlay/path"}
+        {"name": "Marker", "path": "/android/example/overlays/marker"},
+        {"name": "InfoWindow", "path": "/android/example/overlays/infoWindow"},
+        {"name": "Custom InfoWindow", "path": "/android/overlays/customInfoWindow"},
+        {"name": "Polygon", "path": "/android/example/overlays/polygon"},
+        {"name": "Polyline", "path": "/android/example/overlays/polyline"},
+        {"name": "Path", "path": "/android/example/overlays/path"}
+      ]
+    },
+    {
+      "name":"Events",
+      "examples":[
+        {"name": "Map Tap, LongPress Event", "path": "/android/example/events/mapTap"},
+        {"name": "Map Double/TwoFingerTap, Scale Event", "path": "/android/example/events/mapZoom"},
+        {"name": "Overlay Event", "path": "/android/events/overlayEvent"}
       ]
     }
   ]

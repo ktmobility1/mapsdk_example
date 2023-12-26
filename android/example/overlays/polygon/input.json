@@ -1,0 +1,14 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_polygon_overlay.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/overlay/PolygonOverlayActivity.kt"
+  ],
+  "category": "Overlays",
+  "name": "Polygon",
+  "desc": "Polygon 추가, Polygon 탭 이벤터 처리하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "PolygonOverlayOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.polygon/-polygon-overlay-options/index.html",
+    "OnMapTapListener": "https://map.gis.kt.com/mapsdk/android/apidoc/htmlCollector/maps/com.kt.maps.gesture/-on-map-tap-listener/index.html"
+  }
+}
