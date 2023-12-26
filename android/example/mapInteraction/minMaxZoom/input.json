@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_min_max_zoom.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/interaction/MinMaxZoomActivity.kt"
+  ],
+  "category": "Map Interaction",
+  "name": "Min / Max Zoom",
+  "desc": "최소/최대 줌 레벨 제한에 관련된 예제",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "OnCameraChangeListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-on-camera-change-listener/index.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_max_pitch.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/interaction/MaxPitchActivity.kt"
+  ],
+  "category": "Map Interaction",
+  "name": "Max Pitch",
+  "desc": "최대 기울기 제한에 관련된 예제",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "OnCameraChangeListener": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.camera/-on-camera-change-listener/index.html"
+  }
+}

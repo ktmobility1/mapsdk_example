@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_toggle_gesture_settings.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/interaction/ToggleGestureSettingsActivity.kt"
+  ],
+  "category": "Map Interaction",
+  "name": "Toggle Gesture Settings",
+  "desc": "지도 Gesture 세팅값(disable/enable)에 따른 상태 확인 예제\n\n(Scroll, Zoom, Tilt, Rotate, Pitch)",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "GestureSettings": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-gesture-settings/index.html"
+  }
+}

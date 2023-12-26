@@ -6,15 +6,18 @@
         {"name":"Normal Map", "path":"/android/example/baseMap/normalMap"}, 
         {"name":"Satellite Map", "path":"/android/example/baseMap/satelliteMap"}, 
         {"name":"Hybrid Map", "path":"/android/example/baseMap/hybridMap"}, 
-        {"name":"Realtime Traffic Map", "path":"/android/example/baseMap/realtimeTrafficMap"}
+        {"name":"Realtime Traffic Map", "path":"/android/example/baseMap/realtimeTrafficMap"},
+        {"name":"Map Type", "path":"/android/example/baseMap/mapType"}
       ]
     },
     {
       "name":"Map interaction", 
       "examples":[
-          {"name": "Change map center, zoom", "path": "/android/example/mapInteraction/changeMapCenterZoom"},
-          {"name": "Change map zoom, pitch, rotate", "path": "/android/example/mapInteraction/changeMapZoomPitchRotate"}, 
-          {"name": "Resize map", "path": "/android/example/mapInteraction/resizeMapZoom"}
+          {"name": "Double Tap Zoom Handler", "path": "/android/example/mapInteraction/doubleTapZoom"},
+          {"name": "Toggle Gesture Settings", "path": "/android/example/mapInteraction/toggleGestureSettings"},
+          {"name": "Min / Max Zoom", "path": "/android/example/mapInteraction/minMaxZoom"},
+          {"name": "Max Pitch", "path": "/android/example/mapInteraction/maxPitch"},
+          {"name": "Gesture Interactive", "path": "/android/example/mapInteraction/gestureInteractive"}
       ]
     }
   ]

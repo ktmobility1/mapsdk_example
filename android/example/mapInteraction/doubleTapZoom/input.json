@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_double_tap_zoom_handler.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/interaction/DoubleTapZoomHandlerActivity.kt"
+  ],
+  "category": "Map Interaction",
+  "name": "Double Tap Zoom Handler",
+  "desc": "Double Tap Zoom을 사용하면 두번 탭을 통해 한 지점에서 지도를 확대/축소 할 수 있습니다. ('enable, disable' 동작)",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "GestureSettings": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-gesture-settings/index.html"
+  }
+}

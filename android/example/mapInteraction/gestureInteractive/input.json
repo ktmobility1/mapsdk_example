@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_all_gesture_handler.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/interaction/AllGestureHandlerActivity.kt"
+  ],
+  "category": "Map Interaction",
+  "name": "Gesture Interactive",
+  "desc": "지도 위 Gesture 전체 interactive 설정",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "GestureSettings": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.gesture/-gesture-settings/index.html"
+  }
+}
