@@ -28,6 +28,22 @@
         {"name": "Move Camera", "path": "/android/example/camera/moveCamera"},
         {"name": "Fit to the bounds", "path": "/android/example/camera/fitBounds"}
       ]
+    },
+    {
+      "name":"Controls",
+      "examples":[
+      ]
+    },
+    {
+      "name":"Overlays",
+      "examples":[
+        {"name": "Marker", "path": "/android/example/overlay/marker"},
+        {"name": "InfoWindow", "path": "/android/example/overlay/infoWindow"},
+        {"name": "Custom InfoWindow", "path": "/android/overlay/customInfoWindow"},
+        {"name": "Polygon", "path": "/android/example/overlay/polygon"},
+        {"name": "Polyline", "path": "/android/example/overlay/polyline"},
+        {"name": "Path", "path": "/android/example/overlay/path"}
+      ]
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_infowindow.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/overlay/InfoWindowActivity.kt"
+  ],
+  "category": "Overlay",
+  "name": "InfoWindow",
+  "desc": "멀티 InfoWindow 보여주기 설정하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "MarkerOptions": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.overlay.marker/-marker-options/index.html"
+  }
+}
