@@ -1,0 +1,12 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_maptype.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/base/MapTypeActivity.kt"
+  ],
+  "category": "Base Map",
+  "name": "KT MapType",
+  "desc": "KT의 지도타입을 변경하는 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html"
+  }
+}

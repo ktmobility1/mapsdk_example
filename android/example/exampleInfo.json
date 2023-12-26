@@ -6,9 +6,7 @@
         {"name":"Normal Map", "path":"/android/example/baseMap/normalMap"}, 
         {"name":"Satellite Map", "path":"/android/example/baseMap/satelliteMap"}, 
         {"name":"Hybrid Map", "path":"/android/example/baseMap/hybridMap"}, 
-        {"name":"Realtime Traffic Map", "path":"/android/example/baseMap/realtimeTrafficMap"},
-        {"name":"Vector Map", "path":"/android/example/baseMap/vectorMap"}, 
-        {"name":"Raster Map", "path":"/android/example/baseMap/rasterMap"}
+        {"name":"Realtime Traffic Map", "path":"/android/example/baseMap/realtimeTrafficMap"}
       ]
     },
     {
