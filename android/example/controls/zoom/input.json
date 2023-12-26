@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_zoom_controls.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/control/ZoomControlsActivity.kt"
+  ],
+  "category": "Controls",
+  "name": "ZoomControls",
+  "desc": "Map Zoom 관련 Control 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "ZoomControls": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.controls/-zoom-controls/index.html"
+  }
+}

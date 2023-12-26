@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_scale_bar.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/control/ScaleBarActivity.kt"
+  ],
+  "category": "Controls",
+  "name": "ScaleBar",
+  "desc": "Map Scale 관련 Control 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "ScaleBar": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.controls/-scale-bar/index.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_current_location.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/control/CurrentLocationActivity.kt"
+  ],
+  "category": "Controls",
+  "name": "CurrentLocation",
+  "desc": "사용자의 현재위치에 대한 정보를 표출하는 Control 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "CurrentLocation": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.controls/-current-location/index.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_compass.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/control/CompassActivity.kt"
+  ],
+  "category": "Controls",
+  "name": "Compass",
+  "desc": "나침반 View 관련 Control 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "Compass": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.controls/-compass/index.html"
+  }
+}

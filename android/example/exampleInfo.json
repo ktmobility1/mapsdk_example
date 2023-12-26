@@ -32,6 +32,12 @@
     {
       "name":"Controls",
       "examples":[
+        {"name": "Compass", "path": "/android/example/controls/compass"},
+        {"name": "CurrentLocation", "path": "/android/example/controls/location"},
+        {"name": "Logo", "path": "/android/example/controls/logo"},
+        {"name": "PanControls", "path": "/android/example/controls/pan"},
+        {"name": "ScaleBar", "path": "/android/example/controls/scale"},
+        {"name": "ZoomControls", "path": "/android/example/controls/zoom"}
       ]
     },
     {

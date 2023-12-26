@@ -1,0 +1,13 @@
+{
+  "files": [
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/res/layout/activity_pan_controls.xml",
+    "https://raw.githubusercontent.com/ktmobility1/android-map-sdk/master/app/src/main/java/com/kt/maps/sample/example/control/PanControlsActivity.kt"
+  ],
+  "category": "Controls",
+  "name": "PanControls",
+  "desc": "Map Pan 관련 Control 예제입니다.",
+  "reference":{
+    "KtMap" : "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps/-kt-map/index.html",
+    "PanControls": "https://map.gis.kt.com/mapsdk/android/apidoc/maps/com.kt.maps.controls/-pan-controls/index.html"
+  }
+}
