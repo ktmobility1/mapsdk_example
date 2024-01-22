@@ -5,7 +5,8 @@ let map = new ktGms.Map({
     style: "normal",
     center: [127.017422, 37.49144],
     zoom: 16,
-    maxPitch: 68
+    maxPitch: 68,
+    localIdeographFontFamily:null,
 });
 
 //사실 뭐!!
