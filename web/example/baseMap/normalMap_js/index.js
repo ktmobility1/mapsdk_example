@@ -8,5 +8,3 @@ let map = new ktGms.Map({
     maxPitch: 68,
     localIdeographFontFamily:null,
 });
-
-//사실 뭐!!
