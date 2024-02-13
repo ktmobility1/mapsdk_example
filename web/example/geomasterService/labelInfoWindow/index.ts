@@ -58,28 +58,33 @@ const poiSearch = async (poi_id: string) => {
 	`
 }
 
-// POI 라벨 위에서 마우스 커서가 포인터로 되게 합니다
-map.onLayer("mousemove", "poi_label", async (e: ktGms.event.MapMouseEvent) => {
-	const features = map.queryRenderedFeatures(e.point);
-	const pois = features.filter((info: any) => info.layer.id === "poi_label")
-	if (pois.length > 0) {
-		map.getCanvas().style.cursor = "pointer";
-	} else {
+map.on('load', _ => {
+	const labelLayers = map.getStyle().layers.filter(
+    (layer: any) => layer.id.includes("poi_label")
+	);
+	labelLayers.forEach((layer:any) => {
+		// POI 라벨 위에서 마우스 커서가 포인터로 되게 합니다
+		map.onLayer("mousemove", layer.id, async (e: ktGms.event.MapMouseEvent) => {
+			const features = map.queryRenderedFeatures(e.point);
+			const pois = features.filter((info: any) => info.layer.id.includes("poi_label"))
+			if (pois.length > 0) {
+				map.getCanvas().style.cursor = "pointer";
+			}
+		})
 
-	}
-})
+		// POI 라벨에서 마우스가 떠날 때 커서가 grab으로 되게 합니다
+		map.onLayer("mouseleave", layer.id, async (e: ktGms.event.MapMouseEvent) => {
+			map.getCanvas().style.cursor = "grab";
+		})
 
-// POI 라벨에서 마우스가 떠날 때 커서가 grab으로 되게 합니다
-map.onLayer("mouseleave", "poi_label", async (e: ktGms.event.MapMouseEvent) => {
-	map.getCanvas().style.cursor = "grab";
-})
-
-// POI 라벨을 클릭했을 때 POI Search API를 호출하여 해당 장소에 대한 정보를 받아와서 InfoWindow로 표출합니다
-map.onLayer("click", "poi_label", async (e: ktGms.event.MapMouseEvent) => {
-	const features = map.queryRenderedFeatures(e.point);
-	const pois = features.filter((info: any) => info.layer.id === "poi_label")
-	if (pois.length > 0) {
-		const htmlStr = await poiSearch(pois[0].properties.poi_id)
-		new ktGms.overlay.InfoWindow().setLngLat(e.lngLat).setHTML(htmlStr).addTo(map);
-	}
-})
+		// POI 라벨을 클릭했을 때 POI Search API를 호출하여 해당 장소에 대한 정보를 받아와서 InfoWindow로 표출합니다
+		map.onLayer("click", layer.id, async (e: ktGms.event.MapMouseEvent) => {
+			const features = map.queryRenderedFeatures(e.point);
+			const pois = features.filter((info: any) => info.layer.id.includes("poi_label"))
+			if (pois.length > 0) {
+				const htmlStr = await poiSearch(pois[0].properties.poi_id)
+				new ktGms.overlay.InfoWindow().setLngLat(e.lngLat).setHTML(htmlStr).addTo(map);
+			}
+		})
+	});      
+});
