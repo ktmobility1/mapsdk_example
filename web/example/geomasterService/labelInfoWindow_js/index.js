@@ -76,9 +76,10 @@ const poiSearch = async poi_id => {
 }
 
 map.on("load", _ => {
-  const labelLayers = map
-    .getStyle()
-    .layers.filter(layer => layer.id.includes("poi_label"))
+  const labelLayers = map.getStyle().layers.filter(
+    layer => layer.id.includes("poi_label")
+  );
+
   labelLayers.forEach(layer => {
     // POI 라벨 위에서 마우스 커서가 포인터로 되게 합니다
     map.onLayer("mousemove", layer.id, async e => {
