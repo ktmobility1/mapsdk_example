@@ -342,7 +342,7 @@ id는 <code>feature</code> 배열의 인덱스에 기반하여 생성되고, 이
 <section class="tsd-panel tsd-member"><a id="getClusterChildren" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr>Cluster<wbr>Children</span><a href="#getClusterChildren" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getClusterChildren.getClusterChildren-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Children</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">GeoJSONSource</span><a href="#getClusterChildren.getClusterChildren-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getClusterChildren.getClusterChildren-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Children</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#getClusterChildren.getClusterChildren-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>GeoJSONSource 생성 시 <code>cluster:true</code>로 했을 때 사용 가능한 메소드입니다.<br>clusterId로 클러스터 된 소스의 경우 다음 zoom 레벨에서 지정된 클러스터의 하위 항목을 GeoJSON의 피쳐 배열로 반환합니다.</p>
 </div>
@@ -355,18 +355,29 @@ id는 <code>feature</code> 배열의 인덱스에 기반하여 생성되고, 이
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type ">Callback</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Geometry</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span><br><span>    </span>[<span class="tsd-kind-index-signature">name</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 <div class="tsd-comment tsd-typography"><p>호출될 콜백함수입니다</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">GeoJSONSource</span></h4>
+<div class="tsd-comment tsd-typography"></div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">arg</span>: <span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Geometry</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span><br><span>    </span>[<span class="tsd-kind-index-signature">name</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></li></ul></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
 <li>Defined in src/source/GeoJSONSource.ts:252</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getClusterExpansionZoom" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr>Cluster<wbr>Expansion<wbr>Zoom</span><a href="#getClusterExpansionZoom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getClusterExpansionZoom.getClusterExpansionZoom-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Expansion<wbr>Zoom</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">GeoJSONSource</span><a href="#getClusterExpansionZoom.getClusterExpansionZoom-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getClusterExpansionZoom.getClusterExpansionZoom-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Expansion<wbr>Zoom</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#getClusterExpansionZoom.getClusterExpansionZoom-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>GeoJSONSource 생성 시 <code>cluster:true</code>로 했을 때 사용 가능한 메소드입니다.<br>clusterId로 클러스터 된 소스의 경우 지정된 클러스터가 확장되는 zoom 레벨을 반환합니다.</p>
 </div>
@@ -379,18 +390,29 @@ id는 <code>feature</code> 배열의 인덱스에 기반하여 생성되고, 이
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type ">Callback</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 <div class="tsd-comment tsd-typography"><p>호출될 콜백함수입니다</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">GeoJSONSource</span></h4>
+<div class="tsd-comment tsd-typography"></div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">arg</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></li></ul></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/source/GeoJSONSource.ts:266</li></ul></aside></li></ul></section>
+<li>Defined in src/source/GeoJSONSource.ts:268</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getClusterLeaves" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr>Cluster<wbr>Leaves</span><a href="#getClusterLeaves" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getClusterLeaves.getClusterLeaves-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Leaves</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">limit</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">GeoJSONSource</span><a href="#getClusterLeaves.getClusterLeaves-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getClusterLeaves.getClusterLeaves-1"><span class="tsd-kind-call-signature">get<wbr>Cluster<wbr>Leaves</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">clusterId</span>, <span class="tsd-kind-parameter">limit</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#getClusterLeaves.getClusterLeaves-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>GeoJSONSource 생성 시 <code>cluster:true</code>로 했을 때 사용 가능한 메소드입니다.<br>clusterId로 클러스터 된 소스의 경우 해당 클러스터에 속한 소스들을 GeoJSON의 피쳐 배열로 반환합니다.</p>
 </div>
@@ -413,14 +435,25 @@ id는 <code>feature</code> 배열의 인덱스에 기반하여 생성되고, 이
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type ">Callback</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Geometry</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span><br><span>    </span>[<span class="tsd-kind-index-signature">name</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 <div class="tsd-comment tsd-typography"><p>호출될 콜백함수입니다</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">GeoJSONSource</span></h4>
+<div class="tsd-comment tsd-typography"></div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">arg</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">arg</span>: <span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Geometry</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span><br><span>    </span>[<span class="tsd-kind-index-signature">name</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></li></ul></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/source/GeoJSONSource.ts:282</li></ul></aside></li></ul></section>
+<li>Defined in src/source/GeoJSONSource.ts:286</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="setClusterOptions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr>Cluster<wbr>Options</span><a href="#setClusterOptions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -446,7 +479,7 @@ id는 <code>feature</code> 배열의 인덱스에 기반하여 생성되고, 이
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">GeoJSONSource</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/source/GeoJSONSource.ts:293</li></ul></aside></li></ul></section></section></div>
+<li>Defined in src/source/GeoJSONSource.ts:299</li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
