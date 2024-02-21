@@ -699,6 +699,7 @@ input[type="checkbox"]:checked ~ svg .tsd-checkbox-checkmark {
 .tsd-navigation > a,
 .tsd-navigation .tsd-accordion-summary {
     width: calc(100% - 0.5rem);
+    display: flex;
 }
 .tsd-navigation a,
 .tsd-navigation summary > span,
