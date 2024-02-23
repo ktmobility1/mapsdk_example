@@ -19,7 +19,7 @@ map.on("load", () => {
 		new ktGms.layer.PolygonLayer(
 			"state-fills",
 			new ktGms.style.FillStyle({
-				"fill-color": "#4ba3e3",
+				"fill-color": "#F0B7BD",
 				"fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 1, 0.3],
 			}, {}),
 			"states"
@@ -31,7 +31,7 @@ map.on("load", () => {
 		new ktGms.layer.LineLayer(
 			"state-borders",
 			new ktGms.style.LineStyle({
-				"line-color": "#4ba3e3",
+				"line-color": "#F06071",
 				"line-width": 2,
 			}, {}),
 			"states"
