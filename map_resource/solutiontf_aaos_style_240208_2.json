@@ -23,7 +23,7 @@
     },
     "KT_Vector_Traffic": {
       "type": "vector",
-      "tiles": ["http://211.184.227.17/vtile/last/ctt/{z}/{x}/{y}.pbf"],
+      "tiles": ["https://tile.gis.kt.com/image/MVT/ctt/{z}/{x}/{y}.pbf"],
       "minZoom": 0,
       "maxzoom": 17,
       "format": "pbf"
@@ -594,6 +594,21 @@
       "paint": {"fill-color": "#f8f9fa", "fill-opacity": 0.6}
     },
     {
+      "id": "road_poly_109_:1062-copy",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "road_poly",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "filter": ["==", "pid", 109],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(171, 171, 171, 171)",
+        "line-opacity": 1,
+        "line-width": 2
+      }
+    },
+    {
       "id": "road_poly_109_:1062",
       "type": "fill",
       "source": "KT_Vector",
@@ -712,7 +727,7 @@
       "minzoom": 6,
       "maxzoom": 24,
       "filter": ["==", "pid", 101],
-      "paint": {"fill-color": "#F8f9fa", "fill-opacity": 1}
+      "paint": {"fill-color": "rgba(243, 206, 144, 1)", "fill-opacity": 1}
     },
     {
       "id": "road_line_102_:1047",
@@ -734,7 +749,7 @@
       "filter": ["==", "pid", 101],
       "paint": {
         "line-color": "rgba(217, 182, 51, 1)",
-        "line-width": 1,
+        "line-width": 1.5,
         "line-opacity": 1
       }
     },
@@ -2190,6 +2205,7 @@
       "source-layer": "ctt",
       "minzoom": 6,
       "maxzoom": 24,
+      "layout": {"visibility": "none"},
       "paint": {
         "line-color": [
           "case",
@@ -2305,7 +2321,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 17,
       "filter": ["all", ["==", "poi_cd", "130205"]],
       "layout": {
         "icon-image": "ico_078",
@@ -2877,10 +2893,10 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": ["all", [">=", "poi_cd", "80700"], ["<=", "poi_cd", "80720"]],
       "layout": {
-        "icon-image": "ico_185",
+        "icon-image": "ico_093",
         "text-anchor": "top",
         "text-field": "{nm_dp}",
         "text-font": ["KTfontMedium"],
@@ -3229,7 +3245,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 17,
       "filter": ["all", [">=", "poi_cd", "91000"], ["<=", "poi_cd", "91020"]],
       "layout": {
         "icon-image": "ico_079",
@@ -3692,183 +3708,7 @@
       "source": "KT_Vector_Label",
       "source-layer": "label",
       "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90710"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_68",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90709"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_69",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90708"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_70",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90707"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_71",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90706"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_72",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90704"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_73",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90703"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_74",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90702"]],
-      "layout": {
-        "icon-image": "ico_091",
-        "text-anchor": "top",
-        "text-field": "{nm_dp}",
-        "text-font": ["KTfontMedium"],
-        "text-size": 12,
-        "text-offset": [0, 0.7],
-        "icon-size": 1.1
-      },
-      "paint": {
-        "text-halo-color": "#f8f9fa",
-        "text-halo-width": 2,
-        "text-color": "#5F6368"
-      }
-    },
-    {
-      "id": "poi_label_75",
-      "type": "symbol",
-      "source": "KT_Vector_Label",
-      "source-layer": "label",
-      "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "90701"]],
+      "filter": ["all", [">=", "poi_cd", "90070"], ["<=", "poi_cd", "90710"]],
       "layout": {
         "icon-image": "ico_091",
         "text-anchor": "top",
@@ -3898,7 +3738,8 @@
         "text-font": ["KTfontMedium"],
         "text-size": 12,
         "text-offset": [0, 0.7],
-        "icon-size": 1.1
+        "icon-size": 1.1,
+        "visibility": "visible"
       },
       "paint": {
         "text-halo-color": "#f8f9fa",
@@ -5209,7 +5050,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": ["all", ["==", "poi_cd", "130103"]],
       "layout": {
         "icon-image": "ico_077",
@@ -5605,7 +5446,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 14,
       "filter": ["all", [">=", "poi_cd", "20200"], ["<=", "poi_cd", "20206"]],
       "layout": {
         "icon-image": "ico_074",
@@ -5957,7 +5798,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160107"]],
       "layout": {
         "icon-image": "ico_084",
@@ -5979,7 +5820,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160106"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6001,7 +5842,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160105"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6023,7 +5864,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160104"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6045,7 +5886,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160103"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6067,7 +5908,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160102"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6089,7 +5930,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "160101"]],
       "layout": {
         "icon-image": "ico_084",
@@ -6354,7 +6195,7 @@
       "source": "KT_Vector_Label",
       "source-layer": "label",
       "minzoom": 16,
-      "filter": ["all", ["==", "poi_cd", "100103"]],
+      "filter": ["all", ["==", "poi_cd", "010103"]],
       "layout": {
         "icon-image": "ico_110",
         "text-anchor": "top",
@@ -7037,7 +6878,7 @@
       "source": "KT_Vector_Label",
       "source-layer": "label",
       "minzoom": 14,
-      "filter": ["all", [">=", "poi_cd", "110200"], ["<=", "poi_cd", "110216"]],
+      "filter": ["all", ["==", "poi_cd", "110216"]],
       "layout": {
         "icon-image": "ico_105",
         "text-anchor": "top",
@@ -7045,7 +6886,8 @@
         "text-font": ["KTfontMedium"],
         "text-size": 12,
         "text-offset": [0, 0.7],
-        "icon-size": 1.1
+        "icon-size": 1.1,
+        "visibility": "visible"
       },
       "paint": {
         "text-halo-color": "#f8f9fa",
@@ -7344,7 +7186,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 11,
+      "minzoom": 12,
       "filter": ["all", ["==", "poi_cd", "20101"]],
       "layout": {
         "icon-image": "ico_069",
@@ -7873,7 +7715,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": ["all", [">=", "poi_cd", "150600"], ["<=", "poi_cd", "150635"]],
       "layout": {
         "icon-image": "ico_500{nm_dp}",
@@ -7893,7 +7735,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150495"]],
       "layout": {
         "icon-image": "ico_341",
@@ -7915,7 +7757,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150494"]],
       "layout": {
         "icon-image": "ico_341",
@@ -7937,7 +7779,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150493"]],
       "layout": {
         "icon-image": "ico_340",
@@ -7959,7 +7801,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150492"]],
       "layout": {
         "icon-image": "ico_339",
@@ -7981,7 +7823,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150491"]],
       "layout": {
         "icon-image": "ico_338",
@@ -8003,7 +7845,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150490"]],
       "layout": {
         "icon-image": "ico_337",
@@ -8025,7 +7867,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150489"]],
       "layout": {
         "icon-image": "ico_336",
@@ -8047,7 +7889,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150488"]],
       "layout": {
         "icon-image": "ico_332",
@@ -8069,7 +7911,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150487"]],
       "layout": {
         "icon-image": "ico_331",
@@ -8091,7 +7933,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150486"]],
       "layout": {
         "icon-image": "ico_333",
@@ -8113,7 +7955,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150485"]],
       "layout": {
         "icon-image": "ico_317",
@@ -8135,7 +7977,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150484"]],
       "layout": {
         "icon-image": "ico_314",
@@ -8157,7 +7999,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150483"]],
       "layout": {
         "icon-image": "ico_315",
@@ -8179,7 +8021,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150481"]],
       "layout": {
         "icon-image": "ico_316",
@@ -8201,7 +8043,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150471"]],
       "layout": {
         "icon-image": "ico_327",
@@ -8223,7 +8065,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150461"]],
       "layout": {
         "icon-image": "ico_328",
@@ -8245,7 +8087,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150453"]],
       "layout": {
         "icon-image": "ico_334",
@@ -8267,7 +8109,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150452"]],
       "layout": {
         "icon-image": "ico_326",
@@ -8289,7 +8131,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150451"]],
       "layout": {
         "icon-image": "ico_325",
@@ -8311,7 +8153,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150444"]],
       "layout": {
         "icon-image": "ico_343",
@@ -8333,7 +8175,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150443"]],
       "layout": {
         "icon-image": "ico_323",
@@ -8355,7 +8197,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150442"]],
       "layout": {
         "icon-image": "ico_322",
@@ -8377,7 +8219,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150441"]],
       "layout": {
         "icon-image": "ico_321",
@@ -8399,7 +8241,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150432"]],
       "layout": {
         "icon-image": "ico_319",
@@ -8421,7 +8263,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150431"]],
       "layout": {
         "icon-image": "ico_318",
@@ -8443,7 +8285,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150423"]],
       "layout": {
         "icon-image": "ico_000",
@@ -8465,7 +8307,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150422"]],
       "layout": {
         "icon-image": "ico_312",
@@ -8487,7 +8329,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150421"]],
       "layout": {
         "icon-image": "ico_313",
@@ -8509,7 +8351,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150419"]],
       "layout": {
         "icon-image": "ico_310",
@@ -8531,7 +8373,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150418"]],
       "layout": {
         "icon-image": "ico_309",
@@ -8553,7 +8395,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150417"]],
       "layout": {
         "icon-image": "ico_308",
@@ -8575,7 +8417,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150416"]],
       "layout": {
         "icon-image": "ico_307",
@@ -8597,7 +8439,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150415"]],
       "layout": {
         "icon-image": "ico_306",
@@ -8619,7 +8461,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150414"]],
       "layout": {
         "icon-image": "ico_305",
@@ -8641,7 +8483,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150413"]],
       "layout": {
         "icon-image": "ico_304",
@@ -8663,7 +8505,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150412"]],
       "layout": {
         "icon-image": "ico_303",
@@ -8685,7 +8527,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["all", ["==", "poi_cd", "150411"]],
       "layout": {
         "icon-image": "ico_300",
@@ -9059,7 +8901,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 9,
+      "minzoom": 6,
       "maxzoom": 14,
       "filter": ["all", ["==", "poi_cd", "110211"]],
       "layout": {
@@ -9105,7 +8947,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": ["all", ["==", "poi_cd", "140302"]],
       "layout": {
         "icon-image": "ico_030",
@@ -9189,11 +9031,33 @@
       }
     },
     {
+      "id": "poi_label_317-copy",
+      "type": "symbol",
+      "source": "KT_Vector_Label",
+      "source-layer": "label",
+      "minzoom": 10,
+      "filter": ["all", [">=", "poi_cd", "10102"], ["<=", "poi_cd", "10104"]],
+      "layout": {
+        "icon-image": "ico_000",
+        "text-anchor": "top",
+        "text-field": "{nm_dp1}",
+        "text-font": ["KTfontMedium"],
+        "text-size": 15,
+        "text-offset": [0, 0.7],
+        "icon-size": 1.1
+      },
+      "paint": {
+        "text-halo-color": "#f8f9fa",
+        "text-halo-width": 2,
+        "text-color": "#5F6368"
+      }
+    },
+    {
       "id": "poi_label_317",
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 12,
+      "minzoom": 15,
       "filter": ["all", [">=", "poi_cd", "10102"], ["<=", "poi_cd", "10104"]],
       "layout": {
         "icon-image": "ico_000",
@@ -9321,6 +9185,52 @@
       }
     },
     {
+      "id": "poi_label_323-1",
+      "type": "symbol",
+      "source": "KT_Vector_Label",
+      "source-layer": "label",
+      "minzoom": 11,
+      "filter": ["all", ["==", "poi_cd", "110203"]],
+      "layout": {
+        "icon-image": "ico_005",
+        "text-anchor": "top",
+        "text-field": "{nm_dp}",
+        "text-font": ["KTfontMedium"],
+        "text-size": 12,
+        "text-offset": [0, 0.7],
+        "icon-size": 1.1,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-color": "#f8f9fa",
+        "text-halo-width": 2,
+        "text-color": "#5F6368"
+      }
+    },
+    {
+      "id": "poi_label_323-2",
+      "type": "symbol",
+      "source": "KT_Vector_Label",
+      "source-layer": "label",
+      "minzoom": 10,
+      "filter": ["all", ["==", "poi_cd", 110204]],
+      "layout": {
+        "icon-image": "ico_006",
+        "text-anchor": "top",
+        "text-field": "{nm_dp}",
+        "text-font": ["KTfontMedium"],
+        "text-size": 12,
+        "text-offset": [0, 0.7],
+        "icon-size": 1.1,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-color": "#f8f9fa",
+        "text-halo-width": 2,
+        "text-color": "#5F6368"
+      }
+    },
+    {
       "id": "poi_label_323",
       "type": "symbol",
       "source": "KT_Vector_Label",
@@ -9392,7 +9302,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 8,
+      "minzoom": 7,
       "maxzoom": 12,
       "filter": ["all", ["==", "poi_cd", "110106"]],
       "layout": {
@@ -9529,7 +9439,7 @@
       "type": "symbol",
       "source": "KT_Vector_Label",
       "source-layer": "label",
-      "minzoom": 12,
+      "minzoom": 15,
       "filter": ["all", ["==", "poi_cd", "110105"]],
       "layout": {
         "icon-image": "ico_000",
@@ -9553,7 +9463,7 @@
       "source": "KT_Vector_Label",
       "source-layer": "label",
       "minzoom": 6,
-      "maxzoom": 12,
+      "maxzoom": 15,
       "filter": ["all", ["==", "poi_cd", "110105"]],
       "layout": {
         "icon-image": "ico_000",
