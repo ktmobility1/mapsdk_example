@@ -23,7 +23,7 @@
     },
     "KT_Vector_Traffic": {
       "type": "vector",
-      "tiles": ["http://211.184.227.17/vtile/last/ctt/{z}/{x}/{y}.pbf"],
+      "tiles": ["https://tile.gis.kt.com/image/MVT/ctt/{z}/{x}/{y}.pbf"],
       "minZoom": 0,
       "maxzoom": 17,
       "format": "pbf"
