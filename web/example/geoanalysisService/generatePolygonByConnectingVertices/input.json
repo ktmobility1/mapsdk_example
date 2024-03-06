@@ -1,0 +1,19 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Generate a polygon by connecting vertices",
+  "desc": "",
+  "reference": {
+  }
+}

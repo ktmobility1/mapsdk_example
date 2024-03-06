@@ -1,0 +1,19 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.js": {
+      "contentType": "text/javascript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Calculate shortest distance between point and line",
+  "desc": "",
+  "reference": {
+  }
+}
