@@ -16,7 +16,7 @@ let style:ktGms.style.FillStyle = new ktGms.style.FillStyle({
     "fill-outline-color": "#000",
     "fill-opacity": 0.6,
   },{
-    visibility: "visible",
+    "visibility": "visible",
   }
 );
 

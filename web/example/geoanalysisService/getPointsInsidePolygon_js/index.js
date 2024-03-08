@@ -1,12 +1,12 @@
-import ktGms from "kt-map-sdk-js"
-import analysis from "kt-map-sdk-geoanalysis"
+import ktGms from "kt-map-sdk-js";
+import analysis from "kt-map-sdk-geoanalysis";
 let map = new ktGms.Map({
   container: "map",
   style: "normal",
   center: [127.017422, 37.49144],
   zoom: 15,
-  maxPitch: 68
-})
+  maxPitch: 68,
+});
 
 map.on("load", () => {
   // point 생성
@@ -21,24 +21,24 @@ map.on("load", () => {
       [127.01862066738204, 37.490447523621384],
       [127.0204496974224, 37.4925372982849],
       [127.01876698978509, 37.492885588377845],
-      [127.01730376575364, 37.491802013866774]
+      [127.01730376575364, 37.491802013866774],
     ],
     {}
-  )
+  );
   // 지도에 PointLayer 추가
   new ktGms.layer.PointLayer( //Layer ID
     "point_layer", //PointLayer에 적용할 스타일
     new ktGms.style.CircleStyle(
       {
         "circle-radius": 5,
-        "circle-color": "#1253A4"
+        "circle-color": "#1253A4",
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("points", { data: points })
-  ).addTo(map)
+  ).addTo(map);
 
   // polygon 생성
   const polygon = new ktGms.geometry.Polygon(
@@ -48,42 +48,42 @@ map.on("load", () => {
         [127.0200595044023, 37.493736957341994],
         [127.02044969747703, 37.49108607210243],
         [127.01745008821263, 37.49031207326567],
-        [127.01649899259172, 37.4929823353571]
-      ]
+        [127.01649899259172, 37.4929823353571],
+      ],
     ],
     {}
-  )
+  );
   // PolygonLayer 추가
   new ktGms.layer.PolygonLayer( //Layer ID
     "polygon_layer", //PointLayer에 적용할 스타일
     new ktGms.style.FillStyle(
       {
         "fill-color": "#58BE89",
-        "fill-opacity": 0.5
+        "fill-opacity": 0.5,
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("polygon", { data: polygon })
-  ).addTo(map)
+  ).addTo(map);
 
   // polygon 내부 points 계산
-  const ptsWithinPoly = analysis.joins.pointsWithinPolygon(points, polygon)
+  const ptsWithinPoly = analysis.joins.pointsWithinPolygon(points, polygon);
   // 지도에 PointLayer 추가
   new ktGms.layer.PointLayer( //Layer ID
     "point_within_polygon_layer", //PointLayer에 적용할 스타일
     new ktGms.style.CircleStyle(
       {
         "circle-radius": 5,
-        "circle-color": "#FF0000"
+        "circle-color": "#FF0000",
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("point_within_polygon", {
-      data: ptsWithinPoly
+      data: ptsWithinPoly,
     })
-  ).addTo(map)
-})
+  ).addTo(map);
+});

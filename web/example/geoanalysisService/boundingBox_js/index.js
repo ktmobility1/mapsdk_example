@@ -1,12 +1,12 @@
-import ktGms from "kt-map-sdk-js"
-import analysis from "kt-map-sdk-geoanalysis"
+import ktGms from "kt-map-sdk-js";
+import analysis from "kt-map-sdk-geoanalysis";
 let map = new ktGms.Map({
   container: "map",
   style: "normal",
   center: [127.017422, 37.49144],
   zoom: 15,
-  maxPitch: 68
-})
+  maxPitch: 68,
+});
 
 map.on("load", () => {
   // LineString 생성
@@ -14,10 +14,10 @@ map.on("load", () => {
     [
       [127.02222, 37.49144],
       [127.015522, 37.49044],
-      [127.015522, 37.49294]
+      [127.015522, 37.49294],
     ],
     {}
-  )
+  );
   // 지도에 LineLayer 추가
   new ktGms.layer.LineLayer( //Layer ID
     "line_layer", //LineLayer에 적용할 스타일
@@ -25,20 +25,20 @@ map.on("load", () => {
       {
         "line-color": "#000000",
         "line-opacity": 0.5,
-        "line-width": 3
+        "line-width": 3,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
         "line-join": "round",
-        "line-cap": "round"
+        "line-cap": "round",
       }
     ),
     line
-  ).addTo(map)
+  ).addTo(map);
 
   // bounding box 계산 & polygon으로 변환
-  const bbox = analysis.measurement.bbox(line)
-  const polygon = analysis.measurement.bboxPolygon(bbox)
+  const bbox = analysis.measurement.bbox(line);
+  const polygon = analysis.measurement.bboxPolygon(bbox);
 
   // PolygonLayer 추가
   new ktGms.layer.PolygonLayer( //Layer ID
@@ -46,12 +46,12 @@ map.on("load", () => {
     new ktGms.style.FillStyle(
       {
         "fill-color": "#58BE89",
-        "fill-opacity": 0.5
+        "fill-opacity": 0.5,
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("geojsonSource", { data: polygon })
-  ).addTo(map)
-})
+  ).addTo(map);
+});

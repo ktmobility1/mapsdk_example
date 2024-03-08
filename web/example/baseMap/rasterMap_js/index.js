@@ -9,7 +9,7 @@ let map = new ktGms.Map({
 let style = new ktGms.style.RasterStyle({
     "raster-opacity": 0.6,
 }, {
-    visibility: "visible",
+    "visibility": "visible",
 });
 let source = new ktGms.source.RasterSource("raster-tiles", {
     "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"],

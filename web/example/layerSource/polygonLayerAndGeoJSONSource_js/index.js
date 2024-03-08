@@ -17,7 +17,7 @@ let style = new ktGms.style.FillStyle(
     "fill-opacity": 0.6,
   },
   {
-    visibility: "visible",
+    "visibility": "visible",
   }
 );
 

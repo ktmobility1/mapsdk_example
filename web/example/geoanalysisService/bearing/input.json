@@ -13,7 +13,8 @@
   },
   "category": "geoanalysisService",
   "name": "Calculate angle between points",
-  "desc": "",
+  "desc": "두개의 좌표의 기울기를 계산하는 예제입니다. `bearing` 함수를 사용해 기울기를 계산할 수 있습니다.",
   "reference": {
+    "bearing" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.bearing.html"
   }
 }

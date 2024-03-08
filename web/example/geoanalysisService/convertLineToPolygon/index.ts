@@ -55,10 +55,9 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("geojsonSource", {data : polygon})
+    new ktGms.source.GeoJSONSource("geojsonSource", { data: polygon })
   ).addTo(map);
-
 });

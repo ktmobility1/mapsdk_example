@@ -25,14 +25,16 @@ map.on("load", () => {
         "circle-color": "#1253A4",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     point
   ).addTo(map);
-  
+
   // point로부터 0.3km 만큼 버퍼 생성
-  const buffered = analysis.transformation.buffer(point, 0.3, {units:"kilometers"});
+  const buffered = analysis.transformation.buffer(point, 0.3, {
+    units: "kilometers",
+  });
 
   // PolygonLayer 추가
   new ktGms.layer.PolygonLayer(
@@ -45,10 +47,9 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("geojsonSource", {data : buffered})
+    new ktGms.source.GeoJSONSource("geojsonSource", { data: buffered })
   ).addTo(map);
-
 });

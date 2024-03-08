@@ -11,13 +11,15 @@ let map: ktGms.Map = new ktGms.Map({
 map.on("load", () => {
   // Polygon 생성
   const polygon1: ktGms.geometry.Polygon = new ktGms.geometry.Polygon(
-    [[
-      [127.015522, 37.49044],
-      [127.02222, 37.49044],
-      [127.02222, 37.49294],
-      [127.015522, 37.49294],
-      [127.015522, 37.49044]
-    ]],
+    [
+      [
+        [127.015522, 37.49044],
+        [127.02222, 37.49044],
+        [127.02222, 37.49294],
+        [127.015522, 37.49294],
+        [127.015522, 37.49044],
+      ],
+    ],
     {}
   );
   // 지도에 PolygonLayer 추가
@@ -31,7 +33,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon1
@@ -39,12 +41,14 @@ map.on("load", () => {
 
   // Polygon 생성
   const polygon2: ktGms.geometry.Polygon = new ktGms.geometry.Polygon(
-    [[
-      [127.02222, 37.49144],
-      [127.015522, 37.49044],
-      [127.01855, 37.48522],
-      [127.02222, 37.49144]
-    ]],
+    [
+      [
+        [127.02222, 37.49144],
+        [127.015522, 37.49044],
+        [127.01855, 37.48522],
+        [127.02222, 37.49144],
+      ],
+    ],
     {}
   );
   // 지도에 PolygonLayer 추가
@@ -58,7 +62,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon2
@@ -78,26 +82,44 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("geojsonSource", {data : difference})
-  ).addTo(map);    
+    new ktGms.source.GeoJSONSource("geojsonSource", { data: difference })
+  ).addTo(map);
 
   // 버튼 토글 이벤트 발생 시 visibility 변경
-  const polygon1_input = document.getElementById('polygon1') as HTMLInputElement;
+  const polygon1_input = document.getElementById(
+    "polygon1"
+  ) as HTMLInputElement;
   polygon1_input.addEventListener("change", (e: Event) => {
-    const isChecked = (<HTMLInputElement>e.target).checked
-    map.setLayoutProperty("polygon1_layer", "visibility", isChecked ? "visible" : "none");
-  })
-  const polygon2_input = document.getElementById('polygon2') as HTMLInputElement;
+    const isChecked = (<HTMLInputElement>e.target).checked;
+    map.setLayoutProperty(
+      "polygon1_layer",
+      "visibility",
+      isChecked ? "visible" : "none"
+    );
+  });
+  const polygon2_input = document.getElementById(
+    "polygon2"
+  ) as HTMLInputElement;
   polygon2_input.addEventListener("change", (e: Event) => {
-    const isChecked = (<HTMLInputElement>e.target).checked
-    map.setLayoutProperty("polygon2_layer", "visibility", isChecked ? "visible" : "none");
-  })
-  const difference_input = document.getElementById('difference') as HTMLInputElement;
+    const isChecked = (<HTMLInputElement>e.target).checked;
+    map.setLayoutProperty(
+      "polygon2_layer",
+      "visibility",
+      isChecked ? "visible" : "none"
+    );
+  });
+  const difference_input = document.getElementById(
+    "difference"
+  ) as HTMLInputElement;
   difference_input.addEventListener("change", (e: Event) => {
-    const isChecked = (<HTMLInputElement>e.target).checked
-    map.setLayoutProperty("diff_polygon_layer", "visibility", isChecked ? "visible" : "none");
-  })
+    const isChecked = (<HTMLInputElement>e.target).checked;
+    map.setLayoutProperty(
+      "diff_polygon_layer",
+      "visibility",
+      isChecked ? "visible" : "none"
+    );
+  });
 });

@@ -19,7 +19,10 @@ map.on("load", () => {
     {}
   );
   // Line 변환
-  const curved = analysis.transformation.bezierSpline(line, { resolution: 10000, sharpness: 0.85 });
+  const curved = analysis.transformation.bezierSpline(line, {
+    resolution: 10000,
+    sharpness: 0.85,
+  });
 
   // 지도에 LineLayer 추가
   new ktGms.layer.LineLayer(

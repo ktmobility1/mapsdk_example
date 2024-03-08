@@ -13,10 +13,7 @@ map.on("load", () => {
   const coordinate2 = [127.015522, 37.49044];
   // MultiPoint 생성
   const multiPoint: ktGms.geometry.MultiPoint = new ktGms.geometry.MultiPoint(
-    [
-      coordinate1,
-      coordinate2
-    ],
+    [coordinate1, coordinate2],
     {}
   );
   // 지도에 Point 객체 및 PointLayer 추가
@@ -30,11 +27,13 @@ map.on("load", () => {
         "circle-color": "#000000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     multiPoint
   ).addTo(map);
   const result = document.getElementById("result_text");
-  result.innerText = "bearing result : " + String(analysis.measurement.bearing(coordinate1, coordinate2));
+  result.innerText =
+    "bearing result : " +
+    String(analysis.measurement.bearing(coordinate1, coordinate2));
 });

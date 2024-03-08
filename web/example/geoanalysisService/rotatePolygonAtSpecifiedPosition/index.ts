@@ -11,13 +11,15 @@ let map: ktGms.Map = new ktGms.Map({
 map.on("load", () => {
   // Polygon 생성
   const polygon: ktGms.geometry.Polygon = new ktGms.geometry.Polygon(
-    [[
-      [127.015522, 37.49044],
-      [127.02222, 37.49044],
-      [127.02222, 37.49294],
-      [127.015522, 37.49294],
-      [127.015522, 37.49044]
-    ]],
+    [
+      [
+        [127.015522, 37.49044],
+        [127.02222, 37.49044],
+        [127.02222, 37.49294],
+        [127.015522, 37.49294],
+        [127.015522, 37.49044],
+      ],
+    ],
     {}
   );
   // 지도에 PolygonLayer 추가
@@ -31,7 +33,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon
@@ -39,7 +41,11 @@ map.on("load", () => {
 
   // rotate
   const angle = 90;
-  const rotatedPolygon = analysis.transformation.transformRotate(polygon, angle, {pivot:[127.013, 37.49]})
+  const rotatedPolygon = analysis.transformation.transformRotate(
+    polygon,
+    angle,
+    { pivot: [127.013, 37.49] }
+  );
 
   // 지도에 PolygonLayer 추가
   new ktGms.layer.PolygonLayer(
@@ -52,10 +58,9 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("rotatedPolygon", {data:rotatedPolygon})
+    new ktGms.source.GeoJSONSource("rotatedPolygon", { data: rotatedPolygon })
   ).addTo(map);
-
 });

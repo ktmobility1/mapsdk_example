@@ -59,7 +59,7 @@ map.on("load", () => {
         "circle-color": "#FF0000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("intersect_point", { data: intersectPoint })
