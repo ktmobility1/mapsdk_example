@@ -30,7 +30,7 @@ map.on("load", () => {
         "circle-color": "#000000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     multiPoint
@@ -45,7 +45,7 @@ map.on("load", () => {
         "circle-color": "#FF0000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("center_point", { data: centerPoint })

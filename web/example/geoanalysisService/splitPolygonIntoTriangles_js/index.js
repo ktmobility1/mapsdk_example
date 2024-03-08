@@ -1,12 +1,12 @@
-import ktGms from "kt-map-sdk-js"
-import analysis from "kt-map-sdk-geoanalysis"
+import ktGms from "kt-map-sdk-js";
+import analysis from "kt-map-sdk-geoanalysis";
 let map = new ktGms.Map({
   container: "map",
   style: "normal",
   center: [127.017422, 37.49144],
   zoom: 15,
-  maxPitch: 68
-})
+  maxPitch: 68,
+});
 
 map.on("load", () => {
   // Polygon 생성
@@ -34,28 +34,28 @@ map.on("load", () => {
         [127.02427279137578, 37.494922686570135],
         [127.02148329400057, 37.49422467170132],
         [127.02032457970671, 37.49519508084681],
-        [127.01899420403538, 37.49417359718649]
-      ]
+        [127.01899420403538, 37.49417359718649],
+      ],
     ],
     {}
-  )
+  );
   // 지도에 PolygonLayer 추가
   new ktGms.layer.PolygonLayer( //Layer ID
     "polygon_layer", //PolygonLayer에 적용할 스타일
     new ktGms.style.FillStyle(
       {
         "fill-color": "#1253A4",
-        "fill-opacity": 0.5
+        "fill-opacity": 0.5,
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     polygon
-  ).addTo(map)
+  ).addTo(map);
 
   // Polygon 분할
-  const triangles = analysis.transformation.tesselate(polygon)
+  const triangles = analysis.transformation.tesselate(polygon);
 
   // 지도에 PolygonLayer 추가
   new ktGms.layer.PolygonLayer( //Layer ID
@@ -63,12 +63,12 @@ map.on("load", () => {
     new ktGms.style.LineStyle(
       {
         "line-color": "#000000",
-        "line-width": 3
+        "line-width": 3,
       },
       {
-        visibility: "visible"
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("triangleSource", { data: triangles })
-  ).addTo(map)
-})
+  ).addTo(map);
+});

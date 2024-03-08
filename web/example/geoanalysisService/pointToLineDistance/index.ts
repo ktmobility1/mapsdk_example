@@ -39,7 +39,10 @@ map.on("load", () => {
   ).addTo(map);
 
   // Point 생성
-  const point:ktGms.geometry.PointGeo = new ktGms.geometry.PointGeo([127.02, 37.49],{});
+  const point: ktGms.geometry.PointGeo = new ktGms.geometry.PointGeo(
+    [127.02, 37.49],
+    {}
+  );
   // 지도에 PointLayer 추가
   new ktGms.layer.PointLayer(
     //Layer ID
@@ -51,7 +54,7 @@ map.on("load", () => {
         "circle-color": "#FF0000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     point
@@ -59,5 +62,11 @@ map.on("load", () => {
 
   // 점 <-> 선 거리 계산
   const result = document.getElementById("result_text");
-  result.innerText = "result : " + String(analysis.measurement.pointToLineDistance(point, line, {units: "kilometers"})+ "km");
+  result.innerText =
+    "result : " +
+    String(
+      analysis.measurement.pointToLineDistance(point, line, {
+        units: "kilometers",
+      }) + "km"
+    );
 });

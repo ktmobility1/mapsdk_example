@@ -11,7 +11,7 @@ let map: ktGms.Map = new ktGms.Map({
 map.on("load", () => {
   const bbox = [127.015, 37.49, 127.02, 37.493];
   const cellSide = 0.05;
-  const grid = analysis.grid.pointGrid(bbox, cellSide, {units:"kilometers"});
+  const grid = analysis.grid.pointGrid(bbox, cellSide, { units: "kilometers" });
 
   // 지도에 PointLayer 추가
   new ktGms.layer.PointLayer(
@@ -22,10 +22,10 @@ map.on("load", () => {
       {
         "circle-radius": 10,
         "circle-color": "#FF0000",
-        "circle-opacity": 0.5
+        "circle-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("point", { data: grid })

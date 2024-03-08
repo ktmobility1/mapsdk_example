@@ -39,8 +39,8 @@ map.on("load", () => {
   ).addTo(map);
 
   // line 시작점으로부터 0.1km 떨어진 점
-  const distance = 0.1
-  const options = { units: "kilometers" } 
+  const distance = 0.1;
+  const options = { units: "kilometers" };
   const point = analysis.measurement.along(line, distance, options);
 
   // 지도에 PointLayer 추가
@@ -54,7 +54,7 @@ map.on("load", () => {
         "circle-color": "#1253A4",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("point", { data: point })

@@ -39,9 +39,13 @@ map.on("load", () => {
   ).addTo(map);
 
   // 기존 line에서 0.1km 떨어진 offsetLine 생성
-  const distance = 0.1
-  const options = { units: "kilometers" } 
-  const offsetLine = analysis.transformation.lineOffset(line, distance, options);
+  const distance = 0.1;
+  const options = { units: "kilometers" };
+  const offsetLine = analysis.transformation.lineOffset(
+    line,
+    distance,
+    options
+  );
 
   // 지도에 LineLayer 추가
   new ktGms.layer.LineLayer(

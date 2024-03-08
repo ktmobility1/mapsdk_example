@@ -11,7 +11,8 @@ let map: ktGms.Map = new ktGms.Map({
 
 map.on("load", async () => {
   // remote로 geojson 호출
-  analysis.utils.getGeoJSONfromRemote(
+  analysis.utils
+    .getGeoJSONfromRemote(
       "https://map.gis.kt.com/mapsdk/data/seoul_sub.geojson"
     )
     .then((value) => {
@@ -26,10 +27,10 @@ map.on("load", async () => {
             "fill-opacity": 0.5,
           },
           {
-            visibility: "visible",
+            "visibility": "visible",
           }
         ),
-        new ktGms.source.GeoJSONSource("geojsonSource", {data : value})
+        new ktGms.source.GeoJSONSource("geojsonSource", { data: value })
       ).addTo(map);
       const result = document.getElementById("result_text");
       result.innerText =

@@ -27,7 +27,7 @@ map.on("load", async () => {
             "fill-opacity": 0.5,
           },
           {
-            visibility: "visible",
+            "visibility": "visible",
           }
         ),
         new ktGms.source.GeoJSONSource("geojsonSource", { data: value })
@@ -50,7 +50,7 @@ map.on("load", async () => {
             "fill-opacity": 0.5,
           },
           {
-            visibility: "visible",
+            "visibility": "visible",
           }
         ),
         new ktGms.source.GeoJSONSource("simplifiedSource", { data: simplified })

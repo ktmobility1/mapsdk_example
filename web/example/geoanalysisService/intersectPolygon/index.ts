@@ -33,7 +33,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon1
@@ -62,7 +62,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon2
@@ -82,7 +82,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("geojsonSource", { data: intersect })

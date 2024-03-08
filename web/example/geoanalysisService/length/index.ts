@@ -40,5 +40,7 @@ map.on("load", () => {
 
   // Line의 length 계산
   const result = document.getElementById("result_text");
-  result.innerText = "length result : " + String(analysis.measurement.length(line, {units: "kilometers"})+ "km");
+  result.innerText =
+    "length result : " +
+    String(analysis.measurement.length(line, { units: "kilometers" }) + "km");
 });

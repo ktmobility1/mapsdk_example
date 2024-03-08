@@ -47,7 +47,7 @@ map.on("load", () => {
         "circle-color": "#58BE89",
       },
       {
-        visibility: "visible"
+        "visibility": "visible"
       }
     ),
     point
@@ -65,7 +65,7 @@ map.on("load", () => {
         "circle-color": "#1253A4",
       },
       {
-        visibility: "visible"
+        "visibility": "visible"
       }
     ),
     new ktGms.source.GeoJSONSource("nearest_point", { data: nearestPoint })

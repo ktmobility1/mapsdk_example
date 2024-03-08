@@ -11,13 +11,15 @@ let map: ktGms.Map = new ktGms.Map({
 map.on("load", () => {
   // Polygon 생성
   const polygon1: ktGms.geometry.Polygon = new ktGms.geometry.Polygon(
-    [[
-      [127.015522, 37.49044],
-      [127.02222, 37.49044],
-      [127.02222, 37.49294],
-      [127.015522, 37.49294],
-      [127.015522, 37.49044]
-    ]],
+    [
+      [
+        [127.015522, 37.49044],
+        [127.02222, 37.49044],
+        [127.02222, 37.49294],
+        [127.015522, 37.49294],
+        [127.015522, 37.49044],
+      ],
+    ],
     {}
   );
   // 지도에 PolygonLayer 추가
@@ -29,11 +31,11 @@ map.on("load", () => {
       {
         "line-color": "#ffb3ba",
         "line-width": 10,
-        "line-opacity": 1
+        "line-opacity": 1,
       },
       {
         "line-join": "round",
-        "line-cap": "round"
+        "line-cap": "round",
       }
     ),
     polygon1
@@ -41,12 +43,14 @@ map.on("load", () => {
 
   // Polygon 생성
   const polygon2: ktGms.geometry.Polygon = new ktGms.geometry.Polygon(
-    [[
-      [127.02222, 37.49144],
-      [127.015522, 37.49044],
-      [127.01855, 37.48522],
-      [127.02222, 37.49144]
-    ]],
+    [
+      [
+        [127.02222, 37.49144],
+        [127.015522, 37.49044],
+        [127.01855, 37.48522],
+        [127.02222, 37.49144],
+      ],
+    ],
     {}
   );
   // 지도에 PolygonLayer 추가
@@ -58,11 +62,11 @@ map.on("load", () => {
       {
         "line-color": "#bae1ff",
         "line-width": 10,
-        "line-opacity": 1
+        "line-opacity": 1,
       },
       {
         "line-join": "round",
-        "line-cap": "round"        
+        "line-cap": "round",
       }
     ),
     polygon2
@@ -82,10 +86,9 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("geojsonSource", {data : union})
-  ).addTo(map);    
-
+    new ktGms.source.GeoJSONSource("geojsonSource", { data: union })
+  ).addTo(map);
 });

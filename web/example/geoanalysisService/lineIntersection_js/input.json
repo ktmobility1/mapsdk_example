@@ -13,7 +13,8 @@
   },
   "category": "geoanalysisService",
   "name": "Calculate a line intersection",
-  "desc": "",
+  "desc": "두 선의 교차점을 지도에 표출하는 예제입니다. `lineIntersect` 함수를 사용해 선의 교차점을 계산할 수 있습니다.",
   "reference": {
+    "lineIntersect" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/miscellaneous.lineIntersect.html"
   }
 }

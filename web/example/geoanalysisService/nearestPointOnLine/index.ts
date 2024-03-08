@@ -30,7 +30,7 @@ map.on("load", () => {
         "line-width": 5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
         "line-join": "round",
         "line-cap": "round",
       }
@@ -54,13 +54,15 @@ map.on("load", () => {
         "circle-color": "#58BE89",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     point
   ).addTo(map);
 
-  const nearestPoint = analysis.miscellaneous.nearestPointOnLine(line, point, { units: "kilometers" });
+  const nearestPoint = analysis.miscellaneous.nearestPointOnLine(line, point, {
+    units: "kilometers",
+  });
   // 지도에 PointLayer 추가
   new ktGms.layer.PointLayer(
     //Layer ID
@@ -72,7 +74,7 @@ map.on("load", () => {
         "circle-color": "#1253A4",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("nearest_point", { data: nearestPoint })

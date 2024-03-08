@@ -13,7 +13,8 @@
   },
   "category": "geoanalysisService",
   "name": "Calculate a nearest point on line",
-  "desc": "",
+  "desc": "선에서 특정 좌표와 가장 가까운 지점을 계산하고 표출하는 예제입니다. `nearestPointOnLine` 함수를 사용해 특정 좌표와 가장 가까운 선 위의 좌표를 계산할 수 있습니다.",
   "reference": {
+    "nearestPointOnLine" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/miscellaneous.nearestPointOnLine.html"
   }
 }
