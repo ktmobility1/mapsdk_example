@@ -74,9 +74,9 @@ map.on("load", () => {
 }
 ```
 
-결과
+결과쓰
 
-![스크린샷 2024-02-27 오후 8.21.35.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_1.png?raw=true.png)
+![스크린샷 2024-02-27 오후 8.21.35.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_1.png?raw=true)
 
 - analysis.utils.getGeoJSONfromRemote 는 외부 geoJSON을 가져오는 기능입니다.
     
