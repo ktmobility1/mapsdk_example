@@ -211,7 +211,7 @@ document.getElementById("routeBtn")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.15.24.png](%https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_3.png?raw=true)
+![스크린샷 2024-03-08 오후 5.15.24.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_3.png?raw=true)
 
 - const routeService = new geomaster.RouteService({accessKey:"<사용자 라이센스키>"})
     
