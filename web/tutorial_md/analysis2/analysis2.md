@@ -68,7 +68,7 @@ document.getElementById("shpfile")?.addEventListener("change", async(event:any) 
 
 결과
 
-![스크린샷 2024-03-08 오후 4.06.28.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_4.06.28.png)
+![스크린샷 2024-03-08 오후 4.06.28.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_1.png?raw=true)
 
 - 로컬파일에서 선택할때 이벤트 addEventListener("change”, 콜백함수)로 처리합니다.
     
@@ -133,7 +133,7 @@ document.getElementById("endBtn")?.addEventListener("click", () => {
 });
 ```
 
-![스크린샷 2024-03-08 오후 4.38.12.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_4.38.12.png)
+![스크린샷 2024-03-08 오후 4.38.12.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_2.png?raw=true)
 
 - 출발점, 도착점 버튼에 click이벤트 바인딩하고 콜백함수에서 map의 click 이벤트를 일시적으로 설정합니다
 - map.on이 아닌 map.once로 click를 하는 이유이는 출발, 도착을 항상하는 것이 아니므로 한번만 이벤트를 감지하고 바로 이벤트를 해제하려면 “on” 함수가 아닌 “once”를 사용합니다.
@@ -211,7 +211,7 @@ document.getElementById("routeBtn")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.15.24.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_5.15.24.png)
+![스크린샷 2024-03-08 오후 5.15.24.png](%https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_3.png?raw=true)
 
 - const routeService = new geomaster.RouteService({accessKey:"<사용자 라이센스키>"})
     
@@ -259,7 +259,7 @@ const bufferSearch = async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.20.40.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_5.20.40.png)
+![스크린샷 2024-03-08 오후 5.20.40.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_4.png?raw=true)
 
 - analysis.transformation.buffer를 이용하면 라인에 buffer를 생성하여 폴리곤을 생성합니다.
 - 생성한 폴리곤을 투명도 0.7의 회색으로 표출합니다. PolygonLayer + FillStyle를 이용하여
@@ -298,7 +298,7 @@ const alongSearch = () => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.44.01.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_5.44.01.png)
+![스크린샷 2024-03-08 오후 5.44.01.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_5.png?raw=true)
 
 - analysis.measurement.length를 사용해서 경로의 총길이를 알아냅니다.
     
@@ -336,7 +336,7 @@ const twoDthreeSearh = async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.54.33.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%E1%84%8C%E1%85%AE%E1%84%87%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8C%E1%85%A5%E1%86%B7)%20909b553f82b0431fa48c0d668ce68dc2/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-08_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_5.54.33.png)
+![스크린샷 2024-03-08 오후 5.54.33.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a2_6.png?raw=true)
 
 - [analysis.transformation.circle](http://analysis.transformation.circle) 를 이용하여 포인터를 기준으로 Circle 폴리곤을 생성합니다.
 - PolygonLayer + FillStyle을 이용해서 Circle 폴리곤을 초록색의 0.5투명도로 표출합니다.

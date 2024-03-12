@@ -121,7 +121,7 @@ document.getElementById("newRoadLine")?.addEventListener("change", async(event:a
 
 결과
 
-![스크린샷 2024-03-09 오후 10.09.46.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_10.09.46.png)
+![스크린샷 2024-03-09 오후 10.09.46.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_1.png?raw=true)
 
 - map.addImage 는 이미지 리소스를 map인스턴스에 추가하는 함수입니다. 필요할때  사용하려면 첫번째 인수가 string으로 고유 id를 정의하고 이렇게 정의된 고유id를 통해서 접근해서 사용합니다.
 - map.loadImage 함수는 리모트에 있는 이미지 로딩하는 비동기 함수이고 콜백함수에서 리모트에서 가져온 이미지를 map.addImage로 추가합니다.
@@ -178,7 +178,7 @@ document.getElementById("twoLineCreate")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-09 오후 10.10.35.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_10.10.35.png)
+![스크린샷 2024-03-09 오후 10.10.35.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_2.png?raw=true)
 
 - analysis.transformation.transformTranslate 함수를 사용해서 Line을 양쪽으로 10미터 씩 이동된 라인을 생성 합니다. transformTranslate함수에 두번째 인수는 이동되어진 수치입니다 단위가 km이기 때문에  -0.01(오른쪽), 왼쪽(0.01), 셋번째 인수는 방향입니다. 기존 라인과 평행선을 생성하려면 정확한 direction으로 세팅해야합니다.
 - analysis.measurement.bearing 함수를 이용해서 정확한 direction을 찾습니다. 신규도로 Line에 시작점, 끝점을 통해서 방향을 얻어내고 평행으로 이동해야 하므로 90을 더해줍니다.
@@ -231,7 +231,7 @@ document.getElementById("lineSplit")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-09 오후 10.11.12.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_10.11.12.png)
+![스크린샷 2024-03-09 오후 10.11.12.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_3.png?raw=true)
 
 - analysis.miscellaneous.lineSplit 함수를 사용해서 Line을 분리합니다. 분리된 Line들은 FeatureCollection으로 반환됩니다.
 - 반환된 FeatureCollection 안에 라인들은 선형의 모습대로 정렬이 되어지 있지 않습니다. 가로수 산정하는데는 문제가 없지만 7개 색깔로 분리해서 지도에 표출할때 제대로 분리되어 있는지 혼선이 있을 수 있어 라인들을 선형 모습대로 정렬합니다.
@@ -296,7 +296,7 @@ document.getElementById("notOverlapSearch")?.addEventListener("click", async() =
 
 결과
 
-![스크린샷 2024-03-09 오후 10.11.44.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_10.11.44.png)
+![스크린샷 2024-03-09 오후 10.11.44.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_4.png?raw=true)
 
 - 양쪽의 분리된 FeatureCollection을 순회하면서 각각의 Line 고속도로와 겹치는지, 3.5미터 이상인지 검사합니다.
     - analysis.measurement.length 로 길이를 검사합니다.
@@ -349,7 +349,7 @@ document.getElementById("stepCntSearch")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-09 오후 9.47.59.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_9.47.59.png)
+![스크린샷 2024-03-09 오후 9.47.59.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_5.png?raw=true)
 
 - analysis.measurement.length 로 각각의 라인의 합을 구하고, 라인의 길이 3.5로 나누어 심을 수 있는    가로수 갯수를 산정하여 오른쪽 List에 표시합니다.
 
@@ -381,7 +381,7 @@ document.getElementById("roadCreate")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-09 오후 9.59.51.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_9.59.51.png)
+![스크린샷 2024-03-09 오후 9.59.51.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_6.png?raw=true)
 
 - analysis.transformation.buffer 함수를 사용합니다 18미터로 생성하려면 한쪽을 9미터 이기때문에 0.09로 입력합니다(단위가 km이기때문에)
 - 생성된 Polygon을 흰색으로 Polygon + FillStyle로 표출합니다.
@@ -439,7 +439,7 @@ document.getElementById("plantTree")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-09 오후 10.05.11.png](%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%20%E1%84%90%E1%85%B2%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AF%20(%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%B2%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%89%E1%85%AE%20%E1%84%80%E1%85%A2%E1%86%BA%E1%84%89%E1%85%AE)%200e8b89395889408f8a97649357dee4fb/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_10.05.11.png)
+![스크린샷 2024-03-09 오후 10.05.11.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a3_7.png?raw=true)
 
 - analysis.measurement.along(feature, 0.0035 * (index+1) 이 코드 처럼 0.0035km(3.5m)로 포인트를 얻기 위해서 along 함수를 이용하여 가로수 심어질 포인트들을 산정합니다.
 - 이렇게 산정된 포인트들을 PointLayer + CircleStyle로 흰색 원으로 지도에 표출합니다.
