@@ -184,7 +184,7 @@ map.on("load", async() => {
 
 결과
 
-![스크린샷 2024-02-27 오후 9.27.09.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_3.png?raw=true
+![스크린샷 2024-02-27 오후 9.27.09.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_3.png?raw=true)
 
 코드설명
 
@@ -294,7 +294,7 @@ const resultMapDisplay = (sordData:Array<any>) => {
 
 결과
 
-![스크린샷 2024-02-27 오후 10.09.42.png](%https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_4.png?raw=true)
+![스크린샷 2024-02-27 오후 10.09.42.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_4.png?raw=true)
 
 코드설명
 
