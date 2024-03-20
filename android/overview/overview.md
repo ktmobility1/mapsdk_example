@@ -45,8 +45,8 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>최소버전</td>
-<td><a href="https://www.android.com/versions/marshmallow-6-0/">Android 6</a>(Marshmallow.)</td>
+<td style="width:30%">최소버전</td>
+<td style="width:100%"><a href="https://www.android.com/versions/marshmallow-6-0/">Android 6</a>(Marshmallow.)</td>
 <td><a
 href="https://developer.android.com/tools/releases/platforms#6.0">23</a></td>
 </tr>
