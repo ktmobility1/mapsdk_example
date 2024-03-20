@@ -46,13 +46,13 @@
 <tbody>
 <tr class="odd">
 <td>최소버전</td>
-<td><a href="https://www.android.com/versions/marshmallow-6-0/" style="width:100%">Android 6</a>(Marshmallow.)</td>
+<td><a href="https://www.android.com/versions/marshmallow-6-0/">Android 6</a>(Marshmallow.)</td>
 <td><a
 href="https://developer.android.com/tools/releases/platforms#6.0">23</a></td>
 </tr>
 <tr class="even">
 <td>권장버전</td>
-<td><a href="https://developer.android.com/about/versions/13" style="width:100%">Android
+<td><a href="https://developer.android.com/about/versions/13">Android
 13</a> (TIRAMISU)</td>
 <td><a
 href="https://developer.android.com/tools/releases/platforms#13">33</a></td>
