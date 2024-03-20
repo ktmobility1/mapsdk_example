@@ -28,8 +28,8 @@ async function getSido() {
 // 선택한 '시도'에 맞는 '시군구' 데이터를 가져오는 함수입니다
 async function getSigungu(selectedSido) {
   // '시군구' selectbox가 있다면 삭제하고 새로 생성합니다
-  document.getElementById('sigungu').remove()
-  document.getElementById('eupmyeondong').remove()
+  if(document.getElementById('sigungu'))  document.getElementById('sigungu').remove()
+  if(document.getElementById('eupmyeondong')) document.getElementById('eupmyeondong').remove()
   let sigunguSelect = document.createElement('select')
   sigunguSelect.id = 'sigungu'
   appendOption('Select an SIGUNGU code', sigunguSelect, true)
@@ -52,7 +52,7 @@ async function getSigungu(selectedSido) {
 // 선택한 '시도'와 '시군구'에 맞는 '읍면동' 데이터를 가져오는 함수입니다
 async function getEupmyeondong(selectedSido, selectedSigungu) {
   // '시군구' selectbox가 있다면 삭제하고 새로 생성합니다
-  document.getElementById('eupmyeondong').remove()
+  if(document.getElementById('eupmyeondong')) document.getElementById('eupmyeondong').remove()
   let eupmyeondongSelect = document.createElement('select')
   eupmyeondongSelect.id = 'eupmyeondong'
   appendOption('Select an EUPMYEONDONG code', eupmyeondongSelect, true)

@@ -11,7 +11,7 @@ let map = new ktGms.Map({
   access_token: 'YOUR_ACCESS_TOKEN',
 })
 
-// KT 5대 사옥의 placeId를 정의합니다
+// 주유소의 placeId를 정의합니다
 let placeId = {
   fly1: {
     name: '우전산업주유소',

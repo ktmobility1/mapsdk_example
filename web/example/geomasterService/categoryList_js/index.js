@@ -28,8 +28,8 @@ async function getMaster() {
 // 선택한 'MASTER'에 맞는 'MIDDLE' 카테고리 데이터를 가져오는 함수입니다
 async function getMiddle(selectedMaster) {
   // 'middle' selectbox가 있다면 삭제하고 새로 생성합니다
-  document.getElementById('middle').remove()
-  document.getElementById('sub').remove()
+  if(document.getElementById('middle')) document.getElementById('middle').remove()
+  if(document.getElementById('sub')) document.getElementById('sub').remove()
   let middleSelect = document.createElement('select');
   middleSelect.id = 'middle';
   appendOption('Select an MIDDLE category', '', middleSelect, true);
@@ -51,7 +51,7 @@ async function getMiddle(selectedMaster) {
 // 선택한 'MIDDLE'에 맞는 'SUB' 카테고리 데이터를 가져오는 함수입니다
 async function getSub(selectedMiddle) {
   // 'sub' selectbox가 있다면 삭제하고 새로 생성합니다
-  document.getElementById('sub').remove()
+  if(document.getElementById('sub')) document.getElementById('sub').remove()
   let subSelect = document.createElement('select')
   subSelect.id = 'sub'
   appendOption('Select an SUB category', '', subSelect, true)
