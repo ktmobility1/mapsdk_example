@@ -3,7 +3,7 @@
         "index.html": {
             "contentType": "text/html"
         },
-        "index.ts": {
+        "index.js": {
             "contentType": "text/javascript",
             "selected": true
         },
