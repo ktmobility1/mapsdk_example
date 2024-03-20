@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "POI Search By Id",
+  "desc": "Geomaster의 SearchService.placeById를 사용한 예제입니다. <br/> kt 5대 사옥 버튼을 클릭하면, 클릭한 사옥으로 이동하고 그 장소에 대한 정보를 표출합니다" 
+}

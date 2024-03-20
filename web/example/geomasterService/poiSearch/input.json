@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "POI Search",
+  "desc": "Geomaster의 SearchService.place를 사용한 예제입니다. <br/> 찾으려는 장소를 입력하고 SEARCH 버튼을 누르면, 결과의 첫 번째 장소로 지도가 이동하고 그 장소에 대한 정보를 표출합니다"
+}
