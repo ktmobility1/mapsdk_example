@@ -37,20 +37,20 @@
 <col style="width: 45%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr class="header" style="background-color: black;">
 <th>구분</th>
 <th>Version</th>
 <th>API Level</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="odd" style="background-color: black;">
 <td style="width:30%">최소버전</td>
 <td style="width:100%"><a href="https://www.android.com/versions/marshmallow-6-0/">Android 6</a>(Marshmallow.)</td>
 <td><a
 href="https://developer.android.com/tools/releases/platforms#6.0">23</a></td>
 </tr>
-<tr class="even">
+<tr class="even" style="background-color: black;">
 <td>권장버전</td>
 <td><a href="https://developer.android.com/about/versions/13">Android
 13</a> (TIRAMISU)</td>
