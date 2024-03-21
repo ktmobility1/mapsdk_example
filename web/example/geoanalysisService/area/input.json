@@ -1,0 +1,21 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Calculate polygon area",
+  "desc": "Remote에 존재하는 특정 GeoJSON 파일을 load 하여 그 면적을 측정하는 예제입니다. `getGeoJSONfromRemote` 함수를 사용해 GeoJSON 파일을 불러올 수 있고, `area` 함수를 사용하여 면적을 계산할 수 있습니다.",
+  "reference": {
+    "area" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.area.html",
+    "getGeoJSONfromRemote" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/utils.getGeoJSONfromRemote.html"
+  }
+}

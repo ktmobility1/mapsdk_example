@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="module" src="./index.js" defer></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    html, body, #map { width:100%; height: 100%; }
+   
+    #features {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        overflow: auto;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .overlay {
+        position: absolute;
+        display: grid;
+        top: 10px;
+        left: 10px;
+    }
+
+    .overlay button {
+        font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .overlay button:hover {
+        background-color: #4ea0da;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="overlay">
+    <button id="fly1">강남구청주차장</button>
+    <button id="fly2">여의도주차장</button>
+    <button id="fly3">종로구주차장</button>
+    <button id="fly4">뚝섬주차장</button>
+    <button id="fly5">마포구주차장</button>
+  </div>
+  <pre id="features">장소를 선택해주세요</pre>
+</body>
+</html>

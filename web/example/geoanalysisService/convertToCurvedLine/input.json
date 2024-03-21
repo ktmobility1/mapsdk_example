@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Convert to curved line",
+  "desc": "선을 Bezier spline(베지어 곡선)으로 변환하는 예제입니다. `bezierSpline` 함수를 사용해 곡선으로 변환할 수 있습니다.",
+  "reference": {
+    "bezierSpline" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/transformation.bezierSpline.html"
+  }
+}

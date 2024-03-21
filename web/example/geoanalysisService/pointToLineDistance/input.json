@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Calculate shortest distance between point and line",
+  "desc": "점과 선 사이의 거리를 측정하는 예제입니다. `pointToLineDistance` 함수를 사용해 길이를 계산할 수 있습니다. 길이의 기본 단위는 `kilometers`입니다.",
+  "reference": {
+    "pointToLineDistance" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.pointToLineDistance.html"
+  }
+}

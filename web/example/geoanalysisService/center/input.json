@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Calculate a center point",
+  "desc": "MultiPoint의 중심점을 찾는 예제입니다. `center` 함수를 사용해 중심점을 계산할 수 있습니다.",
+  "reference": {
+    "center" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.center.html"
+  }
+}

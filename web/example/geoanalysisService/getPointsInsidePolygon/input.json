@@ -1,0 +1,20 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Get points inside polygon",
+  "desc": "여러 개의 점 중에 다각형 내부에 포함되는 점들을 계산하는 예제입니다. `pointsWithinPolygon` 함수를 사용해 다각형 내부의 점들을 계산할 수 있습니다.",
+  "reference": {
+    "pointsWithinPolygon" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/joins.pointsWithinPolygon.html"
+  }
+}

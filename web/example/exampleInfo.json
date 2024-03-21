@@ -137,12 +137,21 @@
     {
       "name":"Geomaster Service",
       "examples":[
+        {"name":"Search POI By Word", "path":"/web/example/geomasterService/poiSearch"},
+        {"name":"Search POI By Id", "path":"/web/example/geomasterService/poiSearchById"},
         {"name":"Label InfoWindow", "path":"/web/example/geomasterService/labelInfoWindow"},
-        {"name":"POI Search API", "path":"/web/example/geomasterService/poiSearchApi"},
-        {"name":"Thema API", "path":"/web/example/geomasterService/themaApi"},
-        {"name":"Address Search API", "path":"/web/example/geomasterService/addresSearchApi"},
-        {"name":"Reverse Geocoding API", "path":"/web/example/geomasterService/reverseGeocodingApi"},
-        {"name":"Route API", "path":"/web/example/geomasterService/routeApi"}
+        {"name":"Autocomplete", "path":"/web/example/geomasterService/autocomplete"},
+        {"name":"Search Category List", "path":"/web/example/geomasterService/categoryList"},
+        {"name":"Search EV Station", "path":"/web/example/geomasterService/EVStation"},
+        {"name":"Search EV Station By Id", "path":"/web/example/geomasterService/EVStationById"},
+        {"name":"Search Gas Station", "path":"/web/example/geomasterService/gasStation"},
+        {"name":"Search Gas Station By Id", "path":"/web/example/geomasterService/gasStationById"},
+        {"name":"Search Parking Lot", "path":"/web/example/geomasterService/parkinglot"},
+        {"name":"Search Parking Lot By Id", "path":"/web/example/geomasterService/parkingLotById"},
+        {"name":"Search address using Geocoding", "path":"/web/example/geomasterService/geocoding"},
+        {"name":"Address Step By Step", "path":"/web/example/geomasterService/stepbystep"},
+        {"name":"Route", "path":"/web/example/geomasterService/route"},
+        {"name":"Link OneNavi with KT Map", "path":"/web/example/geomasterService/onenavi"}
       ]
     },
     {
@@ -156,6 +165,32 @@
     {
       "name":"Analyze Tool",
       "examples":[
+          {"name":"Calculate a center point", "path":"/web/example/geoanalysisService/center"},
+          {"name":"Calculate angle between points", "path":"/web/example/geoanalysisService/bearing"},
+          {"name":"Get a point from the origin", "path":"/web/example/geoanalysisService/destination"},
+          {"name":"Calculate distance between points", "path":"/web/example/geoanalysisService/distance"},
+          {"name":"Get a midpoint between points", "path":"/web/example/geoanalysisService/midpoint"},
+          {"name":"Calculate position at specified distance on line", "path":"/web/example/geoanalysisService/specifiedDistanceOnLine"},
+          {"name":"Calculate a line length", "path":"/web/example/geoanalysisService/length"},
+          {"name":"Calculate shortest distance between point and line", "path":"/web/example/geoanalysisService/pointToLineDistance"},
+          {"name":"Convert to curved line", "path":"/web/example/geoanalysisService/convertToCurvedLine"},
+          {"name":"Get a lineOffset", "path":"/web/example/geoanalysisService/lineOffset"},
+          {"name":"Calculate a line intersection", "path":"/web/example/geoanalysisService/lineIntersection"},
+          {"name":"Calculate a nearest point on line", "path":"/web/example/geoanalysisService/nearestPointOnLine"},
+          {"name":"Generate grid points", "path":"/web/example/geoanalysisService/pointGrid"},
+          {"name":"Calculate polygon area", "path":"/web/example/geoanalysisService/area"},
+          {"name":"Calculate a bounding box", "path":"/web/example/geoanalysisService/boundingBox"},
+          {"name":"Calculate a buffer of points", "path":"/web/example/geoanalysisService/buffer"},
+          {"name":"Generate a polygon by connecting vertices", "path":"/web/example/geoanalysisService/generatePolygonByConnectingVertices"},
+          {"name":"Generate a truncated polygon(difference)", "path":"/web/example/geoanalysisService/differencePolygon"},
+          {"name":"Generate a truncated polygon(intersect)", "path":"/web/example/geoanalysisService/intersectPolygon"},
+          {"name":"Simplify a polygon", "path":"/web/example/geoanalysisService/simplify"},
+          {"name":"Split polygon into triangles", "path":"/web/example/geoanalysisService/splitPolygonIntoTriangles"},
+          {"name":"Rotate polygon at specified position", "path":"/web/example/geoanalysisService/rotatePolygonAtSpecifiedPosition"},
+          {"name":"Join polygons", "path":"/web/example/geoanalysisService/union"},
+          {"name":"Generate points from polygon vertices", "path":"/web/example/geoanalysisService/generatePointsFromPolygon"},
+          {"name":"Convert line to polygon", "path":"/web/example/geoanalysisService/convertLineToPolygon"},
+          {"name":"Get points inside polygon", "path":"/web/example/geoanalysisService/getPointsInsidePolygon"}
       ]
     },
     {

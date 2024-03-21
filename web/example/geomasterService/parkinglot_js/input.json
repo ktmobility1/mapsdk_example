@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "Search ParkingLot",
+  "desc": "Geomaster의 SearchService.parkingLot을 사용한 예제입니다. <br/> 주차장 검색 버튼을 클릭하면 보이는 지도 bound 내에서 주차장 찾습니다. 지도 범위 내에 주차장이 없다면 메세지를 표출하고, 주차장이 있다면 cluster layer로 주차장을 표시합니다."
+}
