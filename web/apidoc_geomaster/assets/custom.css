@@ -1,0 +1,116 @@
+/* Type Declaration property와 optional tag 순서 변경 */
+.tsd-parameter h5 {
+    display: flex;
+    align-items: center;
+}
+
+ul.tsd-parameter-list h5 {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+code.tsd-tag {
+    margin-left: 0.5em;
+    font-size: 65%;
+    order: 1;
+}
+
+.tsd-kind-property {
+    order: 0;
+}
+
+/* default font style 변경 */
+.tsd-typography h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* parameter 간격 변경 */
+ul.tsd-parameter-list h5 span {
+    margin: 0px 5px;
+}
+
+/* implementation, 정의된 코드 위치 숨김 */
+aside {
+    display: none;
+}
+
+/* Type declaration 글자 없애기 */
+.tsd-type-declaration h4:first {
+    display: none;
+}
+
+/* 타입 프로퍼티 ul의 점 없애고 왼쪽 패딩 없애기 */
+.tsd-type-declaration ul {
+    padding-left: 15px;
+}
+
+.tsd-type-declaration .tsd-parameter {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* 타입 프로퍼티 글자 크기 */
+.tsd-type-declaration h5 .tsd-kind-property {
+    font-size: 1.25rem;
+    /* color: var(--color-text); */
+}
+
+/* li 줄간격 변경 */
+.tsd-typography li {
+    line-height: 2em;
+}
+
+/* background color 변경 */
+:root {
+    /* Dark */
+    --dark-color-background: #111729;
+    /* #15192a */
+    --dark-color-background-secondary: #15192a;
+    /* #131521 */
+}
+
+/* 인라인 코드 강조  */
+/* #374070 */
+p > code,
+li > code {
+    --dark-color-background: #344454;
+    --light-color-background: #FFFFFF;
+    background: #ffffff21
+    /* background: #fafafa;
+    border: 1px solid #eaeaea;
+    color: #0074de; */
+}
+
+/* typeDoc settings 숨기기 */
+.tsd-navigation.settings {
+    display: none;
+}
+
+/* 검색창 focus 색상 변경 */
+#tsd-search.has-focus {
+    background-color: #374070;
+}
+
+#tsd-search .results {
+    border: 1px solid white;
+}
+
+/* 상단에 full Path명 및 링크 안나오게 */
+.tsd-breadcrumb {
+    display: none;
+}
+
+pre {
+    margin: 5px 0px;
+}
+p {
+    line-height: 2;
+}
+
+/* 클래스 계층 구조 안나오게 */
+.tsd-hierarchy {
+    display: none;
+}
