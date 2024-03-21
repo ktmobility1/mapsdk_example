@@ -76,7 +76,7 @@ map.on("load", () => {
 
 결과
 
-![스크린샷 2024-02-27 오후 8.21.35.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_1.png?raw=true)
+![스크린샷 2024-02-27 오후 8.21.35.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_1.png?raw=true)
 
 - analysis.utils.getGeoJSONfromRemote 는 외부 geoJSON을 가져오는 기능입니다.
     
@@ -123,7 +123,7 @@ map.on("load", async() => {
 
 결과
 
-![스크린샷 2024-02-27 오후 8.52.49.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_2.png?raw=true)
+![스크린샷 2024-02-27 오후 8.52.49.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_2.png?raw=true)
 
 코드설명
 
@@ -184,7 +184,7 @@ map.on("load", async() => {
 
 결과
 
-![스크린샷 2024-02-27 오후 9.27.09.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_3.png?raw=true)
+![스크린샷 2024-02-27 오후 9.27.09.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_3.png?raw=true)
 
 코드설명
 
@@ -294,7 +294,7 @@ const resultMapDisplay = (sordData:Array<any>) => {
 
 결과
 
-![스크린샷 2024-02-27 오후 10.09.42.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_4.png?raw=true)
+![스크린샷 2024-02-27 오후 10.09.42.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_4.png?raw=true)
 
 코드설명
 
@@ -365,7 +365,7 @@ map.on("load", async() => {
 
 결과
 
-![스크린샷 2024-02-27 오후 10.44.57.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_5.png?raw=true)
+![스크린샷 2024-02-27 오후 10.44.57.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_5.png?raw=true)
 
 코드설명
 
@@ -421,7 +421,7 @@ const circleResultDisplay = (res:any) => {
 
 결과
 
-![스크린샷 2024-02-27 오후 10.56.58.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis1/img/a1_6.png?raw=true)
+![스크린샷 2024-02-27 오후 10.56.58.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/img/a1_6.png?raw=true)
 
 코드설명
 
