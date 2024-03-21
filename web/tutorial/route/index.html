@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <title>ktmap-geomaster-route-tutorial</title>
+  </head>
+  <body>
+    <div id="map">
+      <div class="search">
+        <div class="search-ctrl">
+          <input
+              id="search-start"
+              type="text"
+              name="search"
+              placeholder="출발지를 입력하세요"
+          />
+          <button id="search-btn-start">🔍︎</button>
+            <input
+            id="search-end"
+            type="text"
+            name="search"
+            placeholder="도착지를 입력하세요"
+          />
+          <button id="search-btn-end">🔍︎</button>
+          <div><button id="route">길찾기</button></div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/src/index.ts" ></script>
+</html>
