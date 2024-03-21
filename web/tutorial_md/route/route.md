@@ -934,4 +934,4 @@ const arrowHeadImage = (color: any) => {
 
 # 전체 코드
 
-전체 코드는 ~~~깃 에서 확인할 수 있습니다.
+전체 코드는 [route](https://github.com/ktmobility1/mapsdk_example/tree/main/web/tutorial/route) 에서 확인할 수 있습니다.
