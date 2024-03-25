@@ -1014,4 +1014,4 @@ master?.addEventListener('input', async (_) => {
 
 # 전체 코드
 
-전체 코드는 ~~~깃 에서 확인할 수 있습니다.
+전체 코드는 [search poi](https://github.com/ktmobility1/mapsdk_example/tree/main/web/tutorial_md/searchpoi/project) 에서 확인할 수 있습니다.

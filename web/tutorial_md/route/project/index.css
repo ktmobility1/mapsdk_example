@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#map {
+  width: 100%;
+  height: 99%;
+}
+
+/* 검색창 */
+.search {
+  z-index: 1;
+  position: absolute;
+  margin-left: 12px;
+}
+
+.search-ctrl {
+  z-index: 1;
+  margin-top: 12px;
+  top: 12px;
+  left: 12px;
+  width: 384px;
+  min-height: 48px;
+  padding: 3px 0 0;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  height: 130px;
+}
+
+.search-ctrl input[type="text"] {
+  z-index: 1;
+  margin-left: 12px;
+  width: 334px;
+  min-height: 40px;
+  padding: 3px 0 0;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 16px;
+  font: 16px "KTfontMedium";
+  outline: none;
+}
+
+#search-end {
+  margin-top:0px;
+}
+
+.search-ctrl button {
+  position: absolute;
+  height: 45px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+  font-size:20px
+}
+
+/* 길찾기 버튼 */
+#route {
+  position: relative;
+  cursor: pointer;
+  float:right;
+  margin:3px;
+  width: 100px;
+  height: 30px;
+  color: #4A90E1;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -.8px;
+  border: 1px solid #4A90E1;
+  border-radius: 20px;
+}
+#route:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+
+/* 자동완성 */
+#autocomplete {
+  position: absolute;
+  top: 65px;
+  background-color: #fff;
+  margin-left: 12px;
+  margin-top:3px;
+  border-radius: 4px;
+  width: 334px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+}
+
+#autocomplete div {
+  padding: 10px 0px 10px 10px;
+  font: 16px "KTfontMedium";
+}
+#autocomplete div:hover {
+  cursor: pointer;
+  background-color: rgb(234, 234, 234);
+}
+
+/* poi 결과 */
+#poi-result {
+  height: 85vh;
+  margin-top: 10px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  background-color: #fff;
+}
+
+#poi-result #top {
+  height: 28px;
+  padding-left: 15px;
+  padding-top: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  font:14px "KTfontMedium";
+}
+
+#poi-result #list-result {
+  overflow: scroll;
+  height: 95%;
+}
+
+#poi-result .list {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#poi-result .list:hover {
+  background-color: rgb(234, 234, 234);
+}
+#poi-result .list .name span {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+}
+#poi-result .list .name{
+  font: 16px "KTfontMedium";
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+#poi-result .list .info {
+  padding-left: 30px;
+}
+#poi-result .list .address {
+  padding-left: 30px;
+  color:#707070
+}
+
+#poi-result .selected {
+  padding: 3px;
+  border-radius: 10px;
+  font: 13px "KTfontMedium";
+  width: 40px !important;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+
+/* 길찾기 결과 */
+#route-result {
+  height: 76vh;
+  margin-top: 10px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  background-color: #fff;
+  padding: 15px;
+  overflow: auto;
+  width: 360px;
+}
+
+#route-result #time {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+}
+#route-result #distance {
+  font: 13px "KTfontMedium";
+}
+
+
+
+#route-result #list-result {
+  /* overflow: auto; */
+  height: 95%;
+}
+
+#route-result #list {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#route-result #list:hover {
+  background-color: rgb(234, 234, 234);
+}
+#route-result #list .name .index {
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+#route-result #list .name .distance {
+  font: 13px "KTfontMedium";
+}
+#route-result #list .name{
+  font: 16px "KTfontMedium";
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+#route-result #list .info {
+  padding-left: 30px;
+}
+#route-result #list .address {
+  padding-left: 30px;
+  color:#707070
+}
+
+.tabMenu ul {
+  list-style: none;
+  display:flex;
+  padding:0px;
+  margin-bottom: 18px;
+}
+
+.tabMenu ul li {
+  width: 100%;
+
+}
+.tabMenu ul li a {
+  display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #888;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -.6px;
+    text-align: center;
+    text-decoration: none;
+}
+.tabMenu ul li.current a {
+  color: #4A90E1;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid gray;
+  border-radius: -2px;
+  border-bottom: 0px;
+}
+
+#route-result .info {
+  padding-bottom: 13px;
+  border-bottom: 1px solid #4A90E1;
+}
+
+.none {
+  display: none;
+}
