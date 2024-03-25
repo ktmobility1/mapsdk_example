@@ -746,6 +746,24 @@ const arrowHeadImage = (color: any) => {
 
 ```
 
+기존 makeAutocomplete 함수에 경로탐색 결과, 길찾기 경로를 제거하는 코드도 추가해 줍니다.
+> index.ts
+> 
+```tsx
+// geomaster의 자동완성 메소드를 실행하고, 그 결과를 화면에 띄우는 함수입니다
+async function makeAutocomplete(term: string) {
+  // 길찾기 결과 영역을 제거합니다.
+  document.getElementById('route-result')?.remove()
+  if (map.getLayer('LineString')) map.removeLayer('LineString')
+  if (map.getLayer('arrow')) map.removeLayer('arrow')
+  if (map.getSource('LineString')) map.removeSource('LineString')
+
+  ...
+}
+
+```
+
+
 > index.css
 > 
 
