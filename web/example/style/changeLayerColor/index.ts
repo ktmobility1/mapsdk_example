@@ -41,7 +41,7 @@ map.on("load", () => {
 //물 레이어 색상을 지정한 색상으로 바꾸는 함수입니다
 const changeWaterColor = (map:ktGms.Map, color:string) => {
     //물 레이어 피쳐를 가져옵니다
-    const waterLayers = map.queryRenderedFeatures({layers:["md_water_poly_311_:116", "md_water_poly_311_:117","dt_water_poly_311_:119", "dt_water_poly_311_:123"]})
+    const waterLayers = map.queryRenderedFeatures({layers:["water_poly_308_:1001", "water_poly_313_:1010", "water_poly_312_:1010", "water_poly_311_:1010"]})
 
     //물 레이어의 색상을 변경합니다
     waterLayers.forEach((water:any) => {
@@ -52,7 +52,7 @@ const changeWaterColor = (map:ktGms.Map, color:string) => {
 //아파트 건물 레이어 색상을 지정한 색상으로 바꾸는 함수입니다
 const changeBuildingColor = (map:ktGms.Map, color:string) => {
     //건물 레이어 피쳐를 가져옵니다
-    const buildingLayers = map.queryRenderedFeatures({layers:["dt_bld_poly_707_:149", "dt_bld_poly_707::149","dt_bld_poly_707_:176", "dt_bld_poly_707::176"]})
+    const buildingLayers = map.queryRenderedFeatures({layers:["bld_poly_706_:1142", "bld_poly_713_:1143","bld_poly_714_:1141", "bld_poly_703_:1147", "bld_poly_704_:1148", "bld_poly_705_:1148", "bld_poly_709_:1147"]})
 
     //건물 레이어 색상을 변경합니다
     buildingLayers.forEach((building:any) => {
