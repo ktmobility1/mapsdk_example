@@ -45,7 +45,7 @@ searchBtn.addEventListener('click', async () => {
     geometry.push(
       new ktGms.geometry.PointGeo(
         [poi.point.lng, poi.point.lat], //좌표
-        { name: poi.name }, //속성 정보
+        { name: `${poi.name} ${poi.branch}` } //속성 정보
       ),
     )
   })
@@ -83,6 +83,12 @@ searchBtn.addEventListener('click', async () => {
     )
   }
 
+  // 클러스터 되지 않은 포인터 클릭했을 때 이름이 뜨도록 설정합니다
+  map.onLayer("click", "gasStationLayer", (event) => {
+    alert(event.features[0].properties.name);
+  });
+
+  // 클러스터 된 레이어의 개별 이름을 클릭했을 때 이름이 뜨도록 설정합니다
   map.onLayer('leaveClick', 'gasStationLayer', (event) => {
     alert(event.properties.address)
   })
