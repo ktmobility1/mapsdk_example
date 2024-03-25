@@ -55,19 +55,19 @@ mac 기준 프롬프트 창에서 vite를 통해 vanilla 프로젝트 생성하�
     
 2. 프로젝트 이름을 설정합니다
     
-    ![ProjectName](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/ProjectName.png?raw=true)
+    ![ProjectName](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/ProjectName.png?raw=true)
     
 3. 프레임워크를 Vanilla로 선택합니다
     
-    ![Framework](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/Framework.png?raw=true)
+    ![Framework](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/Framework.png?raw=true)
     
 4. 언어를 JavaScript로 선택합니다
     
-    ![Javascript](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/Javascript.png?raw=true)
+    ![Javascript](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/Javascript.png?raw=true)
     
 5. 아래와 같은 화면이 나오면 vanilla 프로젝트가 생성된 것입니다.
     
-    ![ProjectDone](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/ProjectDone.png?raw=true)
+    ![ProjectDone](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/ProjectDone.png?raw=true)
     
 
 ### **디렉토리 이동 후 시작**
@@ -82,11 +82,11 @@ npm install //필요한 모듈 설치
 npm run dev //프로젝트 start
 ```
 
-![MoveDirectory](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/MoveDirectory.png?raw=true)
+![MoveDirectory](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/MoveDirectory.png?raw=true)
 
 아래와 같이 vanilla 초기 화면을 브라우저에서 확인하시면 환경셋팅에 성공하신겁니다
 
-![InitialPage](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/InitialPage.png?raw=true)
+![InitialPage](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/InitialPage.png?raw=true)
 
 ### 설치 및 설정
 
@@ -449,7 +449,7 @@ Map 컴포넌트에 Marker들을 추가하겠습니다.
 
 마커가 추가된 화면은 아래와 같습니다.
 
-![Marker](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/Marker.png?raw=true)
+![Marker](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/Marker.png?raw=true)
 
 마커에 대한 더 자세한 사항은 API DOCS를 확인해주세요
 
@@ -509,7 +509,7 @@ Map 컴포넌트에 InfoWindow를 추가하겠습니다.
 
 인포윈도우가 추가된 화면은 아래와 같습니다.
 
-![InfoWindow](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/InfoWindow.png?raw=true)
+![InfoWindow](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/InfoWindow.png?raw=true)
 
 ### Custom InfoWindow
 
@@ -579,7 +579,7 @@ Map 컴포넌트에 기존의 InfoWindow는 삭제하고 Custom InfoWindow를 �
 
 커스텀한 인포윈도우가 추가된 화면은 아래와 같습니다.
 
-![InfoWindow2](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/InfoWindow2.png?raw=true)
+![InfoWindow2](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/InfoWindow2.png?raw=true)
 
 인포윈도우에 대한 더 자세한 사항은 API DOCS를 확인해주세요
 
@@ -593,7 +593,7 @@ Layer는 Source와 Style 요소로 정의됩니다.
 
 Polygon Layer를 예시로 설명 드리겠습니다. Polygon Layer는 데이터인 GeoJSON Source와 시각적 요소인 Fill Style로 구성됩니다. 그리고 GeoJSON Source는 Polygon 형태의 Geometry로 구성되어 있습니다. 
 
-![Layer](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/Layer.png?raw=true)
+![Layer](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/Layer.png?raw=true)
 
 ### Source, Style, Layer
 
@@ -827,7 +827,7 @@ ktMapComponent.ktMapCatalog.addEvent('layerEventId', layerClick);
 
 Layer가 추가된 화면은 아래와 같습니다.
 
-![Result](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/vanillaWebComponent/img/Result.png?raw=true)
+![Result](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/vanillaWebComponent/img/Result.png?raw=true)
 
 레이어에 대한 더 자세한 사항은 API Document를 확인해주세요.
 

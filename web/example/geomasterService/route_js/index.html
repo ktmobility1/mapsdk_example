@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="module" src="./index.js" defer></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    html, body, #map { width:100%; height: 100%; }
+    .overlay {
+        position: absolute;
+        display: grid;
+        top: 10px;
+        left: 10px;
+    }
+
+    .overlay button {
+        font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    #end {
+      background-color: #AD0216;
+    }
+    #route {
+      background-color: #5F5F5F;
+
+    }
+
+    .overlay button:hover {
+        background-color: #4ea0da;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="overlay">
+    <button id="start">출발지</button>
+    <button id="end">도착지</button>
+    <button id="route">길찾기</button>
+  </div>
+</body>
+</html>

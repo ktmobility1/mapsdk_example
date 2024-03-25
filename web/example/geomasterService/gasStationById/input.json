@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "gasStation search by Id",
+  "desc": "Geomaster의 SearchService.gasStationById를 사용한 예제입니다. <br/> 각 주유소 버튼을 클릭하면, 클릭한 주유소 위치로 이동하고 그 장소에 대한 정보를 표출합니다" 
+}

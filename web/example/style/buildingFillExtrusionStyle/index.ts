@@ -33,8 +33,10 @@ map.on("load", function () {
     is3D?.addEventListener("change", () => {
         if (is3D.checked) {
             switchMap(1, extrusionLayers);
+            map.setPitch(60)
         } else {
             switchMap(0, extrusionLayers);
+            map.setPitch(0)
         }
     });
     switchMap(is3D.checked ? 1 : 0, extrusionLayers);

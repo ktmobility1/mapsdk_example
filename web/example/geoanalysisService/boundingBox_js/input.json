@@ -1,0 +1,21 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.js": {
+      "contentType": "text/javascript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Calculate a bounding box",
+  "desc": "선의 bounding box를 계산하고, 이를 Polygon으로 변환하여 표출하는 예제입니다. `bbox` 함수를 사용해 bounding box를 계산할 수 있고, `bboxPolygon` 함수를 사용하여 bounding box를 polygon으로 변환할 수 있습니다.",
+  "reference": {
+    "bbox" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.bbox.html",
+    "bboxPolygon" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/measurement.bboxPolygon.html"
+  }
+}

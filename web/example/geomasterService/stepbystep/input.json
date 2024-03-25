@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.ts" :{
+      "contentType" : "text/typescript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "Step By Step",
+  "desc": "Geomaster의 SearchService.stepbystep 사용한 예제입니다. <br/> 서울 > 강남구 > 개포동 과 같이 단계별로 주소를 검색할 수 있습니다. '시도' > '시군구' > '읍면동'을 단계별로 모두 선택하면, 선택한 읍면동으로 지도가 이동합니다."  
+}

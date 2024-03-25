@@ -19,7 +19,7 @@ map.on(ktGms.event.MapDefaultEvent.eventName.load, (event) => {
     },
     {
       "icon-size": 1.5,
-      visibility: "visible",
+      "visibility": "visible",
     },
     // image의 url
     "https://map.gis.kt.com/mapsdk/images/symbol.png"

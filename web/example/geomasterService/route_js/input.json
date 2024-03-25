@@ -1,0 +1,14 @@
+{
+  "files": {
+    "index.html": {
+      "contentType" : "text/html"
+    },
+    "index.js" :{
+      "contentType" : "text/javascript",
+      "selected" : true
+    }
+  },
+  "category": "Geomaster Service",
+  "name": "Route",
+  "desc": "Geomaster의 RouteService.route를 사용한 예제입니다. <br/> 1. 출발지 버튼을 누르고 출발지를 지도에서 클릭하세요.<br/>2. 도착지 버튼을 누르고 도착지를 지도에서 클릭하세요.<br/>3. 길찾기 버튼을 눌러 경로탐색의 결과를 확인하세요."
+}

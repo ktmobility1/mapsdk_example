@@ -1,0 +1,20 @@
+{
+    "files": {
+        "index.html": {
+            "contentType": "text/html"
+        },
+        "index.ts": {
+            "contentType": "text/typescript",
+            "selected": true
+        },
+        "package.json": {
+            "contentType": "text/json"
+        }
+    },
+    "category": "Geomaster Service",
+    "name": "Geocoding",
+    "desc": "Geomaster의 SearchService.geocode를 사용한 예제입니다. <br/> 지도를 클릭하면 그 지도의 위경도 좌표와 주소를 표출합니다.",
+    "reference": {
+        "InfoWindow": "https://map.gis.kt.com/mapsdk/web/apidoc/classes/overlay_InfoWindow.InfoWindow.html"
+    }
+}

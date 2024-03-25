@@ -1,0 +1,21 @@
+{
+  "files": {
+    "index.html": {
+      "contentType": "text/html"
+    },
+    "index.ts": {
+      "contentType": "text/typescript",
+      "selected": true
+    },
+    "package.json": {
+      "contentType": "text/json"
+    }
+  },
+  "category": "geoanalysisService",
+  "name": "Simplify a polygon",
+  "desc": "Remote에 존재하는 특정 GeoJSON 파일을 load 하고, 이를 단순화하는 예제입니다. `getGeoJSONfromRemote` 함수를 사용해 GeoJSON 파일을 불러올 수 있고, `simplify` 함수를 사용하여 GeoJSON을 단순화할 수 있습니다.",
+  "reference": {
+    "simplify" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/transformation.simplify.html",
+    "getGeoJSONfromRemote" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/utils.getGeoJSONfromRemote.html"
+  }
+}

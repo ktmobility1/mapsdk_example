@@ -68,7 +68,7 @@ document.getElementById("shpfile")?.addEventListener("change", async(event:any) 
 
 결과
 
-![스크린샷 2024-03-08 오후 4.06.28.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_1.png?raw=true)
+![스크린샷 2024-03-08 오후 4.06.28.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_1.png?raw=true)
 
 - 로컬파일에서 선택할때 이벤트 addEventListener("change”, 콜백함수)로 처리합니다.
     
@@ -133,7 +133,7 @@ document.getElementById("endBtn")?.addEventListener("click", () => {
 });
 ```
 
-![스크린샷 2024-03-08 오후 4.38.12.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_2.png?raw=true)
+![스크린샷 2024-03-08 오후 4.38.12.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_2.png?raw=true)
 
 - 출발점, 도착점 버튼에 click이벤트 바인딩하고 콜백함수에서 map의 click 이벤트를 일시적으로 설정합니다
 - map.on이 아닌 map.once로 click를 하는 이유이는 출발, 도착을 항상하는 것이 아니므로 한번만 이벤트를 감지하고 바로 이벤트를 해제하려면 “on” 함수가 아닌 “once”를 사용합니다.
@@ -211,7 +211,7 @@ document.getElementById("routeBtn")?.addEventListener("click", async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.15.24.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_3.png?raw=true)
+![스크린샷 2024-03-08 오후 5.15.24.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_3.png?raw=true)
 
 - const routeService = new geomaster.RouteService({accessKey:"<사용자 라이센스키>"})
     
@@ -259,7 +259,7 @@ const bufferSearch = async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.20.40.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_4.png?raw=true)
+![스크린샷 2024-03-08 오후 5.20.40.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_4.png?raw=true)
 
 - analysis.transformation.buffer를 이용하면 라인에 buffer를 생성하여 폴리곤을 생성합니다.
 - 생성한 폴리곤을 투명도 0.7의 회색으로 표출합니다. PolygonLayer + FillStyle를 이용하여
@@ -298,7 +298,7 @@ const alongSearch = () => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.44.01.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_5.png?raw=true)
+![스크린샷 2024-03-08 오후 5.44.01.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_5.png?raw=true)
 
 - analysis.measurement.length를 사용해서 경로의 총길이를 알아냅니다.
     
@@ -336,7 +336,7 @@ const twoDthreeSearh = async() => {
 
 결과
 
-![스크린샷 2024-03-08 오후 5.54.33.png](https://github.com/ktmobility1/mapsdk_example/blob/feature/web-tutorial-md/web/tutorial_md/analysis2/img/a2_6.png?raw=true)
+![스크린샷 2024-03-08 오후 5.54.33.png](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/img/a2_6.png?raw=true)
 
 - [analysis.transformation.circle](http://analysis.transformation.circle) 를 이용하여 포인터를 기준으로 Circle 폴리곤을 생성합니다.
 - PolygonLayer + FillStyle을 이용해서 Circle 폴리곤을 초록색의 0.5투명도로 표출합니다.
