@@ -60,6 +60,13 @@ const inputChange = debounce((val) => makeAutocomplete(val), 200)
 
 // geomaster의 자동완성 메소드를 실행하고, 그 결과를 화면에 띄우는 함수입니다
 async function makeAutocomplete(term: string) {
+  // 길찾기 결과 영역을 제거합니다.
+  document.getElementById('route-result')?.remove()
+  if (map.getLayer('LineString')) map.removeLayer('LineString')
+  if (map.getLayer('arrow')) map.removeLayer('arrow')
+  if (map.getSource('LineString')) map.removeSource('LineString')
+
+  
   // 기존 자동완성 결과가 화면에 있으면 삭제합니다
   document.getElementById('autocomplete')?.remove()
   // 자동완성 할 용어가 없다면 함수를 종료합니다
