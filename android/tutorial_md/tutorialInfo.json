@@ -4,6 +4,11 @@
             "name": "location",
             "key": "위치",
             "icon": ""
+        },
+        {
+            "name": "map",
+            "key": "지도",
+            "icon": ""
         }
     ]
 }
