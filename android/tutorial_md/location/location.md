@@ -72,7 +72,7 @@ ktMap.locationPuckEnabled = true
 
 
 
-![location0.jpeg](img/location0.jpeg)
+![location0.jpeg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/location/img/location0.jpeg?raw=true)
 
 
 <br/>
@@ -85,7 +85,7 @@ ktMap.locationHeadingEnabled = true
 
 
 
-![location0.jpeg](img/location1.jpeg)
+![location1.jpeg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/location/img/location1.jpeg?raw=true)
 
 <br/>
 
