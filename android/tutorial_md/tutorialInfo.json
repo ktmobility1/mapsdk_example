@@ -1,8 +1,8 @@
 {
     "infos": [
         {
-            "name": "",
-            "key": "",
+            "name": "location",
+            "key": "위치",
             "icon": ""
         }
     ]
