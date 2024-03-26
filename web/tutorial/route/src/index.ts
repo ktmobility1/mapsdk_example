@@ -1,7 +1,6 @@
 import ktGms from 'kt-map-sdk-js'
 import geomaster from 'kt-map-sdk-geomaster'
-import tbts from './tbtType.json'
-let tbtsData: any = tbts
+
 let map = new ktGms.Map({
   container: 'map',
   style: 'normal',
@@ -66,7 +65,6 @@ async function makeAutocomplete(term: string) {
   if (map.getLayer('arrow')) map.removeLayer('arrow')
   if (map.getSource('LineString')) map.removeSource('LineString')
 
-  
   // 기존 자동완성 결과가 화면에 있으면 삭제합니다
   document.getElementById('autocomplete')?.remove()
   // 자동완성 할 용어가 없다면 함수를 종료합니다
@@ -155,7 +153,6 @@ function makePoi(numberOfAddress: number, poi: Array<any>) {
         <div class="info">${p.category.masterName}</div>
         <div class="address">${p.address.siDo} ${p.address.siGunGu} ${p.address.street}</div>
         <div class="address">지번) ${p.address.eupMyeonDong} ${p.address.houseNumber}</div>
-
     `
     listResult?.appendChild(list)
 
@@ -211,6 +208,7 @@ routeBtn?.addEventListener('click', async (e: any) => {
   // routeService의 route 메소드를 호출합니다.
   // 출발지마커의 위치와 도착지마커의 위치, 경로탐색 타입 (0: 최적경로, 7: 최소시간, 3: 최단거리, 2: 무료도로 우선)
   routeResult = await routeService.route({ start: startMarker.getLngLat(), end: endMarker.getLngLat(), rp_type: '0;7;3;2' })
+  console.log(routeResult)
   routeHandler(0)
 })
 
@@ -324,7 +322,7 @@ function makeRouteResult(rpType: number) {
     list.innerHTML += `
           <div class="name">
             <span class="index">[${index + 1}]</span>
-            ${tbt.shtDirName ? tbt.shtDirName : tbt.tbtName ?? ''} ${tbtsData[tbt.type]}
+            ${tbt.shtDirName ? tbt.shtDirName : tbt.tbtName ?? ''} ${tbt.typeString}
             <span class="distance">${distanceConversion(tbt.nextDistance)}</span>
           </div>
       `
@@ -349,6 +347,7 @@ function timeConversion(seconds: number) {
 
 // m 단위를 km로 변경해주는 함수
 function distanceConversion(length: number) {
+  if (!length) return ''
   return length >= 1000 ? length / 1000 + 'km' : length + 'm'
 }
 
