@@ -1,0 +1,64 @@
+{
+    "infos": [
+        {
+            "name": "react",
+            "key": "React에서 KTMapSDK",
+            "icon": "fa-brands fa-react"
+        },
+        {
+            "name": "reactWebComponent",
+            "key": "React에서 KTMapSDK WebComponent",
+            "icon": "fa-brands fa-react"
+        },
+        {
+            "name": "vue",
+            "key": "Vue에서 KTMapSDK",
+            "icon": "fa-brands fa-vuejs"
+        },
+        {
+            "name": "vueWebComponent",
+            "key": "Vue에서 KTMapSDK WebComponent",
+            "icon": "fa-brands fa-vuejs"
+        },
+        {
+            "name": "vanilla",
+            "key": "Vanilla에서 KTMapSDK",
+            "icon": "fa-brands fa-js"
+        },
+        {
+            "name": "vanillaWebComponent",
+            "key": "Vanilla에서 KTMapSDK WebComponent",
+            "icon": "fa-brands fa-js"
+        },
+        {
+            "name": "analysis1",
+            "key": "분석 튜토리얼(전국 동물병원)",
+            "icon": "fa-solid fa-dog"
+        },
+        {
+            "name": "analysis2",
+            "key": "분석 튜토리얼(도로주변 편의점)",
+            "icon": "fa-solid fa-store"
+        },
+        {
+            "name": "analysis3",
+            "key": "분석 튜토리얼(신규도로 가로수갯수)",
+            "icon": "fa-solid fa-tree"
+        },
+        {
+            "name": "searchpoi",
+            "key": "Geomaster 튜토리얼(장소 검색)",
+            "icon": "fa-solid fa-location-dot"
+        },
+        {
+            "name": "searchaddress",
+            "key": "Geomaster 튜토리얼(주소 검색)",
+            "icon": "fa-solid fa-address-card"
+        },
+        {
+            "name": "route",
+            "key": "Geomaster 튜토리얼(길찾기)",
+            "icon": "fa-solid fa-route"
+        }
+    ]
+}
