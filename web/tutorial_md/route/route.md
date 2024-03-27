@@ -572,8 +572,7 @@ function makePoi(numberOfAddress: number, poi: Array<any>) {
 > 
 
 ```tsx
-import tbts from './tbtType.json'
-let tbtsData: any = tbts
+
 ...
 
 let routeResult: any
@@ -592,8 +591,8 @@ routeBtn?.addEventListener('click', async (e: any) => {
   routeHandler(0)
 })
 
+
 async function routeHandler(rpType: number) {
-	
   // 응답 값의 coordinates 결과를 저장합니다.
   let coordinates = routeResult[rpType].geoJSON.coordinates
 
@@ -617,11 +616,10 @@ async function routeHandler(rpType: number) {
       'LineString',
     ),
   )
-
   // 화살표 이미지를 불러옵니다.
   const is = await arrowHeadImage('#fff')
   if (!map.getImage('arrow-head')) map.addImage('arrow-head', is as any)
-  
+
   // 방향을 알 수 있도록 화살표를 표시해주는 Layer 입니다.
   map.addLayer(
     new ktGms.layer.LineSymbolicLayer(
@@ -704,15 +702,14 @@ function makeRouteResult(rpType: number) {
     list.innerHTML += `
           <div class="name">
             <span class="index">[${index + 1}]</span>
-            ${tbt.shtDirName ? tbt.shtDirName : tbt.tbtName ?? ''} ${tbtsData[tbt.type]}
+            ${tbt.shtDirName ? tbt.shtDirName : tbt.tbtName ?? ''} ${tbt.typeString}
             <span class="distance">${distanceConversion(tbt.nextDistance)}</span>
           </div>
       `
     listResult?.appendChild(list)
-
   })
-
 }
+
 // 초 -> 시간,분으로 변환해주는 함수
 function timeConversion(seconds: number) {
   if (seconds < 61) {
@@ -730,6 +727,7 @@ function timeConversion(seconds: number) {
 
 // m 단위를 km로 변경해주는 함수
 function distanceConversion(length: number) {
+  if (!length) return ''
   return length >= 1000 ? length / 1000 + 'km' : length + 'm'
 }
 
@@ -743,6 +741,7 @@ const arrowHeadImage = (color: any) => {
     img.onload = () => resolve(createImageBitmap(img))
   })
 }
+
 
 ```
 
@@ -868,79 +867,6 @@ async function makeAutocomplete(term: string) {
 }
 ```
 
-> tbtTyps.json
-> 
-
-```json
-{
-  "0":"안내없음",
-  "1":"직진(발성)",
-  "2":"1시 방향 우회전",
-  "3":"2시 방향 우회전",
-  "4":"우회전",
-  "5":"4시 방향 우회전",
-  "6":"5시 방향 우회전",
-  "7":"7시 방향 좌회전",
-  "8":"8시 방향 좌회전",
-  "9":"좌회전",
-  "10":"10시 방향 좌회전",
-  "11":"11시 방향 좌회전",
-  "12":"직진 방향에 고가도로 진입",
-  "13":"오른쪽 방향에 고가도로 진입",
-  "14":"왼쪽 방향에 고가도로 진입",
-  "15":"지하차도",
-  "16":"오른쪽 방향에 고가도로 옆 도로",
-  "17":"왼쪽 방향에 고가도로 옆 도로",
-  "18":"오른쪽 방향에 지하차도 옆 도로",
-  "19":"왼쪽 방향에 지하차도 옆 도로",
-  "20":"오른쪽 도로",
-  "21":"왼쪽 도로",
-  "22":"직진 방향에 고속도로 진입",
-  "23":"오른쪽 방향에 고속도로 진입",
-  "24":"왼쪽 방향에 고속도로 진입",
-  "25":"직진 방향에 도시고속도로 진입",
-  "26":"오른쪽 방향에 도시고속도로 진입",
-  "27":"왼쪽 방향에 도시고속도로 진입",
-  "28":"오른쪽 방향에 고속도로 출구",
-  "29":"왼쪽 방향에 고속도로 출구",
-  "30":"오른쪽 방향에 도시고속도로 출구",
-  "31":"왼쪽 방향에 도시고속도로 출구",
-  "32":"분기점에서 직진",
-  "33":"분기점에서 오른쪽",
-  "34":"분기점에서 왼쪽",
-  "35":"U-TURN",
-  "36":"직진(무발성)",
-  "37"	:"터널",
-  "40"	:"교차로에서1시방향"	,
-  "41"	:"교차로에서2시방향"	,
-  "42"	:"교차로에서3시방향"	,
-  "43"	:"교차로에서4시방향"	,
-  "44"	:"교차로에서5시방향"	,
-  "45"	:"교차로에서6시방향"	,
-  "46"	:"교차로에서7시방향"	,
-  "47"	:"교차로에서8시방향"	,
-  "48"	:"교차로에서9시방향"	,
-  "49"	:"교차로에서10시방향"	,
-  "50"	:"교차로에서11시방향",
-  "51"	:"교차로에서12시방향"	,
-  "52"	:"IC",
-  "53"	:"JC",	
-  "54"	:"TG",	
-  "55"	:"SA",	
-  "56"	:"교량",	
-  "998":"출발지",	
-  "999":	"목적지",	
-  "1000"	:"경유지",	
-  "1999":	"길건너 목적지",	
-  "2000":	"길건너 경유지",	
-  "2999":	"Ferry 항로 시작",	
-  "3000":	"Ferry 항로 끝",	
-  "3998":	"코스 시작",
-  "3999":	"코스 재진입",
-  "4000":	"코스 종료"
-}
-
-```
 
 광화문 → 판교역으로 길찾기 한 결과 화면입니다.
 
