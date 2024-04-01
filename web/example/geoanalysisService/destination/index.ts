@@ -26,7 +26,7 @@ map.on("load", () => {
         "circle-color": "#FF0000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     origin
@@ -35,8 +35,13 @@ map.on("load", () => {
   // destination 계산
   const distance = 0.5;
   const bearing = -90;
-  const options = { units: "kilometers" }
-  const destinationPoint = analysis.measurement.destination(origin,distance,bearing,options);
+  const options = { units: "kilometers" };
+  const destinationPoint = analysis.measurement.destination(
+    origin,
+    distance,
+    bearing,
+    options
+  );
   new ktGms.layer.PointLayer(
     //Layer ID
     "destination_point_layer",
@@ -47,9 +52,11 @@ map.on("load", () => {
         "circle-color": "#000000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("destination_point", { data: destinationPoint })
+    new ktGms.source.GeoJSONSource("destination_point", {
+      data: destinationPoint,
+    })
   ).addTo(map);
 });

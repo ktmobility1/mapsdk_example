@@ -36,7 +36,7 @@ map.on("load", () => {
         "circle-color": "#1253A4",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("points", { data: points })
@@ -66,7 +66,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("polygon", { data: polygon })
@@ -85,9 +85,11 @@ map.on("load", () => {
         "circle-color": "#FF0000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
-    new ktGms.source.GeoJSONSource("point_within_polygon", { data: ptsWithinPoly })
+    new ktGms.source.GeoJSONSource("point_within_polygon", {
+      data: ptsWithinPoly,
+    })
   ).addTo(map);
 });

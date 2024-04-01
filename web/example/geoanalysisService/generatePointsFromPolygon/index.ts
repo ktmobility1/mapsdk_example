@@ -39,7 +39,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("polygon", { data: polygon })
@@ -57,7 +57,7 @@ map.on("load", () => {
         "circle-color": "#000000",
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("point", { data: points })

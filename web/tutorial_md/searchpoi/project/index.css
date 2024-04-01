@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#map {
+  width: 100%;
+  height: 99%;
+}
+
+/* 검색창 */
+.search {
+  z-index: 1;
+  position: absolute;
+  margin-left: 12px;
+}
+
+.search-ctrl {
+  z-index: 1;
+  margin-top: 12px;
+  top: 12px;
+  left: 12px;
+  width: 384px;
+  min-height: 48px;
+  padding: 3px 0 0;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+}
+
+.search-ctrl input[type="text"] {
+  z-index: 1;
+  margin-left: 12px;
+  width: 334px;
+  min-height: 40px;
+  padding: 3px 0 0;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 16px;
+  font: 16px "KTfontMedium";
+  outline: none;
+}
+
+.search-ctrl button {
+  position: absolute;
+  height: 45px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+  font-size:20px
+}
+
+
+
+/* 자동완성 */
+#autocomplete {
+  position: absolute;
+  top: 65px;
+  background-color: #fff;
+  margin-left: 12px;
+  margin-top:3px;
+  border-radius: 4px;
+  width: 334px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+}
+
+#autocomplete div {
+  padding: 10px 0px 10px 10px;
+  font: 16px "KTfontMedium";
+}
+#autocomplete div:hover {
+  cursor: pointer;
+  background-color: rgb(234, 234, 234);
+}
+
+/* poi 결과 */
+#poi-result {
+  display: none;
+  height: 85vh;
+  margin-top: 10px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  background-color: #fff;
+}
+
+#poi-result #top {
+  height: 28px;
+  padding-left: 15px;
+  padding-top: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  font:14px "KTfontMedium";
+}
+
+#poi-result #list-result {
+  overflow: scroll;
+  height: 90%;
+}
+
+#poi-result #list {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#poi-result #list:hover {
+  background-color: rgb(234, 234, 234);
+}
+#poi-result #list .name span {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+#poi-result #list .name{
+  font: 16px "KTfontMedium";
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+#poi-result #list .info {
+  padding-left: 30px;
+}
+#poi-result #list .address {
+  padding-left: 30px;
+  color:#707070
+}
+
+/* 검색창 페이징처리 */
+#bottom {
+  padding-top: 10px;
+  border-top: 1px solid #e8e8e8;
+  display:flex;
+  justify-content:center;
+  color:rgb(78, 78, 78);
+}
+#pagination-numbers {
+  width:90%;
+  display: flex;
+  justify-content: center;
+}
+#pagination-numbers div {
+  width: 8%;
+  text-align: center;
+  cursor: pointer;
+}
+#pagination-numbers .active {
+  color:#000;
+  font-weight: 600;
+}
+
+#pagination-numbers div:hover {
+  color:#000;
+  font-weight: 600;
+}
+#prev-button, #next-button {
+  cursor: pointer;
+}
+
+/* 카테고리 selectbox */
+.selectbox {
+  z-index: 1;
+  position: absolute;
+  right: 12px;
+  margin-top: 12px;
+}
+
+.selectbox select {
+  width: 300px;
+  min-height: 40px;
+  padding: 3px 10px 0;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  font: 16px "KTfontMedium";
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+}
+

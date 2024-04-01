@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <title>ktmap-geomaster-searchaddress-tutorial</title>
+  </head>
+  <body>
+    <div id="map">
+      <div id="addressSetting">
+        <div id="address">
+          <div id="current">
+            <span class="sido addr">시도</span>
+            <span class="divider addr">></span>
+            <span class="sigungu addr">시/군/구</span>
+            <span class="divider addr">></span>
+            <span class="eupmyeondong addr">읍/면/동</span>
+          </div>
+          <div id="expand" style="display: none">
+            <div id="choice-sido" class="choice"></div>
+            <div id="choice-sigungu" class="choice"></div>
+            <div id="choice-eupmyeondong" class="choice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/src/index.ts" ></script>
+</html>

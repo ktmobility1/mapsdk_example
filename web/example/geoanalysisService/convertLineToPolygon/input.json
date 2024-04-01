@@ -13,7 +13,8 @@
   },
   "category": "geoanalysisService",
   "name": "Convert line to polygon",
-  "desc": "",
+  "desc": "선을 다각형으로 변환하는 예제입니다. `lineToPolygon` 함수를 사용해 선을 다각형으로 변환할 수 있습니다.",
   "reference": {
+    "lineToPolygon" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/conversion.lineToPolygon.html"
   }
 }

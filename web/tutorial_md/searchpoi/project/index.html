@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="index.css" />
+  <title>ktmap-geomaster-searchpoi-tutorial</title>
+</head>
+
+<body>
+  <div id="map">
+    <div class="search">
+      <div class="search-ctrl">
+        <input id="search-input" type="text" name="search" placeholder="검색어를 입력하세요" />
+        <button id="search-btn">🔍︎</button>
+      </div>
+      <div id="poi-result"> <!--poi결과-->
+        <div id="top"></div> <!--장소 개수-->
+        <div id="list-result"> <!--poi검색 결과 리스트-->
+      </div>
+
+      <div id="bottom">
+        <div class="before" id="prev-button">〈〈</div>
+        <div id="pagination-numbers"></div>
+        <div class="next" id="next-button">〉〉</div>
+      </div>
+    </div>
+    </div>
+    <div class="selectbox"> <!--카테고리 검색-->
+      <select id="master">
+        <option disabled selected value="">카테고리 검색</option>
+      </select>
+    </div>
+  </div>
+</body>
+<script type="module" src="/src/index.ts"></script>
+
+</html>

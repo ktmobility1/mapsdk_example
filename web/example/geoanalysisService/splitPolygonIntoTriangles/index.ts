@@ -50,7 +50,7 @@ map.on("load", () => {
         "fill-opacity": 0.5,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     polygon
@@ -70,7 +70,7 @@ map.on("load", () => {
         "line-width": 3,
       },
       {
-        visibility: "visible",
+        "visibility": "visible",
       }
     ),
     new ktGms.source.GeoJSONSource("triangleSource", { data: triangles })

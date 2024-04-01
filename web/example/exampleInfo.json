@@ -137,12 +137,21 @@
     {
       "name":"Geomaster Service",
       "examples":[
+        {"name":"Search POI By Word", "path":"/web/example/geomasterService/poiSearch"},
+        {"name":"Search POI By Id", "path":"/web/example/geomasterService/poiSearchById"},
         {"name":"Label InfoWindow", "path":"/web/example/geomasterService/labelInfoWindow"},
-        {"name":"POI Search API", "path":"/web/example/geomasterService/poiSearchApi"},
-        {"name":"Thema API", "path":"/web/example/geomasterService/themaApi"},
-        {"name":"Address Search API", "path":"/web/example/geomasterService/addresSearchApi"},
-        {"name":"Reverse Geocoding API", "path":"/web/example/geomasterService/reverseGeocodingApi"},
-        {"name":"Route API", "path":"/web/example/geomasterService/routeApi"}
+        {"name":"Autocomplete", "path":"/web/example/geomasterService/autocomplete"},
+        {"name":"Search Category List", "path":"/web/example/geomasterService/categoryList"},
+        {"name":"Search EV Station", "path":"/web/example/geomasterService/EVStation"},
+        {"name":"Search EV Station By Id", "path":"/web/example/geomasterService/EVStationById"},
+        {"name":"Search Gas Station", "path":"/web/example/geomasterService/gasStation"},
+        {"name":"Search Gas Station By Id", "path":"/web/example/geomasterService/gasStationById"},
+        {"name":"Search Parking Lot", "path":"/web/example/geomasterService/parkinglot"},
+        {"name":"Search Parking Lot By Id", "path":"/web/example/geomasterService/parkingLotById"},
+        {"name":"Search address using Geocoding", "path":"/web/example/geomasterService/geocoding"},
+        {"name":"Address Step By Step", "path":"/web/example/geomasterService/stepbystep"},
+        {"name":"Route", "path":"/web/example/geomasterService/route"},
+        {"name":"Link OneNavi with KT Map", "path":"/web/example/geomasterService/onenavi"}
       ]
     },
     {

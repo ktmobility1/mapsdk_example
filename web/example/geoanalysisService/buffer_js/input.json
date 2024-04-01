@@ -13,7 +13,8 @@
   },
   "category": "geoanalysisService",
   "name": "Calculate a buffer of points",
-  "desc": "",
+  "desc": "점에 버퍼를 부여해서 원(polygon)으로 표출하는 예제입니다. `buffer` 함수를 사용해 점에 버퍼를 부여할 수 있습니다.",
   "reference": {
+    "buffer" : "https://map.gis.kt.com/mapsdk/web/apidoc_geoanalysis/functions/transformation.buffer.html"
   }
 }

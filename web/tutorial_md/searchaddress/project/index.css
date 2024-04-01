@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#map {
+width: 100%;
+height: 99%;
+}
+
+#addressSetting {
+  z-index: 1;
+  position: absolute;
+  left: 12px;
+  margin-top: 12px;
+}
+
+#current {
+  background-color: #fff;
+  font: 14px "KTfontMedium";
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  border-radius: 5px;
+  min-height: 30px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+
+#current .sido, #current .sigungu, #current .eupmyeondong {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+} 
+
+#expand {
+  margin-top: 4px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .12);
+  display: flex;
+}
+
+.choice {
+  width: 110px;
+  text-align: center;
+  height: 200px;
+  overflow-y:scroll;
+}
+.choice div {
+  cursor: pointer;
+  height: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.choice div:hover {
+  background-color: #efefef;
+}
+.choice .select {
+  background-color: #dbdbdb;
+}
