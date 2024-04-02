@@ -2,7 +2,7 @@ import ktGms from "kt-map-sdk-js";
 
 const map = new ktGms.Map({
     container: "map",
-    style: "https://map.gis.kt.com/mapsdk/data/basicStyle.json",
+    style: "https://ktmobility1.github.io/mapsdk_example/map_resource/maptiler/basicStyle.json",
     center: [127.017422, 37.49144],
     zoom: 16,
     maxPitch: 68
@@ -17,7 +17,7 @@ const changeMap = (element: HTMLButtonElement): void => {
         button.classList.remove("-active");
     });
     element?.classList.add("-active");
-    map.setStyle(`https://map.gis.kt.com/mapsdk/data/${element?.value}Style.json`)
+    map.setStyle(`https://ktmobility1.github.io/mapsdk_example/map_resource/maptiler/${element?.value}Style.json`)
 };
 
 buttonsContainer.addEventListener("click", function (event) {
