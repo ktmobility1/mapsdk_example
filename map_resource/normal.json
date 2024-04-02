@@ -30,11 +30,6 @@
   "glyphs": "https://tile.gis.kt.com/image/mvt_label/KTfont/{fontstack}/{range}.pbf?key=KDhMfHvorAFkFe64wlZb",
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {"background-color": "rgb(239,239,239)"}
-    },
-    {
       "id": "water_poly_301_:1000",
       "type": "fill",
       "source": "KT_Vector",
