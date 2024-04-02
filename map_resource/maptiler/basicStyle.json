@@ -12,7 +12,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=A1IdiqrFlzyZj4WKYi8G"
+      "types": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf"]
     }
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=A1IdiqrFlzyZj4WKYi8G",
