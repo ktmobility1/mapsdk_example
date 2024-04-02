@@ -9,10 +9,7 @@
   "sources": {
     "KT_Vector": {
       "type": "vector",
-      "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf"],
-      "minZoom": 0,
-      "maxzoom": 17,
-      "format": "pbf"
+      "url": "https://ktmobility1.github.io/mapsdk_example/map_resource/tile.json"
     },
     "KT_Vector_Label": {
       "type": "vector",
