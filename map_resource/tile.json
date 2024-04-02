@@ -3,5 +3,27 @@
   "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf"],
   "minZoom": 0,
   "maxzoom": 17,
-  "format": "pbf"
+  "format": "pbf",
+  "vector_layers": [
+    {
+      "id": "road_poly_105_:1064",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "trainstation_poly_1313_:1151",
+      "fields": {
+        "cate1": "String",
+        "cate2": "String",
+        "pid": "Number"
+    },
+      "minzoom": 0,
+      "maxzoom": 17
+    }
+  ]
 }
