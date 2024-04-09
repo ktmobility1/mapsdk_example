@@ -29,7 +29,7 @@ const poiSearch = async (poi_id) => {
   const homepage = poi.extension && poi.extension.homepageURL ? poi.extension.homepageURL : ''
   const roadAddress = poi.address.siDo + ' ' + poi.address.siGunGu + ' ' + poi.address.street + ' ' + poi.address.streetNumber
   const landAddress = poi.address.eupMyeonDong + ' ' + poi.address.houseNumber
-  const photoURL = poi.extension && poi.extension.photoUrl ? poi.extension.photoUrl : ''
+  const photoURL = poi.extension && poi.extension.photoURL ? poi.extension.photoURL : ''
 
   // InfoWindow에 들어갈 HTML 내용을 리턴합니다
   return `
