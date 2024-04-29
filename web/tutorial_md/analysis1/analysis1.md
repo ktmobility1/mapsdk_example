@@ -431,3 +431,5 @@ const circleResultDisplay = (res:any) => {
     asyncPointsWithinPolygonCollenction 함수가 아닌 asyncPointsWithinPolygon를 호출해야 합니다
     
 - circleResultDisplay 함수에서는 전달받은 동물병원 포인트 GeoJSON을 오른쪽 리스트에 동물병원 명칭을 표출합니다.
+
+[https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4)

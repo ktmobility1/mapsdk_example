@@ -343,3 +343,5 @@ const twoDthreeSearh = async() => {
 - 위해서 사용했던 analysis.joins.asyncPointsWithinPolygon를 이용해서 2km반경 안에 편의점정보를
     
     오른쪽 리스트에 종류별 편의점 갯수를 표시합니다.
+
+[https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/analysis2.mp4](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis2/analysis2.mp4)
