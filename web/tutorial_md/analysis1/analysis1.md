@@ -432,5 +432,4 @@ const circleResultDisplay = (res:any) => {
     
 - circleResultDisplay 함수에서는 전달받은 동물병원 포인트 GeoJSON을 오른쪽 리스트에 동물병원 명칭을 표출합니다.
 
-[https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4)
-<video src="https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4" width="320" height="240" controls></video>
+<video src="https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis1/analysis1.mp4" width="800" height="450" controls></video>

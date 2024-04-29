@@ -444,4 +444,4 @@ document.getElementById("plantTree")?.addEventListener("click", async() => {
 - analysis.measurement.along(feature, 0.0035 * (index+1) 이 코드 처럼 0.0035km(3.5m)로 포인트를 얻기 위해서 along 함수를 이용하여 가로수 심어질 포인트들을 산정합니다.
 - 이렇게 산정된 포인트들을 PointLayer + CircleStyle로 흰색 원으로 지도에 표출합니다.
 
-[https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis3/analysis3.mp4](https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis3/analysis3.mp4)
+<video src="https://ktmobility1.github.io/mapsdk_example/web/tutorial_md/analysis3/analysis3.mp4" width="800" height="450" controls></video>
