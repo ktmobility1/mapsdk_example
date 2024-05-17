@@ -15,10 +15,9 @@
 - 지도에 오버레이를 추가한다.
 
 ```kotlin
-val path = ktMap.addPathOverlay(
-  PathOverlayOptions.Builder().apply {
-		links(
-      listOf(
+val path = ktMap.addPathOverlay(PathOverlayOptions.Builder().apply {
+    links(
+        listOf(
             listOf(
                 LngLat(latitude = 37.55320682259445, longitude = 126.9727695192017),
                 LngLat(latitude = 37.55726966876823, longitude = 126.97289139202248)
@@ -34,9 +33,8 @@ val path = ktMap.addPathOverlay(
                 LngLat(latitude = 37.56596349439521, longitude = 126.97717583536038)
             )
         )
-    )
-	}.build()
-)
+    ) 
+}.build())
 ```
 
 ![path01.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path01.jpg)
@@ -57,30 +55,30 @@ ktMap.removePathOverlay(path)
 - 개별 도로(link)는 다시 좌표 리스트를 설정합니다. 이 때 주의할 점은 다음 도로(link)의 첫전째 좌표는 이전 도로(link)의 마지막 좌표와 일치해야합니다.
 
 ```kotlin
-val path = ktMap.addPathOverlay(
-	PathOverlayOptions.Builder().apply {
-		links( // 도로(link) 목록
-      listOf(
-	      // 0번째 도로(link)
-        listOf( // 좌표 목록
-            LngLat(latitude = 37.55320682259445, longitude = 126.9727695192017),
-            LngLat(latitude = 37.55726966876823, longitude = 126.97289139202248)
-        ),
-        // 1번째 도로(link)
-	      listOf(
-            LngLat(latitude = 37.55726966876823, longitude = 126.97289139202248),
-            LngLat(latitude = 37.55740633539673, longitude = 126.97297407409239),
-            LngLat(latitude = 37.55747530737832, longitude = 126.973028783291),
-            LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178)
-        ),
-        // 2번째 도로(link)
+val path = ktMap.addPathOverlay(PathOverlayOptions.Builder().apply {
+    links( // 도로(link) 목록
         listOf(
-            LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
-            LngLat(latitude = 37.56596349439521, longitude = 126.97717583536038)
+        // 0번째 도로(link)
+            listOf( // 좌표 목록
+                LngLat(latitude = 37.55320682259445, longitude = 126.9727695192017),
+                LngLat(latitude = 37.55726966876823, longitude = 126.97289139202248)
+            ),
+            // 1번째 도로(link)
+            listOf(
+                LngLat(latitude = 37.55726966876823, longitude = 126.97289139202248),
+                LngLat(latitude = 37.55740633539673, longitude = 126.97297407409239),
+                LngLat(latitude = 37.55747530737832, longitude = 126.973028783291),
+                LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178)
+            ),
+            // 2번째 도로(link)
+            listOf(
+                LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
+                LngLat(latitude = 37.56596349439521, longitude = 126.97717583536038)
+            )
         )
-      )
-  )	
-)
+    )
+}.build())
+
 ```
 
 ## 도로(link) 두께
@@ -129,11 +127,11 @@ path.color(Color.RED)
 
 ```kotlin
 path.linkColors(
-	listOf(
-    Color.RED, // 0번째 도로(link) 색상
-    Color.GREEN, // 1번째 도로(link) 색상
-    Color.YELLOW // 2번째 도로(link) 색상
-	)
+    listOf(
+        Color.RED, // 0번째 도로(link) 색상
+        Color.GREEN, // 1번째 도로(link) 색상
+        Color.YELLOW // 2번째 도로(link) 색상
+    )
 )
 ```
 
@@ -185,10 +183,10 @@ path.resetCurrentLinkAndLngLat()
 
 `passedColor` 속성을 활용하여 지나간 도로(link) 색상을 설정할 수 있습니다.
 
-- 지나간 도로 색상을 회색으로 설정한다.
+- 지나간 도로 색상을 밝은 회색으로 설정한다.
 
 ```kotlin
-path.passedColor = [Color.](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)LTGRAY
+path.passedColor = Color.LTGRAY
 ```
 
 ![path08.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path08.jpg)
@@ -196,7 +194,7 @@ path.passedColor = [Color.](https://developer.android.com/reference/android/grap
 - 색상이  [Color.TRANSPARENT](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)인 경우는 지나간 도로를 보이기 안도록 처리할 수 있습니다.
 
 ```kotlin
-path.passedColor = [Color.TRANSPARENT](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)
+path.passedColor = Color.TRANSPARENT
 ```
 
 ![path09.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path09.jpg)
@@ -211,16 +209,16 @@ path.passedColor = [Color.TRANSPARENT](https://developer.android.com/reference/a
 
 ```kotlin
 val arrow = ktMap.addArrowOverlay(
-  ArrowOverlayOptions.Builder().apply {
+    ArrowOverlayOptions.Builder().apply {
 		lngLats(
 			listOf(
-        LngLat(latitude = 37.55740633539673, longitude = 126.97297407409239),
-        LngLat(latitude = 37.55747530737832, longitude = 126.973028783291),
-        LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
-        LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
-        LngLat(latitude = 37.56596349439521, longitude = 126.97717583536038)
-		  )
-		)
+                LngLat(latitude = 37.55740633539673, longitude = 126.97297407409239),
+                LngLat(latitude = 37.55747530737832, longitude = 126.973028783291),
+                LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
+                LngLat(latitude = 37.56501037083583, longitude = 126.97719537663178),
+                LngLat(latitude = 37.56596349439521, longitude = 126.97717583536038)
+            )
+        )
 	}
 )
 ```
