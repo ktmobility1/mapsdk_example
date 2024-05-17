@@ -39,7 +39,7 @@ val path = ktMap.addPathOverlay(
 )
 ```
 
-![path01.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path01.jpg)
+![path01.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path01.jpg)
 
 - `객체`로 오버레이를 지도에서 삭제한다.
 
@@ -95,7 +95,7 @@ val path = ktMap.addPathOverlay(
 path.width(10)
 ```
 
-![path02.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path02.jpg)
+![path02.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path02.jpg)
 
 ## 외곽선 두께
 
@@ -109,7 +109,7 @@ path.width(10)
 path.strokeWidth(10)
 ```
 
-![path03.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path03.jpg)
+![path03.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path03.jpg)
 
 ## 도로(link) 색상
 
@@ -123,7 +123,7 @@ path.strokeWidth(10)
 path.color(Color.RED)
 ```
 
-![path13.png](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path13.png)
+![path13.png](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path13.png)
 
 - 도로(link)별로 색상을 설정한다.
 
@@ -137,7 +137,7 @@ path.linkColors(
 )
 ```
 
-![path04.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path04.jpg)
+![path04.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path04.jpg)
 
 ## 경로선 반복 이미지 패턴
 
@@ -151,7 +151,7 @@ path.linkColors(
 path.pattern(AppCompatResources.getDrawable(this@PathActivity, R.drawable.path_pattern))
 ```
 
-![path05.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path05.jpg)
+![path05.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path05.jpg)
 
 ## 지나간 도로(link) 설정
 
@@ -171,7 +171,7 @@ path.currentLinkAndLngLat(
 )
 ```
 
-![path07.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path07.jpg)
+![path07.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path07.jpg)
 
 `resetCurrentLinkAndLngLat` 메소드를 이용해서 지나간 도로를 초기화할 수 있습니다.
 
@@ -191,7 +191,7 @@ path.resetCurrentLinkAndLngLat()
 path.passedColor = [Color.](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)LTGRAY
 ```
 
-![path08.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path08.jpg)
+![path08.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path08.jpg)
 
 - 색상이  [Color.TRANSPARENT](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)인 경우는 지나간 도로를 보이기 안도록 처리할 수 있습니다.
 
@@ -199,7 +199,7 @@ path.passedColor = [Color.](https://developer.android.com/reference/android/grap
 path.passedColor = [Color.TRANSPARENT](https://developer.android.com/reference/android/graphics/Color#TRANSPARENT)
 ```
 
-![path09.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path09.jpg)
+![path09.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path09.jpg)
 
 ## 화살표 오버레이 추가/삭제
 
@@ -225,7 +225,7 @@ val arrow = ktMap.addArrowOverlay(
 )
 ```
 
-![path12.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path12.jpg)
+![path12.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path12.jpg)
 
 - 삭제
 
@@ -245,7 +245,7 @@ ktMap.removeArrowOverlay(arrow)
 arrow.color(Color.RED)
 ```
 
-![path11.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path11.jpg)
+![path11.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path11.jpg)
 
 ## 화살표 오버레이 외곽선 색상
 
@@ -259,4 +259,4 @@ arrow.color(Color.RED)
 arrow.strokeColor(Color.YELLOW)
 ```
 
-![path10.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/path10.jpg)
+![path10.jpg](https://ktmobility1.github.io/mapsdk_example/android/tutorial_md/pathOverlay/img/path10.jpg)
