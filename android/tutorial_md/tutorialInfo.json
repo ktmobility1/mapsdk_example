@@ -9,6 +9,11 @@
             "name": "map",
             "key": "지도",
             "icon": ""
+        },
+        {
+            "name": "pathOverlay",
+            "key": "경로 관련 오버레이",
+            "icon": ""
         }
     ]
 }
