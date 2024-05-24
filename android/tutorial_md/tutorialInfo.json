@@ -9,6 +9,36 @@
             "name": "map",
             "key": "지도",
             "icon": ""
+        },
+        {
+            "name": "overlay",
+            "key": "오버레이 공통",
+            "icon": ""
+        },
+        {
+            "name": "marker",
+            "key": "마커",
+            "icon": ""
+        },
+        {
+            "name": "infowindow",
+            "key": "인포윈도우",
+            "icon": ""
+        },
+        {
+            "name": "polygon",
+            "key": "폴리곤 오버레이",
+            "icon": ""
+        },
+        {
+            "name": "polyline",
+            "key": "폴리라인 오버레이",
+            "icon": ""
+        },
+        {
+            "name": "pathOverlay",
+            "key": "경로 관련 오버레이",
+            "icon": ""
         }
     ]
 }
