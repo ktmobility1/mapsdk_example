@@ -56,17 +56,6 @@
       "paint": {"line-color": "#F9F9F5", "line-width": 1, "line-opacity": 1}
     },
     {
-      "id": "bound_line_1003_:1001",
-      "type": "line",
-      "source": "KT_Vector",
-      "source-layer": "bound_line",
-      "minzoom": 6,
-      "maxzoom": 24,
-      "filter": ["==", "pid", 1001],
-      "layout": {"visibility": "visible"},
-      "paint": {"line-color": "#F9F9F5", "line-width": 1, "line-opacity": 1}
-    },
-    {
       "id": "water_poly_308_:1001",
       "type": "fill",
       "source": "KT_Vector",
