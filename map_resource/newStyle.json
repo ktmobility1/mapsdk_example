@@ -1656,30 +1656,7 @@
         }
       }
     },
-   
-    {
-      "id": "bld_poly_713_:1143",
-      "type": "fill-extrusion",
-      "source": "KT_Vector",
-      "source-layer": "bld_poly",
-      "minzoom": 6,
-      "maxzoom": 24,
-      "filter": [
-        "==",
-        "pid",
-        713
-      ],
-      "paint": {
-        "fill-extrusion-color": "#EEEFF6",
-        "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": false,
-        "fill-extrusion-translate-anchor": "map",
-        "fill-extrusion-height": {
-          "type": "identity",
-          "property": "floor"
-        }
-      }
-    },
+
     {
       "id": "bld_poly_714_:1121",
       "type": "line",
