@@ -1656,24 +1656,7 @@
         }
       }
     },
-    {
-      "id": "bld_poly_713_:1123",
-      "type": "line",
-      "source": "KT_Vector",
-      "source-layer": "bld_poly",
-      "minzoom": 6,
-      "maxzoom": 24,
-      "filter": [
-        "==",
-        "pid",
-        713
-      ],
-      "paint": {
-        "line-color": "#989CB9",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
+   
     {
       "id": "bld_poly_713_:1143",
       "type": "fill-extrusion",
