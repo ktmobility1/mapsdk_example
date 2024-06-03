@@ -1,0 +1,5998 @@
+{
+  "version": 8,
+  "name": "OSM Liberty",
+  "metadata": {
+    "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "KT_Vector": {
+      "type": "vector",
+      "tiles": [
+        "https://tile.gis.kt.com/image/mvt_9/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxzoom": 17,
+        "format":"pbf"
+    },
+    "KT_Vector_Label": {
+      "type": "vector",
+      "tiles": [
+        "https://tile.gis.kt.com/image/mvt_label/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxzoom": 17,
+        "format":"pbf"
+    }
+  },
+  "glyphs": "https://tile.gis.kt.com/image/mvt_label/KTfont/{fontstack}/{range}.pbf?key=KDhMfHvorAFkFe64wlZb",
+  "sprite": "https://tile.gis.kt.com/image/mvt_label/sprite",
+  "layers": [
+    {
+      "id": "wd1_water_poly_301_:1",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "wd1_water_poly_301",
+      "paint": {
+        "fill-color": "#f8f5ef",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 24
+    },
+    {
+      "id": "wd1_sea_:2",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "wd1_sea",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 9
+    },
+    {
+      "id": "wd2_sea_:3",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "wd2_sea",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_sea_:4",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_sea",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_sea_:5",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_sea",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    }, 
+    {
+      "id": "md_terrain_poly_401_:12",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_402_:13",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_402_or",
+      "paint": {
+        "fill-color": "#90cc85",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_403_:14",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_404_:15",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_404_or",
+      "paint": {
+        "fill-color": "#7eb374",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_405_:16",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_406_:17",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_406_or",
+      "paint": {
+        "fill-color": "#6c9963",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_407_:18",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_407_or",
+      "paint": {
+        "fill-color": "#628c5b",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "md_terrain_poly_401_:19",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_402_:20",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_402_or",
+      "paint": {
+        "fill-color": "#90cc85",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_403_:21",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_404_:22",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_404_or",
+      "paint": {
+        "fill-color": "#7eb374",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_405_:23",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_406_:24",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_406_or",
+      "paint": {
+        "fill-color": "#6c9963",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_407_:25",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_407_or",
+      "paint": {
+        "fill-color": "#628c5b",
+        "fill-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_terrain_poly_401_:26",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_402_:27",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_402_or",
+      "paint": {
+        "fill-color": "#90cc85",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_403_:28",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_404_:29",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_404_or",
+      "paint": {
+        "fill-color": "#7eb374",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_405_:30",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_406_:31",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_406_or",
+      "paint": {
+        "fill-color": "#6c9963",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_407_:32",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_407_or",
+      "paint": {
+        "fill-color": "#628c5b",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_terrain_poly_401_:33",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_terrain_poly_403_:34",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_terrain_poly_405_:35",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_terrain_poly_407_:36",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_407_or",
+      "paint": {
+        "fill-color": "#628c5b",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_terrain_poly_401_:37",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_terrain_poly_403_:38",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_terrain_poly_405_:39",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_terrain_poly_407_:40",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_407_or",
+      "paint": {
+        "fill-color": "#628c5b",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_terrain_poly_401_:41",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_401_or",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "md_terrain_poly_403_:42",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_403_or",
+      "paint": {
+        "fill-color": "#88bf7c",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "md_terrain_poly_405_:43",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_terrain_poly_405_or",
+      "paint": {
+        "fill-color": "#75a66c",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "dt_water_poly_309_:44",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_309",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_525_:46",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "fill-color": "#cfd0dc",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_524_:47",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_524",
+      "paint": {
+        "fill-color": "#c3b495",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_522_:48",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_522",
+      "paint": {
+        "fill-color": "#f0e1b8",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_521_:49",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_521",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_517_:50",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_517",
+      "paint": {
+        "fill-color": "#d8eae8",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_516_:51",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_516",
+      "paint": {
+        "fill-color": "#b7bdef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_515_:52",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_515",
+      "paint": {
+        "fill-color": "#c8c3ad",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_514_:53",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_514",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_513_:54",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_513",
+      "paint": {
+        "fill-color": "#a1d8e0",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_511_:55",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_511",
+      "paint": {
+        "fill-color": "#b1dfe1",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_510_:56",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_510",
+      "paint": {
+        "fill-color": "#efcece",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_509_:57",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_509",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_508_:58",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_508",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_507_:59",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_507",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_506_:60",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_506",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_505_:61",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_505",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_504_:62",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_504",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_503_:63",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_503",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_502_:64",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_502",
+      "paint": {
+        "fill-color": "#e3e6ea",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_512_:65",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_512",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_525_:66",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "fill-color": "#cfd0dc",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_524_:67",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_524",
+      "paint": {
+        "fill-color": "#c3b495",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_522_:68",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_522",
+      "paint": {
+        "fill-color": "#f0e1b8",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_521_:69",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_521",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_517_:70",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_517",
+      "paint": {
+        "fill-color": "#d8eae8",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_516_:71",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_516",
+      "paint": {
+        "fill-color": "#b7bdef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_515_:72",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_515",
+      "paint": {
+        "fill-color": "#c8c3ad",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_514_:73",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_514",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_513_:74",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_513",
+      "paint": {
+        "fill-color": "#a1d8e0",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_511_:75",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_511",
+      "paint": {
+        "fill-color": "#b1dfe1",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_510_:76",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_510",
+      "paint": {
+        "fill-color": "#efcece",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_509_:77",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_509",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_508_:78",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_508",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_507_:79",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_507",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_506_:80",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_506",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_505_:81",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_505",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_504_:82",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_504",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_503_:83",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_503",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_502_:84",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_502",
+      "paint": {
+        "fill-color": "#e3e6ea",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "md_area_poly_525_:85",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_525",
+      "paint": {
+        "fill-color": "#cfd0dc",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_517_:86",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_517",
+      "paint": {
+        "fill-color": "#d8eae8",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_513_:87",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_513",
+      "paint": {
+        "fill-color": "#a1d8e0",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_511_:88",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_511",
+      "paint": {
+        "fill-color": "#b1dfe1",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_508_:89",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_508",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_506_:90",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_506",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_505_:91",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_505",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_504_:92",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_504",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_503_:93",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_503",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_525_:94",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_525",
+      "paint": {
+        "fill-color": "#cfd0dc",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_517_:95",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_517",
+      "paint": {
+        "fill-color": "#d8eae8",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_513_:96",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_513",
+      "paint": {
+        "fill-color": "#a1d8e0",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_511_:97",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_511",
+      "paint": {
+        "fill-color": "#b1dfe1",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_508_:98",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_508",
+      "paint": {
+        "fill-color": "#bfdcef",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_506_:99",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_506",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_505_:100",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_505",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_504_:101",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_504",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_area_poly_503_:102",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_503",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 10,
+      "maxzoom": 12
+    },
+    {
+      "id": "dt_area_poly_519_:103",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_519",
+      "paint": {
+        "fill-color": "#b8e0b9",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_520_:104",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_520",
+      "paint": {
+        "fill-color": "#c6bfa2",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_518_:105",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_518",
+      "paint": {
+        "fill-color": "#d8e4ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_518::105",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_518",
+      "paint": {
+        "line-color": "#f9f9f9",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_601_:106",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_601",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 13
+    },
+    {
+      "id": "dt_golf_poly_601_:107",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_601",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_602_:108",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_602",
+      "paint": {
+        "fill-color": "#7bcd80",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_604_:109",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_604",
+      "paint": {
+        "fill-color": "#a3e094",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_603_:110",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_603",
+      "paint": {
+        "fill-color": "#96d989",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_605_:111",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_605",
+      "paint": {
+        "fill-color": "#64c06a",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_606_:112",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_606",
+      "paint": {
+        "fill-color": "#f0e6c9",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_608_:113",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_608",
+      "paint": {
+        "fill-color": "#9ad993",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "wd2_water_poly_311_:114",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "wd2_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "wd2_water_poly_311_:115",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "wd2_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_water_poly_311_:116",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_water_poly_311_:117",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "dt_water_poly_312_:118",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_312",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_water_poly_311_:119",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_water_poly_313_:120",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_313",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_607_:121",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_607",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_water_poly_312_:122",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_312",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_water_poly_311_:123",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_water_poly_311",
+      "paint": {
+        "fill-color": "#89b3ea",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_609_:140",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_609",
+      "paint": {
+        "fill-color": "#9ad993",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_609::140",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_609",
+      "paint": {
+        "line-color": "#747474",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_717_:141",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_717",
+      "paint": {
+        "fill-extrusion-color": "#e6ddca",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_717::141",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_717",
+      "paint": {
+        "line-color": "#b2a68e",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_714_:142",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_714",
+      "paint": {
+        "fill-extrusion-color": "#fbffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_714::142",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_714",
+      "paint": {
+        "line-color": "#a1b3b3",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_713_:143",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_713",
+      "paint": {
+        "fill-extrusion-color": "#f4fdfd",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_713::143",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_713",
+      "paint": {
+        "line-color": "#c1c9c9",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_712_:144",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_712",
+      "paint": {
+        "fill-extrusion-color": "#f4fdfd",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_712::144",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_712",
+      "paint": {
+        "line-color": "#c1c9c9",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_711_:145",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_711",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_711::145",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_711",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_710_:146",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_710",
+      "paint": {
+        "fill-extrusion-color": "#ffebeb",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_710::146",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_710",
+      "paint": {
+        "line-color": "#ccb3b3",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_709_:147",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_709",
+      "paint": {
+        "fill-extrusion-color": "#fcffff",
+        "fill-extrusion-opacity": 0.4,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_709::147",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_709",
+      "paint": {
+        "line-color": "#b2b2b2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_708_:148",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_708",
+      "paint": {
+        "fill-extrusion-color": "#edede9",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_708::148",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_708",
+      "paint": {
+        "line-color": "#b2b2b2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_707_:149",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_707",
+      "paint": {
+        "fill-extrusion-color": "#fdfbf8",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_707::149",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_707",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_706_:150",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_706",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_706::150",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_706",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_705_:151",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_705",
+      "paint": {
+        "fill-extrusion-color": "#fbffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_705::151",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_705",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_704_:152",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_704",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_704::152",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_704",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_703_:153",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_703",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_703::153",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_703",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_702_:154",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_702",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_702::154",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_702",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_701_:155",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_701",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_701::155",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_701",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_golf_poly_609_:168",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_609",
+      "paint": {
+        "fill-color": "#9ad993",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_golf_poly_609::168",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_golf_poly_609",
+      "paint": {
+        "line-color": "#747474",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_717_:169",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_717",
+      "paint": {
+        "fill-extrusion-color": "#f0ecd5",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_717::169",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_717",
+      "paint": {
+        "line-color": "#cfc8b8",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_714_:170",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_714",
+      "paint": {
+        "fill-extrusion-color": "#fbffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_714::170",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_714",
+      "paint": {
+        "line-color": "#a1b3b3",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_713_:171",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_713",
+      "paint": {
+        "fill-extrusion-color": "#f4fdfd",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_713::171",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_713",
+      "paint": {
+        "line-color": "#c1c9c9",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_712_:172",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_712",
+      "paint": {
+        "fill-extrusion-color": "#f4fdfd",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_712::172",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_712",
+      "paint": {
+        "line-color": "#c1c9c9",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_711_:173",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_711",
+      "paint": {
+        "fill-extrusion-color": "#ffffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_711::173",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_711",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_710_:174",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_710",
+      "paint": {
+        "fill-extrusion-color": "#ffebeb",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_710::174",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_710",
+      "paint": {
+        "line-color": "#ccb3b3",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_709_:175",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_709",
+      "paint": {
+        "fill-extrusion-color": "#fcffff",
+        "fill-extrusion-opacity": 0.4,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_709::175",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_709",
+      "paint": {
+        "line-color": "#b2b2b2",
+        "line-width": 0.8,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_707_:176",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_707",
+      "paint": {
+        "fill-extrusion-color": "#fdfbf8",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_707::176",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_707",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_705_:177",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_705",
+      "paint": {
+        "fill-extrusion-color": "#fbffff",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_bld_poly_705::177",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_705",
+      "paint": {
+        "line-color": "#c1b7a2",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "wd2_bound_line_1004_:180",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_bound_line_1004",
+      "paint": {
+        "line-color": "#5c5b58",
+        "line-width": 1,
+        "line-opacity": 0.45
+      },
+      "minzoom": 6,
+      "maxzoom": 10
+    },
+    {
+      "id": "wd2_bound_line_1003_:181",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_bound_line_1003",
+      "paint": {
+        "line-color": "#5c5b58",
+        "line-width": 1,
+        "line-opacity": 0.5
+      },
+      "minzoom": 6,
+      "maxzoom": 10
+    },
+    {
+      "id": "wd2_bound_line_1002_:182",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_bound_line_1002",
+      "paint": {
+        "line-color": "#5c5b58",
+        "line-width": 1,
+        "line-opacity": 0.55
+      },
+      "minzoom": 6,
+      "maxzoom": 12
+    },
+    {
+      "id": "wd1_bound_line_1001_:183",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd1_bound_line_1001",
+      "paint": {
+        "line-color": "#f8f5ef",
+        "line-width": 1,
+        "line-opacity": 0.15
+      },
+      "minzoom": 6,
+      "maxzoom": 7
+    },
+    {
+      "id": "dt_road_line_2400_s_1=1:186",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_line_2400_s",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 1.8,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_109_1=1:189",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_109",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_107_1=1:190",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_107",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_105_1=1:191",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_105",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 3.4,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_104_1=1:192",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_104",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3.4,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_103_1=1:193",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3.4,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_102_1=1:194",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_line_2400_s_:196",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_line_2400_s",
+      "paint": {
+        "fill-color": "#ffffff",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_111_1=1:187",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_111",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_111_:197",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_111",
+      "paint": {
+        "fill-color": "#ffffff",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_111::197",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_111",
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_110_1=1:188",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_110",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_110_:198",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_110",
+      "paint": {
+        "fill-color": "#ffffff",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_110::198",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_110",
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_109_:199",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_109",
+      "paint": {
+        "fill-color": "#ffffff",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_109::199",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_109",
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_107_:200",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_107",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_107::200",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_107",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_105_:201",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_105",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_105::201",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_105",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_104_:202",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_104",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_104::202",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_104",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_103_:203",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_103::203",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_102_:204",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_102::204",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_101_1=1:195",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_road_poly_101_:205",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    
+    {
+      "id": "dt_facil_poly_906_:206",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_facil_poly_906",
+      "paint": {
+        "fill-color": "#dbd1bc",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_facil_poly_906::206",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_facil_poly_906",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_facil_poly_905_:207",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_facil_poly_905",
+      "paint": {
+        "fill-color": "#a0d897",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    
+    
+    {
+      "id": "dt_road_poly_112_:212",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_road_poly_112",
+      "paint": {
+        "fill-color": "#ffffff",
+        "fill-opacity": 0.4
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    
+  
+    
+    {
+      "id": "md_road_poly_105:1=1:227",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_105_:228",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_105::228",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    
+    {
+      "id": "md_road_poly_104:1=1:229",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_104_:230",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_104::230",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_103:1=1:231",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_103_:232",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_103::232",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_102:1=1:233",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 2.4,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_102_:234",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_102::234",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_101:1=1:235",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 2.4,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_101_:236",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_road_poly_101::236",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    
+    {
+      "id": "md_road_poly_105:1=1:238",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_105_:239",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_105::239",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1.4,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    
+    {
+      "id": "md_road_poly_104:1=1:240",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_104_:241",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_104::241",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_103:1=1:242",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_103_:243",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_103::243",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_102:1=1:244",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_102_:245",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_102::245",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    
+    {
+      "id": "md_road_poly_101:1=1:246",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_101_:247",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_101::247",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 13
+    },
+    
+    {
+      "id": "md_road_poly_105::248",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_105_:249",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_105::249",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1.4,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    
+    {
+      "id": "md_road_poly_104::250",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_104_:251",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_104::251",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1.8,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_103::252",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_103_:253",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_103::253",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 1.8,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    
+    {
+      "id": "md_road_poly_105::254",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#dbd1bc",
+        "line-width": 2.4,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_105_:255",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "fill-color": "#fffbd1",
+        "fill-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_105::255",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_105",
+      "paint": {
+        "line-color": "#fffbd1",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_104::256",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 3.6,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_104_:257",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_104::257",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_104",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 11
+    },
+    
+    {
+      "id": "md_road_poly_103::258",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_103_:259",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_103::259",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_trainroad_line_1227_:260",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1227",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_trainroad_line_1225_:261",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1225",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_trainroad_line_1205_:262",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1205",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_trainroad_line_1203_:263",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1203",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_trainroad_line_1202_:264",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1202",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_trainroad_line_1201_:265",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_trainroad_line_1201",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 9,
+      "maxzoom": 13
+    },
+    {
+      "id": "md_road_poly_102:1=1:266",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_102_:267",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_102::267",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    
+    {
+      "id": "md_road_poly_101:1=1:268",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_101_:269",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    {
+      "id": "md_road_poly_101::269",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 11,
+      "maxzoom": 12
+    },
+    
+    {
+      "id": "md_road_poly_102:1=1:270",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4.8,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_102_:271",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_102::271",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    
+    {
+      "id": "md_road_poly_101:1=1:272",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4.8,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_101_:273",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_101::273",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 10,
+      "maxzoom": 11
+    },
+    {
+      "id": "md_road_poly_103:1=1:274",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_103_:275",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "fill-color": "#ffde6e",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_103::275",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_103",
+      "paint": {
+        "line-color": "#ffde6e",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_102:1=1:276",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 3.6,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_102_:277",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_102::277",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_102",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    
+    {
+      "id": "md_road_poly_101:1=1:278",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 3.6,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_101_:279",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "fill-color": "#ffae56",
+        "fill-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "md_road_poly_101::279",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_road_poly_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.6,
+        "line-opacity": 1
+      },
+      "minzoom": 8,
+      "maxzoom": 10
+    },
+    {
+      "id": "wd2_road_line_102_lv3_1=1:280",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_102_lv3",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 3.2,
+        "line-opacity": 1
+      },
+      "minzoom": 7,
+      "maxzoom": 9
+    },
+    {
+      "id": "wd2_road_line_102_lv3_:281",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_102_lv3",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.2,
+        "line-opacity": 1
+      },
+      "minzoom": 7,
+      "maxzoom": 9
+    },
+    {
+      "id": "wd2_road_line_101_lv3_1=1:282",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_101_lv3",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 4,
+        "line-opacity": 1
+      },
+      "minzoom": 7,
+      "maxzoom": 9
+    },
+    {
+      "id": "wd2_road_line_101_lv3_:283",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_101_lv3",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 7,
+      "maxzoom": 9
+    },
+    {
+      "id": "wd2_road_line_102_lv2_1=1:284",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_102_lv2",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 2,
+        "line-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "wd2_road_line_102_lv2_:285",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd2_road_line_102_lv2",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 1.2,
+        "line-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "wd1_road_line_101_1=1:286",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd1_road_line_101",
+      "paint": {
+        "line-color": "#e56b2d",
+        "line-width": 2.8,
+        "line-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "wd1_road_line_101_:287",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "wd1_road_line_101",
+      "paint": {
+        "line-color": "#ffae56",
+        "line-width": 1.8,
+        "line-opacity": 1
+      },
+      "minzoom": 6,
+      "maxzoom": 8
+    },
+    {
+      "id": "dt_area_poly_525_1=1:288",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "line-color": "#5d5c57",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_area_poly_525_1=1:289",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "line-color": "#5d5c57",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 15,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_525_1=1:290",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "line-color": "#75746e",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_area_poly_525_1=1:291",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_area_poly_525",
+      "paint": {
+        "line-color": "#75746e",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 13,
+      "maxzoom": 15
+    },
+    {
+      "id": "md_area_poly_525_1=1:292",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_525",
+      "paint": {
+        "line-color": "#75746e",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 12,
+      "maxzoom": 14
+    },
+    {
+      "id": "md_area_poly_525_1=1:293",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "md_area_poly_525",
+      "paint": {
+        "line-color": "#75746e",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 11,
+      "maxzoom": 13
+    },
+    {
+      "id": "dt_busroad_poly_201_:294",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_busroad_poly_201",
+      "paint": {
+        "fill-color": "#dbd9ce",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_line_718_:295",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_line_718",
+      "paint": {
+        "line-color": "#fefefe",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_line_716_:296",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_line_716",
+      "paint": {
+        "line-color": "#fefefe",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_802_st_area(geom)>2500:297",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_802",
+      "paint": {
+        "fill-color": "#d6be8d",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_802:st_area(geom)>2500:297",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_802",
+      "paint": {
+        "line-color": "#d6be8d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_802_st_area(geom)>2500:298",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_802",
+      "paint": {
+        "fill-color": "#f5d89d",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1238_:299",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1238",
+      "paint": {
+        "line-color": "#ffc72c",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1237_:300",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1237",
+      "paint": {
+        "line-color": "#a17800",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1236_:301",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1236",
+      "paint": {
+        "line-color": "#84bd39",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1234_:302",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1234",
+      "paint": {
+        "line-color": "#6f99d0",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1234_:303",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1234",
+      "paint": {
+        "line-color": "#71d071",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1233_:304",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1233",
+      "paint": {
+        "line-color": "#2684f0",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1232_:305",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1232",
+      "paint": {
+        "line-color": "#ffb850",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1231_:306",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1231",
+      "paint": {
+        "line-color": "#ffb300",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1230_:307",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1230",
+      "paint": {
+        "line-color": "#ff850d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1229_:308",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1229",
+      "paint": {
+        "line-color": "#8a61ad",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1228_:309",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1228",
+      "paint": {
+        "line-color": "#ffda00",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1227_:310",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1227",
+      "paint": {
+        "line-color": "#26b28f",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1204_:311",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1204",
+      "paint": {
+        "line-color": "#26b28f",
+        "line-width": 1.45,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1226_:312",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1226",
+      "paint": {
+        "line-color": "#406ab4",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1225_:313",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1225",
+      "paint": {
+        "line-color": "#0a8e72",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1224_:314",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1224",
+      "paint": {
+        "line-color": "#5eae53",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1223_:315",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1223",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1222_:316",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1222",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1221_:317",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1221",
+      "paint": {
+        "line-color": "#009900",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1220_:318",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1220",
+      "paint": {
+        "line-color": "#f90202",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1219_:319",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1219",
+      "paint": {
+        "line-color": "#d4a32a",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1218_:320",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1218",
+      "paint": {
+        "line-color": "#4bb948",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1217_:321",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1217",
+      "paint": {
+        "line-color": "#f26921",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1216_:322",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1216",
+      "paint": {
+        "line-color": "#8cadcb",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1215_:323",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1215",
+      "paint": {
+        "line-color": "#db0029",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1214_:324",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1214",
+      "paint": {
+        "line-color": "#ffb300",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1213_:325",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1213",
+      "paint": {
+        "line-color": "#aa9872",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1212_:326",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1212",
+      "paint": {
+        "line-color": "#f51361",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1211_:327",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1211",
+      "paint": {
+        "line-color": "#54640d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1210_:328",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1210",
+      "paint": {
+        "line-color": "#8c6c54",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1209_:329",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1209",
+      "paint": {
+        "line-color": "#8b50a4",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1208_:330",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1208",
+      "paint": {
+        "line-color": "#32a1c8",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1207_:331",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1207",
+      "paint": {
+        "line-color": "#fe5b10",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1206_:332",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1206",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1203_:333",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1203",
+      "paint": {
+        "line-color": "#c3c2bc",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 14,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1205_:334",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1205",
+      "paint": {
+        "line-color": "#0d3692",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1202_:335",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1202",
+      "paint": {
+        "line-color": "#3681b7",
+        "line-width": 1.3,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1201_:336",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1201",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 12,
+      "maxzoom": 16
+    },
+    {
+      "id": "dt_trainroad_line_1238_:337",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1238",
+      "paint": {
+        "line-color": "#ffc72c",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1237_:338",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1237",
+      "paint": {
+        "line-color": "#a17800",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1236_:339",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1236",
+      "paint": {
+        "line-color": "#84bd39",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1235_:340",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1235",
+      "paint": {
+        "line-color": "#6f99d0",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1234_:341",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1234",
+      "paint": {
+        "line-color": "#71d071",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1233_:342",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1233",
+      "paint": {
+        "line-color": "#2684f0",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1232_:343",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1232",
+      "paint": {
+        "line-color": "#ffb850",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1231_:344",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1231",
+      "paint": {
+        "line-color": "#ffb300",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1230_:345",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1230",
+      "paint": {
+        "line-color": "#ff850d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1229_:346",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1229",
+      "paint": {
+        "line-color": "#8a61ad",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1228_:347",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1228",
+      "paint": {
+        "line-color": "#ffda00",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1227_:348",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1227",
+      "paint": {
+        "line-color": "#26b28f",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1204_:349",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1204",
+      "paint": {
+        "line-color": "#26b28f",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1226_:350",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1226",
+      "paint": {
+        "line-color": "#406ab4",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1225_:351",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1225",
+      "paint": {
+        "line-color": "#0a8e72",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1224_:352",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1224",
+      "paint": {
+        "line-color": "#5eae53",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1223_:353",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1223",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1222_:354",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1222",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1221_:355",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1221",
+      "paint": {
+        "line-color": "#009900",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1220_:356",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1220",
+      "paint": {
+        "line-color": "#f90202",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1219_:357",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1219",
+      "paint": {
+        "line-color": "#d4a32a",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1218_:358",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1218",
+      "paint": {
+        "line-color": "#4bb948",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1217_:359",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1217",
+      "paint": {
+        "line-color": "#f26921",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1216_:360",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1216",
+      "paint": {
+        "line-color": "#8cadcb",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1215_:361",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1215",
+      "paint": {
+        "line-color": "#d26670",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1214_:362",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1214",
+      "paint": {
+        "line-color": "#ffb300",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1213_:363",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1213",
+      "paint": {
+        "line-color": "#aa9872",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1212_:364",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1212",
+      "paint": {
+        "line-color": "#f51361",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1211_:365",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1211",
+      "paint": {
+        "line-color": "#54640d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1210_:366",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1210",
+      "paint": {
+        "line-color": "#8c6c54",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1209_:367",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1209",
+      "paint": {
+        "line-color": "#8b50a4",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1208_:368",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1208",
+      "paint": {
+        "line-color": "#32a1c8",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1207_:369",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1207",
+      "paint": {
+        "line-color": "#fe5b10",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1206_:370",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1206",
+      "paint": {
+        "line-color": "#33a23d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1205_:371",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1205",
+      "paint": {
+        "line-color": "#0d3692",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1203_:372",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1203",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1202_:373",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1202",
+      "paint": {
+        "line-color": "#3681b7",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroad_line_1201_:374",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroad_line_1201",
+      "paint": {
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_803_st_area(geom)>2500:375",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_803",
+      "paint": {
+        "fill-color": "#f5d89d",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_803:st_area(geom)>2500:375",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_803",
+      "paint": {
+        "line-color": "#d6be8d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "plink_crosswalk_:376",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "plink_crosswalk",
+      "paint": {
+        "line-color": "#d1c9c0",
+        "line-width": 16,
+        "line-opacity": 0.8
+      },
+      "minzoom": 17,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_facil_poly_901_:377",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_facil_poly_901",
+      "paint": {
+        "fill-color": "#f0eee7",
+        "fill-opacity": 1
+      },
+      "minzoom": 17,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1303_:378",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1303",
+      "paint": {
+        "fill-color": "#8bacd9",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1301_:379",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1301",
+      "paint": {
+        "fill-color": "#8bacd9",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainroadext_poly_1402_s_:380",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainroadext_poly_1402_s",
+      "paint": {
+        "fill-color": "#8bacd9",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1338_:381",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1338",
+      "paint": {
+        "fill-color": "#ffc72c",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1337_:382",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1337",
+      "paint": {
+        "fill-color": "#a17800",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1336_:383",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1336",
+      "paint": {
+        "fill-color": "#84bd39",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1335_:384",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1335",
+      "paint": {
+        "fill-color": "#6f99d0",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1334_:385",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1334",
+      "paint": {
+        "fill-color": "#71d071",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1327_:386",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1327",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1304_:387",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1304",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1333_:388",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1333",
+      "paint": {
+        "fill-color": "#2684f0",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1332_:389",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1332",
+      "paint": {
+        "fill-color": "#ffb850",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1331_:390",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1331",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1330_:391",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1330",
+      "paint": {
+        "fill-color": "#fea526",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1329_:392",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1329",
+      "paint": {
+        "fill-color": "#9a48b1",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1328_:393",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1328",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1326_:394",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1326",
+      "paint": {
+        "fill-color": "#426bb3",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1325_:395",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1325",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1324_:396",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1324",
+      "paint": {
+        "fill-color": "#5eae53",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1323_:397",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1323",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1322_:398",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1322",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1321_:399",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1321",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1320_:400",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1320",
+      "paint": {
+        "fill-color": "#f85757",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1319_:401",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1319",
+      "paint": {
+        "fill-color": "#9d722a",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1318_:402",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1318",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1317_:403",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1317",
+      "paint": {
+        "fill-color": "#ef6d29",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1316_:404",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1316",
+      "paint": {
+        "fill-color": "#33a5eb",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1315_:405",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1315",
+      "paint": {
+        "fill-color": "#d92553",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1314_:406",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1314",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1313_:407",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1313",
+      "paint": {
+        "fill-color": "#bd9f4c",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1312_:408",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1312",
+      "paint": {
+        "fill-color": "#dc4d89",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1311_:409",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1311",
+      "paint": {
+        "fill-color": "#889823",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1310_:410",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1310",
+      "paint": {
+        "fill-color": "#8c6c54",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1309_:411",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1309",
+      "paint": {
+        "fill-color": "#9a48b1",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1308_:412",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1308",
+      "paint": {
+        "fill-color": "#33a5eb",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1307_:413",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1307",
+      "paint": {
+        "fill-color": "#f27939",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1306_:414",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1306",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1305_:415",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1305",
+      "paint": {
+        "fill-color": "#365abc",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1302_:416",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1302",
+      "paint": {
+        "fill-color": "#6fb7e3",
+        "fill-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1338_:417",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1338",
+      "paint": {
+        "fill-color": "#ffc72c",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1337_:418",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1337",
+      "paint": {
+        "fill-color": "#a17800",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1336_:419",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1336",
+      "paint": {
+        "fill-color": "#84bd39",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1335_:420",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1335",
+      "paint": {
+        "fill-color": "#6f99d0",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1334_:421",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1334",
+      "paint": {
+        "fill-color": "#71d071",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1327_:422",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1327",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1304_:423",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1304",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1333_:424",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1333",
+      "paint": {
+        "fill-color": "#2684f0",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1332_:425",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1332",
+      "paint": {
+        "fill-color": "#ffb850",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1331_:426",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1331",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1330_:427",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1330",
+      "paint": {
+        "fill-color": "#fea526",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1329_:428",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1329",
+      "paint": {
+        "fill-color": "#9a48b1",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1328_:429",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1328",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1326_:430",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1326",
+      "paint": {
+        "fill-color": "#426bb3",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1325_:431",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1325",
+      "paint": {
+        "fill-color": "#3d9e9e",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1324_:432",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1324",
+      "paint": {
+        "fill-color": "#5eae53",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1323_:433",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1323",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1322_:434",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1322",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1321_:435",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1321",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1320_:436",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1320",
+      "paint": {
+        "fill-color": "#f85757",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1319_:437",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1319",
+      "paint": {
+        "fill-color": "#9d722a",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1318_:438",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1318",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1317_:439",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1317",
+      "paint": {
+        "fill-color": "#ef6d29",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1316_:440",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1316",
+      "paint": {
+        "fill-color": "#33a5eb",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1315_:441",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1315",
+      "paint": {
+        "fill-color": "#d92553",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1314_:442",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1314",
+      "paint": {
+        "fill-color": "#edb217",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1313_:443",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1313",
+      "paint": {
+        "fill-color": "#bd9f4c",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1312_:444",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1312",
+      "paint": {
+        "fill-color": "#dc4d89",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1311_:445",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1311",
+      "paint": {
+        "fill-color": "#889823",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1310_:446",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1310",
+      "paint": {
+        "fill-color": "#8c6c54",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1309_:447",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1309",
+      "paint": {
+        "fill-color": "#9a48b1",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1308_:448",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1308",
+      "paint": {
+        "fill-color": "#33a5eb",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1307_:449",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1307",
+      "paint": {
+        "fill-color": "#f27939",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1306_:450",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1306",
+      "paint": {
+        "fill-color": "#30bb37",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1305_:451",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1305",
+      "paint": {
+        "fill-color": "#365abc",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_trainstation_poly_1302_:452",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_trainstation_poly_1302",
+      "paint": {
+        "fill-color": "#6fb7e3",
+        "fill-opacity": 1
+      },
+      "minzoom": 16,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_715_:453",
+      "type": "fill-extrusion",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_715",
+      "paint": {
+        "fill-extrusion-color": "#ded6cd",
+        "fill-extrusion-opacity": 0.25,
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-height": {
+          "type": "identity",
+          "property": "floor"
+        }
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_bld_poly_715::453",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_bld_poly_715",
+      "paint": {
+        "line-color": "#aba59d",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_805_:454",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_805",
+      "paint": {
+        "fill-color": "#ffecab",
+        "fill-opacity": 0.85
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_805::454",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_805",
+      "paint": {
+        "line-color": "#d9be66",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_801_:455",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_801",
+      "paint": {
+        "fill-color": "#d1b165",
+        "fill-opacity": 0.5
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_801::455",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_801",
+      "paint": {
+        "line-color": "#b89645",
+        "line-width": 0.8,
+        "line-opacity": 0.4
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_line_811_:456",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_line_811",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 1.3,
+        "line-opacity": 0.85
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_line_810_:457",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_line_810",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 1,
+        "line-opacity": 0.75
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_804_:458",
+      "type": "fill",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_804",
+      "paint": {
+        "fill-color": "#ccc0a3",
+        "fill-opacity": 0.85
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "dt_roadext_poly_804::458",
+      "type": "line",
+      "source": "KT_Vector",
+      "source-layer": "dt_roadext_poly_804",
+      "paint": {
+        "line-color": "#e69544",
+        "line-width": 1,
+        "line-opacity": 1
+      },
+      "minzoom": 15,
+      "maxzoom": 24
+    },
+    {
+      "id": "poi_label",
+      "type": "symbol",
+      "source": "KT_Vector_Label",
+      "source-layer": "label",
+      "minzoom": 6,
+      "layout": {
+        "icon-image": "ico_{icon_cd}",
+        "text-anchor": "top",
+        "text-field": "{nm_dp}",
+        "text-font": [
+          "KTfontMedium"
+        ],
+        "text-size": 13,
+        "text-offset": [0, 0.7]
+      },
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 0.8)",
+        "text-halo-width": 2,
+        "text-color": "rgba(6, 0, 56, 1)"
+      }
+    }
+  ],
+  "id": "osm-liberty"
+}
