@@ -35,7 +35,17 @@
       },
       "minzoom": 0,
       "maxzoom": 17
-    }
+    },
+    {
+      "id": "trainroad_line",
+      "fields": {
+        "cate1": "String",
+        "cate2": "String",
+        "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
   ],
 
   "tilestats" : {
@@ -62,6 +72,25 @@
       },
       {
         "layer": "trainstation_poly",
+        "geometry": "Polygon",
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "trainroad_line",
         "geometry": "Polygon",
         "attributeCount":3,
         "attributes" : [
