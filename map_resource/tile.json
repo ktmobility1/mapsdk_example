@@ -1,6 +1,6 @@
 {
   "type": "vector",
-  "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf"],
+  "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf", "https://tile.gis.kt.com/image/MVT/label/{z}/{x}/{y}.pbf"],
   "minZoom": 0,
   "maxzoom": 17,
   "format": "pbf",
