@@ -1,0 +1,48 @@
+{
+  "type": "vector",
+  "tiles": ["https://tile.gis.kt.com/image/MVT/label/{z}/{x}/{y}.pbf"],
+  "minZoom": 0,
+  "maxzoom": 17,
+  "format": "pbf",
+
+  "vector_layers": [
+    {
+      "id": "label",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    }
+  ],
+
+  "tilestats" : {
+    "layerCount": 2,
+    "layers": [
+      {
+        "layer": "label",
+        "geometry": "Point",
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
