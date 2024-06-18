@@ -81,7 +81,7 @@
       },
       {
         "layer": "label",
-        "geometry": "point",
+        "geometry": "Point",
         "attributeCount":3,
         "attributes" : [
           {
