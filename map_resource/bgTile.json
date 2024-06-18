@@ -7,6 +7,116 @@
 
   "vector_layers": [
     {
+      "id": "water_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "sea_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "terrain_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "golf_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "bound_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "bound_line",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "area_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "road_line",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "roadext_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "facil_poly",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
+      "id": "bld_line",
+      "fields": {
+          "cate1": "String",
+          "cate2": "String",
+          "pid": "Number"
+      },
+      "minzoom": 0,
+      "maxzoom": 17
+    },
+    {
       "id": "bld_poly",
       "fields": {
           "cate1": "String",
@@ -111,7 +221,237 @@
       {
         "layer": "road_poly",
         "geometry": [
-          "Polygon",
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "water_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "sea_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "terrain_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "golf_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "bound_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "bound_line",
+        "geometry": [
+          "LineString"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "area_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "road_line",
+        "geometry": [
+          "LineString"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "roadext_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "facil_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "bld_line",
+        "geometry": [
           "LineString"
         ],
         "attributeCount":3,
