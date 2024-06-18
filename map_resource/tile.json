@@ -1,6 +1,6 @@
 {
   "type": "vector",
-  "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf", "https://tile.gis.kt.com/image/MVT/label/{z}/{x}/{y}.pbf"],
+  "tiles": ["https://tile.gis.kt.com/image/MVT/base/{z}/{x}/{y}.pbf"],
   "minZoom": 0,
   "maxzoom": 17,
   "format": "pbf",
@@ -18,26 +18,6 @@
     },
     {
       "id": "trainstation_poly",
-      "fields": {
-        "cate1": "String",
-        "cate2": "String",
-        "pid": "Number"
-      },
-      "minzoom": 0,
-      "maxzoom": 17
-    },
-    {
-      "id": "label",
-      "fields": {
-        "cate1": "String",
-        "cate2": "String",
-        "pid": "Number"
-      },
-      "minzoom": 0,
-      "maxzoom": 17
-    },
-    {
-      "id": "trainroad_line",
       "fields": {
         "cate1": "String",
         "cate2": "String",
@@ -73,44 +53,6 @@
       {
         "layer": "trainstation_poly",
         "geometry": "Polygon",
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
-        "layer": "trainroad_line",
-        "geometry": "Polygon",
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
-        "layer": "label",
-        "geometry": "Point",
         "attributeCount":3,
         "attributes" : [
           {
