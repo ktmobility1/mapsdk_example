@@ -45,7 +45,7 @@
       },
       "minzoom": 0,
       "maxzoom": 17
-    },
+    }
   ],
 
   "tilestats" : {
