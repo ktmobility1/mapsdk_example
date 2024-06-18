@@ -68,6 +68,25 @@
             "type": "Number"
           }
         ]
+      },
+      {
+        "layer": "label",
+        "geometry": "Polygon",
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
       }
     ]
   }
