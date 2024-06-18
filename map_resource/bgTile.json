@@ -162,84 +162,6 @@
     "layerCount": 2,
     "layers": [
       {
-        "layer": "bld_poly",
-        "geometry": "Polygon",
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
-        "layer": "trainstation_poly",
-        "geometry": "Polygon",
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
-        "layer": "trainroad_line",
-        "geometry": "LineString",
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
-        "layer": "road_poly",
-        "geometry": [
-          "Polygon"
-        ],
-        "attributeCount":3,
-        "attributes" : [
-          {
-            "attribute": "cate1",
-            "type": "string"
-          },
-          {
-            "attribute": "cate2",
-            "type": "string"
-          },
-          {
-            "attribute": "pid",
-            "type": "Number"
-          }
-        ]
-      },
-      {
         "layer": "water_poly",
         "geometry": [
           "Polygon"
@@ -387,6 +309,27 @@
         ]
       },
       {
+        "layer": "road_poly",
+        "geometry": [
+          "Polygon"
+        ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
         "layer": "road_line",
         "geometry": [
           "LineString"
@@ -454,6 +397,63 @@
         "geometry": [
           "LineString"
         ],
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "bld_poly",
+        "geometry": "Polygon",
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "trainstation_poly",
+        "geometry": "Polygon",
+        "attributeCount":3,
+        "attributes" : [
+          {
+            "attribute": "cate1",
+            "type": "string"
+          },
+          {
+            "attribute": "cate2",
+            "type": "string"
+          },
+          {
+            "attribute": "pid",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "layer": "trainroad_line",
+        "geometry": "LineString",
         "attributeCount":3,
         "attributes" : [
           {
