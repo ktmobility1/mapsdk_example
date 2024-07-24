@@ -2365,8 +2365,8 @@
       "paint": {
         "fill-extrusion-color": "#FCFCFC",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2415,8 +2415,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2462,8 +2462,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2509,8 +2509,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2556,8 +2556,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2603,8 +2603,8 @@
       "paint": {
         "fill-extrusion-color": "#FCFCFC",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2650,8 +2650,8 @@
       "paint": {
         "fill-extrusion-color": "#FCFCFC",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2697,8 +2697,8 @@
       "paint": {
         "fill-extrusion-color": "#FCFCFC",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2744,8 +2744,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2791,8 +2791,8 @@
       "paint": {
         "fill-extrusion-color": "#F5EEEE",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2838,8 +2838,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2885,8 +2885,8 @@
       "paint": {
         "fill-extrusion-color": "#EEEFF6",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2932,8 +2932,8 @@
       "paint": {
         "fill-extrusion-color": "#EEEFF6",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -2979,8 +2979,8 @@
       "paint": {
         "fill-extrusion-color": "#F8F8F8",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -3026,8 +3026,8 @@
       "paint": {
         "fill-extrusion-color": "#F7F3EB",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
@@ -3073,8 +3073,8 @@
       "paint": {
         "fill-extrusion-color": "#E9EEF3",
         "fill-extrusion-opacity": 0.2,
-        "fill-extrusion-vertical-gradient": true,
-        "fill-extrusion-translate-anchor": "map",
+        "fill-extrusion-vertical-gradient": false,
+        "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-height": {
           "type": "identity",
           "property": "floor"
