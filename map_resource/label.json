@@ -2,7 +2,7 @@
   "tilejson": "3.0.0",
   "tiles":
   [
-      "https://tile.gis.kt.com/label/{z}/{x}/{y}.mvt"
+      "https://vtile.gis.kt.com/mvt/tiles/label0.0.1/ad039496-4c8d-4aad-925c-bf587852a543/{z}/{z}_{x}_{y}.pbf"
   ],
   "description": "Label",
   "name": "label",
