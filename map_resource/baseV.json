@@ -1,0 +1,2262 @@
+{
+  "tilejson": "3.0.0",
+  "tiles":
+  [
+      "https://vtile.gis.kt.com/mvt/tiles/base0.0.1/ad039496-4c8d-4aad-925c-bf587852a543/{z}/{z}_{x}_{y}.pbf"
+  ],
+  "description": "기본지도",
+  "name": "base",
+  "format": "MVT",
+  "type": "AGGREGATED",
+  "version": "0.0.1",
+  "minzoom": 6,
+  "maxzoom": 16,
+  "vector_layers":
+  [
+      {
+          "id": "water-sea",
+          "geometry": "Polygon",
+          "minzoom": 6,
+          "maxzoom": 9,
+          "fields":
+          {
+              "category_id": "바다"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      3013,
+                      3023,
+                      3033,
+                      3043,
+                      3053,
+                      3063,
+                      3073
+                  ],
+                  "labels":
+                  [
+                      "해심50",
+                      "해심100",
+                      "해심200",
+                      "해심500",
+                      "해심1000",
+                      "해심2000",
+                      "해심3000"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "WD1_WATER_POLY_301",
+                  "category_id": 3013,
+                  "description": "해심50",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_302",
+                  "category_id": 3023,
+                  "description": "해심100",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_303",
+                  "category_id": 3033,
+                  "description": "해심200",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_304",
+                  "category_id": 3043,
+                  "description": "해심500",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_305",
+                  "category_id": 3053,
+                  "description": "해심1000",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_306",
+                  "category_id": 3063,
+                  "description": "해심2000",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              },
+              {
+                  "id": "WD1_WATER_POLY_307",
+                  "category_id": 3073,
+                  "description": "해심3000",
+                  "minzoom": 6,
+                  "maxzoom": 9
+              }
+          ]
+      },
+      {
+          "id": "area-land",
+          "geometry": "Polygon",
+          "minzoom": 6,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "땅"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "default": 3083
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "WD2_WATER_POLY_308",
+                  "category_id": 3083,
+                  "minzoom": 6,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_WATER_POLY_308",
+                  "category_id": 3083,
+                  "minzoom": 12,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "area-terrain",
+          "geometry": "Polygon",
+          "minzoom": 6,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "등고선"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      4073,
+                      4063,
+                      4053,
+                      4043,
+                      4033,
+                      4023,
+                      4013
+                  ],
+                  "labels":
+                  [
+                      "등고레벨7",
+                      "등고레벨6",
+                      "등고레벨5",
+                      "등고레벨4",
+                      "등고레벨3",
+                      "등고레벨2",
+                      "등고레벨1"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "MD_TERRAIN_POLY_407",
+                  "category_id": 4073,
+                  "description": "등고레벨7",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_406",
+                  "category_id": 4063,
+                  "description": "등고레벨6",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_405",
+                  "category_id": 4053,
+                  "description": "등고레벨5",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_404",
+                  "category_id": 4043,
+                  "description": "등고레벨4",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_403",
+                  "category_id": 4033,
+                  "description": "등고레벨3",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_402",
+                  "category_id": 4023,
+                  "description": "등고레벨2",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "MD_TERRAIN_POLY_401",
+                  "category_id": 4013,
+                  "description": "등고레벨1",
+                  "minzoom": 6,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "water-river",
+          "geometry": "Polygon",
+          "minzoom": 6,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "하천"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      3093,
+                      3113
+                  ],
+                  "labels":
+                  [
+                      "하천경계",
+                      "실폭하천"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_WATER_POLY_309",
+                  "category_id": 3093,
+                  "description": "하천경계",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "WD2_WATER_POLY_311",
+                  "category_id": 3113,
+                  "description": "실폭하천",
+                  "minzoom": 6,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_WATER_POLY_311",
+                  "category_id": 3113,
+                  "description": "실폭하천",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "area-distinct",
+          "geometry": "Polygon",
+          "minzoom": 12,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "구역"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      5133,
+                      5083,
+                      5033,
+                      5053,
+                      5063,
+                      5073,
+                      5093,
+                      5103,
+                      5113,
+                      5243,
+                      5123,
+                      5163,
+                      5143,
+                      5043,
+                      5213,
+                      5223,
+                      5173
+                  ],
+                  "labels":
+                  [
+                      "대단지",
+                      "공장",
+                      "대학교",
+                      "아파트",
+                      "놀이공원",
+                      "도심공원",
+                      "일반공원",
+                      "학교",
+                      "병원",
+                      "관공서",
+                      "사적지",
+                      "IC/JC",
+                      "휴게소",
+                      "일반",
+                      "녹지",
+                      "해수욕장",
+                      "백사장",
+                      "스키장"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_AREA_POLY_513",
+                  "category_id": 5133,
+                  "description": "대단지",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_502",
+                  "category_id": 5023,
+                  "description": "공장",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_508",
+                  "category_id": 5083,
+                  "description": "대학교",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_503",
+                  "category_id": 5033,
+                  "description": "아파트",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_505",
+                  "category_id": 5053,
+                  "description": "놀이공원",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_506",
+                  "category_id": 5063,
+                  "description": "도심공원",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_507",
+                  "category_id": 5073,
+                  "description": "일반공원",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_509",
+                  "category_id": 5093,
+                  "description": "학교",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_510",
+                  "category_id": 5103,
+                  "description": "병원",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_511",
+                  "category_id": 5113,
+                  "description": "관공서",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_524",
+                  "category_id": 5243,
+                  "description": "사적지",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_512",
+                  "category_id": 5123,
+                  "description": "IC/JC",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_521",
+                  "category_id": 5213,
+                  "description": "해수욕장",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_522",
+                  "category_id": 5223,
+                  "description": "백사장",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_517",
+                  "category_id": 5173,
+                  "geometry": "스키장",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "area-golf",
+          "geometry": "Polygon",
+          "minzoom": 12,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "골프장"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      6013,
+                      6083,
+                      6023,
+                      6033,
+                      6043,
+                      6053,
+                      6073,
+                      6093
+                  ],
+                  "labels":
+                  [
+                      "골프장구역",
+                      "실외골프연습장구역",
+                      "오비",
+                      "페어",
+                      "그린",
+                      "티",
+                      "호수",
+                      "클럽하우스"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_GOLF_POLY_601",
+                  "category_id": 6013,
+                  "description": "골프장구역",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_608",
+                  "category_id": 6083,
+                  "description": "실외골프연습장구역",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_602",
+                  "category_id": 6023,
+                  "description": "오비",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_603",
+                  "category_id": 6033,
+                  "description": "페어",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_604",
+                  "category_id": 6043,
+                  "description": "그린",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_605",
+                  "category_id": 6053,
+                  "description": "티",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_607",
+                  "category_id": 6073,
+                  "description": "호수",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_GOLF_POLY_609",
+                  "category_id": 6093,
+                  "description": "클럽하우스",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "water-lake",
+          "geometry": "Polygon",
+          "minzoom": 12,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "호수,저수지,수계시설"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      3123,
+                      3133
+                  ],
+                  "labels":
+                  [
+                      "호수저수지",
+                      "수계시설"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_WATER_POLY_312",
+                  "category_id": 3123,
+                  "description": "호수저수지",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_WATER_POLY_313",
+                  "category_id": 3133,
+                  "description": "수계시설",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "facility",
+          "geometry": "UNKNOWN",
+          "minzoom": 15,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "건물/구역내시설"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      5183,
+                      5153,
+                      5193,
+                      5203,
+                      7162
+                  ],
+                  "labels":
+                  [
+                      "스키장슬로프",
+                      "주차장",
+                      "단지내녹지구역",
+                      "단지내시설구역",
+                      "건물내부시설"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_AREA_POLY_518",
+                  "category_id": 5183,
+                  "description": "스키장슬로프",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_515",
+                  "category_id": 5153,
+                  "description": "주차장",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_519",
+                  "category_id": 5193,
+                  "description": "단지내녹지구역",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_520",
+                  "category_id": 5203,
+                  "description": "단지내시설구역",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_LINE_716",
+                  "category_id": 7162,
+                  "description": "건물내부시설1",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_LINE_718",
+                  "category_id": 7162,
+                  "description": "건물내부시설2",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "building",
+          "geometry": "Polygon",
+          "minzoom": 14,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "건물",
+              "floor": "층수"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      7173,
+                      7143,
+                      7133,
+                      7123,
+                      7113,
+                      7103,
+                      7083,
+                      7053,
+                      7073,
+                      7043,
+                      7063,
+                      7033,
+                      7023,
+                      7013
+                  ],
+                  "labels":
+                  [
+                      "사적지",
+                      "관공서",
+                      "학교",
+                      "대학교",
+                      "호텔",
+                      "병원",
+                      "주상복합",
+                      "대형일반건물",
+                      "아파트",
+                      "중형일반건물",
+                      "연립주택",
+                      "소형일반건물",
+                      "기타건물",
+                      "단독건물"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_BLD_POLY_717",
+                  "category_id": 7173,
+                  "description": "사적지",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_714",
+                  "category_id": 7143,
+                  "description": "관공서",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_713",
+                  "category_id": 7133,
+                  "description": "학교",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_712",
+                  "category_id": 7123,
+                  "description": "대학교",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_711",
+                  "category_id": 7113,
+                  "description": "호텔",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_710",
+                  "category_id": 7103,
+                  "description": "병원",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_708",
+                  "category_id": 7083,
+                  "description": "주상복합",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_705",
+                  "category_id": 7053,
+                  "description": "대형일반건물",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_707",
+                  "category_id": 7073,
+                  "description": "아파트",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_706",
+                  "category_id": 7063,
+                  "description": "연립주택",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_703",
+                  "category_id": 7033,
+                  "description": "소형일반건물",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_702",
+                  "category_id": 7023,
+                  "description": "기타건물",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BLD_POLY_701",
+                  "category_id": 7013,
+                  "description": "단독건물",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "road",
+          "geometry": "UNKNOWN",
+          "minzoom": 6,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "도로"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      1012,
+                      1013,
+                      1022,
+                      1023,
+                      1032,
+                      1033,
+                      1042,
+                      1043,
+                      1052,
+                      1062,
+                      1053,
+                      1073,
+                      1093,
+                      1103,
+                      1113,
+                      1123,
+                      1133
+                  ],
+                  "labels":
+                  [
+                      "고속도로_선",
+                      "고속도로_면",
+                      "도시고속_선",
+                      "도시고속_면",
+                      "국도_선",
+                      "국도_면",
+                      "주요간선_선",
+                      "주요간선2_선",
+                      "주요간선_면",
+                      "일반도로",
+                      "기타도로",
+                      "세도로",
+                      "골목길",
+                      "주요부지내도로",
+                      "세부부지내도로"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "WD2_ROAD_LINE_101",
+                  "category_id": 1012,
+                  "description": "고속도로_선",
+                  "minzoom": 6,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_ROAD_POLY_101",
+                  "category_id": 1013,
+                  "description": "고속도로_면",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "WD2_ROAD_LINE_102",
+                  "category_id": 1022,
+                  "description": "도시고속_선",
+                  "minzoom": 6,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_ROAD_POLY_102",
+                  "category_id": 1023,
+                  "description": "도시고속_면",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "WD2_ROAD_LINE_103",
+                  "category_id": 1032,
+                  "description": "국도_선",
+                  "minzoom": 8,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_ROAD_POLY_103",
+                  "category_id": 1033,
+                  "description": "국도_면",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "WD2_ROAD_LINE_104",
+                  "category_id": 1042,
+                  "description": "지방도_선",
+                  "minzoom": 8,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "DT_ROAD_POLY_104",
+                  "category_id": 1043,
+                  "description": "지방도_면",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "WD2_ROAD_LINE_105",
+                  "category_id": 1052,
+                  "description": "주욕간선_선",
+                  "minzoom": 10,
+                  "maxzoom": 11
+              },
+              {
+                  "id": "WD2_ROAD_LINE_106",
+                  "category_id": 1052,
+                  "description": "주요간선2_선",
+                  "minzoom": 10,
+                  "maxzoom": 11,
+                  "fields_values":
+                  [
+                      {
+                          "attribute": "category_id",
+                          "type": "Number",
+                          "default": 1052
+                      }
+                  ]
+              },
+              {
+                  "id": "DT_ROAD_POLY_105",
+                  "category_id": 1053,
+                  "description": "주요간선_면",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_107",
+                  "category_id": 1073,
+                  "description": "일반도로",
+                  "minzoom": 12,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_109",
+                  "category_id": 1093,
+                  "description": "기타도로",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_110",
+                  "category_id": 1103,
+                  "description": "세도로",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_111",
+                  "category_id": 1113,
+                  "description": "골목길",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_112",
+                  "category_id": 1123,
+                  "description": "주요부지내도로",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROAD_POLY_113",
+                  "category_id": 1133,
+                  "description": "세부부지내도로",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "road-extra",
+          "geometry": "LineString",
+          "minzoom": 13,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "도로-부가정보"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      8062,
+                      8102,
+                      8012,
+                      8042,
+                      8032,
+                      8022,
+                      8122
+                  ],
+                  "labels":
+                  [
+                      "도로상하표현구분",
+                      "지하차도상하표현",
+                      "터널",
+                      "지하차도",
+                      "일반교량",
+                      "주요교량",
+                      "지하부폴리곤"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_ROADEXT_LINE_806",
+                  "category_id": 8062,
+                  "description": "도로상하표현구분",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_810",
+                  "category_id": 8102,
+                  "description": "지하차도상하표현",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_801",
+                  "category_id": 8012,
+                  "description": "터널",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_804",
+                  "category_id": 8042,
+                  "description": "지하차도",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_803",
+                  "category_id": 8032,
+                  "description": "일반교량",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_802",
+                  "category_id": 8022,
+                  "description": "주요교량",
+                  "minzoom": 14,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_ROADEXT_LINE_812",
+                  "category_id": 8122,
+                  "description": "지하부폴리곤",
+                  "minzoom": 13,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "road-surface-marking",
+          "geometry": "UNKNOWN",
+          "minzoom": 15,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "도로-차선,방향,횡단보도",
+              "markings": "도로중앙선(겹선)/유턴선/안전지대/도로중앙선(단선)",
+              "lanes": "차선",
+              "road_arrows": "방면화살표",
+              "angle": "방면화살표 방향"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      9402,
+                      9202,
+                      9072,
+                      9222,
+                      9221,
+                      9982
+                  ],
+                  "labels":
+                  [
+                      "차량정지선",
+                      "차선",
+                      "도로중앙선",
+                      "방면화살표",
+                      "유턴/일방통행",
+                      "횡단보도중심선"
+                  ]
+              },
+              {
+                  "attribute": "lanes",
+                  "type": "Number",
+                  "values":
+                  [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                  ],
+                  "labels":
+                  [
+                      "차선(실선)",
+                      "차선(점선)",
+                      "차선(차선변경금지구역선)",
+                      "버스차선(실선)",
+                      "버스차선(점선)"
+                  ]
+              },
+              {
+                  "attribute": "markings",
+                  "type": "Number",
+                  "values":
+                  [
+                      1,
+                      2,
+                      3,
+                      4
+                  ],
+                  "labels":
+                  [
+                      "중앙선(겹선)",
+                      "유턴선",
+                      "안전지대(사선",
+                      "중앙선(단선)"
+                  ]
+              },
+              {
+                  "attribute": "road_sign",
+                  "type": "Number",
+                  "values":
+                  [
+                      1,
+                      2
+                  ],
+                  "labels":
+                  [
+                      "유턴",
+                      "일방통행"
+                  ]
+              },
+              {
+                  "attribute": "road_arrow",
+                  "type": "Number",
+                  "values":
+                  [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                  ],
+                  "labels":
+                  [
+                      "직전",
+                      "우회전",
+                      "좌회전",
+                      "유턴",
+                      "직진및우회전",
+                      "직진및좌회전",
+                      "직진및좌유턴",
+                      "우회전및유턴",
+                      "좌회전및유턴",
+                      "차선감소",
+                      "직진금지",
+                      "우회전금지",
+                      "좌회전금지",
+                      "유턴금지",
+                      "양방향통행",
+                      "양방향통행금지"
+                  ]
+              },
+              {
+                  "attribute": "angle",
+                  "type": "Number",
+                  "min": 0,
+                  "max": 359
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_FACIL_LINE_940",
+                  "category_id": 9402,
+                  "description": "차량정지선",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_FACIL_LINE_920",
+                  "category_id": 9202,
+                  "description": "차선",
+                  "minzoom": 16,
+                  "maxzoom": 16,
+                  "mapping_fields":
+                  {
+                      "flag": "lanes"
+                  }
+              },
+              {
+                  "id": "DT_FACIL_LINE_922",
+                  "category_id": 9222,
+                  "description": "방면화살표",
+                  "minzoom": 16,
+                  "maxzoom": 16,
+                  "mapping_fields":
+                  {
+                      "flag": "road_arrow"
+                  }
+              },
+              {
+                  "id": "DT_FACIL_LINE_998",
+                  "category_id": 9982,
+                  "description": "횡단보도중심선",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "uturn",
+                  "category_id": 9221,
+                  "description": "유턴",
+                  "minzoom": 15,
+                  "maxzoom": 16,
+                  "mapping_fields":
+                  {
+                      "label_nm": "angle"
+                  },
+                  "fields_values":
+                  [
+                      {
+                          "attribute": "category_id",
+                          "type": "Number",
+                          "default": 9221
+                      },
+                      {
+                          "attribute": "road_sign",
+                          "type": "Number",
+                          "default": 1
+                      }
+                  ]
+              },
+              {
+                  "id": "oneway",
+                  "category_id": 9221,
+                  "description": "일방통행",
+                  "minzoom": 15,
+                  "maxzoom": 16,
+                  "mapping_fields":
+                  {
+                      "label_nm": "angle"
+                  },
+                  "fields_values":
+                  [
+                      {
+                          "attribute": "category_id",
+                          "type": "Number",
+                          "default": 9221
+                      },
+                      {
+                          "attribute": "road_sign",
+                          "type": "Number",
+                          "default": 2
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "road-bus",
+          "geometry": "UNKNOWN",
+          "minzoom": 16,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "도로-버스전용"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      2013,
+                      2022,
+                      2023
+                  ],
+                  "labels":
+                  [
+                      "버스중앙차도-면",
+                      "버스전용차선",
+                      "버스중앙정류장"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_BUSROAD_POLY_201",
+                  "category_id": 2013,
+                  "description": "버스중앙차도",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BUSROAD_LINE_202",
+                  "category_id": 2022,
+                  "description": "버스전용차선",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_BUSROAD_POLY_203",
+                  "category_id": 2033,
+                  "description": "버스중앙정류장",
+                  "minzoom": 16,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "road-facility",
+          "geometry": "Polygon",
+          "minzoom": 15,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "도로-시설물",
+              "median": "중앙분리대"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      9033,
+                      9063,
+                      7153
+                  ],
+                  "labels":
+                  [
+                      "육교",
+                      "중앙분리대",
+                      "톨게이트"
+                  ]
+              },
+              {
+                  "attribute": "median",
+                  "type": "Number",
+                  "values":
+                  [
+                      0,
+                      1,
+                      2
+                  ],
+                  "labels":
+                  [
+                      "화단형",
+                      "콘크리트형",
+                      "가드레일형"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_FACIL_POLY_903",
+                  "category_id": 9033,
+                  "description": "육교",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_FACIL_POLY_906",
+                  "category_id": 9063,
+                  "description": "중앙분리대",
+                  "minzoom": 16,
+                  "maxzoom": 16,
+                  "mapping_fields":
+                  {
+                      "flag": "median"
+                  }
+              },
+              {
+                  "id": "DT_BLD_POLY_715",
+                  "category_id": 7153,
+                  "description": "톨게이트",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "train",
+          "geometry": "UNKNOWN",
+          "minzoom": 6,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "철도"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      14013,
+                      12012,
+                      12022,
+                      12032,
+                      12042,
+                      12052,
+                      12062,
+                      12072,
+                      12082,
+                      12092,
+                      12102,
+                      12112,
+                      12122,
+                      12132,
+                      12142,
+                      12152,
+                      12162,
+                      12172,
+                      12182,
+                      12192,
+                      12202,
+                      12212,
+                      12222,
+                      12232,
+                      12242,
+                      12252,
+                      12272,
+                      12292,
+                      12302,
+                      12312,
+                      12322,
+                      12332,
+                      12342,
+                      12352,
+                      12362,
+                      12372,
+                      12382,
+                      12392,
+                      12402,
+                      13013,
+                      13023,
+                      13033,
+                      13043,
+                      13053,
+                      13063,
+                      13073,
+                      13083,
+                      13093,
+                      13103,
+                      13113,
+                      13123,
+                      13133,
+                      13143,
+                      13153,
+                      13163,
+                      13173,
+                      13183,
+                      13193,
+                      13203,
+                      13213,
+                      13223,
+                      13233,
+                      13243,
+                      13253,
+                      13273,
+                      13293,
+                      13303,
+                      13313,
+                      13323,
+                      13333,
+                      13343,
+                      13353,
+                      13363,
+                      13373,
+                      13383,
+                      13393,
+                      13403
+                  ],
+                  "labels":
+                  [
+                      "철도경계",
+                      "선_고철",
+                      "선_공철",
+                      "선_철도",
+                      "선_중앙",
+                      "선_서울1",
+                      "선_서울2",
+                      "선_서울3",
+                      "선_서울4",
+                      "선_서울5",
+                      "선_서울6",
+                      "선_서울7",
+                      "선_서울8",
+                      "선_서울9",
+                      "선_수인분당",
+                      "선_신분",
+                      "선_인천1",
+                      "선_부산1",
+                      "선_부산2",
+                      "선_부산3",
+                      "선_부산4",
+                      "선_대구1",
+                      "선_대구2",
+                      "선_광주1",
+                      "선_대전1",
+                      "선_용인",
+                      "선_경춘",
+                      "선_경의",
+                      "선_김해",
+                      "선_의정",
+                      "선_대구3",
+                      "선_인천2",
+                      "선_경강",
+                      "선_우이신설",
+                      "선_동해",
+                      "선_서해",
+                      "선_김포",
+                      "선_인천자기",
+                      "선_신림선",
+                      "선_GTX-A",
+                      "역_고철",
+                      "역_공철",
+                      "역_철도",
+                      "역_중앙",
+                      "역_서울1",
+                      "역_서울2",
+                      "역_서울3",
+                      "역_서울4",
+                      "역_서울5",
+                      "역_서울6",
+                      "역_서울7",
+                      "역_서울8",
+                      "역_서울9",
+                      "역_수인분당",
+                      "역_신분",
+                      "역_인천1",
+                      "역_부산1",
+                      "역_부산2",
+                      "역_부산3",
+                      "역_대구1",
+                      "역_대구2",
+                      "역_광주1",
+                      "역_대전1",
+                      "역_용인",
+                      "역_경춘",
+                      "역_부산4",
+                      "역_경의",
+                      "역_김해",
+                      "역_의정",
+                      "역_대구3",
+                      "역_인천2",
+                      "역_경강",
+                      "역_우이신설",
+                      "역_동해",
+                      "역_서해",
+                      "역_김포",
+                      "역_인천자기",
+                      "역_신림선",
+                      "역_GTX-A"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_TRAINROADEXT_POLY_1401",
+                  "category_id": 14013,
+                  "description": "철도경계",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1201",
+                  "description": "선_고철",
+                  "category_id": 12012,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1202",
+                  "description": "선_공철",
+                  "category_id": 12022,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1203",
+                  "description": "선_철도",
+                  "category_id": 12032,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1204",
+                  "description": "선_중앙",
+                  "category_id": 12042,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1205",
+                  "description": "선_서울1",
+                  "category_id": 12052,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1206",
+                  "description": "선_서울2",
+                  "category_id": 12062,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1207",
+                  "description": "선_서울3",
+                  "category_id": 12072,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1208",
+                  "description": "선_서울4",
+                  "category_id": 12082,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1209",
+                  "description": "선_서울5",
+                  "category_id": 12092,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1210",
+                  "description": "선_서울6",
+                  "category_id": 12102,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1211",
+                  "description": "선_서울7",
+                  "category_id": 12112,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1212",
+                  "description": "선_서울8",
+                  "category_id": 12122,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1213",
+                  "description": "선_서울9",
+                  "category_id": 12132,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1214",
+                  "description": "선_수인분당",
+                  "category_id": 12142,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1215",
+                  "description": "선_신분",
+                  "category_id": 12152,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1216",
+                  "description": "선_인천1",
+                  "category_id": 12162,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1217",
+                  "description": "선_부산1",
+                  "category_id": 12172,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1218",
+                  "description": "선_부산2",
+                  "category_id": 12182,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1219",
+                  "description": "선_부산3",
+                  "category_id": 12192,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1226",
+                  "description": "선_부산4",
+                  "category_id": 12262,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1220",
+                  "description": "선_대구1",
+                  "category_id": 12202,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1221",
+                  "description": "선_대구2",
+                  "category_id": 12212,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1222",
+                  "description": "선_광주1",
+                  "category_id": 12222,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1223",
+                  "description": "선_대전1",
+                  "category_id": 12232,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1224",
+                  "description": "선_용인",
+                  "category_id": 12242,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1225",
+                  "description": "선_경춘",
+                  "category_id": 12252,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1227",
+                  "description": "선_경의",
+                  "category_id": 12272,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1229",
+                  "description": "선_김해",
+                  "category_id": 12292,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1230",
+                  "description": "선_의정",
+                  "category_id": 12302,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1231",
+                  "description": "선_대구3",
+                  "category_id": 12312,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1232",
+                  "description": "선_인천2",
+                  "category_id": 12322,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1233",
+                  "description": "선_경강",
+                  "category_id": 12332,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1234",
+                  "description": "선_우이신설",
+                  "category_id": 12342,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1235",
+                  "description": "선_동해",
+                  "category_id": 12352,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1236",
+                  "description": "선_서해",
+                  "category_id": 12362,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1237",
+                  "description": "선_김포",
+                  "category_id": 12372,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1238",
+                  "description": "선_인천자기",
+                  "category_id": 12382,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1239",
+                  "description": "선_신림선",
+                  "category_id": 12392,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINROAD_LINE_1240",
+                  "description": "선_GTX-A",
+                  "category_id": 12402,
+                  "minzoom": 6,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1301",
+                  "description": "역_고철",
+                  "category_id": 13013,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1302",
+                  "description": "역_공철",
+                  "category_id": 13023,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1303",
+                  "description": "역_철도",
+                  "category_id": 13033,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1304",
+                  "description": "역_중앙",
+                  "category_id": 13043,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1305",
+                  "description": "역_서울1",
+                  "category_id": 13053,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1306",
+                  "description": "역_서울2",
+                  "category_id": 13063,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1307",
+                  "description": "역_서울3",
+                  "category_id": 13073,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1308",
+                  "description": "역_서울4",
+                  "category_id": 13083,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1309",
+                  "description": "역_서울5",
+                  "category_id": 13093,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1310",
+                  "description": "역_서울6",
+                  "category_id": 13103,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1311",
+                  "description": "역_서울7",
+                  "category_id": 13113,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1312",
+                  "description": "역_서울8",
+                  "category_id": 13123,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1313",
+                  "description": "역_서울9",
+                  "category_id": 13133,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1314",
+                  "description": "역_수인분당",
+                  "category_id": 13143,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1315",
+                  "description": "역_신분",
+                  "category_id": 13153,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1316",
+                  "description": "역_인천1",
+                  "category_id": 13163,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1317",
+                  "description": "역_부산1",
+                  "category_id": 13173,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1318",
+                  "description": "역_부산2",
+                  "category_id": 13183,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1319",
+                  "description": "역_부산3",
+                  "category_id": 13193,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1320",
+                  "description": "역_대구1",
+                  "category_id": 13203,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1321",
+                  "description": "역_대구2",
+                  "category_id": 13213,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1322",
+                  "description": "역_광주1",
+                  "category_id": 13223,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1323",
+                  "description": "역_대전1",
+                  "category_id": 13233,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1324",
+                  "description": "역_용인",
+                  "category_id": 13243,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1325",
+                  "description": "역_경춘",
+                  "category_id": 13253,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1326",
+                  "description": "역_부산4",
+                  "category_id": 13263,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1327",
+                  "description": "역_경의",
+                  "category_id": 13273,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1329",
+                  "description": "역_김해",
+                  "category_id": 13293,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1330",
+                  "description": "역_의정",
+                  "category_id": 13303,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1331",
+                  "description": "역_대구3",
+                  "category_id": 13313,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1332",
+                  "description": "역_인천2",
+                  "category_id": 13323,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1333",
+                  "description": "역_경강",
+                  "category_id": 13333,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1334",
+                  "description": "역_우이신설",
+                  "category_id": 13343,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1335",
+                  "description": "역_동해",
+                  "category_id": 13353,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1336",
+                  "description": "역_서해",
+                  "category_id": 13363,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1337",
+                  "description": "역_김포",
+                  "category_id": 13373,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1338",
+                  "description": "역_인천자기",
+                  "category_id": 13383,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1339",
+                  "description": "역_신림선",
+                  "category_id": 13393,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_TRAINSTATION_POLY_1340",
+                  "description": "역_GTX-A",
+                  "category_id": 13403,
+                  "minzoom": 15,
+                  "maxzoom": 16
+              }
+          ]
+      },
+      {
+          "id": "area-boundary",
+          "geometry": "UNKNOWN",
+          "minzoom": 5,
+          "maxzoom": 16,
+          "fields":
+          {
+              "category_id": "공원경계/행정구역/개발예정구역/어린이보호구역"
+          },
+          "fields_values":
+          [
+              {
+                  "attribute": "category_id",
+                  "type": "Number",
+                  "values":
+                  [
+                      5233,
+                      5253,
+                      10012,
+                      10022,
+                      10073,
+                      10083,
+                      10093
+                  ],
+                  "labels":
+                  [
+                      "어린이보호구역",
+                      "개발예정구역",
+                      "경위도",
+                      "국경",
+                      "군립공원경계",
+                      "도립공원경계",
+                      "국립공원경계"
+                  ]
+              }
+          ],
+          "source_layers":
+          [
+              {
+                  "id": "DT_AREA_POLY_523",
+                  "category_id": 5233,
+                  "description": "어린이보호구역",
+                  "minzoom": 15,
+                  "maxzoom": 16
+              },
+              {
+                  "id": "DT_AREA_POLY_525",
+                  "category_id": 5253,
+                  "description": "개발예정구역",
+                  "minzoom": 11,
+                  "maxzoom": 14
+              },
+              {
+                  "id": "WD2_BOUND_LINE_1001",
+                  "category_id": 10012,
+                  "description": "경위도",
+                  "minzoom": 6,
+                  "maxzoom": 10
+              },
+              {
+                  "id": "WD2_BOUND_LINE_1002",
+                  "category_id": 10022,
+                  "description": "국경",
+                  "minzoom": 6,
+                  "maxzoom": 10
+              },
+              {
+                  "id": "WD2_BOUND_POLY_1007",
+                  "category_id": 10073,
+                  "description": "군립공원경계",
+                  "minzoom": 6,
+                  "maxzoom": 10
+              },
+              {
+                  "id": "WD2_BOUND_POLY_1008",
+                  "category_id": 10083,
+                  "description": "도립공원경계",
+                  "minzoom": 6,
+                  "maxzoom": 10
+              },
+              {
+                  "id": "WD2_BOUND_POLY_1009",
+                  "category_id": 10093,
+                  "description": "국립공원경계",
+                  "minzoom": 6,
+                  "maxzoom": 10
+              }
+          ]
+      }
+  ]
+}
