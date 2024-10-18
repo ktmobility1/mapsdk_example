@@ -6483,176 +6483,140 @@
     {
       "id": "WD2_ROAD_LINE_106_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1062
-      ],
+      "filter": ["==", "category_id", 1401042],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
-      "layerName": "주요간선2명",
-      "groupName": "도로라인"
+      "layerName": "새주소길명",
+      "groupName": "도로라벨"
     },
     {
       "id": "WD2_ROAD_LINE_105_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1052
-      ],
+      "filter": ["==", "category_id", 1401032],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
       "layerName": "주요간선명",
-      "groupName": "도로라인"
+      "groupName": "도로라벨"
     },
     {
       "id": "WD2_ROAD_LINE_104_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1042
-      ],
+      "filter": ["==", "category_id", 1402042],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
       "layerName": "지방도명",
-      "groupName": "도로라인"
+      "groupName": "도로라벨"
     },
     {
       "id": "WD2_ROAD_LINE_103_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1032
-      ],
+      "filter": ["==", "category_id", 1402032],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
       "layerName": "국도명",
-      "groupName": "도로라인"
+      "groupName": "도로라벨"
     },
     {
       "id": "WD2_ROAD_LINE_102_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1022
-      ],
+      "filter": ["==", "category_id", 1401011],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
       "layerName": "도시고속화도로명",
-      "groupName": "도로라인"
+      "groupName": "도로라벨"
     },
     {
       "id": "WD2_ROAD_LINE_101_symbol",
       "type": "symbol",
-      "source": "KT_Vector",
+      "source": "KT_Vector_Label",
       "source-layer": "road",
       "minzoom": 6,
       "maxzoom": 16,
-      "filter": [
-        "==",
-        "category_id",
-        1012
-      ],
+      "filter": ["==", "category_id", 1401022],
       "paint": {
         "text-color": "#3e3e3e",
         "text-halo-color": "#D9B633",
         "text-halo-width": 0.3
       },
       "layout": {
-        "text-field": "{category_id}",
+        "text-field": "{label_nm}",
         "text-size": 11,
         "symbol-placement": "line",
-        "text-font": [
-          "KTfontMedium"
-        ],
-        "symbol-spacing": 100
+        "text-font": ["KTfontMedium"],
+        "symbol-spacing": 400
       },
       "layerName": "고속도로명",
-      "groupName": "도로라인"
+      "groupName": "도로라벨"
     },
     {
       "id": "poi_label_1204",
