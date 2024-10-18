@@ -1,0 +1,1619 @@
+{
+    "ico_002": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1080
+    },
+    "ico_004": {
+      "width": 74,
+      "height": 74,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1132
+    },
+    "ico_005": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1068,
+      "y": 144
+    },
+    "ico_006": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1572,
+      "y": 144
+    },
+    "ico_014": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1428,
+      "y": 72
+    },
+    "ico_015": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1932,
+      "y": 72
+    },
+    "ico_018": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 936
+    },
+    "ico_019": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1008
+    },
+    "ico_021": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1224
+    },
+    "ico_022": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1296
+    },
+    "ico_023": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1368
+    },
+    "ico_024": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1440
+    },
+    "ico_025": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1512
+    },
+    "ico_026": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1584
+    },
+    "ico_028": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 1056,
+      "y": 901
+    },
+    "ico_029": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 1108,
+      "y": 901
+    },
+    "ico_030": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 1160,
+      "y": 901
+    },
+    "ico_031": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1800
+    },
+    "ico_032": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1872
+    },
+    "ico_033": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1944
+    },
+    "ico_034": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 936
+    },
+    "ico_035": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1008
+    },
+    "ico_036": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 144
+    },
+    "ico_037": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 276,
+      "y": 144
+    },
+    "ico_038": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 348,
+      "y": 144
+    },
+    "ico_040": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 492,
+      "y": 144
+    },
+    "ico_041": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 564,
+      "y": 144
+    },
+    "ico_042": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 636,
+      "y": 144
+    },
+    "ico_043": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 956
+    },
+    "ico_044": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 708,
+      "y": 144
+    },
+    "ico_045": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 144
+    },
+    "ico_046": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1172
+    },
+    "ico_047": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 852,
+      "y": 144
+    },
+    "ico_049": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 996,
+      "y": 144
+    },
+    "ico_050": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_054": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1356,
+      "y": 144
+    },
+    "ico_055": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1644,
+      "y": 144
+    },
+    "ico_056": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1428,
+      "y": 144
+    },
+    "ico_061": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1716,
+      "y": 144
+    },
+    "ico_062": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1788,
+      "y": 144
+    },
+    "ico_063": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1860,
+      "y": 144
+    },
+    "ico_064": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1932,
+      "y": 144
+    },
+    "ico_068": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 360
+    },
+    "ico_069": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 432
+    },
+    "ico_071": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 648
+    },
+    "ico_072": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 720
+    },
+    "ico_073": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 792
+    },
+    "ico_074": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 864
+    },
+    "ico_075": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 936
+    },
+    "ico_076": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1008
+    },
+    "ico_077": {
+      "width": 74,
+      "height": 74,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1288
+    },
+    "ico_078": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1080
+    },
+    "ico_079": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1152
+    },
+    "ico_080": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1224
+    },
+    "ico_082": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1296
+    },
+    "ico_083": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1368
+    },
+    "ico_084": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1440
+    },
+    "ico_085": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1512
+    },
+    "ico_086": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1942
+    },
+    "ico_087": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1584
+    },
+    "ico_088": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1656
+    },
+    "ico_089": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1728
+    },
+    "ico_090": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 288
+    },
+    "ico_091": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 276,
+      "y": 72
+    },
+    "ico_092": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 708,
+      "y": 72
+    },
+    "ico_093": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1028
+    },
+    "ico_094": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1100
+    },
+    "ico_095": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 420,
+      "y": 72
+    },
+    "ico_096": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 72
+    },
+    "ico_097": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 708,
+      "y": 72
+    },
+    "ico_098": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 72
+    },
+    "ico_099": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 708,
+      "y": 72
+    },
+    "ico_100": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 348,
+      "y": 72
+    },
+    "ico_101": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 72
+    },
+    "ico_102": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1872
+    },
+    "ico_103": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1944
+    },
+    "ico_104": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1172
+    },
+    "ico_105": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1284,
+      "y": 144
+    },
+    "ico_106": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 420,
+      "y": 144
+    },
+    "ico_107": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1244
+    },
+    "ico_108": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 420,
+      "y": 144
+    },
+    "ico_109": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1316
+    },
+    "ico_110": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 924,
+      "y": 72
+    },
+    "ico_111": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 276,
+      "y": 216
+    },
+    "ico_112": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1388
+    },
+    "ico_113": {
+      "width": 74,
+      "height": 74,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1210
+    },
+    "ico_114": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1212,
+      "y": 144
+    },
+    "ico_115": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1460
+    },
+    "ico_116": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1532
+    },
+    "ico_117": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1604
+    },
+    "ico_118": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1676
+    },
+    "ico_119": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1800
+    },
+    "ico_120": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1872
+    },
+    "ico_121": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1726
+    },
+    "ico_122": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1820
+    },
+    "ico_123": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1798
+    },
+    "ico_124": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1368
+    },
+    "ico_125": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1870
+    },
+    "ico_126": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1748
+    },
+    "ico_127": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1820
+    },
+    "ico_128": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1892
+    },
+    "ico_129": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 979,
+      "y": 1964
+    },
+    "ico_130": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1510
+    },
+    "ico_131": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1582
+    },
+    "ico_132": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1512
+    },
+    "ico_133": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1654
+    },
+    "ico_134": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 956
+    },
+    "ico_135": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 924,
+      "y": 144
+    },
+    "ico_136": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 276,
+      "y": 144
+    },
+    "ico_137": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1512
+    },
+    "ico_138": {
+      "width": 74,
+      "height": 74,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 1210
+    },
+    "ico_139": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1028
+    },
+    "ico_140": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 216
+    },
+    "ico_141": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1028
+    },
+    "ico_142": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1100
+    },
+    "ico_143": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1728
+    },
+    "ico_144": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1172
+    },
+    "ico_145": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1572,
+      "y": 72
+    },
+    "ico_146": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1244
+    },
+    "ico_147": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_148": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_149": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1316
+    },
+    "ico_150": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_151": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_152": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1212,
+      "y": 72
+    },
+    "ico_153": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_154": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1068,
+      "y": 72
+    },
+    "ico_155": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 72
+    },
+    "ico_156": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1212,
+      "y": 72
+    },
+    "ico_157": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1284,
+      "y": 72
+    },
+    "ico_158": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1500,
+      "y": 144
+    },
+    "ico_159": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1716,
+      "y": 72
+    },
+    "ico_160": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1284,
+      "y": 72
+    },
+    "ico_161": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1572,
+      "y": 72
+    },
+    "ico_162": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1388
+    },
+    "ico_163": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1356,
+      "y": 72
+    },
+    "ico_164": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1500,
+      "y": 72
+    },
+    "ico_165": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1572,
+      "y": 72
+    },
+    "ico_166": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1460
+    },
+    "ico_167": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1644,
+      "y": 72
+    },
+    "ico_168": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1500,
+      "y": 144
+    },
+    "ico_169": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1656
+    },
+    "ico_170": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1140,
+      "y": 144
+    },
+    "ico_171": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 924,
+      "y": 144
+    },
+    "ico_172": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1532
+    },
+    "ico_173": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1604
+    },
+    "ico_174": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 1152
+    },
+    "ico_175": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 492,
+      "y": 72
+    },
+    "ico_176": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 852,
+      "y": 72
+    },
+    "ico_177": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 492,
+      "y": 72
+    },
+    "ico_178": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 564,
+      "y": 72
+    },
+    "ico_179": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1676
+    },
+    "ico_180": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 72
+    },
+    "ico_181": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 348,
+      "y": 72
+    },
+    "ico_182": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1676
+    },
+    "ico_183": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 564,
+      "y": 72
+    },
+    "ico_184": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 420,
+      "y": 72
+    },
+    "ico_185": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 564,
+      "y": 72
+    },
+    "ico_186": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 420,
+      "y": 72
+    },
+    "ico_187": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1748
+    },
+    "ico_188": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 204,
+      "y": 1152
+    },
+    "ico_189": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1051,
+      "y": 1748
+    },
+    "ico_190": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 780,
+      "y": 72
+    },
+    "ico_191": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 348,
+      "y": 72
+    },
+    "ico_300": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 432
+    },
+    "ico_303": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 504
+    },
+    "ico_304": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 576
+    },
+    "ico_305": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 648
+    },
+    "ico_306": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 720
+    },
+    "ico_307": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 792
+    },
+    "ico_308": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 864
+    },
+    "ico_309": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 288
+    },
+    "ico_310": {
+      "width": 68,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 132,
+      "y": 360
+    },
+    "ico_312": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 360
+    },
+    "ico_313": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 648
+    },
+    "ico_314": {
+      "width": 135,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 654,
+      "y": 0
+    },
+    "ico_315": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 504
+    },
+    "ico_316": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 432
+    },
+    "ico_317": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 576
+    },
+    "ico_318": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1458,
+      "y": 0
+    },
+    "ico_319": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1590,
+      "y": 0
+    },
+    "ico_321": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 930,
+      "y": 0
+    },
+    "ico_322": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1062,
+      "y": 0
+    },
+    "ico_323": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 144
+    },
+    "ico_325": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1194,
+      "y": 0
+    },
+    "ico_326": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1326,
+      "y": 0
+    },
+    "ico_327": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1854,
+      "y": 0
+    },
+    "ico_328": {
+      "width": 130,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 1720,
+      "y": 0
+    },
+    "ico_331": {
+      "width": 162,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 162,
+      "y": 0
+    },
+    "ico_332": {
+      "width": 162,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 326,
+      "y": 0
+    },
+    "ico_333": {
+      "width": 134,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 792,
+      "y": 0
+    },
+    "ico_334": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 216
+    },
+    "ico_336": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 720
+    },
+    "ico_337": {
+      "width": 162,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 492,
+      "y": 0
+    },
+    "ico_338": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 864
+    },
+    "ico_339": {
+      "width": 104,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 792
+    },
+    "ico_340": {
+      "width": 161,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 0
+    },
+    "ico_343": {
+      "width": 128,
+      "height": 68,
+      "pixelRatio": 3.4,
+      "x": 0,
+      "y": 72
+    },
+    "ico_5001": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 79,
+      "y": 1133
+    },
+    "ico_5002": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1334
+    },
+    "ico_5003": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1604
+    },
+    "ico_5004": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1658
+    },
+    "ico_5005": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1712
+    },
+    "ico_5006": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1766
+    },
+    "ico_5007": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1820
+    },
+    "ico_5008": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1874
+    },
+    "ico_5009": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1928
+    },
+    "ico_50010": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 79,
+      "y": 1211
+    },
+    "ico_50011": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 79,
+      "y": 1289
+    },
+    "ico_50012": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 902
+    },
+    "ico_50013": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 956
+    },
+    "ico_50014": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1010
+    },
+    "ico_50015": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1064
+    },
+    "ico_50016": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1118
+    },
+    "ico_50017": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1172
+    },
+    "ico_50018": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1226
+    },
+    "ico_50019": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1280
+    },
+    "ico_50020": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1388
+    },
+    "ico_50021": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1442
+    },
+    "ico_50022": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1496
+    },
+    "ico_50023": {
+      "width": 48,
+      "height": 48,
+      "pixelRatio": 3.4,
+      "x": 899,
+      "y": 1550
+    },
+    "ico_5001-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1193
+    },
+    "ico_5002-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1246
+    },
+    "ico_5003-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1299
+    },
+    "ico_5004-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1352
+    },
+    "ico_5005-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1405
+    },
+    "ico_5006-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1458
+    },
+    "ico_5007-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1511
+    },
+    "ico_5008-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1564
+    },
+    "ico_5008-2": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1617
+    },
+    "ico_5009-1": {
+      "width": 59,
+      "height": 49,
+      "pixelRatio": 3.4,
+      "x": 834,
+      "y": 1670
+    }
+  }
